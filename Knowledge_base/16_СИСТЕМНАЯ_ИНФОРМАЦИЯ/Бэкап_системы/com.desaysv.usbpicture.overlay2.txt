@@ -1,0 +1,48 @@
+Key Set Manager:
+  [com.desaysv.usbpicture.overlay2]
+      Signing KeySets: 1
+
+Packages:
+  Package [com.desaysv.usbpicture.overlay2] (1d31e92):
+    userId=10029
+    pkg=Package{120b063 com.desaysv.usbpicture.overlay2}
+    codePath=/product/app/SVUSBPictureTwoOverlay
+    resourcePath=/product/app/SVUSBPictureTwoOverlay
+    legacyNativeLibraryDir=/product/app/SVUSBPictureTwoOverlay/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 minSdk=27 targetSdk=28
+    versionName=T1D V_20250808_0242
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{3b7460 com.desaysv.usbpicture.overlay2}
+    flags=[ SYSTEM ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PRODUCT ]
+    dataDir=/data/user/0/com.desaysv.usbpicture.overlay2
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 06:59:18
+    firstInstallTime=2024-12-25 11:44:08
+    lastUpdateTime=2025-08-08 06:59:18
+    signatures=PackageSignatures{905fd19 version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    overlayTarget=com.desaysv.usbpicture
+    overlayCategory=null
+    User 0: ceDataInode=262382 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.desaysv.usbpicture.overlay2]
+
+
+Compiler stats:
+  [com.desaysv.usbpicture.overlay2]
+    (No recorded stats)

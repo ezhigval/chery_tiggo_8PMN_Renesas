@@ -1,0 +1,370 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        1ed5c5 ru.yandex.androidkeyboard/com.yandex.passport.internal.links.LinksHandlingActivity filter b0327e6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "passport.yandex.ru": -1
+          Authority: "passport-rc.yandex.ru": -1
+          Authority: "passport.yandex-team.ru": -1
+          Path: "PatternMatcher{PREFIX: /am/push/qrsecure}"
+          Path: "PatternMatcher{PREFIX: /am/pssp/browser/account}"
+          AutoVerify=true
+      https:
+        1ed5c5 ru.yandex.androidkeyboard/com.yandex.passport.internal.links.LinksHandlingActivity filter b0327e6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "passport.yandex.ru": -1
+          Authority: "passport-rc.yandex.ru": -1
+          Authority: "passport.yandex-team.ru": -1
+          Path: "PatternMatcher{PREFIX: /am/push/qrsecure}"
+          Path: "PatternMatcher{PREFIX: /am/pssp/browser/account}"
+          AutoVerify=true
+        75f6ed4 ru.yandex.androidkeyboard/com.yandex.passport.internal.ui.YxAuthActivity filter 3d54dbe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "yxc3d8ee887cbd48d7a3103928a9631516.oauth.yandex.ru": -1
+          Path: "PatternMatcher{LITERAL: /magic-link/ru.yandex.androidkeyboard/finish}"
+          AutoVerify=true
+      ru.yandex.androidkeyboard.passport:
+        6533c3 ru.yandex.androidkeyboard/com.yandex.passport.internal.ui.browser.SocialBrowserDataActivity filter 8644127
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ru.yandex.androidkeyboard.passport"
+          Authority: "social": -1
+        6533c3 ru.yandex.androidkeyboard/com.yandex.passport.internal.ui.browser.SocialBrowserDataActivity filter 9b3cfd4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ru.yandex.androidkeyboard.passport"
+          Authority: "n2b_auth": -1
+
+  Non-Data Actions:
+      com.yandex.passport.action.NATIVE_MAILISH_GOOGLE_AUTH:
+        8ce9eca ru.yandex.androidkeyboard/com.yandex.passport.internal.social.GoogleNativeSocialAuthActivity filter 6681540
+          Action: "com.yandex.passport.action.NATIVE_MAILISH_GOOGLE_AUTH"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.passport.action.SEND_AUTH_TO_TRACK:
+        bf4bb58 ru.yandex.androidkeyboard/com.yandex.passport.internal.ui.authwithtrack.SendAuthToTrackActivity filter 4abc79
+          Action: "com.yandex.passport.action.SEND_AUTH_TO_TRACK"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.passport.action.NATIVE_SOCIAL_VKONTAKTE_AUTH:
+        19fdd96 ru.yandex.androidkeyboard/com.yandex.passport.internal.social.VkNativeSocialAuthActivity filter 5c9dc72
+          Action: "com.yandex.passport.action.NATIVE_SOCIAL_VKONTAKTE_AUTH"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        c1d5f01 ru.yandex.androidkeyboard/com.android.inputmethod.latin.setup.SetupYandexKeyboardActivityAlias filter d9182c5
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        739f1a6 ru.yandex.androidkeyboard/com.android.inputmethod.latin.settings.SettingsActivity filter 62ae41a
+          Action: "android.intent.action.MAIN"
+        7b0a7e7 ru.yandex.androidkeyboard/com.android.inputmethod.latin.spellcheck.SpellCheckerSettingsActivity filter 7df3b4b
+          Action: "android.intent.action.MAIN"
+      com.yandex.passport.ACTION_SYSTEM_ADD_ACCOUNT:
+        1611f48 ru.yandex.androidkeyboard/com.yandex.passport.internal.ui.router.LoginRouterActivity filter 38c8641
+          Action: "com.yandex.passport.ACTION_SYSTEM_ADD_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.intent.ADD_ACCOUNT:
+        1611f48 ru.yandex.androidkeyboard/com.yandex.passport.internal.ui.router.LoginRouterActivity filter 51f4928
+          Action: "com.yandex.intent.ADD_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.metrica.push.action.NOTIFICATION_ACTION:
+        49f5763 ru.yandex.androidkeyboard/com.yandex.metrica.push.core.notification.MetricaPushDummyActivity filter e762e1f
+          Action: "com.yandex.metrica.push.action.NOTIFICATION_ACTION"
+      com.yandex.passport.action.NATIVE_SOCIAL_GOOGLE_AUTH:
+        8ce9eca ru.yandex.androidkeyboard/com.yandex.passport.internal.social.GoogleNativeSocialAuthActivity filter a49c8c3
+          Action: "com.yandex.passport.action.NATIVE_SOCIAL_GOOGLE_AUTH"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.auth.action.YA_SDK_LOGIN:
+        ea37054 ru.yandex.androidkeyboard/com.yandex.passport.internal.ui.authsdk.AuthSdkActivity filter cda457d
+          Action: "com.yandex.auth.action.YA_SDK_LOGIN"
+          Category: "android.intent.category.DEFAULT"
+      ru.yandex.speechkit.action.voice_recognition:
+        2add09f ru.yandex.androidkeyboard/ru.yandex.speechkit.gui.RecognizerActivity filter 559456c
+          Action: "ru.yandex.speechkit.action.voice_recognition"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        5e50e25 ru.yandex.androidkeyboard/com.yandex.passport.internal.core.announcing.PackageRemovedReceiver filter b7d46d1
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+          Ssp: "PatternMatcher{PREFIX: com.yandex.}"
+          Ssp: "PatternMatcher{PREFIX: ru.yandex.}"
+
+  Non-Data Actions:
+      com.google.android.gms.auth.api.phone.SMS_RETRIEVED:
+        c939713 ru.yandex.androidkeyboard/com.yandex.passport.internal.smsretriever.SmsRetrieverReceiver filter 6910536
+          Action: "com.google.android.gms.auth.api.phone.SMS_RETRIEVED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        e417668 ru.yandex.androidkeyboard/androidx.profileinstaller.ProfileInstallReceiver filter 4c21b2f
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        fda377b ru.yandex.androidkeyboard/com.yandex.passport.internal.core.announcing.AccountsChangedReceiver filter fef71f8
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "com.yandex.accounts.LOGIN_ACCOUNTS_CHANGED"
+      ru.yandex.androidkeyboard.action.ymp.SILENT_PUSH_RECEIVE:
+        3755229 ru.yandex.androidkeyboard/.metrica.push.MetricaSilentPushReceiver filter fc6455b
+          Action: "ru.yandex.androidkeyboard.action.ymp.SILENT_PUSH_RECEIVE"
+      com.yandex.metrica.push.action.NOTIFICATION_ACTION:
+        24a7d47 ru.yandex.androidkeyboard/com.yandex.metrica.push.core.notification.MetricaPushBroadcastReceiver filter ae03ec2
+          Action: "com.yandex.metrica.push.action.NOTIFICATION_ACTION"
+      com.yandex.metrica.push.action.EXPIRED_BY_TTL_ACTION:
+        327a6e3 ru.yandex.androidkeyboard/com.yandex.metrica.push.core.notification.TtlBroadcastReceiver filter a5a8810
+          Action: "com.yandex.metrica.push.action.EXPIRED_BY_TTL_ACTION"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        e417668 ru.yandex.androidkeyboard/androidx.profileinstaller.ProfileInstallReceiver filter a60ff09
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        78e3e6a ru.yandex.androidkeyboard/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 6be7f0d
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        65430c2 ru.yandex.androidkeyboard/com.yandex.metrica.push.core.notification.MetricaPushNotificationStatusChangeHandler filter a604d3
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        e417668 ru.yandex.androidkeyboard/androidx.profileinstaller.ProfileInstallReceiver filter 2f7850e
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.yandex.passport.ACTION_SSO_ANNOUNCEMENT:
+        f9479e6 ru.yandex.androidkeyboard/com.yandex.passport.internal.sso.announcing.SsoAnnouncingReceiver filter 919dc37
+          Action: "com.yandex.passport.ACTION_SSO_ANNOUNCEMENT"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        e417668 ru.yandex.androidkeyboard/androidx.profileinstaller.ProfileInstallReceiver filter 48153c
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        65430c2 ru.yandex.androidkeyboard/com.yandex.metrica.push.core.notification.MetricaPushNotificationStatusChangeHandler filter a604d3
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      com.yandex.passport.NOTIFICATION_DISMISS:
+        708405d ru.yandex.androidkeyboard/com.yandex.passport.internal.push.NotificationDismissedReceiver filter aa5b5a4
+          Action: "com.yandex.passport.NOTIFICATION_DISMISS"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        65430c2 ru.yandex.androidkeyboard/com.yandex.metrica.push.core.notification.MetricaPushNotificationStatusChangeHandler filter a604d3
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      com.yandex.accounts.LOGIN_ACCOUNTS_CHANGED:
+        fda377b ru.yandex.androidkeyboard/com.yandex.passport.internal.core.announcing.AccountsChangedReceiver filter fef71f8
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "com.yandex.accounts.LOGIN_ACCOUNTS_CHANGED"
+
+Service Resolver Table:
+  Schemes:
+      appmetrica:
+        89306d0 ru.yandex.androidkeyboard/io.appmetrica.analytics.internal.AppMetricaService filter 288510c
+          Action: "io.appmetrica.analytics.IAppMetricaService"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "appmetrica"
+
+  Non-Data Actions:
+      com.yandex.accounts.AccountAuthenticator:
+        411313d ru.yandex.androidkeyboard/com.yandex.passport.internal.core.auth.AuthenticationService filter 9fa485e permission com.yandex.permission.READ_CREDENTIALS
+          Action: "android.accounts.AccountAuthenticator"
+          Action: "com.yandex.accounts.AccountAuthenticator"
+      android.content.SyncAdapter:
+        1f97a7e ru.yandex.androidkeyboard/com.yandex.passport.internal.core.sync.SyncService filter 851a43f
+          Action: "android.content.SyncAdapter"
+      android.service.quicksettings.action.QS_TILE:
+        8b77f2e ru.yandex.androidkeyboard/.tile.KeyboardTileService filter c927d99 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.google.firebase.MESSAGING_EVENT:
+        19cb4a8 ru.yandex.androidkeyboard/com.google.firebase.messaging.FirebaseMessagingService filter 8045a55
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+        b44bc1 ru.yandex.androidkeyboard/com.yandex.metrica.push.firebase.MetricaMessagingService filter 1e8c6a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+      android.view.InputMethod:
+        d43df9f ru.yandex.androidkeyboard/com.android.inputmethod.latin.LatinIME filter 41ce3 permission android.permission.BIND_INPUT_METHOD
+          Action: "android.view.InputMethod"
+      android.service.textservice.SpellCheckerService:
+        390d6bb ru.yandex.androidkeyboard/com.android.inputmethod.latin.spellcheck.YkAndroidSpellCheckerService filter d1fa6e0 permission android.permission.BIND_TEXT_SERVICE
+          Action: "android.service.textservice.SpellCheckerService"
+      android.accounts.AccountAuthenticator:
+        411313d ru.yandex.androidkeyboard/com.yandex.passport.internal.core.auth.AuthenticationService filter 9fa485e permission com.yandex.permission.READ_CREDENTIALS
+          Action: "android.accounts.AccountAuthenticator"
+          Action: "com.yandex.accounts.AccountAuthenticator"
+
+Permissions:
+  Permission [com.yandex.permission.READ_CREDENTIALS] (8047461):
+    sourcePackage=ru.yandex.androidkeyboard
+    uid=10048 gids=null type=0 prot=signature
+    perm=Permission{9614b86 com.yandex.permission.READ_CREDENTIALS}
+    packageSetting=PackageSetting{3142c47 ru.yandex.androidkeyboard/10048}
+
+Permissions:
+  Permission [ru.yandex.androidkeyboard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (1e557cc):
+    sourcePackage=ru.yandex.androidkeyboard
+    uid=10048 gids=null type=0 prot=signature
+    perm=Permission{32eba15 ru.yandex.androidkeyboard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    packageSetting=PackageSetting{3142c47 ru.yandex.androidkeyboard/10048}
+
+Registered ContentProviders:
+  ru.yandex.androidkeyboard/com.yandex.passport.internal.provider.InternalProvider:
+    Provider{ac580d4 ru.yandex.androidkeyboard/com.yandex.passport.internal.provider.InternalProvider}
+  ru.yandex.androidkeyboard/.sticker.KeyboardStickerFileProvider:
+    Provider{c857572 ru.yandex.androidkeyboard/.sticker.KeyboardStickerFileProvider}
+  ru.yandex.androidkeyboard/androidx.startup.InitializationProvider:
+    Provider{d0a40ca ru.yandex.androidkeyboard/androidx.startup.InitializationProvider}
+  ru.yandex.androidkeyboard/com.yandex.passport.internal.sso.SsoContentProvider:
+    Provider{bde2d58 ru.yandex.androidkeyboard/com.yandex.passport.internal.sso.SsoContentProvider}
+  ru.yandex.androidkeyboard/com.yandex.passport.internal.authsdk.AuthSdkProvider:
+    Provider{ab424ed ru.yandex.androidkeyboard/com.yandex.passport.internal.authsdk.AuthSdkProvider}
+  ru.yandex.androidkeyboard/com.yandex.passport.internal.core.sync.SyncProvider:
+    Provider{5aa0f6 ru.yandex.androidkeyboard/com.yandex.passport.internal.core.sync.SyncProvider}
+  ru.yandex.androidkeyboard/com.squareup.picasso.PicassoProvider:
+    Provider{8448feb ru.yandex.androidkeyboard/com.squareup.picasso.PicassoProvider}
+  ru.yandex.androidkeyboard/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{eed7d06 ru.yandex.androidkeyboard/com.google.firebase.provider.FirebaseInitProvider}
+  ru.yandex.androidkeyboard/io.appmetrica.analytics.internal.PreloadInfoContentProvider:
+    Provider{a45f9f4 ru.yandex.androidkeyboard/io.appmetrica.analytics.internal.PreloadInfoContentProvider}
+
+ContentProvider Authorities:
+  [com.yandex.passport.sync.ru.yandex.androidkeyboard]:
+    Provider{5aa0f6 ru.yandex.androidkeyboard/com.yandex.passport.internal.core.sync.SyncProvider}
+      applicationInfo=ApplicationInfo{c97f7bc ru.yandex.androidkeyboard}
+  [ru.yandex.androidkeyboard.androidx-startup]:
+    Provider{d0a40ca ru.yandex.androidkeyboard/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{c97f7bc ru.yandex.androidkeyboard}
+  [ru.yandex.androidkeyboard.appmetrica.preloadinfo.retail]:
+    Provider{a45f9f4 ru.yandex.androidkeyboard/io.appmetrica.analytics.internal.PreloadInfoContentProvider}
+      applicationInfo=ApplicationInfo{c97f7bc ru.yandex.androidkeyboard}
+  [ru.yandex.androidkeyboard.com.squareup.picasso]:
+    Provider{8448feb ru.yandex.androidkeyboard/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{c97f7bc ru.yandex.androidkeyboard}
+  [com.yandex.passport.internal.sso.ru.yandex.androidkeyboard]:
+    Provider{bde2d58 ru.yandex.androidkeyboard/com.yandex.passport.internal.sso.SsoContentProvider}
+      applicationInfo=ApplicationInfo{c97f7bc ru.yandex.androidkeyboard}
+  [com.yandex.passport.internal.provider.ru.yandex.androidkeyboard]:
+    Provider{ac580d4 ru.yandex.androidkeyboard/com.yandex.passport.internal.provider.InternalProvider}
+      applicationInfo=ApplicationInfo{c97f7bc ru.yandex.androidkeyboard}
+  [ru.yandex.androidkeyboard.keyboard.fileprovider]:
+    Provider{c857572 ru.yandex.androidkeyboard/.sticker.KeyboardStickerFileProvider}
+      applicationInfo=ApplicationInfo{c97f7bc ru.yandex.androidkeyboard}
+  [ru.yandex.androidkeyboard.firebaseinitprovider]:
+    Provider{eed7d06 ru.yandex.androidkeyboard/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{c97f7bc ru.yandex.androidkeyboard}
+  [com.yandex.passport.authsdk.provider.ru.yandex.androidkeyboard]:
+    Provider{ab424ed ru.yandex.androidkeyboard/com.yandex.passport.internal.authsdk.AuthSdkProvider}
+      applicationInfo=ApplicationInfo{c97f7bc ru.yandex.androidkeyboard}
+
+Key Set Manager:
+  [ru.yandex.androidkeyboard]
+      Signing KeySets: 13
+
+Packages:
+  Package [ru.yandex.androidkeyboard] (3142c47):
+    userId=10048
+    pkg=Package{54028a3 ru.yandex.androidkeyboard}
+    codePath=/data/app/ru.yandex.androidkeyboard-rlnY1F_T2X7-HArbNGmuuw==
+    resourcePath=/data/app/ru.yandex.androidkeyboard-rlnY1F_T2X7-HArbNGmuuw==
+    legacyNativeLibraryDir=/data/app/ru.yandex.androidkeyboard-rlnY1F_T2X7-HArbNGmuuw==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=30670400 minSdk=24 targetSdk=34
+    versionName=67.4
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{c97f7bc ru.yandex.androidkeyboard}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/ru.yandex.androidkeyboard
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2025-11-10 21:46:04
+    firstInstallTime=2025-11-10 21:46:04
+    lastUpdateTime=2025-11-10 21:46:04
+    signatures=PackageSignatures{9c527a0 version:3, signatures:[9700950e], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      com.yandex.permission.READ_CREDENTIALS: prot=signature, INSTALLED
+      ru.yandex.androidkeyboard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.INTERNET
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_CONTACTS
+      android.permission.READ_PROFILE
+      android.permission.READ_USER_DICTIONARY
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.RECORD_AUDIO
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.USE_CREDENTIALS
+      android.permission.VIBRATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WRITE_USER_DICTIONARY
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      com.yandex.permission.READ_CREDENTIALS
+      com.yandex.permission.AM_COMMUNICATION
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.gms.permission.AD_ID
+      ru.yandex.androidkeyboard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.READ_EXTERNAL_STORAGE
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.yandex.permission.READ_CREDENTIALS: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WRITE_USER_DICTIONARY: granted=true
+      ru.yandex.androidkeyboard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.READ_USER_DICTIONARY: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=262487 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=true
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true
+        android.permission.RECORD_AUDIO: granted=true
+        android.permission.READ_CONTACTS: granted=true
+      disabledComponents:
+        io.appmetrica.analytics.internal.PreloadInfoContentProvider
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [ru.yandex.androidkeyboard]
+    path: /data/app/ru.yandex.androidkeyboard-rlnY1F_T2X7-HArbNGmuuw==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [ru.yandex.androidkeyboard]
+    (No recorded stats)

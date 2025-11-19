@@ -1,0 +1,243 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/pkix-cert:
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+      application/x-x509-ca-cert:
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+      application/application/x-pem-file:
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+      application/x-x509-server-cert:
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+      application/x-pkcs12:
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+      application/x-x509-user-cert:
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+      application/x-wifi-config:
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+
+  Base MIME Types:
+      application:
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+
+  Non-Data Actions:
+      android.credentials.INSTALL_AS_USER:
+        11a053a com.android.certinstaller/.InstallCertAsUser filter 167db97
+          Action: "android.credentials.INSTALL_AS_USER"
+          Category: "android.intent.category.DEFAULT"
+      android.credentials.INSTALL:
+        a91feae com.android.certinstaller/.CertInstallerMain filter 7bd9f31
+          Action: "android.credentials.INSTALL"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        a91feae com.android.certinstaller/.CertInstallerMain filter 323e616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/x-x509-ca-cert"
+          Type: "application/x-x509-user-cert"
+          Type: "application/x-x509-server-cert"
+          Type: "application/x-pkcs12"
+          Type: "application/application/x-pem-file"
+          Type: "application/pkix-cert"
+          Type: "application/x-wifi-config"
+
+Permissions:
+  Permission [com.android.certinstaller.INSTALL_AS_USER] (7ca2b2e):
+    sourcePackage=com.android.certinstaller
+    uid=10011 gids=null type=0 prot=signature
+    perm=Permission{dd096cf com.android.certinstaller.INSTALL_AS_USER}
+    packageSetting=PackageSetting{2dd785c com.android.certinstaller/10011}
+
+Key Set Manager:
+  [com.android.certinstaller]
+      Signing KeySets: 1
+
+Packages:
+  Package [com.android.certinstaller] (2dd785c):
+    userId=10011
+    pkg=Package{eaaaad1 com.android.certinstaller}
+    codePath=/system/app/CertInstaller
+    resourcePath=/system/app/CertInstaller
+    legacyNativeLibraryDir=/system/app/CertInstaller/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=28 minSdk=28 targetSdk=28
+    versionName=9
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{d5c9936 com.android.certinstaller}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ]
+    dataDir=/data/user/0/com.android.certinstaller
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 07:05:15
+    firstInstallTime=2024-12-25 11:49:50
+    lastUpdateTime=2025-08-08 07:05:15
+    signatures=PackageSignatures{cdfe037 version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      com.android.certinstaller.INSTALL_AS_USER: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.MANAGE_USERS
+      android.permission.ACCESS_ALL_DOWNLOADS
+    install permissions:
+      android.permission.ACCESS_ALL_DOWNLOADS: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+    User 0: ceDataInode=262303 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.android.certinstaller]
+    path: /system/app/CertInstaller/CertInstaller.apk
+      arm64: [status=quicken] [reason=prebuilt]
+
+
+Compiler stats:
+  [com.android.certinstaller]
+    (No recorded stats)

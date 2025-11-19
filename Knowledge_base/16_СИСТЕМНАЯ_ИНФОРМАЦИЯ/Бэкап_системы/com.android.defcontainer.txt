@@ -1,0 +1,69 @@
+Key Set Manager:
+  [com.android.defcontainer]
+      Signing KeySets: 1
+
+Packages:
+  Package [com.android.defcontainer] (b38317b):
+    userId=10001
+    pkg=Package{622bb98 com.android.defcontainer}
+    codePath=/system/priv-app/DefaultContainerService
+    resourcePath=/system/priv-app/DefaultContainerService
+    legacyNativeLibraryDir=/system/priv-app/DefaultContainerService/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=28 minSdk=28 targetSdk=28
+    versionName=9
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{1825ff1 com.android.defcontainer}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PRIVILEGED ]
+    dataDir=/data/user_de/0/com.android.defcontainer
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 07:05:28
+    firstInstallTime=2024-12-25 11:50:18
+    lastUpdateTime=2025-08-08 07:05:28
+    signatures=PackageSignatures{32477d6 version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    requested permissions:
+      android.permission.ALLOCATE_AGGRESSIVE
+      android.permission.ASEC_ACCESS
+      android.permission.ASEC_CREATE
+      android.permission.ASEC_DESTROY
+      android.permission.ASEC_MOUNT_UNMOUNT
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_CACHE_FILESYSTEM
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.READ_EXTERNAL_STORAGE
+    install permissions:
+      android.permission.ACCESS_CACHE_FILESYSTEM: granted=true
+      android.permission.ALLOCATE_AGGRESSIVE: granted=true
+      android.permission.ASEC_ACCESS: granted=true
+      android.permission.ASEC_CREATE: granted=true
+      android.permission.ASEC_DESTROY: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.ASEC_MOUNT_UNMOUNT: granted=true
+    User 0: ceDataInode=262158 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      gids=[2001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.android.defcontainer]
+    path: /system/priv-app/DefaultContainerService/DefaultContainerService.apk
+      arm64: [status=quicken] [reason=prebuilt]
+
+
+Compiler stats:
+  [com.android.defcontainer]
+    (No recorded stats)

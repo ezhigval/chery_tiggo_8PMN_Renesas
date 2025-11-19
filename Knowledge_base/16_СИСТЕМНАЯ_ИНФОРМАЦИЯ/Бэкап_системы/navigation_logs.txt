@@ -1,0 +1,184 @@
+11-15 19:55:29.979  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:29.983  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:29.985  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:32.369  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:32.370  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:32.371  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:34.723  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:34.723  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:34.728  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:36.188 14428 14428 E H3NCustomCenter: Engine is not start, Receive message:turbodog.system.navigation.message, code=100, data=2
+11-15 19:55:37.069  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:37.070  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:37.072  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:39.399  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:39.400  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:39.402  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:41.769  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:41.769  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:41.771  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:44.157  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:44.158  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:44.161  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:46.506  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:46.506  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:46.508  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:48.819  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:48.820  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:48.822  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:51.186  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:51.186  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:51.194  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:53.561  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:53.561  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:53.564  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:55.963  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:55.964  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:55.967  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:55:58.302  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:58.303  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:55:58.309  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:00.648  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:00.654  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:00.660  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:03.001  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:03.002  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:03.004  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:05.375  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:05.376  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:05.378  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:07.703  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:07.703  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:07.705  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:10.081  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:10.082  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:10.083  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:12.442  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:12.444  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:12.446  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:14.805  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:14.806  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:14.809  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:17.150  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:17.151  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:17.156  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:19.501  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:19.502  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:19.505  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:21.844  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:21.844  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:21.848  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:24.158  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:24.158  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:24.160  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:26.583  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:26.584  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:26.586  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:28.919  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:28.920  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:28.921  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:31.251  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:31.252  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:31.254  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:33.779  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:33.779  2044  4207 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:33.784  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:36.311  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:36.312  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:36.317  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:38.697  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:38.698  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:38.719  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:41.034  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:41.035  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:41.037  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:43.580  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:43.581  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:43.586  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:45.965  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:45.965  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:45.969  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:48.434  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:48.435  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:48.439  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:50.779  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:50.780  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:50.782  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:53.195  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:53.196  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:53.197  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:55.525  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:55.527  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:55.529  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:56:58.010  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:58.011  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:56:58.013  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:00.343  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:00.344  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:00.345  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:02.682  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:02.682  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:02.683  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:05.155  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:05.157  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:05.160  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:07.506  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:07.507  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:07.512  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:10.052  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:10.053  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:10.056  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:12.398  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:12.399  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:12.400  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:14.782  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:14.782  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:14.784  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:17.214  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:17.215  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:17.216  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:19.577  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:19.578  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:19.580  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:21.900  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:21.900  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:21.902  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:24.257  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:24.258  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:24.267  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:26.579  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:26.580  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:26.582  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:28.977  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:28.977  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:28.980  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:31.316  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:31.318  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:31.320  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:33.652  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:33.653  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:33.657  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:36.018  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:36.019  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:36.021  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:38.383  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:38.384  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:38.388  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:40.724  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:40.724  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:40.726  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:43.070  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:43.070  2044  6803 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:43.071  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:45.428  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:45.429  2044  2105 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:45.431  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 19:57:47.968  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:47.968  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 19:57:47.970  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation
+11-15 20:04:22.499  2044  6803 E ActivityManager: Sending non-protected broadcast turbodog.system.navigation.message from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 20:04:22.500  2044  6803 E ActivityManager: Sending non-protected broadcast turbodog.system.navigation.message from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 20:04:22.572 14428 14428 E H3NCustomCenter: Receive message:turbodog.system.navigation.message, code=100, data=2
+11-15 20:04:24.650  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 20:04:24.650  2044 14819 E ActivityManager: Sending non-protected broadcast desay.thirdparty.navigation from system 2604:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-15 20:04:24.664  2962  2962 I AAPlatform.NavigationImpl: [onReceive:120-main]-action = desay.thirdparty.navigation

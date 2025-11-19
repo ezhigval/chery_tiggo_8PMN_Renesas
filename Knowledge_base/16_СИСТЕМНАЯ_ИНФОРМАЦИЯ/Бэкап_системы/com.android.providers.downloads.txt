@@ -1,0 +1,197 @@
+Receiver Resolver Table:
+  Schemes:
+      file:
+        77d67a1 com.android.providers.downloads/.DownloadReceiver filter a296d3e
+          Action: "android.intent.action.MEDIA_MOUNTED"
+          Scheme: "file"
+
+  Non-Data Actions:
+      android.intent.action.UID_REMOVED:
+        77d67a1 com.android.providers.downloads/.DownloadReceiver filter be5a9f9
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.UID_REMOVED"
+      android.intent.action.BOOT_COMPLETED:
+        77d67a1 com.android.providers.downloads/.DownloadReceiver filter be5a9f9
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.UID_REMOVED"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      android.content.action.DOCUMENTS_PROVIDER:
+        d3c5a5a com.android.providers.downloads/.DownloadStorageProvider filter 40c48c0
+          Action: "android.content.action.DOCUMENTS_PROVIDER"
+
+Permissions:
+  Permission [android.permission.DOWNLOAD_WITHOUT_NOTIFICATION] (a4bdab2):
+    sourcePackage=com.android.providers.downloads
+    uid=10005 gids=null type=0 prot=normal
+    perm=Permission{69a8a03 android.permission.DOWNLOAD_WITHOUT_NOTIFICATION}
+    packageSetting=PackageSetting{bc3547 com.android.providers.downloads/10005}
+
+Permissions:
+  Permission [android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS] (5255a76):
+    sourcePackage=com.android.providers.downloads
+    uid=10005 gids=null type=0 prot=signature
+    perm=Permission{fbba877 android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS}
+    packageSetting=PackageSetting{bc3547 com.android.providers.downloads/10005}
+
+Permissions:
+  Permission [android.permission.ACCESS_ALL_DOWNLOADS] (5d29b1c):
+    sourcePackage=com.android.providers.downloads
+    uid=10005 gids=null type=0 prot=signature
+    perm=Permission{996c325 android.permission.ACCESS_ALL_DOWNLOADS}
+    packageSetting=PackageSetting{bc3547 com.android.providers.downloads/10005}
+
+Permissions:
+  Permission [android.permission.ACCESS_DOWNLOAD_MANAGER] (775acf8):
+    sourcePackage=com.android.providers.downloads
+    uid=10005 gids=null type=0 prot=signature|privileged
+    perm=Permission{79e65d1 android.permission.ACCESS_DOWNLOAD_MANAGER}
+    packageSetting=PackageSetting{bc3547 com.android.providers.downloads/10005}
+
+Permissions:
+  Permission [android.permission.DOWNLOAD_CACHE_NON_PURGEABLE] (84e6c86):
+    sourcePackage=com.android.providers.downloads
+    uid=10005 gids=null type=0 prot=signature|privileged
+    perm=Permission{4193947 android.permission.DOWNLOAD_CACHE_NON_PURGEABLE}
+    packageSetting=PackageSetting{bc3547 com.android.providers.downloads/10005}
+
+Permissions:
+  Permission [android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED] (2f979ba):
+    sourcePackage=com.android.providers.downloads
+    uid=10005 gids=null type=0 prot=signature|privileged
+    perm=Permission{72bb06b android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED}
+    packageSetting=PackageSetting{bc3547 com.android.providers.downloads/10005}
+
+Registered ContentProviders:
+  com.android.providers.downloads/.DownloadStorageProvider:
+    Provider{d3c5a5a com.android.providers.downloads/.DownloadStorageProvider}
+  com.android.providers.downloads/.DownloadProvider:
+    Provider{49dd256 com.android.providers.downloads/.DownloadProvider}
+
+ContentProvider Authorities:
+  [com.android.providers.downloads.documents]:
+    Provider{d3c5a5a com.android.providers.downloads/.DownloadStorageProvider}
+      applicationInfo=ApplicationInfo{baa6fc0 com.android.providers.downloads}
+  [downloads]:
+    Provider{49dd256 com.android.providers.downloads/.DownloadProvider}
+      applicationInfo=ApplicationInfo{baa6fc0 com.android.providers.downloads}
+
+Key Set Manager:
+  [com.android.providers.downloads]
+      Signing KeySets: 5
+
+Packages:
+  Package [com.android.providers.downloads] (bc3547):
+    userId=10005
+    sharedUser=SharedUserSetting{3e2041c android.media/10005}
+    pkg=Package{1b04f8b com.android.providers.downloads}
+    codePath=/system/priv-app/DownloadProvider
+    resourcePath=/system/priv-app/DownloadProvider
+    legacyNativeLibraryDir=/system/priv-app/DownloadProvider/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=28 minSdk=28 targetSdk=28
+    versionName=9
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{baa6fc0 com.android.providers.downloads}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PRIVILEGED ]
+    dataDir=/data/user/0/com.android.providers.downloads
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 07:05:37
+    firstInstallTime=2024-12-25 11:50:03
+    lastUpdateTime=2025-08-08 07:05:37
+    signatures=PackageSignatures{d06868 version:3, signatures:[e7cbfcc3], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      android.permission.ACCESS_DOWNLOAD_MANAGER: prot=signature|privileged, INSTALLED
+      android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED: prot=signature|privileged, INSTALLED
+      android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS: prot=signature, INSTALLED
+      android.permission.DOWNLOAD_CACHE_NON_PURGEABLE: prot=signature|privileged, INSTALLED
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: prot=normal, INSTALLED
+      android.permission.ACCESS_ALL_DOWNLOADS: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_DOWNLOAD_MANAGER
+      android.permission.ACCESS_CACHE_FILESYSTEM
+      android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_ALL_DOWNLOADS
+      android.permission.UPDATE_DEVICE_STATS
+      android.permission.CONNECTIVITY_INTERNAL
+      android.permission.CLEAR_APP_CACHE
+      android.permission.WAKE_LOCK
+      android.permission.UPDATE_APP_OPS_STATS
+      android.permission.READ_EXTERNAL_STORAGE
+    install permissions:
+      android.permission.ACCESS_CACHE_FILESYSTEM: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      android.permission.USE_RESERVED_DISK: granted=true
+      android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.WRITE_MEDIA_STORAGE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.UPDATE_DEVICE_STATS: granted=true
+      android.permission.ACCESS_ALL_DOWNLOADS: granted=true
+      android.permission.ACCESS_DOWNLOAD_MANAGER: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_MTP: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.CLEAR_APP_CACHE: granted=true
+      android.permission.CONNECTIVITY_INTERNAL: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.UPDATE_APP_OPS_STATS: granted=true
+    User 0: ceDataInode=262264 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+
+Shared users:
+  SharedUser [android.media] (3e2041c):
+    userId=10005
+    install permissions:
+      android.permission.ACCESS_CACHE_FILESYSTEM: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      android.permission.USE_RESERVED_DISK: granted=true
+      android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.WRITE_MEDIA_STORAGE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.UPDATE_DEVICE_STATS: granted=true
+      android.permission.ACCESS_ALL_DOWNLOADS: granted=true
+      android.permission.ACCESS_DOWNLOAD_MANAGER: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_MTP: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.CLEAR_APP_CACHE: granted=true
+      android.permission.CONNECTIVITY_INTERNAL: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.UPDATE_APP_OPS_STATS: granted=true
+    User 0: 
+      gids=[2001, 1065, 1023, 3003, 3007, 1024]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.android.providers.downloads]
+    path: /system/priv-app/DownloadProvider/DownloadProvider.apk
+      arm64: [status=quicken] [reason=prebuilt]
+
+
+Compiler stats:
+  [com.android.providers.downloads]
+    (No recorded stats)

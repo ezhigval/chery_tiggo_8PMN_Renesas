@@ -1,0 +1,48 @@
+Key Set Manager:
+  [com.desaysv.vehiclesetting.overlay3]
+      Signing KeySets: 1
+
+Packages:
+  Package [com.desaysv.vehiclesetting.overlay3] (aeb283f):
+    userId=10037
+    pkg=Package{c1d850c com.desaysv.vehiclesetting.overlay3}
+    codePath=/product/app/SVVehicleSettingThrOverlay
+    resourcePath=/product/app/SVVehicleSettingThrOverlay
+    legacyNativeLibraryDir=/product/app/SVVehicleSettingThrOverlay/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 minSdk=27 targetSdk=28
+    versionName=T1D-PHEV_SVVehicleSetting_02_31.01_250808_R
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{a637e55 com.desaysv.vehiclesetting.overlay3}
+    flags=[ SYSTEM ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PRODUCT ]
+    dataDir=/data/user/0/com.desaysv.vehiclesetting.overlay3
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 06:59:18
+    firstInstallTime=2024-12-25 11:44:10
+    lastUpdateTime=2025-08-08 06:59:18
+    signatures=PackageSignatures{798e06a version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    overlayTarget=com.desaysv.vehiclesetting
+    overlayCategory=null
+    User 0: ceDataInode=262300 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.desaysv.vehiclesetting.overlay3]
+
+
+Compiler stats:
+  [com.desaysv.vehiclesetting.overlay3]
+    (No recorded stats)

@@ -1,0 +1,562 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        10a32d2 com.android.car/.pm.ActivityBlockingActivity filter 7cd30ec
+          Action: "android.intent.action.MAIN"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.car.ICar:
+        2d62c8e com.android.car/.CarService filter ee0979f
+          Action: "android.car.ICar"
+
+Permissions:
+  Permission [android.car.permission.BIND_CAR_INPUT_SERVICE] (737dc98):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature
+    perm=Permission{d8f6cf1 android.car.permission.BIND_CAR_INPUT_SERVICE}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_MILEAGE] (e95abc2):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{a1b6dd3 android.car.permission.CAR_MILEAGE}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CONTROL_CAR_EXTERIOR_LIGHTS] (c60560f):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{dd7669c android.car.permission.CONTROL_CAR_EXTERIOR_LIGHTS}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_DRIVING_STATE] (8d51d85):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{b9a47da android.car.permission.CAR_DRIVING_STATE}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.VMS_SUBSCRIBER] (77171f5):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{4845b8a android.car.permission.VMS_SUBSCRIBER}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_NAVIGATION_MANAGER] (e343871):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{dd4a656 android.car.permission.CAR_NAVIGATION_MANAGER}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CONTROL_CAR_DOORS] (2c3c265):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{1b2bb3a android.car.permission.CONTROL_CAR_DOORS}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CONTROL_CAR_CLIMATE] (7331fe1):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{d815106 android.car.permission.CONTROL_CAR_CLIMATE}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+  Permission [android.car.permission.CONTROL_CAR_SEATS] (76383c7):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{a6fedf4 android.car.permission.CONTROL_CAR_SEATS}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_VENDOR_EXTENSION] (c8724bf):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{d77078c android.car.permission.CAR_VENDOR_EXTENSION}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_EXTERIOR_ENVIRONMENT] (7b9d53):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=normal
+    perm=Permission{fc37690 android.car.permission.CAR_EXTERIOR_ENVIRONMENT}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_ENERGY_PORTS] (991c84):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=normal
+    perm=Permission{9f98c6d android.car.permission.CAR_ENERGY_PORTS}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CONTROL_CAR_MIRRORS] (8cd7cf0):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{d2f8269 android.car.permission.CONTROL_CAR_MIRRORS}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CONTROL_CAR_WINDOWS] (a6868ba):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{839736b android.car.permission.CONTROL_CAR_WINDOWS}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_CONTROL_AUDIO_VOLUME] (3ec77d4):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{a29cd7d android.car.permission.CAR_CONTROL_AUDIO_VOLUME}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.VMS_PUBLISHER] (608b5be):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{809761f android.car.permission.VMS_PUBLISHER}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.STORAGE_MONITORING] (2481894):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{6a7bf3d android.car.permission.STORAGE_MONITORING}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_SPEED] (7db81ea):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=dangerous
+    perm=Permission{f07ccdb android.car.permission.CAR_SPEED}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+  Permission [android.car.permission.CAR_TIRES] (31f2378):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{7e0da51 android.car.permission.CAR_TIRES}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_DISPLAY_IN_CLUSTER] (91461f2):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{6b1a043 android.car.permission.CAR_DISPLAY_IN_CLUSTER}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_ENERGY] (5fa3d4a):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=dangerous
+    perm=Permission{b74d4bb android.car.permission.CAR_ENERGY}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_DIAGNOSTICS] (5e6ff0):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{1f0f969 android.car.permission.CAR_DIAGNOSTICS}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_INSTRUMENT_CLUSTER_CONTROL] (c04a62):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{255b7f3 android.car.permission.CAR_INSTRUMENT_CLUSTER_CONTROL}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_IDENTIFICATION] (777180e):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{fddb22f android.car.permission.CAR_IDENTIFICATION}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_EXTERIOR_LIGHTS] (683506c):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{7f25635 android.car.permission.CAR_EXTERIOR_LIGHTS}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_POWERTRAIN] (d676970):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=normal
+    perm=Permission{3c834e9 android.car.permission.CAR_POWERTRAIN}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.BIND_INSTRUMENT_CLUSTER_RENDERER_SERVICE] (7329cea):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature
+    perm=Permission{3584bdb android.car.permission.BIND_INSTRUMENT_CLUSTER_RENDERER_SERVICE}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_MOCK_VEHICLE_HAL] (379430e):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{7e4012f android.car.permission.CAR_MOCK_VEHICLE_HAL}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_DYNAMICS_STATE] (c3f3a72):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{e6cec3 android.car.permission.CAR_DYNAMICS_STATE}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_ENGINE_DETAILED] (e1d7263):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{6f60e60 android.car.permission.CAR_ENGINE_DETAILED}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CONTROL_APP_BLOCKING] (ca321a2):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{b00de33 android.car.permission.CONTROL_APP_BLOCKING}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CLEAR_CAR_DIAGNOSTICS] (e7a5eaa):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{46e4a9b android.car.permission.CLEAR_CAR_DIAGNOSTICS}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_CONTROL_AUDIO_SETTINGS] (9bfe):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{43dff5f android.car.permission.CAR_CONTROL_AUDIO_SETTINGS}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Permissions:
+  Permission [android.car.permission.CAR_PROJECTION] (37926a4):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=signature|privileged
+    perm=Permission{b339c0d android.car.permission.CAR_PROJECTION}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+  Permission [android.car.permission.CAR_INFO] (d9397c2):
+    sourcePackage=com.android.car
+    uid=1000 gids=null type=0 prot=normal
+    perm=Permission{220e9d3 android.car.permission.CAR_INFO}
+    packageSetting=PackageSetting{fe0566a com.android.car/1000}
+
+Key Set Manager:
+  [com.android.car]
+      Signing KeySets: 1
+
+Packages:
+  Package [com.android.car] (fe0566a):
+    userId=1000
+    sharedUser=SharedUserSetting{601a86d android.uid.system/1000}
+    pkg=Package{d5c0940 com.android.car}
+    codePath=/system/priv-app/CarService
+    resourcePath=/system/priv-app/CarService
+    legacyNativeLibraryDir=/system/priv-app/CarService/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=28 minSdk=28 targetSdk=28
+    versionName=9
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{281a079 com.android.car}
+    flags=[ SYSTEM HAS_CODE PERSISTENT ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION DIRECT_BOOT_AWARE PRIVILEGED ]
+    dataDir=/data/user/0/com.android.car
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.mock
+      android.test.runner
+    usesLibraryFiles:
+      /system/framework/android.test.mock.jar
+      /system/framework/android.test.runner.jar
+    timeStamp=2025-08-08 07:06:36
+    firstInstallTime=2024-12-25 11:51:29
+    lastUpdateTime=2025-08-08 07:06:36
+    signatures=PackageSignatures{6ac61be version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ SYSTEM HAS_CODE PERSISTENT ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      android.car.permission.CAR_ENERGY: prot=dangerous, INSTALLED
+      android.car.permission.CAR_IDENTIFICATION: prot=signature|privileged, INSTALLED
+      android.car.permission.CONTROL_CAR_CLIMATE: prot=signature|privileged, INSTALLED
+      android.car.permission.CONTROL_CAR_DOORS: prot=signature|privileged, INSTALLED
+      android.car.permission.CONTROL_CAR_WINDOWS: prot=signature|privileged, INSTALLED
+      android.car.permission.CONTROL_CAR_MIRRORS: prot=signature|privileged, INSTALLED
+      android.car.permission.CONTROL_CAR_SEATS: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_MILEAGE: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_TIRES: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_SPEED: prot=dangerous, INSTALLED
+      android.car.permission.CAR_ENERGY_PORTS: prot=normal, INSTALLED
+      android.car.permission.CAR_ENGINE_DETAILED: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_DYNAMICS_STATE: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_VENDOR_EXTENSION: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_PROJECTION: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_MOCK_VEHICLE_HAL: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_INFO: prot=normal, INSTALLED
+      android.car.permission.CAR_EXTERIOR_ENVIRONMENT: prot=normal, INSTALLED
+      android.car.permission.CAR_EXTERIOR_LIGHTS: prot=signature|privileged, INSTALLED
+      android.car.permission.CONTROL_CAR_EXTERIOR_LIGHTS: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_POWERTRAIN: prot=normal, INSTALLED
+      android.car.permission.CAR_NAVIGATION_MANAGER: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_DIAGNOSTICS: prot=signature|privileged, INSTALLED
+      android.car.permission.CLEAR_CAR_DIAGNOSTICS: prot=signature|privileged, INSTALLED
+      android.car.permission.VMS_PUBLISHER: prot=signature|privileged, INSTALLED
+      android.car.permission.VMS_SUBSCRIBER: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_DRIVING_STATE: prot=signature|privileged, INSTALLED
+      android.car.permission.CONTROL_APP_BLOCKING: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_CONTROL_AUDIO_VOLUME: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_CONTROL_AUDIO_SETTINGS: prot=signature|privileged, INSTALLED
+      android.car.permission.BIND_INSTRUMENT_CLUSTER_RENDERER_SERVICE: prot=signature, INSTALLED
+      android.car.permission.BIND_CAR_INPUT_SERVICE: prot=signature, INSTALLED
+      android.car.permission.CAR_DISPLAY_IN_CLUSTER: prot=signature|privileged, INSTALLED
+      android.car.permission.CAR_INSTRUMENT_CLUSTER_CONTROL: prot=signature|privileged, INSTALLED
+      android.car.permission.STORAGE_MONITORING: prot=signature|privileged, INSTALLED
+    requested permissions:
+      android.permission.CALL_PHONE
+      android.permission.DEVICE_POWER
+      android.permission.GRANT_RUNTIME_PERMISSIONS
+      android.permission.INTERACT_ACROSS_USERS_FULL
+      android.permission.MANAGE_ACTIVITY_STACKS
+      android.permission.MODIFY_AUDIO_ROUTING
+      android.permission.MODIFY_DAY_NIGHT_MODE
+      android.permission.MODIFY_PHONE_STATE
+      android.permission.READ_CALL_LOG
+      android.permission.READ_PHONE_STATE
+      android.permission.REAL_GET_TASKS
+      android.permission.REBOOT
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.REMOVE_TASKS
+      android.permission.WRITE_SETTINGS
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.BLUETOOTH
+      android.permission.MANAGE_USERS
+      android.permission.LOCATION_HARDWARE
+      android.permission.ACCESS_FINE_LOCATION
+    install permissions:
+      android.permission.REAL_GET_TASKS: granted=true
+      android.permission.BIND_INCALL_SERVICE: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      android.permission.CONFIGURE_WIFI_DISPLAY: granted=true
+      android.permission.ACCESS_WIMAX_STATE: granted=true
+      android.permission.RECOVERY: granted=true
+      android.permission.STORAGE_INTERNAL: granted=true
+      android.permission.BIND_DEVICE_ADMIN: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      android.permission.INSTALL_LOCATION_PROVIDER: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      android.permission.BROADCAST_PHONE_ACCOUNT_REGISTRATION: granted=true
+      android.car.permission.CAR_VENDOR_EXTENSION: granted=true
+      android.permission.BROADCAST_CALLLOG_INFO: granted=true
+      android.permission.INSTALL_PACKAGES: granted=true
+      com.android.permission.WHITELIST_BLUETOOTH_DEVICE: granted=true
+      android.permission.ACCESS_FM_RADIO: granted=true
+      android.permission.NFC: granted=true
+      android.permission.INTERNAL_SYSTEM_WINDOW: granted=true
+      android.permission.NETWORK_SETTINGS: granted=true
+      android.permission.CHANGE_OVERLAY_PACKAGES: granted=true
+      android.permission.CALL_PRIVILEGED: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.MASTER_CLEAR: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.DEVICE_POWER: granted=true
+      android.permission.REMOVE_TASKS: granted=true
+      android.car.permission.CAR_CONTROL_AUDIO_VOLUME: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.WRITE_MEDIA_STORAGE: granted=true
+      android.permission.WRITE_BLOCKED_NUMBERS: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.ACCESS_BROADCAST_RADIO: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.CONTROL_VPN: granted=true
+      android.permission.BIND_CONNECTION_SERVICE: granted=true
+      android.permission.ACCESS_INSTANT_APPS: granted=true
+      android.permission.INTERACT_ACROSS_USERS_FULL: granted=true
+      android.permission.STOP_APP_SWITCHES: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.READ_BLOCKED_NUMBERS: granted=true
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS: granted=true
+      android.permission.TRIGGER_TIME_ZONE_RULES_CHECK: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.intent.category.MASTER_CLEAR.permission.C2D_MESSAGE: granted=true
+      android.permission.BIND_JOB_SERVICE: granted=true
+      android.permission.CONFIRM_FULL_BACKUP: granted=true
+      android.permission.SET_TIME: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.MODIFY_DAY_NIGHT_MODE: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.CHANGE_CONFIGURATION: granted=true
+      android.permission.LOCAL_MAC_ADDRESS: granted=true
+      android.permission.READ_LOGS: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.REQUEST_NETWORK_SCORES: granted=true
+      android.permission.REBOOT: granted=true
+      android.permission.GRANT_RUNTIME_PERMISSIONS: granted=true
+      android.permission.SEND_SHOW_SUSPENDED_APP_DETAILS: granted=true
+      android.permission.CONNECTIVITY_INTERNAL: granted=true
+      android.permission.OVERRIDE_WIFI_CONFIG: granted=true
+      android.permission.FORCE_STOP_PACKAGES: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.certinstaller.INSTALL_AS_USER: granted=true
+      android.permission.MANAGE_ACTIVITY_STACKS: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.CHANGE_WIMAX_STATE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.car.permission.CAR_CONTROL_AUDIO_SETTINGS: granted=true
+      android.permission.DUMP: granted=true
+      android.permission.LOCATION_HARDWARE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.BIND_NETWORK_RECOMMENDATION_SERVICE: granted=true
+      android.permission.DELETE_PACKAGES: granted=true
+    User 0: ceDataInode=262170 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+
+Shared users:
+  SharedUser [android.uid.system] (601a86d):
+    userId=1000
+    install permissions:
+      android.permission.REAL_GET_TASKS: granted=true
+      android.permission.BIND_INCALL_SERVICE: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      android.permission.CONFIGURE_WIFI_DISPLAY: granted=true
+      android.permission.ACCESS_WIMAX_STATE: granted=true
+      android.permission.RECOVERY: granted=true
+      android.permission.STORAGE_INTERNAL: granted=true
+      android.permission.BIND_DEVICE_ADMIN: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      android.permission.INSTALL_LOCATION_PROVIDER: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      android.permission.BROADCAST_PHONE_ACCOUNT_REGISTRATION: granted=true
+      android.car.permission.CAR_VENDOR_EXTENSION: granted=true
+      android.permission.BROADCAST_CALLLOG_INFO: granted=true
+      android.permission.INSTALL_PACKAGES: granted=true
+      com.android.permission.WHITELIST_BLUETOOTH_DEVICE: granted=true
+      android.permission.ACCESS_FM_RADIO: granted=true
+      android.permission.NFC: granted=true
+      android.permission.INTERNAL_SYSTEM_WINDOW: granted=true
+      android.permission.NETWORK_SETTINGS: granted=true
+      android.permission.CHANGE_OVERLAY_PACKAGES: granted=true
+      android.permission.CALL_PRIVILEGED: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.MASTER_CLEAR: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.DEVICE_POWER: granted=true
+      android.permission.REMOVE_TASKS: granted=true
+      android.car.permission.CAR_CONTROL_AUDIO_VOLUME: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.WRITE_MEDIA_STORAGE: granted=true
+      android.permission.WRITE_BLOCKED_NUMBERS: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.ACCESS_BROADCAST_RADIO: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.CONTROL_VPN: granted=true
+      android.permission.BIND_CONNECTION_SERVICE: granted=true
+      android.permission.ACCESS_INSTANT_APPS: granted=true
+      android.permission.INTERACT_ACROSS_USERS_FULL: granted=true
+      android.permission.STOP_APP_SWITCHES: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.READ_BLOCKED_NUMBERS: granted=true
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS: granted=true
+      android.permission.TRIGGER_TIME_ZONE_RULES_CHECK: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.intent.category.MASTER_CLEAR.permission.C2D_MESSAGE: granted=true
+      android.permission.BIND_JOB_SERVICE: granted=true
+      android.permission.CONFIRM_FULL_BACKUP: granted=true
+      android.permission.SET_TIME: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.MODIFY_DAY_NIGHT_MODE: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.CHANGE_CONFIGURATION: granted=true
+      android.permission.LOCAL_MAC_ADDRESS: granted=true
+      android.permission.READ_LOGS: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.REQUEST_NETWORK_SCORES: granted=true
+      android.permission.REBOOT: granted=true
+      android.permission.GRANT_RUNTIME_PERMISSIONS: granted=true
+      android.permission.SEND_SHOW_SUSPENDED_APP_DETAILS: granted=true
+      android.permission.CONNECTIVITY_INTERNAL: granted=true
+      android.permission.OVERRIDE_WIFI_CONFIG: granted=true
+      android.permission.FORCE_STOP_PACKAGES: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.certinstaller.INSTALL_AS_USER: granted=true
+      android.permission.MANAGE_ACTIVITY_STACKS: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.CHANGE_WIMAX_STATE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.car.permission.CAR_CONTROL_AUDIO_SETTINGS: granted=true
+      android.permission.DUMP: granted=true
+      android.permission.LOCATION_HARDWARE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.BIND_NETWORK_RECOMMENDATION_SERVICE: granted=true
+      android.permission.DELETE_PACKAGES: granted=true
+    User 0: 
+      gids=[3002, 1023, 3003, 1013, 3001, 1007]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.SEND_SMS: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.CALL_PHONE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.WRITE_CALL_LOG: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.PROCESS_OUTGOING_CALLS: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.READ_CONTACTS: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.android.car]
+    path: /system/priv-app/CarService/CarService.apk
+      arm64: [status=speed] [reason=prebuilt]
+
+
+Compiler stats:
+  [com.android.car]
+    (No recorded stats)

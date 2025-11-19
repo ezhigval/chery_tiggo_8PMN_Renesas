@@ -1,0 +1,45 @@
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0 
+          inet6 addr: ::1/128 Scope: Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:8 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:8 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:400 TX bytes:400 
+
+wlan1     Link encap:Ethernet  HWaddr 8a:b6:bd:f7:a3:36  Driver bcmsdh_sdmmc
+          inet addr:192.168.33.10  Bcast:192.168.33.255  Mask:255.255.255.0 
+          inet6 addr: fe80::88b6:bdff:fef7:a336/64 Scope: Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1577 errors:0 dropped:1 overruns:0 frame:0 
+          TX packets:1464 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:296291 TX bytes:286481 
+
+eth0      Link encap:Ethernet  HWaddr aa:aa:aa:aa:aa:aa  Driver virtio_net
+          inet addr:192.168.2.2  Bcast:192.168.2.255  Mask:255.255.255.0 
+          inet6 addr: fe80::a8aa:aaff:feaa:aaaa/64 Scope: Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:82675 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:108449 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:7028900 TX bytes:8511178 
+
+wlan0     Link encap:Ethernet  HWaddr 88:b6:bd:57:a3:36  Driver bcmsdh_sdmmc
+          inet addr:172.20.10.7  Bcast:172.20.10.15  Mask:255.255.255.240 
+          inet6 addr: fe80::8ab6:bdff:fe57:a336/64 Scope: Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:2210 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:2065 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:574973 TX bytes:332497 
+
+usb0      Link encap:Ethernet  HWaddr d6:7f:00:f9:ee:6b  Driver rndis_host
+          inet addr:192.168.225.10  Bcast:192.168.225.255  Mask:255.255.255.0 
+          inet6 addr: fe80::c0e2:9aae:ba76:bd33/64 Scope: Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:2345 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:2528 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:1094637 TX bytes:332420 
+

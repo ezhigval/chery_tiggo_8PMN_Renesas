@@ -1,0 +1,79 @@
+mEnabled=false null
+fused=null
+gps Location[ 0,000000,0,000000 hAcc=340282346638528860000000000000000000000 t=?!? et=?!? vAcc=??? sAcc=??? bAcc=???]
+     ---
+net Location[ 0,000000,0,000000 hAcc=340282346638528860000000000000000000000 t=?!? et=?!? vAcc=??? sAcc=??? bAcc=???]
+     ---
+Current Location Manager state:
+  Location Listeners:
+    Reciever[4d8babb listener UpdateRecord[passive android(1000 foreground) Request[POWER_NONE passive fastest=+30m0s0ms lowPowerMode=false]]]
+    Reciever[ceabd8 listener UpdateRecord[gps com.google.android.projection.sink(1000 foreground) Request[ACCURACY_FINE gps requested=+100ms fastest=+100ms lowPowerMode=false]]]
+    Reciever[16b2b31 listener UpdateRecord[gps com.desaysv.vehicle.carplayapp(1000 foreground) Request[ACCURACY_FINE gps requested=0 fastest=0 lowPowerMode=false]]]
+    Reciever[ab08216 listener UpdateRecord[gps com.astrob.turbodog(1069 foreground) Request[ACCURACY_FINE gps requested=+500ms fastest=+500ms lowPowerMode=false]]]
+    Reciever[7ce4797 listener UpdateRecord[gps com.desaysv.setting(1000 background) Request[ACCURACY_FINE gps requested=+1m0s0ms fastest=+1m0s0ms lowPowerMode=false]]]
+    Reciever[26ead84 listener UpdateRecord[passive android(1000 foreground) Request[POWER_NONE passive fastest=0 lowPowerMode=false]]]
+  Active Records by Provider:
+    gps:
+      UpdateRecord[gps com.desaysv.vehicle.carplayapp(1000 foreground) Request[ACCURACY_FINE gps requested=0 fastest=0 lowPowerMode=false]]
+      UpdateRecord[gps com.google.android.projection.sink(1000 foreground) Request[ACCURACY_FINE gps requested=+100ms fastest=+100ms lowPowerMode=false]]
+      UpdateRecord[gps com.desaysv.setting(1000 background) Request[ACCURACY_FINE gps requested=+1m0s0ms fastest=+1m0s0ms lowPowerMode=false]]
+      UpdateRecord[gps com.astrob.turbodog(1069 foreground) Request[ACCURACY_FINE gps requested=+500ms fastest=+500ms lowPowerMode=false]]
+    passive:
+      UpdateRecord[passive android(1000 foreground) Request[POWER_NONE passive fastest=0 lowPowerMode=false]]
+      UpdateRecord[passive android(1000 foreground) Request[POWER_NONE passive fastest=+30m0s0ms lowPowerMode=false]]
+  Active GnssMeasurement Listeners:
+  Active GnssNavigationMessage Listeners:
+  Overlay Provider Packages:
+    fused: com.android.location.fused
+  Historical Records by Provider:
+    com.astrob.turbodog: gps: Interval 0 seconds: Duration requested 12 total, 12 foreground, out of the last 25 minutes: Currently active
+    android: passive: Min interval 0 seconds: Max interval 1800 seconds: Duration requested 112 total, 112 foreground, out of the last 112 minutes: Currently active
+    com.desaysv.vehicle.carplayapp: gps: Interval 0 seconds: Duration requested 112 total, 112 foreground, out of the last 112 minutes: Currently active
+    com.google.android.projection.sink: gps: Interval 0 seconds: Duration requested 112 total, 112 foreground, out of the last 112 minutes: Currently active
+    com.desaysv.setting: gps: Interval 60 seconds: Duration requested 112 total, 0 foreground, out of the last 112 minutes: Currently active
+  Last Known Locations:
+    gps: Location[gps 59,787752,30,162182 hAcc=1 et=+1h52m55s305ms alt=20.5 vel=0.0 bear=204.8 vAcc=??? sAcc=??? bAcc=??? {Bundle[{satnum=10, hdop=0.6}]}]
+    passive: Location[gps 59,787752,30,162182 hAcc=1 et=+1h52m55s305ms alt=20.5 vel=0.0 bear=204.8 vAcc=??? sAcc=??? bAcc=??? {Bundle[{satnum=10, hdop=0.6}]}]
+  Last Known Locations Coarse Intervals:
+    gps: Location[gps 59,787754,30,162181 hAcc=1 et=+1h50m37s289ms alt=20.5 vel=0.0 bear=204.8 vAcc=??? sAcc=??? bAcc=??? {Bundle[{satnum=10, hdop=0.6}]}]
+    passive: Location[gps 59,787754,30,162181 hAcc=1 et=+1h50m37s289ms alt=20.5 vel=0.0 bear=204.8 vAcc=??? sAcc=??? bAcc=??? {Bundle[{satnum=10, hdop=0.6}]}]
+  Geofences:
+  Enabled Providers:
+    fused
+    passive
+  mWhitelist=[] mBlacklist=[]
+  Throttling Whitelisted Packages:
+    
+  fudger: offset: 227, 845 (meters)
+passive Internal State:
+mReportLocation=true
+gps Internal State:
+  mStarted=true
+  mFixInterval=0
+  mLowPowerMode=false
+  mGnssMeasurementsProvider.isRegistered()=false
+  mGnssNavigationMessageProvider.isRegistered()=false
+  mDisableGps (battery saver mode)=false
+  mEngineCapabilities=0xf9 ( SCHEDULING SINGLE_SHOT ON_DEMAND_TIME GEOFENCING MEASUREMENTS NAV_MESSAGES )
+GNSS_KPI_START
+  KPI logging start time: +20s53ms
+  KPI logging end time: +1h52m55s432ms
+  Number of location reports: 0
+  Number of TTFF reports: 0
+  Number of position accuracy reports: 0
+  Number of CN0 reports: 6627
+  Top 4 Avg CN0 mean (dB-Hz): 39.93866002716161
+  Top 4 Avg CN0 standard deviation (dB-Hz): 6.04780843920458
+GNSS_KPI_END
+Power Metrics
+  Time on battery (min): 0.0
+  Amount of time (while on battery) Top 4 Avg CN0 > 20.0 dB-Hz (min): 0.0
+  Amount of time (while on battery) Top 4 Avg CN0 <= 20.0 dB-Hz (min): 0.0
+  Energy consumed while on battery (mAh): 0.0
+Hardware Version: 1.1
+  native internal state: Gnss Location Data:: not valid
+Gnss Time Data:: timeEstimate: 0, timeUncertaintyNs: 0, frequencyUncertaintyNsPerSec: 0
+constell: 1=GPS, 2=SBAS, 3=GLO, 4=QZSS, 5=BDS, 6=GAL; ephType: 0=Eph, 1=Alm, 2=Unk; ephSource: 0=Demod, 1=Supl, 2=Server, 3=Unk; ephHealth: 0=Good, 1=Bad, 2=Unk
+
+fused Internal State (com.android.location.fused):
+REMOTE SERVICE name=fused pkg=com.android.location.fused version=0

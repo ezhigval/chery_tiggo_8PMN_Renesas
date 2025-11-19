@@ -1,0 +1,87 @@
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.os.storage.action.VOLUME_STATE_CHANGED:
+        3588305 com.android.externalstorage/.MountReceiver filter 24bd532
+          Action: "android.os.storage.action.VOLUME_STATE_CHANGED"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      android.content.action.DOCUMENTS_PROVIDER:
+        852174e com.android.externalstorage/.ExternalStorageProvider filter aa76a94
+          Action: "android.content.action.DOCUMENTS_PROVIDER"
+        261e06f com.android.externalstorage/.TestDocumentsProvider filter e39a93d
+          Action: "android.content.action.DOCUMENTS_PROVIDER"
+
+Registered ContentProviders:
+  com.android.externalstorage/.TestDocumentsProvider:
+    Provider{261e06f com.android.externalstorage/.TestDocumentsProvider}
+  com.android.externalstorage/.ExternalStorageProvider:
+    Provider{852174e com.android.externalstorage/.ExternalStorageProvider}
+
+ContentProvider Authorities:
+  [com.android.externalstorage.documents]:
+    Provider{852174e com.android.externalstorage/.ExternalStorageProvider}
+      applicationInfo=ApplicationInfo{b7d6c3e com.android.externalstorage}
+  [com.example.documents]:
+    Provider{261e06f com.android.externalstorage/.TestDocumentsProvider}
+      applicationInfo=ApplicationInfo{b7d6c3e com.android.externalstorage}
+
+Key Set Manager:
+  [com.android.externalstorage]
+      Signing KeySets: 1
+
+Packages:
+  Package [com.android.externalstorage] (76a86dd):
+    userId=10007
+    pkg=Package{960f252 com.android.externalstorage}
+    codePath=/system/priv-app/ExternalStorageProvider
+    resourcePath=/system/priv-app/ExternalStorageProvider
+    legacyNativeLibraryDir=/system/priv-app/ExternalStorageProvider/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=28 minSdk=28 targetSdk=28
+    versionName=9
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{b7d6c3e com.android.externalstorage}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PRIVILEGED ]
+    dataDir=/data/user/0/com.android.externalstorage
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 07:05:28
+    firstInstallTime=2024-12-25 11:49:55
+    lastUpdateTime=2025-08-08 07:05:28
+    signatures=PackageSignatures{5885923 version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WRITE_MEDIA_STORAGE
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+    install permissions:
+      android.permission.WRITE_MEDIA_STORAGE: granted=true
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS: granted=true
+    User 0: ceDataInode=262242 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      gids=[1023]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.android.externalstorage]
+    path: /system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk
+      arm64: [status=quicken] [reason=prebuilt]
+
+
+Compiler stats:
+  [com.android.externalstorage]
+    (No recorded stats)

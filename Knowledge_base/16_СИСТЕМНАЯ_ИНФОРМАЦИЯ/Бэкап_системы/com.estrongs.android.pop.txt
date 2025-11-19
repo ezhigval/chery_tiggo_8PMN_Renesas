@@ -1,0 +1,2388 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/vnd.ms-cab-compressed:
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+      video/3gpp:
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter b358a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter 989d154
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      application/plain:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      application/x-tar:
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+      application/x-tcl:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      application/x-zip:
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+      application/inf:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      application/rar:
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+      application/x-*:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      application/xml:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      application/zip:
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+      text/*:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 75caec0
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      application/x-javascript:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      audio/*:
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      audio/x-wav:
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+      application/postscript:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      application/zipx:
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+      */*:
+        ce07e3 com.estrongs.android.pop/.app.SaveToESActivity filter 91032a8
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        ce07e3 com.estrongs.android.pop/.app.SaveToESActivity filter 144f1c1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        ab2b5e0 com.estrongs.android.pop/.app.ESContentChooserActivity filter 80995d8
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.OPENABLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        cc1e099 com.estrongs.android.pop/.app.filetransfer.FileTransferSendActivity filter 628448f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        cc1e099 com.estrongs.android.pop/.app.filetransfer.FileTransferSendActivity filter 9a2f31c
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        516f5e com.estrongs.android.pop/.app.transferstation.FileTransferStationActivity filter 67a64a1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      audio/amr:
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+      audio/mid:
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+      audio/ogg:
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+      audio/x-mpegurl:
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+      application/x-rar-compressed:
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+      video/*:
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter b358a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter 989d154
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      resource/folder:
+        f46ed55 com.estrongs.android.pop/.view.FileExplorerActivity filter c511a8e
+          Action: "android.intent.action.VIEW"
+          Action: "com.estrongs.android.pop.action.ACTION_VIEW_FOLDER"
+          Category: "android.intent.category.DEFAULT"
+          Type: "resource/folder"
+      text/plain:
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      application/x-gzip:
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+      application/octet-stream:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      video/mp4:
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter b358a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter 989d154
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        241236a com.estrongs.android.pop/.app.videoeditor.VideoEditProxyActivity filter 66e9aab
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "video/mp4"
+      application/x-bzip2:
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+      application/x-7z-compressed:
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+      audio/mpeg:
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+      image/*:
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        c82905b com.estrongs.android.pop/.app.PopRemoteImageBrowser filter 2a5833
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "image"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+  Base MIME Types:
+      resource:
+        f46ed55 com.estrongs.android.pop/.view.FileExplorerActivity filter c511a8e
+          Action: "android.intent.action.VIEW"
+          Action: "com.estrongs.android.pop.action.ACTION_VIEW_FOLDER"
+          Category: "android.intent.category.DEFAULT"
+          Type: "resource/folder"
+      text:
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      audio:
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+      video:
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter b358a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter b358a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter 989d154
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter 989d154
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        241236a com.estrongs.android.pop/.app.videoeditor.VideoEditProxyActivity filter 66e9aab
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "video/mp4"
+      application:
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+  Wild MIME Types:
+      *:
+        ce07e3 com.estrongs.android.pop/.app.SaveToESActivity filter 91032a8
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        ce07e3 com.estrongs.android.pop/.app.SaveToESActivity filter 144f1c1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        ab2b5e0 com.estrongs.android.pop/.app.ESContentChooserActivity filter 80995d8
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.OPENABLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        cc1e099 com.estrongs.android.pop/.app.filetransfer.FileTransferSendActivity filter 628448f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        cc1e099 com.estrongs.android.pop/.app.filetransfer.FileTransferSendActivity filter 9a2f31c
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        516f5e com.estrongs.android.pop/.app.transferstation.FileTransferStationActivity filter 67a64a1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      text:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 75caec0
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      audio:
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      image:
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        c82905b com.estrongs.android.pop/.app.PopRemoteImageBrowser filter 2a5833
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "image"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      video:
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter b358a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter 989d154
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+  Schemes:
+      ftp:
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter 989d154
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter 36e3784
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.apk}"
+          Path: "PatternMatcher{GLOB: .*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\.mp3}"
+          Path: "PatternMatcher{GLOB: .*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\.ape}"
+          Path: "PatternMatcher{GLOB: .*\.mp4}"
+          Path: "PatternMatcher{GLOB: .*\.avi}"
+          Path: "PatternMatcher{GLOB: .*\.wmv}"
+          Path: "PatternMatcher{GLOB: .*\.wav}"
+          Path: "PatternMatcher{GLOB: .*\.asf}"
+          Path: "PatternMatcher{GLOB: .*\.mpg}"
+          Path: "PatternMatcher{GLOB: .*\.3gp}"
+          Path: "PatternMatcher{GLOB: .*\.3gpp}"
+          Path: "PatternMatcher{GLOB: .*\.amr}"
+          Path: "PatternMatcher{GLOB: .*\.rm}"
+          Path: "PatternMatcher{GLOB: .*\.rmvb}"
+          Path: "PatternMatcher{GLOB: .*\.ogg}"
+          Path: "PatternMatcher{GLOB: .*\.oga}"
+          Path: "PatternMatcher{GLOB: .*\.ogv}"
+          Path: "PatternMatcher{GLOB: .*\.wma}"
+          Path: "PatternMatcher{GLOB: .*\.doc}"
+          Path: "PatternMatcher{GLOB: .*\.docx}"
+          Path: "PatternMatcher{GLOB: .*\.ppt}"
+          Path: "PatternMatcher{GLOB: .*\.pps}"
+          Path: "PatternMatcher{GLOB: .*\.ppx}"
+          Path: "PatternMatcher{GLOB: .*\.pptx}"
+          Path: "PatternMatcher{GLOB: .*\.xls}"
+          Path: "PatternMatcher{GLOB: .*\.xlsx}"
+          Path: "PatternMatcher{GLOB: .*\.chm}"
+          Path: "PatternMatcher{GLOB: .*\.txt}"
+          Path: "PatternMatcher{GLOB: .*\.zip}"
+          Path: "PatternMatcher{GLOB: .*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\.rar}"
+          Path: "PatternMatcher{GLOB: .*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\.pdf}"
+          Path: "PatternMatcher{GLOB: .*\.torrent}"
+          Path: "PatternMatcher{GLOB: .*\.mkv}"
+          Path: "PatternMatcher{GLOB: .*\.swf}"
+          Path: "PatternMatcher{GLOB: .*\.flv}"
+          Path: "PatternMatcher{GLOB: .*\.aiff}"
+          Path: "PatternMatcher{GLOB: .*\.pcs}"
+          Path: "PatternMatcher{GLOB: .*\.mov}"
+      file:
+        f46ed55 com.estrongs.android.pop/.view.FileExplorerActivity filter c73c2af
+          Action: "org.openintents.action.VIEW_DIRECTORY"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter b358a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        2af2209 com.estrongs.android.pop/.app.FileChooserActivity filter fa0b59f
+          Action: "com.estrongs.action.PICK_FILE"
+          Action: "com.estrongs.action.PLUGIN_PICK_FILE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+        2af2209 com.estrongs.android.pop/.app.FileChooserActivity filter 6a63ab5
+          Action: "com.estrongs.action.PICK_DIRECTORY"
+          Action: "com.estrongs.action.PLUGIN_PICK_DIRECTORY"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+      http:
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter 989d154
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter 36e3784
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.apk}"
+          Path: "PatternMatcher{GLOB: .*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\.mp3}"
+          Path: "PatternMatcher{GLOB: .*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\.ape}"
+          Path: "PatternMatcher{GLOB: .*\.mp4}"
+          Path: "PatternMatcher{GLOB: .*\.avi}"
+          Path: "PatternMatcher{GLOB: .*\.wmv}"
+          Path: "PatternMatcher{GLOB: .*\.wav}"
+          Path: "PatternMatcher{GLOB: .*\.asf}"
+          Path: "PatternMatcher{GLOB: .*\.mpg}"
+          Path: "PatternMatcher{GLOB: .*\.3gp}"
+          Path: "PatternMatcher{GLOB: .*\.3gpp}"
+          Path: "PatternMatcher{GLOB: .*\.amr}"
+          Path: "PatternMatcher{GLOB: .*\.rm}"
+          Path: "PatternMatcher{GLOB: .*\.rmvb}"
+          Path: "PatternMatcher{GLOB: .*\.ogg}"
+          Path: "PatternMatcher{GLOB: .*\.oga}"
+          Path: "PatternMatcher{GLOB: .*\.ogv}"
+          Path: "PatternMatcher{GLOB: .*\.wma}"
+          Path: "PatternMatcher{GLOB: .*\.doc}"
+          Path: "PatternMatcher{GLOB: .*\.docx}"
+          Path: "PatternMatcher{GLOB: .*\.ppt}"
+          Path: "PatternMatcher{GLOB: .*\.pps}"
+          Path: "PatternMatcher{GLOB: .*\.ppx}"
+          Path: "PatternMatcher{GLOB: .*\.pptx}"
+          Path: "PatternMatcher{GLOB: .*\.xls}"
+          Path: "PatternMatcher{GLOB: .*\.xlsx}"
+          Path: "PatternMatcher{GLOB: .*\.chm}"
+          Path: "PatternMatcher{GLOB: .*\.txt}"
+          Path: "PatternMatcher{GLOB: .*\.zip}"
+          Path: "PatternMatcher{GLOB: .*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\.rar}"
+          Path: "PatternMatcher{GLOB: .*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\.pdf}"
+          Path: "PatternMatcher{GLOB: .*\.torrent}"
+          Path: "PatternMatcher{GLOB: .*\.mkv}"
+          Path: "PatternMatcher{GLOB: .*\.swf}"
+          Path: "PatternMatcher{GLOB: .*\.flv}"
+          Path: "PatternMatcher{GLOB: .*\.aiff}"
+          Path: "PatternMatcher{GLOB: .*\.pcs}"
+          Path: "PatternMatcher{GLOB: .*\.mov}"
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter ef00b6d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Authority: "dwz.cn": -1
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter 2fe43a2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Authority: "www.estrongs.com": -1
+          Path: "PatternMatcher{LITERAL: /esshare}"
+      sftp:
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter 989d154
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter 36e3784
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.apk}"
+          Path: "PatternMatcher{GLOB: .*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\.mp3}"
+          Path: "PatternMatcher{GLOB: .*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\.ape}"
+          Path: "PatternMatcher{GLOB: .*\.mp4}"
+          Path: "PatternMatcher{GLOB: .*\.avi}"
+          Path: "PatternMatcher{GLOB: .*\.wmv}"
+          Path: "PatternMatcher{GLOB: .*\.wav}"
+          Path: "PatternMatcher{GLOB: .*\.asf}"
+          Path: "PatternMatcher{GLOB: .*\.mpg}"
+          Path: "PatternMatcher{GLOB: .*\.3gp}"
+          Path: "PatternMatcher{GLOB: .*\.3gpp}"
+          Path: "PatternMatcher{GLOB: .*\.amr}"
+          Path: "PatternMatcher{GLOB: .*\.rm}"
+          Path: "PatternMatcher{GLOB: .*\.rmvb}"
+          Path: "PatternMatcher{GLOB: .*\.ogg}"
+          Path: "PatternMatcher{GLOB: .*\.oga}"
+          Path: "PatternMatcher{GLOB: .*\.ogv}"
+          Path: "PatternMatcher{GLOB: .*\.wma}"
+          Path: "PatternMatcher{GLOB: .*\.doc}"
+          Path: "PatternMatcher{GLOB: .*\.docx}"
+          Path: "PatternMatcher{GLOB: .*\.ppt}"
+          Path: "PatternMatcher{GLOB: .*\.pps}"
+          Path: "PatternMatcher{GLOB: .*\.ppx}"
+          Path: "PatternMatcher{GLOB: .*\.pptx}"
+          Path: "PatternMatcher{GLOB: .*\.xls}"
+          Path: "PatternMatcher{GLOB: .*\.xlsx}"
+          Path: "PatternMatcher{GLOB: .*\.chm}"
+          Path: "PatternMatcher{GLOB: .*\.txt}"
+          Path: "PatternMatcher{GLOB: .*\.zip}"
+          Path: "PatternMatcher{GLOB: .*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\.rar}"
+          Path: "PatternMatcher{GLOB: .*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\.pdf}"
+          Path: "PatternMatcher{GLOB: .*\.torrent}"
+          Path: "PatternMatcher{GLOB: .*\.mkv}"
+          Path: "PatternMatcher{GLOB: .*\.swf}"
+          Path: "PatternMatcher{GLOB: .*\.flv}"
+          Path: "PatternMatcher{GLOB: .*\.aiff}"
+          Path: "PatternMatcher{GLOB: .*\.pcs}"
+          Path: "PatternMatcher{GLOB: .*\.mov}"
+      https:
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter 989d154
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter 36e3784
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.apk}"
+          Path: "PatternMatcher{GLOB: .*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.apk.*}"
+          Path: "PatternMatcher{GLOB: .*\.mp3}"
+          Path: "PatternMatcher{GLOB: .*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.mp3.*}"
+          Path: "PatternMatcher{GLOB: .*\.ape}"
+          Path: "PatternMatcher{GLOB: .*\.mp4}"
+          Path: "PatternMatcher{GLOB: .*\.avi}"
+          Path: "PatternMatcher{GLOB: .*\.wmv}"
+          Path: "PatternMatcher{GLOB: .*\.wav}"
+          Path: "PatternMatcher{GLOB: .*\.asf}"
+          Path: "PatternMatcher{GLOB: .*\.mpg}"
+          Path: "PatternMatcher{GLOB: .*\.3gp}"
+          Path: "PatternMatcher{GLOB: .*\.3gpp}"
+          Path: "PatternMatcher{GLOB: .*\.amr}"
+          Path: "PatternMatcher{GLOB: .*\.rm}"
+          Path: "PatternMatcher{GLOB: .*\.rmvb}"
+          Path: "PatternMatcher{GLOB: .*\.ogg}"
+          Path: "PatternMatcher{GLOB: .*\.oga}"
+          Path: "PatternMatcher{GLOB: .*\.ogv}"
+          Path: "PatternMatcher{GLOB: .*\.wma}"
+          Path: "PatternMatcher{GLOB: .*\.doc}"
+          Path: "PatternMatcher{GLOB: .*\.docx}"
+          Path: "PatternMatcher{GLOB: .*\.ppt}"
+          Path: "PatternMatcher{GLOB: .*\.pps}"
+          Path: "PatternMatcher{GLOB: .*\.ppx}"
+          Path: "PatternMatcher{GLOB: .*\.pptx}"
+          Path: "PatternMatcher{GLOB: .*\.xls}"
+          Path: "PatternMatcher{GLOB: .*\.xlsx}"
+          Path: "PatternMatcher{GLOB: .*\.chm}"
+          Path: "PatternMatcher{GLOB: .*\.txt}"
+          Path: "PatternMatcher{GLOB: .*\.zip}"
+          Path: "PatternMatcher{GLOB: .*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\..*\..*\.zip.*}"
+          Path: "PatternMatcher{GLOB: .*\.rar}"
+          Path: "PatternMatcher{GLOB: .*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.rar.*}"
+          Path: "PatternMatcher{GLOB: .*\.pdf}"
+          Path: "PatternMatcher{GLOB: .*\.torrent}"
+          Path: "PatternMatcher{GLOB: .*\.mkv}"
+          Path: "PatternMatcher{GLOB: .*\.swf}"
+          Path: "PatternMatcher{GLOB: .*\.flv}"
+          Path: "PatternMatcher{GLOB: .*\.aiff}"
+          Path: "PatternMatcher{GLOB: .*\.pcs}"
+          Path: "PatternMatcher{GLOB: .*\.mov}"
+      hwpps:
+        cd41372 com.estrongs.android.pop/com.huawei.openalliance.ad.activity.PPSLauncherActivity filter c7a3687
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "hwpps"
+          Authority: "com.estrongs.android.pop": -1
+      content:
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter b358a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+
+  Non-Data Actions:
+      android.hardware.usb.action.USB_DEVICE_ATTACHED:
+        25d491f com.estrongs.android.pop/.app.UsbMonitorActivity filter 48ef169
+          Action: "android.hardware.usb.action.USB_DEVICE_ATTACHED"
+          Action: "android.hardware.usb.action.USB_DEVICE_DETACHED"
+          Category: "android.intent.category.DEFAULT"
+      com.estrongs.action.EDITOR_GO_VIP_PAGE:
+        af9c46c com.estrongs.android.pop/.app.premium.newui.ChinaMemberActivity filter b7a2508
+          Action: "com.estrongs.action.EDITOR_GO_VIP_PAGE"
+          Category: "android.intent.category.DEFAULT"
+      android.hardware.usb.action.USB_DEVICE_DETACHED:
+        25d491f com.estrongs.android.pop/.app.UsbMonitorActivity filter 48ef169
+          Action: "android.hardware.usb.action.USB_DEVICE_ATTACHED"
+          Action: "android.hardware.usb.action.USB_DEVICE_DETACHED"
+          Category: "android.intent.category.DEFAULT"
+      com.estrongs.android.pop.action.OPEN_CHOOSER:
+        7b44e7a com.estrongs.android.pop/.app.OpenRecommActivityAlias filter 3323645
+          Action: "com.estrongs.android.pop.action.OPEN_CHOOSER"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        e7fea3d com.estrongs.android.pop/.app.openscreenad.NewSplashActivity filter 41c3b25
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        ce07e3 com.estrongs.android.pop/.app.SaveToESActivity filter 9c3dacb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+        7429100 com.estrongs.android.pop/.app.LocalFileSharingActivity filter 849ed66
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SET_WALLPAPER:
+        e9c3a30 com.estrongs.android.pop/.app.ESWallPaperChooserActivity filter 69e7c16
+          Action: "android.intent.action.SET_WALLPAPER"
+          Category: "android.intent.category.DEFAULT"
+      com.estrongs.action.PLUGIN_PICK_DIRECTORY:
+        2af2209 com.estrongs.android.pop/.app.FileChooserActivity filter 7a8554a
+          Action: "com.estrongs.action.PICK_DIRECTORY"
+          Action: "com.estrongs.action.PLUGIN_PICK_DIRECTORY"
+          Category: "android.intent.category.DEFAULT"
+      com.googlecode.android_scripting.action.EDIT_SCRIPT:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter f7f433e
+          Action: "com.googlecode.android_scripting.action.EDIT_SCRIPT"
+          Category: "android.intent.category.DEFAULT"
+      com.huawei.hms.pps.action.PPS_STUB:
+        d133b06 com.estrongs.android.pop/com.huawei.openalliance.ad.activity.TemplateStubActivity filter 1089b4
+          Action: "com.huawei.hms.pps.action.PPS_STUB"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.RINGTONE_PICKER:
+        3a671b6 com.estrongs.android.pop/.app.ESRingtoneChooserActivity filter 4cccd31
+          Action: "android.intent.action.RINGTONE_PICKER"
+          Category: "android.intent.category.DEFAULT"
+      com.estrongs.action.SAVE_TO_FILE:
+        d480eb7 com.estrongs.android.pop/.app.FileSaveToActivity filter da8a4fa
+          Action: "com.estrongs.action.SAVE_TO_FILE"
+          Category: "android.intent.category.DEFAULT"
+      com.estrongs.android.SHOW_SDCARD:
+        1c4df53 com.estrongs.android.pop/.app.TransitActivity filter ea0f7ee
+          Action: "com.estrongs.android.SHOW_DISK_USAGE"
+          Action: "com.estrongs.android.SHOW_APP_MGR"
+          Action: "com.estrongs.android.SHOW_SDCARD"
+          Action: "com.estrongs.android.SHOW_MUSIC_PLAYER"
+      com.estrongs.action.PLUGIN_PICK_FILE:
+        2af2209 com.estrongs.android.pop/.app.FileChooserActivity filter 6bdf6ec
+          Action: "com.estrongs.action.PICK_FILE"
+          Action: "com.estrongs.action.PLUGIN_PICK_FILE"
+          Category: "android.intent.category.DEFAULT"
+      intent.action.requestInstallPermission:
+        6d58945 com.estrongs.android.pop/com.kwad.sdk.api.proxy.app.BaseFragmentActivity$RequestInstallPermissionActivity filter 24c16c6
+          Action: "intent.action.requestInstallPermission"
+          Category: "android.intent.category.DEFAULT"
+      com.estrongs.android.SHOW_MUSIC_PLAYER:
+        1c4df53 com.estrongs.android.pop/.app.TransitActivity filter ea0f7ee
+          Action: "com.estrongs.android.SHOW_DISK_USAGE"
+          Action: "com.estrongs.android.SHOW_APP_MGR"
+          Action: "com.estrongs.android.SHOW_SDCARD"
+          Action: "com.estrongs.android.SHOW_MUSIC_PLAYER"
+      com.estrongs.android.SHOW_DISK_USAGE:
+        f46ed55 com.estrongs.android.pop/.view.FileExplorerActivity filter 4f566bc
+          Action: "com.estrongs.android.SHOW_DISK_USAGE"
+          Category: "android.intent.category.DEFAULT"
+        1c4df53 com.estrongs.android.pop/.app.TransitActivity filter ea0f7ee
+          Action: "com.estrongs.android.SHOW_DISK_USAGE"
+          Action: "com.estrongs.android.SHOW_APP_MGR"
+          Action: "com.estrongs.android.SHOW_SDCARD"
+          Action: "com.estrongs.android.SHOW_MUSIC_PLAYER"
+      com.estrongs.android.pop.app.AdbControllerActivity:
+        37de1a8 com.estrongs.android.pop/.app.AdbControllerActivity filter 35947f0
+          Action: "com.estrongs.android.pop.app.AdbControllerActivity"
+          Category: "android.intent.category.DEFAULT"
+      com.estrongs.android.SHOW_APP_MGR:
+        1c4df53 com.estrongs.android.pop/.app.TransitActivity filter ea0f7ee
+          Action: "com.estrongs.android.SHOW_DISK_USAGE"
+          Action: "com.estrongs.android.SHOW_APP_MGR"
+          Action: "com.estrongs.android.SHOW_SDCARD"
+          Action: "com.estrongs.android.SHOW_MUSIC_PLAYER"
+      com.estrongs.action.PICK_DIRECTORY:
+        2af2209 com.estrongs.android.pop/.app.FileChooserActivity filter 7a8554a
+          Action: "com.estrongs.action.PICK_DIRECTORY"
+          Action: "com.estrongs.action.PLUGIN_PICK_DIRECTORY"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.CREATE_SHORTCUT:
+        2af2209 com.estrongs.android.pop/.app.FileChooserActivity filter de50cbb
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+      com.estrongs.action.PICK_FILE:
+        2af2209 com.estrongs.android.pop/.app.FileChooserActivity filter 6bdf6ec
+          Action: "com.estrongs.action.PICK_FILE"
+          Action: "com.estrongs.action.PLUGIN_PICK_FILE"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 83517f9
+          Action: "android.intent.action.SEARCH"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.EDIT:
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      android.intent.action.SEND:
+        ce07e3 com.estrongs.android.pop/.app.SaveToESActivity filter 91032a8
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 75caec0
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        cc1e099 com.estrongs.android.pop/.app.filetransfer.FileTransferSendActivity filter 628448f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      android.intent.action.VIEW:
+        f46ed55 com.estrongs.android.pop/.view.FileExplorerActivity filter c511a8e
+          Action: "android.intent.action.VIEW"
+          Action: "com.estrongs.android.pop.action.ACTION_VIEW_FOLDER"
+          Category: "android.intent.category.DEFAULT"
+          Type: "resource/folder"
+        f34f5c8 com.estrongs.android.pop/.app.compress.CompressionActivity filter 748519a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "application/zip"
+          Type: "application/zipx"
+          Type: "application/x-zip"
+          Type: "application/x-rar-compressed"
+          Type: "application/rar"
+          Type: "application/x-gzip"
+          Type: "application/x-7z-compressed"
+          Type: "application/x-tar"
+          Type: "application/x-bzip2"
+          Type: "application/vnd.ms-cab-compressed"
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter b358a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d1fc661 com.estrongs.android.pop/.app.PopVideoPlayer filter 989d154
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "video/mp4"
+          Type: "video/3gpp"
+          Type: "video"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 86de8fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/mid"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+          Type: "audio/x-mpegurl"
+        c092412 com.estrongs.android.pop/.app.AudioPlayerProxyActivity filter 47779f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "audio/mpeg"
+          Type: "audio/x-wav"
+          Type: "audio/amr"
+          Type: "audio/ogg"
+        4ff3586 com.estrongs.android.pop/.app.editor.PopNoteEditor filter 132d843
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Type: "application/x-*"
+          Type: "application/xml"
+          Type: "application/postscript"
+          Type: "application/plain"
+          Type: "application/x-tcl"
+          Type: "application/x-javascript"
+          Type: "application/inf"
+          Type: "application/octet-stream"
+          Type: "text"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        d31679d com.estrongs.android.pop/.app.BrowserDownloaderActivity filter a4db997
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "ftp"
+          Scheme: "sftp"
+          Type: "image"
+          Type: "video"
+          Type: "audio"
+          Type: "text/plain"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        c82905b com.estrongs.android.pop/.app.PopRemoteImageBrowser filter 2a5833
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "image"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        241236a com.estrongs.android.pop/.app.videoeditor.VideoEditProxyActivity filter 66e9aab
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "video/mp4"
+        516f5e com.estrongs.android.pop/.app.transferstation.FileTransferStationActivity filter 67a64a1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      android.intent.action.GET_CONTENT:
+        ab2b5e0 com.estrongs.android.pop/.app.ESContentChooserActivity filter 80995d8
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.OPENABLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      android.intent.action.SEND_MULTIPLE:
+        ce07e3 com.estrongs.android.pop/.app.SaveToESActivity filter 144f1c1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+        cc1e099 com.estrongs.android.pop/.app.filetransfer.FileTransferSendActivity filter 9a2f31c
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Type: "*"
+          mPriority=0, mOrder=0, mHasPartialTypes=true
+      com.estrongs.android.pop.action.ACTION_VIEW_FOLDER:
+        f46ed55 com.estrongs.android.pop/.view.FileExplorerActivity filter c511a8e
+          Action: "android.intent.action.VIEW"
+          Action: "com.estrongs.android.pop.action.ACTION_VIEW_FOLDER"
+          Category: "android.intent.category.DEFAULT"
+          Type: "resource/folder"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        6bb25ab com.estrongs.android.pop/.app.InstallMonitorReceiver filter d837c42
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Scheme: "package"
+      file:
+        aac9f23 com.estrongs.android.pop/.EnableOEMConfig filter c1a428d
+          Action: "android.intent.action.MEDIA_MOUNTED"
+          Action: "android.intent.action.MEDIA_UNMOUNTED"
+          Action: "android.intent.action.MEDIA_BAD_REMOVAL"
+          Scheme: "file"
+        c0e9c20 com.estrongs.android.pop/.app.StartServiceReceiver filter d4dc190
+          Action: "android.intent.action.MEDIA_MOUNTED"
+          Scheme: "file"
+
+  Non-Data Actions:
+      com.estrongs.analysis.action.NOTIFICATION_REMOVED:
+        b92d5f1 com.estrongs.android.pop/.app.analysis.AnalysisNotificationDeletedReceiver filter 757a89
+          Action: "com.estrongs.analysis.action.NOTIFICATION_REMOVED"
+      com.android.vending.INSTALL_REFERRER:
+        c4ad057 com.estrongs.android.pop/.app.CampaignReceiver filter bd05724
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.intent.action.USER_PRESENT:
+        c0e9c20 com.estrongs.android.pop/.app.StartServiceReceiver filter de43453
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "com.estrongs.action.PERFNOTIFY"
+      com.estrongs.action.PERFNOTIFY:
+        c0e9c20 com.estrongs.android.pop/.app.StartServiceReceiver filter de43453
+          Action: "android.intent.action.USER_PRESENT"
+          Action: "com.estrongs.action.PERFNOTIFY"
+      android.intent.action.MEDIA_BUTTON:
+        3896f82 com.estrongs.android.pop/.app.AudioPlayerService$MediaButtonReceiver filter 6ac13b7
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.intent.action.START_OBEX_FTP_SERVER:
+        1c0603a com.estrongs.android.pop/.bt.OBEXFtpServerService filter b2afb78
+          Action: "android.intent.action.START_OBEX_FTP_SERVER"
+      com.ss.android.socialbase.downloader.remote:
+        40ac51 com.estrongs.android.pop/com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService filter 5b36ab6
+          Action: "com.ss.android.socialbase.downloader.remote"
+      android.accessibilityservice.AccessibilityService:
+        7ea4f20 com.estrongs.android.pop/com.estrongs.fs.impl.local.AutoAuthService filter bbd251 permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      com.fighter.runtime.RUNTIME_CONTENT_PROVIDER:
+        1d6148b com.estrongs.android.pop/com.fighter.config.db.runtime.RuntimeContentProvider filter 2fc04db
+          Action: "com.fighter.runtime.RUNTIME_CONTENT_PROVIDER"
+
+Permissions:
+  Permission [com.estrongs.android.pop.reaper.permission.WRITE_DATA] (1de3322):
+    sourcePackage=com.estrongs.android.pop
+    uid=10051 gids=null type=0 prot=signature
+    perm=Permission{d7c51b3 com.estrongs.android.pop.reaper.permission.WRITE_DATA}
+    packageSetting=PackageSetting{2458370 com.estrongs.android.pop/10051}
+
+Permissions:
+  Permission [com.estrongs.android.pop.permission.LDSDK_MESSAGE] (4f273c6):
+    sourcePackage=com.estrongs.android.pop
+    uid=10051 gids=null type=0 prot=signature
+    perm=Permission{ba5cf87 com.estrongs.android.pop.permission.LDSDK_MESSAGE}
+    packageSetting=PackageSetting{2458370 com.estrongs.android.pop/10051}
+
+Permissions:
+  Permission [com.estrongs.android.pop.permission.QDAS_MESSAGE] (65f5512):
+    sourcePackage=com.estrongs.android.pop
+    uid=10051 gids=null type=0 prot=signature
+    perm=Permission{6ee4e3 com.estrongs.android.pop.permission.QDAS_MESSAGE}
+    packageSetting=PackageSetting{2458370 com.estrongs.android.pop/10051}
+
+Permissions:
+  Permission [com.estrongs.android.pop.reaper.permission.READ_DATA] (cdbb010):
+    sourcePackage=com.estrongs.android.pop
+    uid=10051 gids=null type=0 prot=signature
+    perm=Permission{58f0709 com.estrongs.android.pop.reaper.permission.READ_DATA}
+    packageSetting=PackageSetting{2458370 com.estrongs.android.pop/10051}
+
+Permissions:
+  Permission [com.estrongs.android.pop.com.huawei.openaliance.ad.app.ins] (995e62c):
+    sourcePackage=com.estrongs.android.pop
+    uid=10051 gids=null type=0 prot=signature
+    perm=Permission{2fc98f5 com.estrongs.android.pop.com.huawei.openaliance.ad.app.ins}
+    packageSetting=PackageSetting{2458370 com.estrongs.android.pop/10051}
+
+Permissions:
+  Permission [com.estrongs.android.pop.heytap.msp.mobad.BROADCAST_PERMISSION] (5927954):
+    sourcePackage=com.estrongs.android.pop
+    uid=10051 gids=null type=0 prot=signature
+    perm=Permission{b4d70fd com.estrongs.android.pop.heytap.msp.mobad.BROADCAST_PERMISSION}
+    packageSetting=PackageSetting{2458370 com.estrongs.android.pop/10051}
+
+Permissions:
+  Permission [com.estrongs.android.pop.permission.C2D_MESSAGE] (6777040):
+    sourcePackage=com.estrongs.android.pop
+    uid=10051 gids=null type=0 prot=signature
+    perm=Permission{68e7b79 com.estrongs.android.pop.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{2458370 com.estrongs.android.pop/10051}
+
+Permissions:
+  Permission [com.estrongs.android.pop.openadsdk.permission.TT_PANGOLIN] (1856820):
+    sourcePackage=com.estrongs.android.pop
+    uid=10051 gids=null type=0 prot=signature
+    perm=Permission{44745d9 com.estrongs.android.pop.openadsdk.permission.TT_PANGOLIN}
+    packageSetting=PackageSetting{2458370 com.estrongs.android.pop/10051}
+
+Registered ContentProviders:
+  com.estrongs.android.pop/com.fun.report.sdk.AppUpgradeFileProvider:
+    Provider{d3176be com.estrongs.android.pop/com.fun.report.sdk.AppUpgradeFileProvider}
+  com.estrongs.android.pop/com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager:
+    Provider{ed0166c com.estrongs.android.pop/com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager}
+  com.estrongs.android.pop/com.byted.live.lite.ServerManager_push:
+    Provider{357523b com.estrongs.android.pop/com.byted.live.lite.ServerManager_push}
+  com.estrongs.android.pop/com.iadb.IadbProvider:
+    Provider{b394f70 com.estrongs.android.pop/com.iadb.IadbProvider}
+  com.estrongs.android.pop/com.opos.mobad.provider.MobAdGlobalProvider:
+    Provider{3bf29c com.estrongs.android.pop/com.opos.mobad.provider.MobAdGlobalProvider}
+  com.estrongs.android.pop/.app.FileContentProvider:
+    Provider{e1a04a5 com.estrongs.android.pop/.app.FileContentProvider}
+  com.estrongs.android.pop/com.huawei.agconnect.core.provider.AGConnectInitializeProvider:
+    Provider{f639c88 com.estrongs.android.pop/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+  com.estrongs.android.pop/com.huawei.openalliance.ad.provider.PPSECProvider:
+    Provider{7832c1e com.estrongs.android.pop/com.huawei.openalliance.ad.provider.PPSECProvider}
+  com.estrongs.android.pop/com.bytedance.pangle.FileProvider:
+    Provider{5b1ec2a com.estrongs.android.pop/com.bytedance.pangle.FileProvider}
+  com.estrongs.android.pop/androidx.core.content.FileProvider:
+    Provider{d5ceefc com.estrongs.android.pop/androidx.core.content.FileProvider}
+  com.estrongs.android.pop/com.huawei.hms.update.provider.UpdateProvider:
+    Provider{2829583 com.estrongs.android.pop/com.huawei.hms.update.provider.UpdateProvider}
+  com.estrongs.android.pop/com.bytedance.pangle.provider.MainProcessProviderProxy:
+    Provider{c423739 com.estrongs.android.pop/com.bytedance.pangle.provider.MainProcessProviderProxy}
+  com.estrongs.android.pop/com.bytedance.sdk.openadsdk.stub.server.MainServerManager:
+    Provider{41b117e com.estrongs.android.pop/com.bytedance.sdk.openadsdk.stub.server.MainServerManager}
+  com.estrongs.android.pop/com.kwad.sdk.api.proxy.app.AdSdkFileProvider:
+    Provider{9380f2c com.estrongs.android.pop/com.kwad.sdk.api.proxy.app.AdSdkFileProvider}
+  com.estrongs.android.pop/com.bytedance.android.openliveplugin.process.server.LiveServerManager:
+    Provider{9860df5 com.estrongs.android.pop/com.bytedance.android.openliveplugin.process.server.LiveServerManager}
+  com.estrongs.android.pop/com.bytedance.sdk.openadsdk.TTFileProvider:
+    Provider{6d2c78a com.estrongs.android.pop/com.bytedance.sdk.openadsdk.TTFileProvider}
+  com.estrongs.android.pop/com.heytap.msp.mobad.api.MobFileProvider:
+    Provider{ec260a9 com.estrongs.android.pop/com.heytap.msp.mobad.api.MobFileProvider}
+  com.estrongs.android.pop/com.byted.live.lite.ServerManager_bytelive:
+    Provider{decd62e com.estrongs.android.pop/com.byted.live.lite.ServerManager_bytelive}
+  com.estrongs.android.pop/com.qq.e.comm.GDTFileProvider:
+    Provider{1375e65 com.estrongs.android.pop/com.qq.e.comm.GDTFileProvider}
+  com.estrongs.android.pop/com.fighter.provider.ReaperFileProvider:
+    Provider{fda3fc7 com.estrongs.android.pop/com.fighter.provider.ReaperFileProvider}
+  com.estrongs.android.pop/com.fighter.config.db.runtime.RuntimeContentProvider:
+    Provider{1d6148b com.estrongs.android.pop/com.fighter.config.db.runtime.RuntimeContentProvider}
+  com.estrongs.android.pop/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider:
+    Provider{7546392 com.estrongs.android.pop/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+  com.estrongs.android.pop/com.jd.ad.sdk.dl.cache.multiprocess.JADMultiProvider:
+    Provider{4c4d2ea com.estrongs.android.pop/com.jd.ad.sdk.dl.cache.multiprocess.JADMultiProvider}
+  com.estrongs.android.pop/com.baidu.mobads.sdk.api.BdFileProvider:
+    Provider{b0d49db com.estrongs.android.pop/com.baidu.mobads.sdk.api.BdFileProvider}
+
+ContentProvider Authorities:
+  [com.estrongs.android.pop.JADMultiProvider]:
+    Provider{4c4d2ea com.estrongs.android.pop/com.jd.ad.sdk.dl.cache.multiprocess.JADMultiProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost]:
+    Provider{ed0166c com.estrongs.android.pop/com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.iadb]:
+    Provider{b394f70 com.estrongs.android.pop/com.iadb.IadbProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.AGCInitializeProvider]:
+    Provider{f639c88 com.estrongs.android.pop/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.files]:
+    Provider{e1a04a5 com.estrongs.android.pop/.app.FileContentProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.gdt.fileprovider]:
+    Provider{1375e65 com.estrongs.android.pop/com.qq.e.comm.GDTFileProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.fileprovider]:
+    Provider{d5ceefc com.estrongs.android.pop/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.MobAdGlobalProvider]:
+    Provider{3bf29c com.estrongs.android.pop/com.opos.mobad.provider.MobAdGlobalProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.reaper.RuntimeContentProvider]:
+    Provider{1d6148b com.estrongs.android.pop/com.fighter.config.db.runtime.RuntimeContentProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.MobFileProvider]:
+    Provider{ec260a9 com.estrongs.android.pop/com.heytap.msp.mobad.api.MobFileProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.bytedance.android.openliveplugin.process.server.LiveServerManager]:
+    Provider{9860df5 com.estrongs.android.pop/com.bytedance.android.openliveplugin.process.server.LiveServerManager}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.ReaperFileProvider]:
+    Provider{fda3fc7 com.estrongs.android.pop/com.fighter.provider.ReaperFileProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.pps.ecprovider]:
+    Provider{7832c1e com.estrongs.android.pop/com.huawei.openalliance.ad.provider.PPSECProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.pangle.servermanager.push.com.byted.live.lite]:
+    Provider{357523b com.estrongs.android.pop/com.byted.live.lite.ServerManager_push}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.TTFileProvider]:
+    Provider{6d2c78a com.estrongs.android.pop/com.bytedance.sdk.openadsdk.TTFileProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.TTMultiProvider]:
+    Provider{7546392 com.estrongs.android.pop/com.bytedance.sdk.openadsdk.multipro.TTMultiProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.pangle.servermanager.bytelive.com.byted.live.lite]:
+    Provider{decd62e com.estrongs.android.pop/com.byted.live.lite.ServerManager_bytelive}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.bd.provider]:
+    Provider{b0d49db com.estrongs.android.pop/com.baidu.mobads.sdk.api.BdFileProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.pangle.fileprovider]:
+    Provider{5b1ec2a com.estrongs.android.pop/com.bytedance.pangle.FileProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.hms.update.provider]:
+    Provider{2829583 com.estrongs.android.pop/com.huawei.hms.update.provider.UpdateProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.pangle.provider.proxy.main]:
+    Provider{c423739 com.estrongs.android.pop/com.bytedance.pangle.provider.MainProcessProviderProxy}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.XuanhuFileProvider]:
+    Provider{d3176be com.estrongs.android.pop/com.fun.report.sdk.AppUpgradeFileProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.adFileProvider]:
+    Provider{9380f2c com.estrongs.android.pop/com.kwad.sdk.api.proxy.app.AdSdkFileProvider}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+  [com.estrongs.android.pop.pangle.servermanager.main]:
+    Provider{41b117e com.estrongs.android.pop/com.bytedance.sdk.openadsdk.stub.server.MainServerManager}
+      applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+
+Key Set Manager:
+  [com.estrongs.android.pop]
+      Signing KeySets: 3
+
+Packages:
+  Package [com.estrongs.android.pop] (2458370):
+    userId=10051
+    pkg=Package{ffeea5d com.estrongs.android.pop}
+    codePath=/data/app/com.estrongs.android.pop-3PePC0zfS1ardtqzqSO5AQ==
+    resourcePath=/data/app/com.estrongs.android.pop-3PePC0zfS1ardtqzqSO5AQ==
+    legacyNativeLibraryDir=/data/app/com.estrongs.android.pop-3PePC0zfS1ardtqzqSO5AQ==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=10335 minSdk=19 targetSdk=30
+    versionName=4.4.2.12
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{f83038e com.estrongs.android.pop}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.estrongs.android.pop
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.boot.jar
+    timeStamp=2025-11-12 07:31:32
+    firstInstallTime=2025-11-12 07:31:33
+    lastUpdateTime=2025-11-12 07:31:33
+    signatures=PackageSignatures{be04fd2 version:3, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    declared permissions:
+      com.estrongs.android.pop.permission.C2D_MESSAGE: prot=signature, INSTALLED
+      com.estrongs.android.pop.reaper.permission.READ_DATA: prot=signature, INSTALLED
+      com.estrongs.android.pop.reaper.permission.WRITE_DATA: prot=signature, INSTALLED
+      com.estrongs.android.pop.permission.QDAS_MESSAGE: prot=signature, INSTALLED
+      com.estrongs.android.pop.permission.LDSDK_MESSAGE: prot=signature, INSTALLED
+      com.estrongs.android.pop.openadsdk.permission.TT_PANGOLIN: prot=signature, INSTALLED
+      com.estrongs.android.pop.heytap.msp.mobad.BROADCAST_PERMISSION: prot=signature, INSTALLED
+      com.estrongs.android.pop.com.huawei.openaliance.ad.app.ins: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.WRITE_SETTINGS
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.SET_WALLPAPER
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WRITE_MEDIA_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_SUPERUSER
+      android.permission.VIBRATE
+      .PERMISSION
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.GET_TASKS
+      com.google.android.c2dm.permission.RECEIVE
+      com.estrongs.android.pop.permission.C2D_MESSAGE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.CLEAR_APP_CACHE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.CAMERA
+      android.permission.MANAGE_DOCUMENTS
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.GET_ACCOUNTS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      com.iadb.helper.permission.API
+      com.asus.msa.SupplementaryDID.ACCESS
+      freemme.permission.msa
+      com.google.android.gms.permission.AD_ID
+      android.permission.REORDER_TASKS
+      qiku.permission.HIDE_NOTIFICATION
+      com.estrongs.android.pop.reaper.permission.READ_DATA
+      com.estrongs.android.pop.reaper.permission.WRITE_DATA
+      com.estrongs.android.pop.permission.QDAS_MESSAGE
+      com.estrongs.android.pop.permission.LDSDK_MESSAGE
+      com.estrongs.android.pop.openadsdk.permission.TT_PANGOLIN
+      com.miui.systemAdSolution.adSwitch.PROVIDER
+      com.estrongs.android.pop.heytap.msp.mobad.BROADCAST_PERMISSION
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      android.permission.BROADCAST_STICKY
+      com.hihonor.permission.MANAGE_FOLD_SCREEN
+      com.hihonor.permission.MANAGE_FOLD_SCREEN_PRIVILEGED
+      com.estrongs.android.pop.com.huawei.openaliance.ad.app.ins
+    install permissions:
+      com.estrongs.android.pop.reaper.permission.WRITE_DATA: granted=true
+      com.estrongs.android.pop.permission.LDSDK_MESSAGE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      com.estrongs.android.pop.permission.QDAS_MESSAGE: granted=true
+      com.estrongs.android.pop.reaper.permission.READ_DATA: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.estrongs.android.pop.com.huawei.openaliance.ad.app.ins: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      com.estrongs.android.pop.heytap.msp.mobad.BROADCAST_PERMISSION: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      com.estrongs.android.pop.permission.C2D_MESSAGE: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      com.estrongs.android.pop.openadsdk.permission.TT_PANGOLIN: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=262629 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=true
+        android.permission.READ_EXTERNAL_STORAGE: granted=true
+        android.permission.ACCESS_COARSE_LOCATION: granted=true
+        android.permission.READ_PHONE_STATE: granted=true
+        android.permission.CAMERA: granted=true
+        android.permission.GET_ACCOUNTS: granted=true
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true
+      enabledComponents:
+        com.jecelyin.editor.v2.ui.JeEditorActivity
+        com.estrongs.android.pop.app.editor.PopNoteEditor
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.estrongs.android.pop]
+    path: /data/app/com.estrongs.android.pop-3PePC0zfS1ardtqzqSO5AQ==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.estrongs.android.pop]
+    (No recorded stats)

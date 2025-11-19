@@ -1,0 +1,69 @@
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BOOT_COMPLETED:
+        94de135 com.presentation.mypresentation/.BootReceiver filter 2252667
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=1000, mOrder=0, mHasPartialTypes=false
+
+Key Set Manager:
+  [com.presentation.mypresentation]
+      Signing KeySets: 1
+
+Packages:
+  Package [com.presentation.mypresentation] (c4cf59):
+    userId=10015
+    pkg=Package{2cf971e com.presentation.mypresentation}
+    codePath=/vendor/app/ClusterDisplayService
+    resourcePath=/vendor/app/ClusterDisplayService
+    legacyNativeLibraryDir=/vendor/app/ClusterDisplayService/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=28 minSdk=28 targetSdk=28
+    versionName=9
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{1a2abff com.presentation.mypresentation}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION VENDOR ]
+    dataDir=/data/user/0/com.presentation.mypresentation
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 07:06:35
+    firstInstallTime=2024-12-25 11:51:33
+    lastUpdateTime=2025-08-08 07:06:35
+    signatures=PackageSignatures{8e51dcc version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECORD_AUDIO
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.INTERNET
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS: granted=true
+    User 0: ceDataInode=262342 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.presentation.mypresentation]
+    path: /vendor/app/ClusterDisplayService/ClusterDisplayService.apk
+      arm64: [status=quicken] [reason=first-boot]
+
+
+Compiler stats:
+  [com.presentation.mypresentation]
+    (No recorded stats)

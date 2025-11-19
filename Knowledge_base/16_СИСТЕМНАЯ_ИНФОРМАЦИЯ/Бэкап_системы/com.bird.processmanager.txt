@@ -1,0 +1,55 @@
+Key Set Manager:
+  [com.bird.processmanager]
+      Signing KeySets: 3
+
+Packages:
+  Package [com.bird.processmanager] (22d4df2):
+    userId=10053
+    pkg=Package{6361c43 com.bird.processmanager}
+    codePath=/data/app/com.bird.processmanager-cNPAaRAgTnHiOzFgKQndmQ==
+    resourcePath=/data/app/com.bird.processmanager-cNPAaRAgTnHiOzFgKQndmQ==
+    legacyNativeLibraryDir=/data/app/com.bird.processmanager-cNPAaRAgTnHiOzFgKQndmQ==/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 minSdk=10 targetSdk=17
+    versionName=1.0
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{78a2c0 com.bird.processmanager}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    dataDir=/data/user/0/com.bird.processmanager
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.boot.jar
+    timeStamp=2025-11-12 07:32:35
+    firstInstallTime=2025-11-12 07:32:35
+    lastUpdateTime=2025-11-12 07:32:35
+    signatures=PackageSignatures{573fbf9 version:1, signatures:[d7f1f224], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.KILL_BACKGROUND_PROCESSES
+    install permissions:
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+    User 0: ceDataInode=262801 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.bird.processmanager]
+    path: /data/app/com.bird.processmanager-cNPAaRAgTnHiOzFgKQndmQ==/base.apk
+      arm64: [status=verify] [reason=boot]
+
+
+Compiler stats:
+  [com.bird.processmanager]
+    (No recorded stats)
