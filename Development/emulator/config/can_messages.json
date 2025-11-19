@@ -1,0 +1,47 @@
+{
+  "messages": [
+    {
+      "id": "0x100",
+      "data": "0000",
+      "period": 0.1,
+      "type": "periodic",
+      "description": "Vehicle speed (km/h * 10)"
+    },
+    {
+      "id": "0x101",
+      "data": "0000",
+      "period": 0.1,
+      "type": "periodic",
+      "description": "Engine RPM"
+    },
+    {
+      "id": "0x102",
+      "data": "5a",
+      "period": 1.0,
+      "type": "periodic",
+      "description": "Engine temperature (°C)"
+    },
+    {
+      "id": "0x103",
+      "data": "32",
+      "period": 2.0,
+      "type": "periodic",
+      "description": "Fuel level (%)"
+    },
+    {
+      "id": "0x200",
+      "data": "1602",
+      "period": 1.0,
+      "type": "periodic",
+      "description": "Climate control (temp, fan)"
+    },
+    {
+      "id": "0x201",
+      "data": "0f",
+      "period": 0.5,
+      "type": "periodic",
+      "description": "Door status"
+    }
+  ]
+}
+

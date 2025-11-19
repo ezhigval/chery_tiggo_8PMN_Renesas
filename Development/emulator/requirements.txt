@@ -1,0 +1,33 @@
+# T18FL3 Emulator Requirements
+
+# GUI
+PyQt6>=6.6.0
+PyQt6-Qt6>=6.6.0
+
+# QEMU Management
+pexpect>=4.9.0
+psutil>=5.9.0
+
+# CAN Bus
+python-can>=4.3.0
+
+# Logging
+loguru>=0.7.0
+
+# Configuration
+pyyaml>=6.0
+jsonschema>=4.19.0
+
+# Utilities
+python-dateutil>=2.8.2
+pytz>=2023.3
+
+# VNC Client
+vncdotool>=1.0.0
+Pillow>=10.0.0
+
+# Development
+pytest>=7.4.0
+black>=23.11.0
+mypy>=1.7.0
+

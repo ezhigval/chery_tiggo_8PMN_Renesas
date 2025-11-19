@@ -1,0 +1,103 @@
+/dts-v1/;
+
+/ {
+    compatible = "chery,t18fl3-emulator", "renesas,r8a7795", "renesas,g6sh", "linux,t18fl3-virt", "arm,virt";
+    #address-cells = <2>;
+    #size-cells = <2>;
+    interrupt-parent = <&intc>;
+
+    chosen {
+        /* КРИТИЧЕСКИ ВАЖНО: Используем правильное имя устройства для virt машины
+         * В virt машине PL011 создается автоматически и называется ttyAMA0
+         * Но для earlycon нужно указать правильный путь */
+        stdout-path = "serial0:115200n8";
+        /* Также пробуем альтернативные варианты через bootargs */
+        bootargs = "";
+        /* Bootargs НЕ указываем здесь - используем только из -append в QEMU команде
+         * чтобы избежать конфликтов и иметь полный контроль над параметрами загрузки */
+    };
+
+    memory@40000000 {
+        device_type = "memory";
+        reg = <0x00000000 0x40000000 0x00000001 0x00000000>; /* 4GB at 0x40000000 */
+    };
+
+    cpus {
+        #address-cells = <2>;
+        #size-cells = <0>;
+
+        cpu@0 {
+            device_type = "cpu";
+            compatible = "arm,cortex-a57";
+            reg = <0x0 0x0>;
+            enable-method = "psci";
+        };
+    };
+
+    intc: interrupt-controller@8000000 {
+        compatible = "arm,gic-v3";
+        #interrupt-cells = <3>;
+        interrupt-controller;
+        reg = <0x0 0x08000000 0x0 0x10000>,  /* GICD */
+              <0x0 0x08080000 0x0 0x200000>; /* GICR */
+        interrupts = <1 9 4>;
+    };
+
+    psci {
+        compatible = "arm,psci-1.0";
+        method = "hvc";
+    };
+
+    timer {
+        compatible = "arm,armv8-timer";
+        interrupts = <1 13 0xf08>,
+                     <1 14 0xf08>,
+                     <1 11 0xf08>,
+                     <1 10 0xf08>;
+        always-on;
+    };
+
+    soc {
+        #address-cells = <2>;
+        #size-cells = <2>;
+        compatible = "simple-bus";
+        ranges;
+
+        /* БЫСТРОЕ РЕШЕНИЕ: Используем только virt адреса, но с совместимостью драйверов g6sh
+         * Ядро ожидает SCIF драйвер, но мы используем PL011 на virt адресе 0x09000000
+         * Ключевая идея: добавить совместимость с SCIF драйверами в начале compatible,
+         * чтобы ядро попыталось использовать SCIF драйвер, но он будет работать с PL011 */
+        
+        /* Основной serial - используем РЕАЛЬНЫЙ адрес ГУ (0xe6e80000) */
+        scif0: serial@e6e80000 {
+            /* КРИТИЧЕСКИ ВАЖНО: Реальное ГУ использует SCIF на адресе 0xe6e80000!
+             * Это реальный адрес из Renesas R-Car g6sh спецификации
+             * Используем SCIF драйверы в начале для приоритета, PL011 как fallback */
+            compatible = "renesas,scif-r8a7795", "renesas,rcar-gen3-scif", "renesas,scif", "arm,pl011", "arm,primecell";
+            reg = <0x0 0xe6e80000 0x0 0x1000>;
+            interrupts = <0 1 4>;
+            clocks = <&uartclk>, <&uartclk>;
+            clock-names = "fck", "uartclk", "apb_pclk";
+            status = "okay";
+        };
+        
+        /* Второй serial для QNX (если нужен) - используем реальный адрес SCIF1 */
+        scif1: serial@e6e88000 {
+            /* Реальный адрес SCIF1 из Renesas R-Car g6sh спецификации */
+            compatible = "renesas,scif-r8a7795", "renesas,rcar-gen3-scif", "renesas,scif", "arm,pl011", "arm,primecell";
+            reg = <0x0 0xe6e88000 0x0 0x1000>;
+            interrupts = <0 2 4>;
+            clocks = <&uartclk>, <&uartclk>;
+            clock-names = "fck", "uartclk", "apb_pclk";
+            status = "okay";
+        };
+
+        uartclk: uartclk {
+            compatible = "fixed-clock";
+            #clock-cells = <0>;
+            clock-frequency = <24000000>;
+        };
+    };
+};
+
+
