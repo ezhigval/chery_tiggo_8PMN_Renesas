@@ -1,0 +1,29 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        // Yandex MapKit Maven репозиторий
+        maven { url 'https://artifactory.yandex.net/artifactory/maven' }
+        maven { url 'https://maven.yandex.ru' }
+    }
+    dependencies {
+        // Обновлена версия Gradle для поддержки новой Java
+        classpath 'com.android.tools.build:gradle:8.1.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // Yandex MapKit Maven репозиторий (MapKit доступен в Maven Central)
+        maven { url 'https://artifactory.yandex.net/artifactory/maven' }
+        maven { url 'https://maven.yandex.ru' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

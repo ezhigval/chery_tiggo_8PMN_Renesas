@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Цвета в стиле Яндекс Навигатора -->
+    <color name="yandex_nav_white">#FFFFFF</color>
+    <color name="yandex_nav_black">#000000</color>
+    <color name="yandex_nav_dark_bg">#80000000</color> <!-- Полупрозрачный черный -->
+    <color name="yandex_nav_speed_limit_bg">#FFFFFFFF</color> <!-- Белый фон для знака ограничения -->
+    <color name="yandex_nav_speed_limit_border">#FF3333</color> <!-- Красная обводка -->
+    <color name="yandex_nav_speed_limit_text">#FFA500</color> <!-- Желтый текст ограничения -->
+    <color name="yandex_nav_maneuver_bg">#FF1E88E5</color> <!-- Синий фон маневра -->
+    <color name="yandex_nav_maneuver_left">#1E88E5</color> <!-- Синий для налево -->
+    <color name="yandex_nav_maneuver_right">#43A047</color> <!-- Зеленый для направо -->
+    <color name="yandex_nav_maneuver_straight">#5E35B1</color> <!-- Фиолетовый для прямо -->
+    <color name="yandex_nav_text_primary">#FFFFFF</color>
+    <color name="yandex_nav_text_secondary">#CCFFFFFF</color>
+</resources>
+

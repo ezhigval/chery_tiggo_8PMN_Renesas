@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YandexDog Navigator</string>
+    <string name="yandex_mapkit_api_key">c75cd846-c6de-425a-b974-41917fec5071</string>
+</resources>
+

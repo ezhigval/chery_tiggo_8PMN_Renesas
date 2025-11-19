@@ -1,0 +1,107 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.tiggo.navigator'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.tiggo.navigator"
+        minSdk 26  // Yandex MapKit 4.19.0-lite требует minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        
+        externalNativeBuild {
+            cmake {
+                // C флаги для компиляции C кода (не C++)
+                cFlags "-std=c99"
+                // Удаляем cppFlags, так как мы используем C, а не C++
+                // cppFlags "-std=c99"
+            }
+        }
+        
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+    }
+
+    buildTypes {
+        debug {
+            // Ускорение сборки для hot reload
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+            // Кэширование для инкрементальной сборки
+            applicationIdSuffix ""
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    // Ускорение сборки нативного кода
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = false
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    externalNativeBuild {
+        cmake {
+            path file('../CMakeLists.txt')
+            // Не указываем версию - используем доступную из SDK
+            // Android Studio автоматически найдет подходящую версию
+        }
+    }
+    
+    // Альтернатива: указать версию CMake через local.properties
+    // ndk.dir=/path/to/ndk
+    // cmake.dir=/path/to/cmake
+    
+    // ВАЖНО: Исключаем декомпилированные файлы из сборки
+    sourceSets {
+        main {
+            java {
+                // Исключаем папку turbodog_analysis из компиляции
+                exclude '**/turbodog_analysis/**'
+                // Исключаем декомпилированные источники
+                exclude '**/decompiled/**'
+                exclude '**/extracted/**'
+            }
+        }
+    }
+    
+    // Дополнительная фильтрация - исключаем все файлы из turbodog_analysis
+    packagingOptions {
+        exclude 'turbodog_analysis/**'
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // Yandex MapKit SDK (актуальная версия согласно документации)
+    // Библиотека доступна в Maven Central
+    implementation 'com.yandex.android:maps.mobile:4.19.0-lite'
+    
+    // Альтернативные варианты (если 4.19.0-lite недоступна):
+    // implementation 'com.yandex.android:mapkit:4.0.0'
+    // implementation 'com.yandex.android:maps.mobile:4.19.0'
+    
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+

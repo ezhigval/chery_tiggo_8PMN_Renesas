@@ -1,0 +1,52 @@
+# API Keys - НЕ коммитить в репозиторий!
+config/api_key.txt
+config/api_key.properties
+yandex_api_key.txt
+
+# Build files
+build/
+cmake-build-*/
+*.o
+*.so
+*.a
+*.dylib
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# Android
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+.gradle/
+local.properties
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Analysis results (может содержать конфиденциальную информацию)
+# ВАЖНО: Эти папки не должны компилироваться!
+turbodog_analysis/extracted/
+turbodog_analysis/decompiled/
+turbodog_analysis/**/*.java
+turbodog_analysis/**/*.smali
+turbodog_analysis/**/*.class
