@@ -1,8 +1,0 @@
-package:org.kman.WifiManager
-package:com.bird.memorycleanup
-package:com.estrongs.android.pop
-package:ru.yandex.androidkeyboard
-package:com.bird.processmanager
-package:com.browser.tssomas
-package:com.example.navistart
-package:ru.kinopoisk

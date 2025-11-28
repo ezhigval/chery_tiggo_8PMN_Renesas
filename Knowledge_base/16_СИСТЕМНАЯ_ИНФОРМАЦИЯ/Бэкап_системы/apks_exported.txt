@@ -1,8 +1,0 @@
-org.kman.WifiManager -> base.apk
-com.bird.memorycleanup -> base.apk
-com.estrongs.android.pop -> base.apk
-ru.yandex.androidkeyboard -> base.apk
-com.bird.processmanager -> base.apk
-com.browser.tssomas -> base.apk
-com.example.navistart -> base.apk
-ru.kinopoisk -> base.apk
