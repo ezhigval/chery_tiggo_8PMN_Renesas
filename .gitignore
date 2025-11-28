@@ -72,6 +72,8 @@ Development/emulator/boot_rebuild/kernel_*
 Development/emulator/boot_rebuild/ramdisk_*
 Development/Chery_Emulator/logs/
 Development/Chery_Emulator/payload/
+Development/Chery_Emulator/qemu_g6sh/
+Development/Chery_Emulator/qemu_scif_fork/
 
 # APK библиотека - бинарники не коммитим
 APK_library/
