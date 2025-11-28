@@ -72,23 +72,37 @@ class QnxVmManager:
     def build_qemu_args(
         self,
         uart_port: int = 1234,
+        virtio_console_port: int = 1236,
+        enable_debug: bool = True,
     ) -> Sequence[str]:
         """Build QEMU argv for QNX‑only VM.
 
         This is a minimal baseline:
-        - Machine: g6sh (or whatever is configured).
+        - Machine: virt (standard ARM virt board with our QNX tweaks).
         - CPU/RAM: modest defaults.
-        - UART console exposed via a TCP socket for telnet/nc access.
-        - QNX boot image passed as -kernel.
-        - Optional system image attached as read‑only virtio disk.
+        - QNX console (ttyAMA0 / PL011 at 0x1c090000) exposed via a TCP socket
+          for telnet/nc / QnxConsole access.
+        - virtio-console for QNX logs (preferred over SCIF, as QNX IFS includes
+          vdev-virtio-console.so).
+        - QNX hypervisor IFS passed as -kernel.
+        - Optional QNX system image attached as read‑only virtio disk.
         """
 
         cfg = self.config
-        qemu_bin = str(cfg.qemu_binary or "qemu-system-aarch64")
 
-        # Для QNX‑VM используем базовую virt‑машину, чтобы не зависеть от
-        # наличия кастомного g6sh типа в конкретной сборке QEMU. Все нужные
-        # устройства (SCIF0, диски) подключаем вручную через параметры.
+        # QNX‑VM всегда запускаем через специализированный SCIF/PL011 форк,
+        # чтобы не зависеть от настроек основного эмулятора для Android.
+        qemu_bin = str(
+            self.repo_root
+            / "Development"
+            / "Chery_Emulator"
+            / "qemu_scif_fork"
+            / "qemu-system-aarch64"
+        )
+
+        # Для QNX‑VM используем базовую virt‑машину нашего форка. Все нужные
+        # устройства (PL011‑консоль, диски) подключаются через параметры и
+        # внутреннюю логку virt.c (virt_create_qnx_console_pl011).
         machine_arg = "virt"
 
         args: list[str] = [
@@ -103,17 +117,16 @@ class QnxVmManager:
             "2048",
         ]
 
-        # QNX hypervisor uses devc-serscif on scif0. We emulate a SCIF-like
-        # UART using a dedicated Renesas HSCIF stub and expose it via a TCP
-        # socket. This keeps the original images untouched; меняется только
-        # виртуальное железо.
+        # На этапе отладки SCIF/консоли мы не привязываем чардев к HSCIF:
+        # QEMU просто логирует все MMIO‑доступы к UART‑адресам в qnx_qemu_stdout.log.
+        # Когда станет ясно, какой именно UART используется, сюда вернём -chardev.
+
+        # Включаем VNC‑вывод для QNX/cluster дисплея на стандартном порту 5901.
+        # Это соответствует graphics.cluster.vnc_* в emulator_config.yaml.
         args += [
-            "-chardev",
-            f"socket,id=qnx_scif,host=localhost,port={uart_port},server=on,wait=off",
-            "-device",
-            # Map the MMIO region to the SCIF0 base used on the real g6sh
-            # (0xe6e80000) so that devc-serscif sees a UART there.
-            "renesas-hscif,chardev=qnx_scif,addr=0xe6e80000",
+            "-display",
+            # QEMU interprets ":1" as TCP port 5900 + 1 = 5901.
+            "vnc=127.0.0.1:1",
         ]
 
         # We intentionally do not pass a DTB here; the hypervisor image
@@ -131,6 +144,25 @@ class QnxVmManager:
                 f"if=none,file={cfg.qnx_system_img},format=raw,read-only=on,id=qnxsys",
                 "-device",
                 "virtio-blk-pci,drive=qnxsys",
+            ]
+
+        # virtio-console для QNX: QNX IFS содержит vdev-virtio-console.so, поэтому
+        # консоль QNX скорее всего идёт через virtio-console, а не через SCIF.
+        args += [
+            "-device",
+            "virtio-serial-pci,id=qnx_virtio_serial0",
+            "-chardev",
+            f"socket,id=qnx_virtcon,host=localhost,port={virtio_console_port},server=on,wait=off",
+            "-device",
+            "virtconsole,chardev=qnx_virtcon,name=qnx-virtcon0",
+        ]
+
+        # QEMU debug режим для диагностики: guest_errors, unimp, mmu
+        # Это поможет увидеть ошибки инициализации устройств и нереализованные функции.
+        if enable_debug:
+            args += [
+                "-d",
+                "guest_errors,unimp,mmu",
             ]
 
         # We keep networking and GPU minimal for now; they can be added later.

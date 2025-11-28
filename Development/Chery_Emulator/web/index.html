@@ -22,8 +22,8 @@
       background: radial-gradient(circle at top, #1e293b 0, #020617 55%, #000 100%);
       color: var(--text);
       width: 100%;
-      min-height: 100vh;
-      overflow-x: hidden;
+      height: 100vh;       /* фиксируем высоту под viewport */
+      overflow: hidden;    /* глобальный скролл отключён, скроллим только внутри блоков */
     }
     .root {
       display: flex;
@@ -171,10 +171,12 @@
       display: flex;
     }
     .display--hu {
+      /* Default aspect ratio; can be overridden dynamically based on real frame size. */
       aspect-ratio: 1920 / 720;
     }
     .display--cluster {
-      aspect-ratio: 2.6 / 1;
+      /* Cluster имеет то же базовое разрешение 1920x720; правим соотношение сторон. */
+      aspect-ratio: 1920 / 720;
     }
     .splitter {
       flex: 0 0 6px;
@@ -1012,10 +1014,31 @@
       <div class="panel" data-panel="emulator">
         <section class="console-panel">
           <div class="console-panel__title-row">
-            <div class="console-panel__title">Emulator</div>
+            <div class="console-panel__title">Emulator configuration</div>
           </div>
           <div class="console-panel__body">
-            <span class="display__stub">Emulator configuration UI will appear here.</span>
+            <div class="field">
+              <label for="emuBootImg">Android boot image (boot.img)</label>
+              <input id="emuBootImg" type="text" placeholder="Path relative to repo root, e.g. Development/Chery_Emulator/payload/boot_patched_adb_tcp.img" />
+            </div>
+            <div class="field">
+              <label for="emuSystemImg">Android system image (system.img)</label>
+              <input id="emuSystemImg" type="text" placeholder="Path relative to repo root, e.g. Development/Chery_Emulator/payload/system.img" />
+            </div>
+            <div class="field">
+              <label for="emuVendorImg">Android vendor image (vendor.img)</label>
+              <input id="emuVendorImg" type="text" placeholder="Path relative to repo root, e.g. Development/Chery_Emulator/payload/vendor.img" />
+            </div>
+            <div class="field">
+              <label for="emuProductImg">Android product image (product.img)</label>
+              <input id="emuProductImg" type="text" placeholder="Path relative to repo root, e.g. Development/Chery_Emulator/payload/product.img" />
+            </div>
+            <div class="actions">
+              <button class="primary" id="btnSaveEmuConfig">Save emulator config</button>
+            </div>
+            <span class="display__stub">
+              Paths are stored in emulator_config.yaml and used when building the QEMU command.
+            </span>
           </div>
         </section>
       </div>
@@ -1121,6 +1144,10 @@
         // ignore storage errors
       }
       updateMainPanel(tab);
+      if (tab === 'emulator') {
+        // Lazy-load emulator config when user opens the Emulator tab.
+        loadEmulatorConfig();
+      }
     }
 
     sidebarTabs.forEach(el => {
@@ -1179,7 +1206,7 @@
             const blob = data instanceof Blob ? data : new Blob([data]);
             const bitmap = await createImageBitmap(blob);
 
-            // Match canvas size to bitmap, then scale to CSS size by browser.
+            // Match canvas internal size to bitmap; CSS keeps fixed HU/cluster aspect.
             if (canvas.width !== bitmap.width || canvas.height !== bitmap.height) {
               canvas.width = bitmap.width;
               canvas.height = bitmap.height;
@@ -1245,6 +1272,19 @@
       return 'log-type--info';
     }
 
+    function extractTimeLabel(entry) {
+      const msg = String(entry.message || '');
+      // Пытаемся вытащить ISO‑время вида 2025-11-28T23:16:13.648Z из сообщения.
+      const m = msg.match(/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z/);
+      if (m && m[0]) {
+        const d = new Date(m[0]);
+        if (!Number.isNaN(d.getTime())) {
+          return d.toLocaleTimeString();
+        }
+      }
+      return '';
+    }
+
     function passesLogFilter(entry) {
       const src = (entry.source || '').toLowerCase();
       switch (currentLogFilter) {
@@ -1280,9 +1320,6 @@
           return;
         }
 
-        const now = new Date();
-        const timeLabel = now.toLocaleTimeString();
-
         // Последние строки идут первыми: новый лог сверху.
         for (let i = entries.length - 1; i >= 0; i--) {
           const entry = entries[i];
@@ -1293,6 +1330,7 @@
           const level = String(entry.level ?? 'INFO');
           const sourceClass = mapSourceClass(source);
           const levelClass = mapLevelClass(level);
+          const timeLabel = escapeHtml(extractTimeLabel(entry) || '');
           row.innerHTML = `
             <span class="console-col console-col--time">${timeLabel}</span>
             <span class="console-col console-col--source ${sourceClass}">${escapeHtml(source)}</span>

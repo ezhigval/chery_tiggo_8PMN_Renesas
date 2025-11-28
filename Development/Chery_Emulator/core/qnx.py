@@ -81,6 +81,74 @@ class QnxConsole:
         return text.splitlines()
 
 
+class QnxVirtioConsole:
+    """TCP client for QNX virtio-console socket.
+
+    QNX IFS содержит vdev-virtio-console.so, поэтому консоль QNX скорее всего
+    идёт через virtio-console, а не через SCIF. Этот класс подключается к
+    сокету, который QEMU создаёт для virtio-console chardev.
+    """
+
+    def __init__(self, host: str = "localhost", port: int = 1236, timeout: float = 1.0) -> None:
+        self.host = host
+        self.port = port
+        self.timeout = timeout
+
+    def _open(self) -> socket.socket:
+        try:
+            sock = socket.create_connection((self.host, self.port), timeout=self.timeout)
+        except OSError as exc:
+            raise QnxConsoleError(f"Failed to connect to QNX virtio-console at {self.host}:{self.port}: {exc}")
+        return sock
+
+    def send_line(self, line: str) -> None:
+        """Send a single line to QNX virtio-console (adds trailing newline)."""
+
+        try:
+            sock = self._open()
+        except QnxConsoleError:
+            return
+
+        with sock:
+            data = (line + "\n").encode("utf-8", errors="replace")
+            try:
+                sock.sendall(data)
+            except OSError:
+                return
+
+    def tail(self, max_bytes: int = 4096) -> list[str]:
+        """Fetch a small snapshot from the virtio-console socket.
+
+        This is used to quickly inspect QNX boot logs and console output.
+        """
+
+        try:
+            sock = self._open()
+        except QnxConsoleError:
+            return []
+
+        chunks: list[bytes] = []
+        remaining = max_bytes
+
+        with sock:
+            sock.settimeout(self.timeout)
+            while remaining > 0:
+                try:
+                    chunk = sock.recv(min(1024, remaining))
+                except OSError:
+                    break
+                if not chunk:
+                    break
+                chunks.append(chunk)
+                remaining -= len(chunk)
+
+        if not chunks:
+            return []
+
+        text = b"".join(chunks).decode("utf-8", errors="replace")
+        return text.splitlines()
+
+
 @dataclass
 class CanFrame:
     """Abstract CAN frame used by the emulator core.
@@ -145,6 +213,7 @@ class CanBus:
 
 # Global singletons used by the core API.
 qnx_console = QnxConsole()
+qnx_virtio_console = QnxVirtioConsole()
 can_bus = CanBus()
 
 

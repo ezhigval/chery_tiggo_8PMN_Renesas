@@ -11,7 +11,7 @@ from pydantic import BaseModel
 from .state import vehicle_state, IgnitionState
 from .emulator import emulator_manager
 from .api_controls import router as controls_router
-from .qnx import qnx_console, can_bus
+from .qnx import qnx_console, qnx_virtio_console, can_bus
 from .qnx_vm import qnx_vm_manager
 from .display_frames import display_manager
 from .graphics_vnc import hu_vnc_frame, cluster_vnc_frame
@@ -136,7 +136,10 @@ def _auto_start_emulator_if_needed(old_state: IgnitionState, new_state: Ignition
     """Automatically start emulator when moving out of OFF."""
 
     if old_state is IgnitionState.OFF and new_state is not IgnitionState.OFF:
+        # Когда зажигание выходит из OFF, поднимаем сразу оба домена:
+        # Android HU и QNX VM.
         emulator_manager.start()
+        qnx_vm_manager.start()
 
 
 def _state_payload() -> dict[str, object]:
@@ -183,13 +186,17 @@ async def ignition_press_long() -> ActionResponse:
 
 @app.post("/emulator/start", response_model=ActionResponse)
 async def emulator_start() -> ActionResponse:
+    # Full-system start: Android HU + QNX VM.
     emulator_manager.start()
+    qnx_vm_manager.start()
     return _state_response(status="emulator_start")  # type: ignore[return-value]
 
 
 @app.post("/emulator/stop", response_model=ActionResponse)
 async def emulator_stop() -> ActionResponse:
+    # Full-system stop: Android HU + QNX VM.
     emulator_manager.stop()
+    qnx_vm_manager.stop()
     return _state_response(status="emulator_stop")  # type: ignore[return-value]
 
 
@@ -318,6 +325,9 @@ async def get_combined_logs() -> CombinedLogsResponse:
 
     # QNX VM / second domain
     sources.append(("QNX-QEMU", _tail_file(logs_dir / "qnx_qemu_stdout.log", max_lines=80)))
+    # Используем virtio-console как основной источник QNX логов (предпочтительно над SCIF).
+    sources.append(("QNX-VIRTCON", qnx_virtio_console.tail(max_bytes=4096)))
+    # Старый SCIF/UART endpoint оставляем для обратной совместимости.
     sources.append(("QNX-UART", qnx_console.tail(max_bytes=4096)))
 
     entries: list[LogEntry] = []
@@ -337,20 +347,34 @@ async def get_combined_logs() -> CombinedLogsResponse:
 
 @app.post("/emulator/console/clear", response_model=ConsoleResponse)
 async def clear_emulator_console() -> ConsoleResponse:
-    """Truncate QEMU console log on disk and return an empty snapshot.
+    """Best-effort truncation of emulator/QEMU/QNX log files.
 
-    This is a lightweight helper for the UI "refresh logs" button; it does
-    not affect the running emulator, only the accumulated log file.
+    This is wired to the UI "refresh logs" button and is expected to clear
+    the visible log console. It does not affect the running emulator, only
+    local log files under `Development/Chery_Emulator/logs`.
     """
 
     logs_dir = BASE_DIR / "logs"
-    log_path = logs_dir / "qemu_console.log"
+    files = [
+        "qemu_console.log",
+        "qemu_stdout.log",
+        "qemu_serial.log",
+        "emulator_core.log",
+        "adb_android.log",
+        "qnx_qemu_stdout.log",
+    ]
 
     try:
         logs_dir.mkdir(parents=True, exist_ok=True)
-        log_path.write_text("", encoding="utf-8")
+        for name in files:
+            path = logs_dir / name
+            try:
+                path.write_text("", encoding="utf-8")
+            except OSError:
+                # Ignore individual file errors; other logs are still cleared.
+                continue
     except OSError:
-        # If truncation fails, just fall back to current tail snapshot.
+        # On total failure just return current snapshot instead of raising.
         return await get_emulator_console()
 
     return ConsoleResponse(lines=[], truncated=False)
@@ -366,6 +390,19 @@ async def get_qnx_console() -> QnxConsoleSnapshot:
     """
 
     lines = qnx_console.tail(max_bytes=4096)
+    return QnxConsoleSnapshot(lines=lines)
+
+
+@app.get("/qnx/virtconsole", response_model=QnxConsoleSnapshot)
+async def get_qnx_virtconsole() -> QnxConsoleSnapshot:
+    """Return a snapshot from the QNX virtio-console socket.
+
+    QNX IFS содержит vdev-virtio-console.so, поэтому консоль QNX скорее всего
+    идёт через virtio-console, а не через SCIF. Этот endpoint подключается к
+    сокету, который QEMU создаёт для virtio-console chardev (порт 1236).
+    """
+
+    lines = qnx_virtio_console.tail(max_bytes=4096)
     return QnxConsoleSnapshot(lines=lines)
 
 

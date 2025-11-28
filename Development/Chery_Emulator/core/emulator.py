@@ -214,9 +214,8 @@ class EmulatorManager:
         else:
             machine_arg = machine
 
-        # Console log via dedicated PL011 UART mapped at 0x1c090000 (ttyAMA0)
-        # and connected to a file chardev. This matches the g6sh DTB, where
-        # uart@1c090000 is the primary console.
+        # Console log: используем первый UART платы (ttyAMA0 / PL011) и
+        # направляем его в файл. Для g6sh это соответствует uart@1c090000.
         logs_dir = self._logs_dir
         logs_dir.mkdir(parents=True, exist_ok=True)
         console_log = logs_dir / "qemu_console.log"
@@ -231,10 +230,8 @@ class EmulatorManager:
             "4",
             "-m",
             "4096",
-            "-chardev",
-            f"file,id=hucon,path={console_log}",
-            "-device",
-            "pl011,chardev=hucon,id=uart0,base=0x1c090000",
+            "-serial",
+            f"file:{console_log}",
         ]
 
         if cfg.qemu_dtb is not None:
@@ -307,6 +304,10 @@ class EmulatorManager:
             "user,id=net0,hostfwd=tcp::5557-:5555",
             "-device",
             "virtio-net-pci,netdev=net0",
+            # HU display via VNC on 127.0.0.1:5900 (matches graphics.hu.vnc_*):
+            # QEMU интерпретирует ":0" как TCP‑порт 5900.
+            "-display",
+            "vnc=127.0.0.1:0",
         ]
 
         return args
@@ -472,8 +473,22 @@ class EmulatorManager:
         logs_dir = self._logs_dir
         log_path = logs_dir / "adb_android.log"
 
-        args = [adb_bin]
+        # Если ANDROID_ADB_SERIAL не задан, сначала пробуем подключиться к эмулятору.
         serial = os.environ.get("ANDROID_ADB_SERIAL")
+        if not serial:
+            # Best-effort подключение к эмулятору на порту 5557.
+            try:
+                subprocess.run(
+                    [adb_bin, "connect", "127.0.0.1:5557"],
+                    timeout=5,
+                    capture_output=True,
+                )
+            except (subprocess.TimeoutExpired, OSError):
+                # Игнорируем ошибки подключения - возможно, устройство ещё не готово.
+                pass
+            serial = "127.0.0.1:5557"
+
+        args = [adb_bin]
         if serial:
             args += ["-s", serial]
         args += ["logcat", "-v", "brief"]
