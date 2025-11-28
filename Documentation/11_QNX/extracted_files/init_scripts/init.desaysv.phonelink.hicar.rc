@@ -1,0 +1,25 @@
+# COPYRIGHT NOTICE
+# Copyright (c) 2019, DesaySV
+
+service g6sh_hicar /system/bin/g6sh_hicar.init
+        class late_start
+        disabled
+        user root
+        oneshot
+        seclabel u:r:shell:s0
+
+##remove for t18fl3 has already add "lookup main" 
+## in "vendor/desaysv/common/prebuilts_legacy/frameworks/vehicle/cmds/nic-config/direct.network.config.sh"
+#on property:sys.boot_completed=1
+#    start g6sh_hicar
+
+
+# 为了控制HiCar有线连接的发起时机，HiCar默认向sdk上报不支持usb连接，当插入usb时执行以下流程：
+# 1. HiCar应用向sdk上报支持usb连接
+# 2. HiCar应用中设置sys.hicar.usb.uevent.path
+# 3. HiCar应用中设置sys.hicar.usb.resetting=1，对usb执行remove(detach)和add(attach)
+# 4. 触发HiCar有线连接
+
+on property:sys.hicar.usb.resetting=1
+    write ${sys.hicar.usb.uevent.path} "remove"
+    write ${sys.hicar.usb.uevent.path} "add"

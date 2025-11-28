@@ -1,0 +1,29 @@
+#!/system/bin/sh
+#bugreport="/data_extra/data/com.android.shell"
+#dumpstate -o $bugreport/bugreport -p $bugreport/bugreport.png
+cachelist=/sdcard/test.txt
+
+if [ "$1" != "2" ]; then
+  exit 1
+fi
+
+function deletefile() {
+  echo "删除文件"
+  rm -rf $1
+}
+
+array=("")
+count=0
+#解析普通文本文件
+while read line; do
+  array[count]=$line
+  count=$(expr $count + 1)
+  echo $line
+  echo $count
+done <$cachelist
+
+# shellcheck disable=SC2068
+for var in ${array[@]}; do
+  echo "遍历数组"$var
+  deletefile $var
+done

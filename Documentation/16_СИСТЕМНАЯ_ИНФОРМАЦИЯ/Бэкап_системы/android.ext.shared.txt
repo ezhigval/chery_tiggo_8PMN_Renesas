@@ -1,0 +1,50 @@
+Key Set Manager:
+  [android.ext.shared]
+      Signing KeySets: 1
+
+Packages:
+  Package [android.ext.shared] (91a8eda):
+    userId=10009
+    pkg=Package{e716f0b android.ext.shared}
+    codePath=/system/app/ExtShared
+    resourcePath=/system/app/ExtShared
+    legacyNativeLibraryDir=/system/app/ExtShared/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 minSdk=28 targetSdk=28
+    versionName=1
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{3a3d1e8 android.ext.shared}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE ]
+    dataDir=/data/user_de/0/android.ext.shared
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    dynamic libraries:
+      android.ext.shared
+    timeStamp=2025-08-08 07:06:34
+    firstInstallTime=2024-12-25 11:51:30
+    lastUpdateTime=2025-08-08 07:06:34
+    signatures=PackageSignatures{8254001 version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    User 0: ceDataInode=262182 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [android.ext.shared]
+    path: /system/app/ExtShared/ExtShared.apk
+      arm64: [status=quicken] [reason=prebuilt]
+
+
+Compiler stats:
+  [android.ext.shared]
+    (No recorded stats)

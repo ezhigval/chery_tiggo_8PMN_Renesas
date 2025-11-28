@@ -1,0 +1,9 @@
+11-16 16:30:54.971 I/NaviAIDLService(18132): {"requestAuthor":"com.astrob.turbodog","protocolId":30200,"messageType":"dispatch","statusCode":200,"data":{"autoStatus":14}}
+11-16 16:30:54.972 I/NaviAIDLService(18132): {"requestAuthor":"com.astrob.turbodog","protocolId":30200,"messageType":"dispatch","statusCode":200,"data":{"autoStatus":1}}
+11-16 16:31:02.452 I/GenericCustomCenter(18132): Intent { act=turbodog.navigation.system.message (has extras) }Bundle[{CODE=202, DATA=1}]
+11-16 16:31:02.453 I/NaviAIDLService(18132): {"requestAuthor":"com.astrob.turbodog","protocolId":30200,"messageType":"dispatch","statusCode":200,"data":{"autoStatus":16}}
+11-16 16:31:02.464 I/FunctionLayer(18132): FL_ConfigImp::FLSaveSet(): strSaveFilePath = /data_extra/map/TurboDog/rundir/UserData/SystemSet.dat
+11-16 16:31:02.504 I/MediaFocusControl( 2040): requestAudioFocus() from uid/pid 1069/18132 clientId=android.media.AudioManager@1819eacom.astrob.navi.astrobnavilib.s$a@72484db callingPack=com.astrob.turbodog req=3 flags=0x0 sdk=29
+11-16 16:31:02.508 W/ContextImpl( 2587): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1005 android.content.ContextWrapper.sendBroadcast:444 com.desaysv.mapservice.util.ActivityUtil.sendBroadcast:188 com.desaysv.mapservice.adapter.map.turbodog.TurboDogAdapter$3.onReceive:512 android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0:1391 
+11-16 16:31:04.087 I/MediaFocusControl( 2040): abandonAudioFocus() from uid/pid 1069/18132 clientId=android.media.AudioManager@1819eacom.astrob.navi.astrobnavilib.s$a@72484db
+11-16 16:31:04.088 I/MediaFocusControl( 2040): removeFocusForAmp attr = AudioAttributes: usage=USAGE_ASSISTANCE_NAVIGATION_GUIDANCE content=CONTENT_TYPE_SPEECH flags=0x0 tags= bundle=null; clientId = android.media.AudioManager@1819eacom.astrob.navi.astrobnavilib.s$a@72484db

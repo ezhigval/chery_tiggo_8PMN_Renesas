@@ -1,0 +1,62 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        af0c5b8 com.iqqijni.car.keyboard/com.iqqijni.imesettings.ImeMainPreferenceActivity filter 85e7628
+          Action: "android.intent.action.MAIN"
+        9126f91 com.iqqijni.car.keyboard/com.iqqijni.imesettings.ImeLanguagePreferenceActivity filter 328af41
+          Action: "android.intent.action.MAIN"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.view.InputMethod:
+        26cd53e com.iqqijni.car.keyboard/com.iqqijni.car.imeservice.IMEService filter 31afc4b permission android.permission.BIND_INPUT_METHOD
+          Action: "android.view.InputMethod"
+
+Key Set Manager:
+  [com.iqqijni.car.keyboard]
+      Signing KeySets: 1
+
+Packages:
+  Package [com.iqqijni.car.keyboard] (3668806):
+    userId=10041
+    pkg=Package{abdeec7 com.iqqijni.car.keyboard}
+    codePath=/product/app/Kika
+    resourcePath=/product/app/Kika
+    legacyNativeLibraryDir=/product/app/Kika/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=20240711 minSdk=26 targetSdk=30
+    versionName=ime-3.0-desay_T18FL3-20240711
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{6897cf4 com.iqqijni.car.keyboard}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PRODUCT ]
+    dataDir=/data/user/0/com.iqqijni.car.keyboard
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 06:59:26
+    firstInstallTime=2024-12-25 11:44:14
+    lastUpdateTime=2025-08-08 06:59:26
+    signatures=PackageSignatures{554bc1d version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    User 0: ceDataInode=262379 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.iqqijni.car.keyboard]
+    path: /product/app/Kika/Kika.apk
+      arm64: [status=quicken] [reason=prebuilt]
+
+
+Compiler stats:
+  [com.iqqijni.car.keyboard]
+    (No recorded stats)

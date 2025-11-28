@@ -1,0 +1,12 @@
+total 0
+drwxr-xr-x  5 root root    0 2025-11-27 19:15 .
+drwxr-xr-x 13 root root    0 2025-11-27 19:15 ..
+lrwxrwxrwx  1 root root    0 2025-11-27 19:15 driver -> ../../../../bus/platform/drivers/qnx-virtio-du
+-rw-r--r--  1 root root 4096 2025-11-27 19:15 driver_override
+drwxr-xr-x  3 root root    0 2025-11-27 19:15 drm
+drwxr-xr-x  3 root root    0 2025-11-27 19:15 graphics
+-r--r--r--  1 root root 4096 2025-11-27 19:15 modalias
+lrwxrwxrwx  1 root root    0 2025-11-27 19:15 of_node -> ../../../../firmware/devicetree/base/vdevs/qnx,guest_shm@1c050000
+drwxr-xr-x  2 root root    0 2025-11-27 19:15 power
+lrwxrwxrwx  1 root root    0 2025-11-27 19:15 subsystem -> ../../../../bus/platform
+-rw-r--r--  1 root root 4096 2025-11-27 19:15 uevent

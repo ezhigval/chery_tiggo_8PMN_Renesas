@@ -1,0 +1,1462 @@
+  * ReceiverList{f197b7c 14428 com.astrob.turbodog/1069/u0 remote:a7c326f}
+    app=14428:com.astrob.turbodog/1069 pid=14428 uid=1069 user=0
+    Filter #0: BroadcastFilter{f618c05}
+      Action: "android.intent.action.MEDIA_MOUNTED"
+      Action: "android.intent.action.MEDIA_UNMOUNTED"
+      Action: "android.intent.action.MEDIA_REMOVED"
+      Action: "android.intent.action.MEDIA_EJECT"
+      Scheme: "file"
+      requiredPermission=android.permission.READ_EXTERNAL_STORAGE
+  * ReceiverList{2a037e3 2210 com.android.car/1000/u0 remote:6061412}
+    app=2210:com.android.car/1000 pid=2210 uid=1000 user=0
+    Filter #0: BroadcastFilter{bd125e0}
+      Action: "android.intent.action.BOOT_COMPLETED"
+  * ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}
+    app=2658:com.android.bluetooth/1002 pid=2658 uid=1002 user=0
+    Filter #0: BroadcastFilter{68114e3}
+      Action: "android.bluetooth.avrcp-controller.profile.action.CONNECTION_STATE_CHANGED"
+      Action: "android.bluetooth.avrcp-controller.profile.action.BROWSE_CONNECTION_STATE_CHANGED"
+      Action: "android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT"
+      Action: "android.bluetooth.avrcp-controller.profile.action.FOLDER_LIST"
+      Action: "android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED"
+  * ReceiverList{5330865 2044 system/1000/u0 local:94bad5c}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{667893a}
+      Action: "android.bluetooth.adapter.action.LOCAL_NAME_CHANGED"
+      Action: "android.bluetooth.adapter.action.BLUETOOTH_ADDRESS_CHANGED"
+      Action: "android.os.action.SETTING_RESTORED"
+      mPriority=1000, mOrder=0, mHasPartialTypes=false
+  * ReceiverList{94c864e 2044 system/1000/u0 local:9503d49}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{4d5236f}
+      Action: "android.intent.action.USER_SWITCHED"
+  * ReceiverList{f0b0737 2044 system/1000/u-1 local:42ffc36}
+    app=2044:system/1000 pid=2044 uid=1000 user=-1
+    Filter #0: BroadcastFilter{f6f04a4}
+      Action: "android.intent.action.REBOOT"
+      Action: "android.intent.action.ACTION_SHUTDOWN"
+  * ReceiverList{a2088d7 2044 system/1000/u0 local:e4a0056}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{6d5f5c4}
+      Action: "android.intent.action.QUERY_PACKAGE_RESTART"
+      Scheme: "package"
+  * ReceiverList{beb70dd 2044 system/1000/u-1 local:6ab0cb4}
+    app=2044:system/1000 pid=2044 uid=1000 user=-1
+    Filter #0: BroadcastFilter{7909452}
+      Action: "android.intent.action.USER_STARTED"
+      Action: "android.intent.action.USER_UNLOCKED"
+      Action: "android.security.action.TRUST_STORE_CHANGED"
+      mPriority=1000, mOrder=0, mHasPartialTypes=false
+  * ReceiverList{1c400fc 2044 system/1000/u0 local:9cf5def}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{7a96385}
+--
+  * ReceiverList{1573806 14428 com.astrob.turbodog/1069/u0 remote:4a442e1}
+    app=14428:com.astrob.turbodog/1069 pid=14428 uid=1069 user=0
+    Filter #0: BroadcastFilter{fd8dec7}
+      Action: "com.astrob.turbodog.test.search"
+  * ReceiverList{9c10a74 2044 system/1000/u0 local:d4247}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{218fb9d}
+      Action: "android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"
+      Action: "android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE"
+  * ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}
+    app=14428:com.astrob.turbodog/1069 pid=14428 uid=1069 user=0
+    Filter #0: BroadcastFilter{840d368}
+      Action: "desay.broadcast.map.meter.interaction"
+      Action: "turbodog.system.navigation.message"
+      Action: "android.intent.action.LOCALE_CHANGED"
+      Action: "com.astrob.turbodog.test.manual.dismissed.presentation"
+  * ReceiverList{a24587f 2501 com.desaysv.launcher/1000/u0 remote:fd2259e}
+    app=2501:com.desaysv.launcher/1000 pid=2501 uid=1000 user=0
+    Filter #0: BroadcastFilter{5aa904c}
+      Action: "com.android.theme.change.ACTION"
+  * ReceiverList{375809b 2044 system/1000/u0 local:e4acaa}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{9192c38}
+      Action: "com.android.server.action.NETWORK_STATS_UPDATED"
+      requiredPermission=android.permission.READ_NETWORK_USAGE_HISTORY
+  * ReceiverList{9a18b77 2044 system/1000/u0 local:f38e976}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{750d3e4}
+      Action: "com.android.server.net.action.ALLOW_BACKGROUND"
+      requiredPermission=android.permission.MANAGE_NETWORK_POLICY
+  * ReceiverList{2a8fe3f 2283 com.android.systemui/10016/u0 remote:80eca5e}
+    app=2283:com.android.systemui/u0a16 pid=2283 uid=10016 user=0
+    Filter #0: BroadcastFilter{325a30c}
+      Action: "android.media.STREAM_MUTE_CHANGED_ACTION"
+  * ReceiverList{1441f2a 2044 system/1000/u0 local:64d8015}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{ffc411b}
+  * ReceiverList{60981b8 2658 com.android.bluetooth/1002/u0 remote:643bc1b}
+    app=2658:com.android.bluetooth/1002 pid=2658 uid=1002 user=0
+    Filter #0: BroadcastFilter{3e27b91}
+      Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      Action: "android.intent.action.USER_UNLOCKED"
+  * ReceiverList{c4f1126 2044 system/1000/u0 local:4dd4c81}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{e481167}
+      Action: "com.android.server.pm.DISABLE_QUIET_MODE_AFTER_UNLOCK"
+  * ReceiverList{2cdc51c 2044 system/1000/u0 local:4d31e8f}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{353a525}
+      Action: "android.intent.action.USER_SWITCHED"
+  * ReceiverList{19b5a78 2210 com.android.car/1000/u0 remote:b867fdb}
+    app=2210:com.android.car/1000 pid=2210 uid=1000 user=0
+    Filter #0: BroadcastFilter{5864551}
+      Action: "android.intent.action.PACKAGE_ADDED"
+      Action: "android.intent.action.PACKAGE_CHANGED"
+      Action: "android.intent.action.PACKAGE_DATA_CLEARED"
+      Action: "android.intent.action.PACKAGE_REMOVED"
+      Action: "android.intent.action.PACKAGE_REPLACED"
+      Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+      Scheme: "package"
+  * ReceiverList{fcf0da 2044 system/1000/u-1 local:ae4ca85}
+    app=2044:system/1000 pid=2044 uid=1000 user=-1
+    Filter #0: BroadcastFilter{fb1290b}
+      Action: "android.intent.action.USER_STARTED"
+      Action: "android.intent.action.USER_STOPPED"
+      Action: "android.intent.action.USER_ADDED"
+--
+  * ReceiverList{1c12c1d 14428 com.astrob.turbodog/1069/u0 remote:821acf4}
+    app=14428:com.astrob.turbodog/1069 pid=14428 uid=1069 user=0
+    Filter #0: BroadcastFilter{61ece92}
+      Action: "EXIT_ACTION"
+      Action: "MOVE_TASK_TO_BACK"
+      Action: "MOVE_TASK_TO_FRONT"
+      Action: "RESUME_MAPVIEW"
+      Action: "CPGPSLOG"
+  * ReceiverList{a546d68 2044 system/1000/u-1 local:5d488b}
+    app=2044:system/1000 pid=2044 uid=1000 user=-1
+    Filter #0: BroadcastFilter{5b87581}
+      Action: "android.os.action.DEVICE_IDLE_MODE_CHANGED"
+      Action: "android.os.action.LIGHT_DEVICE_IDLE_MODE_CHANGED"
+      Action: "android.os.action.POWER_SAVE_WHITELIST_CHANGED"
+      Action: "android.os.action.POWER_SAVE_TEMP_WHITELIST_CHANGED"
+  * ReceiverList{2d25f82 2044 system/1000/u0 local:815aacd}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{d387693}
+      Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+      Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+      Action: "android.bluetooth.headset.profile.action.ACTIVE_DEVICE_CHANGED"
+  * ReceiverList{aa1e9d0 2044 system/1000/u0 local:74ad593}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{30e1dc9}
+      Action: "android.intent.action.TIME_SET"
+      Action: "android.intent.action.TIMEZONE_CHANGED"
+      Action: "EventConditionProvider.EVALUATE"
+  * ReceiverList{df7cf77 2044 system/1000/u-1 local:9adbd76}
+    app=2044:system/1000 pid=2044 uid=1000 user=-1
+    Filter #0: BroadcastFilter{c3c7e4}
+      Action: "android.intent.action.PACKAGE_ADDED"
+      Action: "android.intent.action.PACKAGE_CHANGED"
+      Action: "android.intent.action.PACKAGE_REMOVED"
+      Scheme: "package"
+  * ReceiverList{3bbba9e 2044 system/1000/u0 local:a0550d9}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{dfec97f}
+      Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+  * ReceiverList{bbf22e4 2283 com.android.systemui/10016/u0 remote:2abb677}
+    app=2283:com.android.systemui/u0a16 pid=2283 uid=10016 user=0
+    Filter #0: BroadcastFilter{d5b834d}
+      Action: "android.intent.action.TIME_TICK"
+      Action: "android.intent.action.TIME_SET"
+      Action: "android.intent.action.TIMEZONE_CHANGED"
+  * ReceiverList{749a36e 2044 system/1000/u0 local:4091ae9}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{f3a4a0f}
+      Action: "android.media.VOLUME_CHANGED_ACTION"
+  * ReceiverList{5839bb4 2044 system/1000/u0 local:6665087}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{3b253dd}
+      Action: "android.intent.action.BOOT_COMPLETED"
+--
+      Action: "desay.thirdparty.navigation"
+  * ReceiverList{7cbac02 2044 system/1000/u0 local:2a594d}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{bad0913}
+      Action: "android.intent.action.DREAMING_STARTED"
+      Action: "android.intent.action.DREAMING_STOPPED"
+  * ReceiverList{104c32e 2044 system/1000/u0 local:2c1e1a9}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{6134ecf}
+      Action: "SnoozeHelper.EVALUATE"
+      Scheme: "repost"
+  * ReceiverList{4f591ba 2044 system/1000/u-1 local:989e2e5}
+    app=2044:system/1000 pid=2044 uid=1000 user=-1
+    Filter #0: BroadcastFilter{ed1e86b}
+      Action: "android.intent.action.PACKAGE_ADDED"
+      Action: "android.intent.action.PACKAGE_REMOVED"
+      Action: "android.intent.action.PACKAGE_CHANGED"
+      Action: "android.intent.action.QUERY_PACKAGE_RESTART"
+      Action: "android.intent.action.PACKAGE_RESTARTED"
+      Action: "android.intent.action.PACKAGE_DATA_CLEARED"
+      Scheme: "package"
+    Filter #1: BroadcastFilter{1f2bfc8}
+      Action: "android.intent.action.UID_REMOVED"
+      Action: "android.intent.action.USER_STOPPED"
+      Action: "android.intent.action.PACKAGES_SUSPENDED"
+      Action: "android.intent.action.PACKAGES_UNSUSPENDED"
+    Filter #2: BroadcastFilter{77ac861}
+      Action: "android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"
+      Action: "android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE"
+  * ReceiverList{a719fff 2827 com.iflytek.autofly.sceneengine/1000/u0 remote:a71db1e}
+    app=2827:com.iflytek.autofly.sceneengine/1000 pid=2827 uid=1000 user=0
+    Filter #0: BroadcastFilter{f5b01cc}
+      Action: "com.iflytek.autofly.sceneengine.bindtts"
+      Action: "com.android.theme.change.ACTION"
+  * ReceiverList{5760a06 2044 system/1000/u0 local:1931ce1}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{f448c7}
+      Action: "android.telecom.action.DEFAULT_DIALER_CHANGED"
+  * ReceiverList{8820d5d 2044 system/1000/u0 local:8404b34}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{26036d2}
+      Action: "android.intent.action.REBOOT"
+      requiredPermission=android.permission.REBOOT
+  * ReceiverList{c2c56a6 2044 system/1000/u-1 local:f763801}
+    app=2044:system/1000 pid=2044 uid=1000 user=-1
+    Filter #0: BroadcastFilter{baba8e7}
+      Action: "android.intent.action.USER_REMOVED"
+      Action: "android.intent.action.USER_UNLOCKED"
+      Action: "android.intent.action.USER_STOPPED"
+  * ReceiverList{1977fe9 2283 com.android.systemui/10016/u0 remote:d090070}
+    app=2283:com.android.systemui/u0a16 pid=2283 uid=10016 user=0
+--
+      Action: "turbodog.navigation.system.message"
+      Action: "com.dsv.action.SWIPE_LEFT_TWO"
+      Action: "com.dsv.action.SWIPE_RIGHT_TWO"
+      Action: "desay.phonelink.navigation"
+  * ReceiverList{2a7863b 2578 com.desaysv.service.bluetooth/1000/u0 remote:b6ac4ca}
+    app=2578:com.desaysv.service.bluetooth/1000 pid=2578 uid=1000 user=0
+    Filter #0: BroadcastFilter{8dc5158}
+      Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+      Action: "android.bluetooth.headsetclient.profile.action.AG_EVENT"
+      Action: "android.bluetooth.headsetclient.profile.action.AG_CALL_CHANGED"
+      Action: "android.bluetooth.headsetclient.profile.action.CONNECTION_STATE_CHANGED"
+      Action: "android.bluetooth.headsetclient.profile.action.AUDIO_STATE_CHANGED"
+  * ReceiverList{e53f84b 2044 system/1000/u-1 local:b8751a}
+    app=2044:system/1000 pid=2044 uid=1000 user=-1
+    Filter #0: BroadcastFilter{469c228}
+      Action: "android.bluetooth.a2dp.profile.action.ACTIVE_DEVICE_CHANGED"
+  * ReceiverList{32d47b3 2044 system/1000/u0 local:8814122}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{d924170}
+      Action: "android.intent.action.TIME_TICK"
+      Action: "android.intent.action.DATE_CHANGED"
+  * ReceiverList{c0cca18 2044 system/1000/u0 local:65f69fb}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{d958c71}
+      Action: "android.intent.action.BATTERY_CHANGED"
+    Filter #1: BroadcastFilter{9dd6a56}
+      Action: "android.intent.action.PACKAGE_REMOVED"
+      Scheme: "package"
+    Filter #2: BroadcastFilter{e30aad7}
+      Action: "android.net.conn.CONNECTIVITY_CHANGE"
+  * ReceiverList{4c1ffa3 2044 system/1000/u0 local:97722d2}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{d8fb2a0}
+      Action: "android.intent.action.PACKAGE_ADDED"
+      Action: "android.intent.action.PACKAGE_REMOVED"
+      Action: "android.intent.action.PACKAGE_CHANGED"
+      Action: "android.intent.action.PACKAGE_REPLACED"
+      Scheme: "package"
+  * ReceiverList{5e28b8f 2283 com.android.systemui/10016/u0 remote:14bfaee}
+    app=2283:com.android.systemui/u0a16 pid=2283 uid=10016 user=0
+    Filter #0: BroadcastFilter{7952e1c}
+      Action: "com.android.systemui.CLOSE_PANEL"
+      Action: "com.android.systemui.OPEN_PANEL"
+      requiredPermission=com.android.permission.RECV.Panel
+  * ReceiverList{9effa2b 2044 system/1000/u0 local:5ddd27a}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{1a8ce88}
+      Action: "android.intent.action.PACKAGE_REMOVED"
+      Action: "android.intent.action.PACKAGE_RESTARTED"
+      Action: "android.intent.action.QUERY_PACKAGE_RESTART"
+      Scheme: "package"
+    Filter #1: BroadcastFilter{8fd9021}
+      Action: "android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE"
+      Action: "android.intent.action.USER_STOPPED"
+--
+      Action: "desay.thirdparty.navigation"
+      Action: "android.hardware.usb.action.USB_DEVICE_ATTACHED"
+      Action: "android.hardware.usb.action.USB_DEVICE_DETACHED"
+      Action: "carplay.power.test"
+  * ReceiverList{7ac3023 2044 system/1000/u0 local:6e1c552}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{90d5920}
+      Action: "android.intent.action.UID_REMOVED"
+  * ReceiverList{36fe1a6 2044 system/1000/u0 local:b50f01}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{9c7d7e7}
+      Action: "com.android.internal.location.ALARM_WAKEUP"
+      Action: "com.android.internal.location.ALARM_TIMEOUT"
+      Action: "android.os.action.POWER_SAVE_MODE_CHANGED"
+      Action: "android.os.action.DEVICE_IDLE_MODE_CHANGED"
+      Action: "android.intent.action.SCREEN_OFF"
+      Action: "android.intent.action.SCREEN_ON"
+      Action: "android.intent.action.SIM_STATE_CHANGED"
+  * ReceiverList{8482f1e 2044 system/1000/u0 local:4e0c759}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{44b63ff}
+      Action: "android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"
+      Action: "android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE"
+  * ReceiverList{c133e72 2210 com.android.car/1000/u0 remote:6c3ef7d}
+    app=2210:com.android.car/1000 pid=2210 uid=1000 user=0
+    Filter #0: BroadcastFilter{f6482c3}
+      Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+  * ReceiverList{2902c95 2044 system/1000/u0 local:5f3044c}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{53691aa}
+      Action: "android.intent.action.SCREEN_ON"
+      Action: "android.intent.action.SCREEN_OFF"
+      Action: "android.intent.action.BATTERY_CHANGED"
+      Action: "android.os.action.DEVICE_IDLE_MODE_CHANGED"
+      Action: "android.os.action.LIGHT_DEVICE_IDLE_MODE_CHANGED"
+  * ReceiverList{facf96e 2044 system/1000/u-1 local:92c08e9}
+    app=2044:system/1000 pid=2044 uid=1000 user=-1
+    Filter #0: BroadcastFilter{9b9e80f}
+      Action: "android.intent.action.USER_SWITCHED"
+      Action: "android.intent.action.MANAGED_PROFILE_ADDED"
+      Action: "android.intent.action.MANAGED_PROFILE_REMOVED"
+      Action: "android.intent.action.ACTION_SHUTDOWN"
+  * ReceiverList{687e1d8 2044 system/1000/u0 local:17d08bb}
+    app=2044:system/1000 pid=2044 uid=1000 user=0
+    Filter #0: BroadcastFilter{3bb2931}
+      Action: "android.intent.action.USER_REMOVED"
+  * ReceiverList{4fb647b 3165 android.process.media/10005/u0 remote:fc6340a}
+    app=3165:android.process.media/u0a5 pid=3165 uid=10005 user=0
+    Filter #0: BroadcastFilter{9c97298}
+      Action: "android.intent.action.MEDIA_EJECT"
+      Scheme: "file"
+--
+          BroadcastFilter{f618c05 u0 ReceiverList{f197b7c 14428 com.astrob.turbodog/1069/u0 remote:a7c326f}}
+
+    Non-Data Actions:
+        android.intent.action.SCREEN_OFF:
+          BroadcastFilter{432049c u0 ReceiverList{b2aac0f 2044 system/1000/u0 local:9164d6e}}
+          BroadcastFilter{a3c29f1 u0 ReceiverList{ddd6d98 2044 system/1000/u0 local:b466b7b}}
+          BroadcastFilter{99be312 u0 ReceiverList{46bc29d 2044 system/1000/u0 local:168d74}}
+          BroadcastFilter{d62aa63 u0 ReceiverList{258c092 2044 system/1000/u0 local:7c3a61d}}
+          BroadcastFilter{6039487 u-1 ReceiverList{cc82cc6 2044 system/1000/u-1 local:7a112a1}}
+          BroadcastFilter{4324de4 u0 ReceiverList{394ad77 2044 system/1000/u0 local:e5b5376}}
+          BroadcastFilter{f6b1d73 u0 ReceiverList{7ddd5e2 2044 system/1000/u0 local:6a57ead}}
+          BroadcastFilter{53691aa u0 ReceiverList{2902c95 2044 system/1000/u0 local:5f3044c}}
+          BroadcastFilter{9c7d7e7 u0 ReceiverList{36fe1a6 2044 system/1000/u0 local:b50f01}}
+          BroadcastFilter{8ede46 u0 ReceiverList{f759a21 2283 com.android.systemui/10016/u0 remote:a32c088}}
+          BroadcastFilter{4a8d261 u0 ReceiverList{75bb3ba 3061 com.iqqijni.car.keyboard/10041/u0 remote:f0b4ce5}}
+        android.net.proxy.PAC_REFRESH:
+          BroadcastFilter{7465ef5 u0 ReceiverList{973042c 2044 system/1000/u0 local:778afdf}}
+        android.hardware.usb.action.USB_DEVICE_ATTACHED:
+          BroadcastFilter{6039487 u-1 ReceiverList{cc82cc6 2044 system/1000/u-1 local:7a112a1}}
+          BroadcastFilter{f956a7b u0 ReceiverList{80c920a 2044 system/1000/u0 local:8b67275}}
+          BroadcastFilter{14cb8cd u0 ReceiverList{f85be64 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:458ff7}}
+          BroadcastFilter{1fac826 u0 ReceiverList{1997f81 2962 com.google.android.projection.sink/1000/u0 remote:84b5f68}}
+        music_id3_refresh_data:
+          BroadcastFilter{5c52d3c u0 ReceiverList{c24932f 2904 com.desaysv.mediaapp/1000/u0 remote:8f8dd0e}}
+        android.intent.action.USER_REMOVED:
+          BroadcastFilter{ae77e50 u-1 ReceiverList{28fec13 2044 system/1000/u-1 local:b03b02}}
+          BroadcastFilter{43f1b80 u-1 ReceiverList{71c0003 2044 system/1000/u-1 local:ab168b2}}
+          BroadcastFilter{42b92f1 u-1 ReceiverList{b536c7b 2044 system/1000/u-1 local:7d95c0a}}
+          BroadcastFilter{5454b37 u-1 ReceiverList{998d036 2044 system/1000/u-1 local:7e95dd1}}
+          BroadcastFilter{3723d1f u0 ReceiverList{40c38be 2044 system/1000/u0 local:fbc4840}}
+          BroadcastFilter{d353490 u-1 ReceiverList{5c59353 2044 system/1000/u-1 local:2a2f742}}
+          BroadcastFilter{db6cef9 u0 ReceiverList{586e1c0 2044 system/1000/u0 local:fa9f743}}
+          BroadcastFilter{56c6869 u-1 ReceiverList{5f63af0 2044 system/1000/u-1 local:6273733}}
+          BroadcastFilter{67fa39e u-1 ReceiverList{9333dd9 2044 system/1000/u-1 local:7464020}}
+          BroadcastFilter{fb1290b u-1 ReceiverList{fcf0da 2044 system/1000/u-1 local:ae4ca85}}
+          BroadcastFilter{d62aa63 u0 ReceiverList{258c092 2044 system/1000/u0 local:7c3a61d}}
+          BroadcastFilter{9084ca0 u0 ReceiverList{ab4c1a3 2044 system/1000/u0 local:c53acd2}}
+          BroadcastFilter{5a585f5 u0 ReceiverList{cca672c 2044 system/1000/u0 local:bd3bedf}}
+          BroadcastFilter{9564963 u0 ReceiverList{36b7b92 2044 system/1000/u0 local:8d06d1d}}
+          BroadcastFilter{fae264a u-1 ReceiverList{2511fec 2044 system/1000/u-1 local:852e29f}}
+          BroadcastFilter{adb5669 u-1 ReceiverList{d3420f0 2044 system/1000/u-1 local:9b4f533}}
+          BroadcastFilter{baba8e7 u-1 ReceiverList{c2c56a6 2044 system/1000/u-1 local:f763801}}
+          BroadcastFilter{dc7d0e2 u0 ReceiverList{85e85ad 2044 system/1000/u0 local:e7d32c4}}
+          BroadcastFilter{64bcae1 u0 ReceiverList{6343c48 2044 system/1000/u0 local:27186eb}}
+          BroadcastFilter{3bb2931 u0 ReceiverList{687e1d8 2044 system/1000/u0 local:17d08bb}}
+          BroadcastFilter{63ee74c u0 ReceiverList{f87ab7f 2044 system/1000/u0 local:832e49e}}
+          BroadcastFilter{a1654b2 u-1 ReceiverList{7a876bd 2044 system/1000/u-1 local:b82fe14}}
+          BroadcastFilter{571d0f8 u-1 ReceiverList{6ac05b 2044 system/1000/u-1 local:ec136a}}
+          BroadcastFilter{b07976c u0 ReceiverList{382881f 2044 system/1000/u0 local:252cfbe}}
+        android.telecom.action.TTY_PREFERRED_MODE_CHANGED:
+          BroadcastFilter{2c361f9 u0 ReceiverList{96de0c0 2044 system/1000/u0 local:ce19243}}
+--
+          BroadcastFilter{61ece92 u0 ReceiverList{1c12c1d 14428 com.astrob.turbodog/1069/u0 remote:821acf4}}
+        android.intent.action.USER_STARTING:
+          BroadcastFilter{56c6869 u-1 ReceiverList{5f63af0 2044 system/1000/u-1 local:6273733}}
+          BroadcastFilter{2be6ea1 u0 ReceiverList{1801708 2044 system/1000/u0 local:ded14ab}}
+        android.intent.action.EMERGENCY_CALLBACK_MODE_CHANGED:
+          BroadcastFilter{9564963 u0 ReceiverList{36b7b92 2044 system/1000/u0 local:8d06d1d}}
+        com.iflytek.autofly.sceneengine.bindtts:
+          BroadcastFilter{f5b01cc u0 ReceiverList{a719fff 2827 com.iflytek.autofly.sceneengine/1000/u0 remote:a71db1e}}
+        android.bluetooth.avrcp-controller.profile.action.GET_MEDIAITEM_STATE_CHANGED:
+          BroadcastFilter{aa9860f u0 ReceiverList{2404f6e 2578 com.desaysv.service.bluetooth/1000/u0 remote:33ef6e9}}
+          BroadcastFilter{4a5f47a u0 ReceiverList{18718a5 2578 com.desaysv.service.bluetooth/1000/u0 remote:fa0d69c}}
+        com.dsv.action.SWIPE_RIGHT_TWO:
+          BroadcastFilter{69ce46b u0 ReceiverList{95efdba 2604 com.desaysv.mapservice/1000/u0 remote:9457ee5}}
+        android.net.wifi.WIFI_STATE_CHANGED:
+          BroadcastFilter{58e0b6c u0 ReceiverList{b0a4c1f 2044 system/1000/u0 local:fcf23be}}
+          BroadcastFilter{a36bd07 u0 ReceiverList{fa4a746 2044 system/1000/u0 local:390e721}}
+          BroadcastFilter{eb73478 u0 ReceiverList{2a181db 2044 system/1000/u0 local:9a6eaea}}
+          BroadcastFilter{effc6e2 u0 ReceiverList{84493ad 2283 com.android.systemui/10016/u0 remote:11ab8c4}}
+          BroadcastFilter{29a7404 u0 ReceiverList{acb1817 3665 com.desaysv.setting/1000/u0 remote:8544496}}
+        android.hardware.display.action.WIFI_DISPLAY_STATUS_CHANGED:
+          BroadcastFilter{adf05b3 u0 ReceiverList{90b3722 2044 system/1000/u0 local:d129ced}}
+        com.desaysv.vrservice.action.CLOSE_AVM:
+          BroadcastFilter{f91724f u0 ReceiverList{1df44ae 2501 com.desaysv.launcher/1000/u0 remote:3577929}}
+        com.autofly.iflytek.account.logged.in:
+          BroadcastFilter{e0467fd u0 ReceiverList{b7eec54 2283 com.android.systemui/10016/u0 remote:92fffa7}}
+          BroadcastFilter{f475b66 u0 ReceiverList{53b57c1 3768 com.desaysv.vehiclesetting/1000/u0 remote:ee870a8}}
+        android.net.wifi.WIFI_AP_STA_JOIN:
+          BroadcastFilter{c35a359 u0 ReceiverList{3e4cba0 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:347dca3}}
+        android.bluetooth.adapter.action.DISCOVERY_FINISHED:
+          BroadcastFilter{104b54b u0 ReceiverList{2f2061a 2283 com.android.systemui/10016/u0 remote:657ecc5}}
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{c35a359 u0 ReceiverList{3e4cba0 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:347dca3}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        android.bluetooth.sap.profile.action.CONNECTION_STATE_CHANGED:
+          BroadcastFilter{44d5a8c u0 ReceiverList{846e3bf 2658 com.android.bluetooth/1002/u0 remote:a86d5de}}
+        android.net.conn.TETHER_STATE_CHANGED:
+          BroadcastFilter{f6704fd u0 ReceiverList{285dd54 2044 system/1000/u0 local:72814a7}}
+        android.intent.action.UID_REMOVED:
+          BroadcastFilter{6ebfb10 u-1 ReceiverList{e19b9c2 2044 system/1000/u-1 local:355060d}}
+          BroadcastFilter{692df58 u-1 ReceiverList{3cf22ca 2044 system/1000/u-1 local:219ce35}}
+          BroadcastFilter{8fd9021 u0 ReceiverList{9effa2b 2044 system/1000/u0 local:5ddd27a}}
+          BroadcastFilter{2e582b7 u-1 ReceiverList{f05e951 2044 system/1000/u-1 local:830e78}}
+          BroadcastFilter{dd24f49 u-1 ReceiverList{a684b13 2044 system/1000/u-1 local:f42b602}}
+          BroadcastFilter{1f2bfc8 u-1 ReceiverList{4f591ba 2044 system/1000/u-1 local:989e2e5}}
+          BroadcastFilter{5e1c25b u-1 ReceiverList{1124f55 2044 system/1000/u-1 local:1f0fa0c}}
+          BroadcastFilter{71d8084 u-1 ReceiverList{7b05d16 2044 system/1000/u-1 local:3659231}}
+          BroadcastFilter{9fc2371 u-1 ReceiverList{33868fb 2044 system/1000/u-1 local:17a7a8a}}
+          BroadcastFilter{9ae165c u-1 ReceiverList{296192e 2044 system/1000/u-1 local:10acfa9}}
+          BroadcastFilter{826d6b5 u0 ReceiverList{9af82ec 2044 system/1000/u0 local:70f19f}}
+          BroadcastFilter{90d5920 u0 ReceiverList{7ac3023 2044 system/1000/u0 local:6e1c552}}
+          BroadcastFilter{f07346c u-1 ReceiverList{85fe4be 2044 system/1000/u-1 local:2954f79}}
+--
+        turbodog.system.navigation.message:
+          BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+        android.intent.action.NETWORK_SET_TIME:
+          BroadcastFilter{836f62b u0 ReceiverList{d333e7a 2044 system/1000/u0 local:e334aa5}}
+        desaysv.broadcast.itinfo:
+          BroadcastFilter{c35a359 u0 ReceiverList{3e4cba0 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:347dca3}}
+        android.hardware.usb.action.USB_DEVICE_DETACHED:
+          BroadcastFilter{f956a7b u0 ReceiverList{80c920a 2044 system/1000/u0 local:8b67275}}
+          BroadcastFilter{14cb8cd u0 ReceiverList{f85be64 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:458ff7}}
+          BroadcastFilter{1fac826 u0 ReceiverList{1997f81 2962 com.google.android.projection.sink/1000/u0 remote:84b5f68}}
+        android.intent.action.SV_TBOX_NOTICE_SDK_BIN:
+          BroadcastFilter{62681ff u0 ReceiverList{645051e 2283 com.android.systemui/10016/u0 remote:8133559}}
+          BroadcastFilter{450610 u0 ReceiverList{5d3bad3 3576 com.android.engmode/1000/u0 remote:1fb0cc2}}
+          BroadcastFilter{29b9f21 u0 ReceiverList{bc9b988 3576 com.android.engmode/1000/u0 remote:3a5b12b}}
+        android.bluetooth.adapter.action.BLUETOOTH_ADDRESS_CHANGED:
+          BroadcastFilter{667893a u0 ReceiverList{5330865 2044 system/1000/u0 local:94bad5c}}
+        android.accounts.action.VISIBLE_ACCOUNTS_CHANGED:
+          BroadcastFilter{ac22097 u0 ReceiverList{e181f16 3346 android.process.acore/10004/u0 remote:b6b1c31}}
+        android.intent.action.BATTERY_CHANGED:
+          BroadcastFilter{c11fa84 u0 ReceiverList{1eaa897 2044 system/1000/u0 local:dedc716}}
+          BroadcastFilter{79533fe u0 ReceiverList{79d53b9 2044 system/1000/u0 local:8158180}}
+          BroadcastFilter{5a585f5 u0 ReceiverList{cca672c 2044 system/1000/u0 local:bd3bedf}}
+          BroadcastFilter{d958c71 u0 ReceiverList{c0cca18 2044 system/1000/u0 local:65f69fb}}
+          BroadcastFilter{53691aa u0 ReceiverList{2902c95 2044 system/1000/u0 local:5f3044c}}
+          BroadcastFilter{e8d1c77 u0 ReceiverList{7441e76 2044 system/1000/u0 local:993fd11}}
+        android.bluetooth.adapter.action.STATE_CHANGED:
+          BroadcastFilter{6039487 u-1 ReceiverList{cc82cc6 2044 system/1000/u-1 local:7a112a1}}
+          BroadcastFilter{d2d7e17 u0 ReceiverList{2c88296 2180 dsv.carstate.service/1000/u0 remote:7d8ddb1}}
+          BroadcastFilter{104b54b u0 ReceiverList{2f2061a 2283 com.android.systemui/10016/u0 remote:657ecc5}}
+          BroadcastFilter{443bda9 u0 ReceiverList{76c9d30 2210 com.android.car/1000/u0 remote:64cba73}}
+          BroadcastFilter{dfec97f u0 ReceiverList{3bbba9e 2044 system/1000/u0 local:a0550d9}}
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{8dc5158 u0 ReceiverList{2a7863b 2578 com.desaysv.service.bluetooth/1000/u0 remote:b6ac4ca}}
+          BroadcastFilter{75b5bb8 u0 ReceiverList{8acbe1b 2578 com.desaysv.service.bluetooth/1000/u0 remote:6a4702a}}
+          BroadcastFilter{ed7efae u0 ReceiverList{96bf029 2658 com.android.bluetooth/1002/u0 remote:52409b0}}
+          BroadcastFilter{c35a359 u0 ReceiverList{3e4cba0 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:347dca3}}
+          BroadcastFilter{4f0c28b u0 ReceiverList{27d005a 2962 com.google.android.projection.sink/1000/u0 remote:4256805}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        com.desaysv.vrservice.action.SCENE_MODE:
+          BroadcastFilter{9bf33aa u0 ReceiverList{b2e1695 2283 com.android.systemui/10016/u0 remote:c0e564c}}
+        android.intent.action.TIME_TICK:
+          BroadcastFilter{d924170 u0 ReceiverList{32d47b3 2044 system/1000/u0 local:8814122}}
+          BroadcastFilter{d5b834d u0 ReceiverList{bbf22e4 2283 com.android.systemui/10016/u0 remote:2abb677}}
+        desay.thirdparty.navigation:
+          BroadcastFilter{14cb8cd u0 ReceiverList{f85be64 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:458ff7}}
+          BroadcastFilter{f6ea25c u0 ReceiverList{ea428cf 2962 com.google.android.projection.sink/1000/u0 remote:448c52e}}
+        android.intent.action.SCREEN_ON:
+          BroadcastFilter{432049c u0 ReceiverList{b2aac0f 2044 system/1000/u0 local:9164d6e}}
+          BroadcastFilter{a3c29f1 u0 ReceiverList{ddd6d98 2044 system/1000/u0 local:b466b7b}}
+          BroadcastFilter{99be312 u0 ReceiverList{46bc29d 2044 system/1000/u0 local:168d74}}
+          BroadcastFilter{d62aa63 u0 ReceiverList{258c092 2044 system/1000/u0 local:7c3a61d}}
+          BroadcastFilter{6039487 u-1 ReceiverList{cc82cc6 2044 system/1000/u-1 local:7a112a1}}
+          BroadcastFilter{4324de4 u0 ReceiverList{394ad77 2044 system/1000/u0 local:e5b5376}}
+          BroadcastFilter{f6b1d73 u0 ReceiverList{7ddd5e2 2044 system/1000/u0 local:6a57ead}}
+          BroadcastFilter{53691aa u0 ReceiverList{2902c95 2044 system/1000/u0 local:5f3044c}}
+          BroadcastFilter{9c7d7e7 u0 ReceiverList{36fe1a6 2044 system/1000/u0 local:b50f01}}
+        com.desaysv.vehicle.carplayapp.action.STATE_CHANGED:
+          BroadcastFilter{c35a359 u0 ReceiverList{3e4cba0 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:347dca3}}
+        android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED:
+          BroadcastFilter{6039487 u-1 ReceiverList{cc82cc6 2044 system/1000/u-1 local:7a112a1}}
+          BroadcastFilter{d387693 u0 ReceiverList{2d25f82 2044 system/1000/u0 local:815aacd}}
+        android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE:
+          BroadcastFilter{218fb9d u0 ReceiverList{9c10a74 2044 system/1000/u0 local:d4247}}
+          BroadcastFilter{758f609 u-1 ReceiverList{e19b9c2 2044 system/1000/u-1 local:355060d}}
+          BroadcastFilter{2a618b1 u-1 ReceiverList{3cf22ca 2044 system/1000/u-1 local:219ce35}}
+          BroadcastFilter{8fd9021 u0 ReceiverList{9effa2b 2044 system/1000/u0 local:5ddd27a}}
+          BroadcastFilter{a169a24 u-1 ReceiverList{f05e951 2044 system/1000/u-1 local:830e78}}
+          BroadcastFilter{22a304e u-1 ReceiverList{a684b13 2044 system/1000/u-1 local:f42b602}}
+          BroadcastFilter{5127bd5 u-1 ReceiverList{53e53de 2044 system/1000/u-1 local:4798719}}
+          BroadcastFilter{77ac861 u-1 ReceiverList{4f591ba 2044 system/1000/u-1 local:989e2e5}}
+          BroadcastFilter{7b9aaf8 u-1 ReceiverList{1124f55 2044 system/1000/u-1 local:1f0fa0c}}
+          BroadcastFilter{ed0206d u-1 ReceiverList{7b05d16 2044 system/1000/u-1 local:3659231}}
+          BroadcastFilter{44b63ff u0 ReceiverList{8482f1e 2044 system/1000/u0 local:4e0c759}}
+          BroadcastFilter{d8db556 u-1 ReceiverList{33868fb 2044 system/1000/u-1 local:17a7a8a}}
+          BroadcastFilter{117bd65 u-1 ReceiverList{296192e 2044 system/1000/u-1 local:10acfa9}}
+          BroadcastFilter{f926a35 u-1 ReceiverList{85fe4be 2044 system/1000/u-1 local:2954f79}}
+          BroadcastFilter{200c3b3 u0 ReceiverList{8f1a504 2044 system/1000/u0 local:e2c6d17}}
+        com.android.server.InputMethodManagerService.SHOW_INPUT_METHOD_PICKER:
+          BroadcastFilter{dc7d0e2 u0 ReceiverList{85e85ad 2044 system/1000/u0 local:e7d32c4}}
+        android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE:
+          BroadcastFilter{218fb9d u0 ReceiverList{9c10a74 2044 system/1000/u0 local:d4247}}
+          BroadcastFilter{758f609 u-1 ReceiverList{e19b9c2 2044 system/1000/u-1 local:355060d}}
+          BroadcastFilter{2a618b1 u-1 ReceiverList{3cf22ca 2044 system/1000/u-1 local:219ce35}}
+          BroadcastFilter{a169a24 u-1 ReceiverList{f05e951 2044 system/1000/u-1 local:830e78}}
+          BroadcastFilter{22a304e u-1 ReceiverList{a684b13 2044 system/1000/u-1 local:f42b602}}
+          BroadcastFilter{77ac861 u-1 ReceiverList{4f591ba 2044 system/1000/u-1 local:989e2e5}}
+          BroadcastFilter{7b9aaf8 u-1 ReceiverList{1124f55 2044 system/1000/u-1 local:1f0fa0c}}
+          BroadcastFilter{ed0206d u-1 ReceiverList{7b05d16 2044 system/1000/u-1 local:3659231}}
+          BroadcastFilter{44b63ff u0 ReceiverList{8482f1e 2044 system/1000/u0 local:4e0c759}}
+          BroadcastFilter{d8db556 u-1 ReceiverList{33868fb 2044 system/1000/u-1 local:17a7a8a}}
+          BroadcastFilter{117bd65 u-1 ReceiverList{296192e 2044 system/1000/u-1 local:10acfa9}}
+          BroadcastFilter{f926a35 u-1 ReceiverList{85fe4be 2044 system/1000/u-1 local:2954f79}}
+          BroadcastFilter{200c3b3 u0 ReceiverList{8f1a504 2044 system/1000/u0 local:e2c6d17}}
+        android.intent.action.PHONE_STATE:
+--
+          BroadcastFilter{61ece92 u0 ReceiverList{1c12c1d 14428 com.astrob.turbodog/1069/u0 remote:821acf4}}
+        android.location.MODE_CHANGED:
+          BroadcastFilter{1b2f514 u0 ReceiverList{27fb367 2044 system/1000/u0 local:9f7fb26}}
+          BroadcastFilter{58e0b6c u0 ReceiverList{b0a4c1f 2044 system/1000/u0 local:fcf23be}}
+          BroadcastFilter{418764b u0 ReceiverList{4e82b1a 2044 system/1000/u0 local:d6b85c5}}
+          BroadcastFilter{651873b u0 ReceiverList{56829ca 2210 com.android.car/1000/u0 remote:be69135}}
+          BroadcastFilter{13c0b1c u0 ReceiverList{696bc8f 2658 com.android.bluetooth/1002/u0 remote:a5e4fee}}
+        com.android.bluetooth.btservice.action.ALARM_WAKEUP:
+          BroadcastFilter{8c408f3 u0 ReceiverList{7a13f62 2658 com.android.bluetooth/1002/u0 remote:e169e2d}}
+        android.app.action.EXIT_DESK_MODE:
+          BroadcastFilter{1b9a0df u0 ReceiverList{487d37e 2044 system/1000/u0 local:f40c139}}
+        android.hardware.usb.action.USB_STATE:
+          BroadcastFilter{b3e45ce u0 ReceiverList{bfb4ac9 2044 system/1000/u0 local:d83aad0}}
+          BroadcastFilter{6515cd u0 ReceiverList{6816f64 2044 system/1000/u0 local:60d64f7}}
+        com.android.engmode.EXIT_CARPLAY:
+          BroadcastFilter{14cb8cd u0 ReceiverList{f85be64 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:458ff7}}
+        com.desay.systemui.set_ap_status:
+          BroadcastFilter{15f1eb3 u0 ReceiverList{1881422 3665 com.desaysv.setting/1000/u0 remote:a34cded}}
+        android.app.action.NEXT_ALARM_CLOCK_CHANGED:
+          BroadcastFilter{46da82 u0 ReceiverList{6f331cd 2044 system/1000/u0 local:c467b64}}
+        android.intent.action.CLOSE_SYSTEM_DIALOGS:
+          BroadcastFilter{dc7d0e2 u0 ReceiverList{85e85ad 2044 system/1000/u0 local:e7d32c4}}
+          BroadcastFilter{8ede46 u0 ReceiverList{f759a21 2283 com.android.systemui/10016/u0 remote:a32c088}}
+          BroadcastFilter{14cb8cd u0 ReceiverList{f85be64 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:458ff7}}
+          BroadcastFilter{24ab1c8 u0 ReceiverList{75bb3ba 3061 com.iqqijni.car.keyboard/10041/u0 remote:f0b4ce5}}
+        android.net.wifi.RSSI_CHANGED:
+          BroadcastFilter{effc6e2 u0 ReceiverList{84493ad 2283 com.android.systemui/10016/u0 remote:11ab8c4}}
+        android.intent.action.MANAGED_PROFILE_ADDED:
+          BroadcastFilter{c9f3e4c u-1 ReceiverList{9333dd9 2044 system/1000/u-1 local:7464020}}
+          BroadcastFilter{9084ca0 u0 ReceiverList{ab4c1a3 2044 system/1000/u0 local:c53acd2}}
+          BroadcastFilter{36c1444 u0 ReceiverList{9da1157 2044 system/1000/u0 local:74a5ad6}}
+          BroadcastFilter{9b9e80f u-1 ReceiverList{facf96e 2044 system/1000/u-1 local:92c08e9}}
+        com.desaysv.vrservice.action.dialog.CANCEL:
+          BroadcastFilter{8b4e076 u0 ReceiverList{f268711 2283 com.android.systemui/10016/u0 remote:df08b38}}
+        android.intent.action.USER_INITIALIZE:
+          BroadcastFilter{571d0f8 u-1 ReceiverList{6ac05b 2044 system/1000/u-1 local:ec136a}}
+        android.bluetooth.device.action.UUID:
+          BroadcastFilter{443bda9 u0 ReceiverList{76c9d30 2210 com.android.car/1000/u0 remote:64cba73}}
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        RESUME_MAPVIEW:
+          BroadcastFilter{61ece92 u0 ReceiverList{1c12c1d 14428 com.astrob.turbodog/1069/u0 remote:821acf4}}
+        android.net.wifi.STATE_CHANGE:
+          BroadcastFilter{a3c29f1 u0 ReceiverList{ddd6d98 2044 system/1000/u0 local:b466b7b}}
+          BroadcastFilter{58e0b6c u0 ReceiverList{b0a4c1f 2044 system/1000/u0 local:fcf23be}}
+          BroadcastFilter{9564963 u0 ReceiverList{36b7b92 2044 system/1000/u0 local:8d06d1d}}
+          BroadcastFilter{effc6e2 u0 ReceiverList{84493ad 2283 com.android.systemui/10016/u0 remote:11ab8c4}}
+          BroadcastFilter{4d77fe6 u0 ReceiverList{91b3e41 2827 com.iflytek.autofly.sceneengine/1000/u0 remote:155e128}}
+          BroadcastFilter{51267b1 u0 ReceiverList{ed30a58 3665 com.desaysv.setting/1000/u0 remote:9d1833b}}
+          BroadcastFilter{be01c8a u0 ReceiverList{1cf96f5 3665 com.desaysv.setting/1000/u0 remote:ffe1c2c}}
+        android.app.action.ENTER_CAR_MODE:
+          BroadcastFilter{1b9a0df u0 ReceiverList{487d37e 2044 system/1000/u0 local:f40c139}}
+          BroadcastFilter{daa6685 u0 ReceiverList{8eb2ffc 2044 system/1000/u0 local:b69e8ef}}
+        android.app.action.EXIT_CAR_MODE:
+          BroadcastFilter{1b9a0df u0 ReceiverList{487d37e 2044 system/1000/u0 local:f40c139}}
+          BroadcastFilter{daa6685 u0 ReceiverList{8eb2ffc 2044 system/1000/u0 local:b69e8ef}}
+        android.bluetooth.mapmce.profile.action.DOWNLOAD_STATE_CHANGED:
+          BroadcastFilter{a066c59 u0 ReceiverList{c718a0 2578 com.desaysv.service.bluetooth/1000/u0 remote:a3f3da3}}
+        android.bluetooth.device.action.ACL_CONNECTED:
+          BroadcastFilter{104b54b u0 ReceiverList{2f2061a 2283 com.android.systemui/10016/u0 remote:657ecc5}}
+          BroadcastFilter{c35a359 u0 ReceiverList{3e4cba0 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:347dca3}}
+          BroadcastFilter{4f0c28b u0 ReceiverList{27d005a 2962 com.google.android.projection.sink/1000/u0 remote:4256805}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        android.intent.action.SIM_STATE_CHANGED:
+          BroadcastFilter{5ef7839 u0 ReceiverList{67f6800 2044 system/1000/u0 local:933ae83}}
+          BroadcastFilter{1dac7eb u0 ReceiverList{203f3a 2044 system/1000/u0 local:24d665}}
+          BroadcastFilter{9c7d7e7 u0 ReceiverList{36fe1a6 2044 system/1000/u0 local:b50f01}}
+          BroadcastFilter{db9de1d u0 ReceiverList{ea5e6f4 2044 system/1000/u0 local:d41c0c7}}
+        android.bluetooth.device.action.PAIRING_REQUEST:
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{4f0c28b u0 ReceiverList{27d005a 2962 com.google.android.projection.sink/1000/u0 remote:4256805}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        android.bluetooth.adapter.action.SCAN_MODE_CHANGED:
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        android.bluetooth.pbap.profile.action.PHONEBOOK_SIZE:
+          BroadcastFilter{f70b75d u0 ReceiverList{4775d34 2578 com.desaysv.service.bluetooth/1000/u0 remote:4b22807}}
+        android.intent.action.USER_INFO_CHANGED:
+          BroadcastFilter{9084ca0 u0 ReceiverList{ab4c1a3 2044 system/1000/u0 local:c53acd2}}
+        ScheduleConditionProvider.EVALUATE:
+          BroadcastFilter{46da82 u0 ReceiverList{6f331cd 2044 system/1000/u0 local:c467b64}}
+        android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT:
+          BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+        com.desay.action.ACTION_HFP_IGNORE_CHANGED:
+          BroadcastFilter{8eca045 u0 ReceiverList{cf38bc 2044 system/1000/u0 local:f299caf}}
+        android.os.action.SETTING_RESTORED:
+          BroadcastFilter{667893a u0 ReceiverList{5330865 2044 system/1000/u0 local:94bad5c}}
+          BroadcastFilter{d353490 u-1 ReceiverList{5c59353 2044 system/1000/u-1 local:2a2f742}}
+          BroadcastFilter{3f508d u0 ReceiverList{48dd24 2044 system/1000/u0 local:33af1b7}}
+        android.bluetooth.avrcp-controller.profile.action.BROWSE_CONNECTION_STATE_CHANGED:
+          BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+          BroadcastFilter{7f9d970 u0 ReceiverList{e943fb3 2658 com.android.bluetooth/1002/u0 remote:5c91922}}
+--
+          BroadcastFilter{61ece92 u0 ReceiverList{1c12c1d 14428 com.astrob.turbodog/1069/u0 remote:821acf4}}
+        turbodog.navigation.system.message:
+          BroadcastFilter{69ce46b u0 ReceiverList{95efdba 2604 com.desaysv.mapservice/1000/u0 remote:9457ee5}}
+        android.bluetooth.pbapclient.profile.action.CONNECTION_STATE_CHANGED:
+          BroadcastFilter{443bda9 u0 ReceiverList{76c9d30 2210 com.android.car/1000/u0 remote:64cba73}}
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{f70b75d u0 ReceiverList{4775d34 2578 com.desaysv.service.bluetooth/1000/u0 remote:4b22807}}
+          BroadcastFilter{44d5a8c u0 ReceiverList{846e3bf 2658 com.android.bluetooth/1002/u0 remote:a86d5de}}
+          BroadcastFilter{7f9d970 u0 ReceiverList{e943fb3 2658 com.android.bluetooth/1002/u0 remote:5c91922}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        android.os.action.POWER_SAVE_WHITELIST_CHANGED:
+          BroadcastFilter{5b87581 u-1 ReceiverList{a546d68 2044 system/1000/u-1 local:5d488b}}
+          BroadcastFilter{20f7f1c u0 ReceiverList{97f808f 2044 system/1000/u0 local:1fa3ee}}
+        android.os.action.DISCHARGING:
+          BroadcastFilter{70cc768 u0 ReceiverList{9b6ca8b 2044 system/1000/u0 local:5f6285a}}
+          BroadcastFilter{db86450 u0 ReceiverList{81caa13 2044 system/1000/u0 local:1a13102}}
+        android.intent.action.LOCALE_CHANGED:
+          BroadcastFilter{1ad2d4 u-1 ReceiverList{113b2e6 2044 system/1000/u-1 local:aac5d41}}
+          BroadcastFilter{cdd6889 u0 ReceiverList{7c8a790 2044 system/1000/u0 local:782f253}}
+          BroadcastFilter{8063357 u0 ReceiverList{3e9c4d6 2044 system/1000/u0 local:208c0f1}}
+          BroadcastFilter{52858ca u-1 ReceiverList{4de1c35 2044 system/1000/u-1 local:44a6e6c}}
+          BroadcastFilter{dc7d0e2 u0 ReceiverList{85e85ad 2044 system/1000/u0 local:e7d32c4}}
+          BroadcastFilter{fffc799 u0 ReceiverList{42bd8e0 2044 system/1000/u0 local:bb9d6e3}}
+          BroadcastFilter{eaa626b u0 ReceiverList{75bb3ba 3061 com.iqqijni.car.keyboard/10041/u0 remote:f0b4ce5}}
+          BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+        com.android.server.net.action.ALLOW_BACKGROUND:
+          BroadcastFilter{750d3e4 u0 ReceiverList{9a18b77 2044 system/1000/u0 local:f38e976}}
+        android.bluetooth.adapter.action.DISCOVERY_STARTED:
+          BroadcastFilter{104b54b u0 ReceiverList{2f2061a 2283 com.android.systemui/10016/u0 remote:657ecc5}}
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{c35a359 u0 ReceiverList{3e4cba0 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:347dca3}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        android.bluetooth.headset.profile.action.ACTIVE_DEVICE_CHANGED:
+          BroadcastFilter{6039487 u-1 ReceiverList{cc82cc6 2044 system/1000/u-1 local:7a112a1}}
+          BroadcastFilter{d387693 u0 ReceiverList{2d25f82 2044 system/1000/u0 local:815aacd}}
+          BroadcastFilter{ed7efae u0 ReceiverList{96bf029 2658 com.android.bluetooth/1002/u0 remote:52409b0}}
+        android.telecom.action.DEFAULT_DIALER_CHANGED:
+          BroadcastFilter{f448c7 u0 ReceiverList{5760a06 2044 system/1000/u0 local:1931ce1}}
+        android.bluetooth.a2dp-sink.profile.action.CONNECTION_STATE_CHANGED:
+          BroadcastFilter{104b54b u0 ReceiverList{2f2061a 2283 com.android.systemui/10016/u0 remote:657ecc5}}
+          BroadcastFilter{443bda9 u0 ReceiverList{76c9d30 2210 com.android.car/1000/u0 remote:64cba73}}
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{aa9860f u0 ReceiverList{2404f6e 2578 com.desaysv.service.bluetooth/1000/u0 remote:33ef6e9}}
+          BroadcastFilter{3166560 u0 ReceiverList{5bcc563 2700 com.desaysv.meterinteraction/1000/u0 remote:7ae6792}}
+          BroadcastFilter{44d5a8c u0 ReceiverList{846e3bf 2658 com.android.bluetooth/1002/u0 remote:a86d5de}}
+          BroadcastFilter{4f0c28b u0 ReceiverList{27d005a 2962 com.google.android.projection.sink/1000/u0 remote:4256805}}
+          BroadcastFilter{7f9d970 u0 ReceiverList{e943fb3 2658 com.android.bluetooth/1002/u0 remote:5c91922}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        com.dsv.action.SWIPE_LEFT_TWO:
+          BroadcastFilter{69ce46b u0 ReceiverList{95efdba 2604 com.desaysv.mapservice/1000/u0 remote:9457ee5}}
+          BroadcastFilter{15bc5a1 u0 ReceiverList{3706a08 2700 com.desaysv.meterinteraction/1000/u0 remote:8eed3ab}}
+        com.desaysv.bluetooth.CALL_INFO:
+          BroadcastFilter{e6ed8f u0 ReceiverList{1fca4ee 2700 com.desaysv.meterinteraction/1000/u0 remote:7e3bed5}}
+          BroadcastFilter{af9ea7c u0 ReceiverList{6ecfd6f 3480 com.desaysv.svhvac/1000/u0 remote:bd3884e}}
+        android.intent.action.CONFIGURATION_CHANGED:
+          BroadcastFilter{b3e45ce u0 ReceiverList{bfb4ac9 2044 system/1000/u0 local:d83aad0}}
+          BroadcastFilter{aeaf571 u-1 ReceiverList{7223718 2044 system/1000/u-1 local:5e26afb}}
+          BroadcastFilter{6039487 u-1 ReceiverList{cc82cc6 2044 system/1000/u-1 local:7a112a1}}
+          BroadcastFilter{797fbac u-1 ReceiverList{6c0d55f 2044 system/1000/u-1 local:e1109fe}}
+          BroadcastFilter{8ede46 u0 ReceiverList{f759a21 2283 com.android.systemui/10016/u0 remote:a32c088}}
+          BroadcastFilter{70fe717 u-1 ReceiverList{7eef96 2044 system/1000/u-1 local:be0deb1}}
+          BroadcastFilter{5c21b1f u-1 ReceiverList{c58cebe 2044 system/1000/u-1 local:c97a179}}
+        com.desaysv.msgcenter.NEW_MSG_ACTION:
+          BroadcastFilter{f38a12 u0 ReceiverList{f4da59d 2501 com.desaysv.launcher/1000/u0 remote:1961c74}}
+        android.net.wifi.supplicant.STATE_CHANGE:
+          BroadcastFilter{51267b1 u0 ReceiverList{ed30a58 3665 com.desaysv.setting/1000/u0 remote:9d1833b}}
+          BroadcastFilter{be01c8a u0 ReceiverList{1cf96f5 3665 com.desaysv.setting/1000/u0 remote:ffe1c2c}}
+        com.desaysv.appmenu.activity.AppMenuActivity:
+          BroadcastFilter{916cf12 u0 ReceiverList{28ede9d 2283 com.android.systemui/10016/u0 remote:aa49974}}
+        com.astrob.turbodog.test.manual.dismissed.presentation:
+          BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+        android.intent.action.DREAMING_STARTED:
+          BroadcastFilter{1c16bfb u0 ReceiverList{e49a98a 2044 system/1000/u0 local:ee337f5}}
+          BroadcastFilter{4324de4 u0 ReceiverList{394ad77 2044 system/1000/u0 local:e5b5376}}
+          BroadcastFilter{bad0913 u0 ReceiverList{7cbac02 2044 system/1000/u0 local:2a594d}}
+        com.android.systemui.CLOSE_PANEL:
+          BroadcastFilter{7952e1c u0 ReceiverList{5e28b8f 2283 com.android.systemui/10016/u0 remote:14bfaee}}
+        dsv.intent.action.volumedialog.hide:
+          BroadcastFilter{14cb8cd u0 ReceiverList{f85be64 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:458ff7}}
+        dsv.intent.action.volumedialog.show:
+          BroadcastFilter{14cb8cd u0 ReceiverList{f85be64 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:458ff7}}
+        android.intent.action.DREAMING_STOPPED:
+          BroadcastFilter{1c16bfb u0 ReceiverList{e49a98a 2044 system/1000/u0 local:ee337f5}}
+          BroadcastFilter{4324de4 u0 ReceiverList{394ad77 2044 system/1000/u0 local:e5b5376}}
+          BroadcastFilter{bad0913 u0 ReceiverList{7cbac02 2044 system/1000/u0 local:2a594d}}
+        com.android.server.wifi.ConnectToNetworkNotification.PICK_NETWORK_AFTER_FAILURE:
+          BroadcastFilter{11f5b3c u0 ReceiverList{cf2b92f 2044 system/1000/u0 local:d2fdb0e}}
+          BroadcastFilter{324ef28 u0 ReceiverList{57bb94b 2044 system/1000/u0 local:a929a1a}}
+        android.net.wifi.WIFI_AP_STA_LEAVE:
+          BroadcastFilter{c35a359 u0 ReceiverList{3e4cba0 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:347dca3}}
+        android.bluetooth.mapmce.profile.action.MESSAGE_SENT_SUCCESSFULLY:
+          BroadcastFilter{a066c59 u0 ReceiverList{c718a0 2578 com.desaysv.service.bluetooth/1000/u0 remote:a3f3da3}}
+        android.net.wifi.WIFI_AP_STATE_CHANGED:
+          BroadcastFilter{58e0b6c u0 ReceiverList{b0a4c1f 2044 system/1000/u0 local:fcf23be}}
+          BroadcastFilter{b3e45ce u0 ReceiverList{bfb4ac9 2044 system/1000/u0 local:d83aad0}}
+          BroadcastFilter{89bf7c7 u0 ReceiverList{f431506 2044 system/1000/u0 local:b9173e1}}
+          BroadcastFilter{db0a46e u0 ReceiverList{1977fe9 2283 com.android.systemui/10016/u0 remote:d090070}}
+          BroadcastFilter{c9ddfe4 u0 ReceiverList{70b4777 2962 com.google.android.projection.sink/1000/u0 remote:5841576}}
+          BroadcastFilter{15f1eb3 u0 ReceiverList{1881422 3665 com.desaysv.setting/1000/u0 remote:a34cded}}
+        android.bluetooth.headsetclient.profile.action.CONNECTION_STATE_CHANGED:
+          BroadcastFilter{b719858 u0 ReceiverList{eb9893b 2180 dsv.carstate.service/1000/u0 remote:246f3ca}}
+          BroadcastFilter{104b54b u0 ReceiverList{2f2061a 2283 com.android.systemui/10016/u0 remote:657ecc5}}
+          BroadcastFilter{443bda9 u0 ReceiverList{76c9d30 2210 com.android.car/1000/u0 remote:64cba73}}
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{8dc5158 u0 ReceiverList{2a7863b 2578 com.desaysv.service.bluetooth/1000/u0 remote:b6ac4ca}}
+          BroadcastFilter{44d5a8c u0 ReceiverList{846e3bf 2658 com.android.bluetooth/1002/u0 remote:a86d5de}}
+          BroadcastFilter{4f0c28b u0 ReceiverList{27d005a 2962 com.google.android.projection.sink/1000/u0 remote:4256805}}
+          BroadcastFilter{7f9d970 u0 ReceiverList{e943fb3 2658 com.android.bluetooth/1002/u0 remote:5c91922}}
+          BroadcastFilter{79a3d8c u0 ReceiverList{4fd72bf 2658 com.android.bluetooth/1002/u0 remote:ad240de}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        android.bluetooth.a2dp.profile.action.ACTIVE_DEVICE_CHANGED:
+          BroadcastFilter{469c228 u-1 ReceiverList{e53f84b 2044 system/1000/u-1 local:b8751a}}
+          BroadcastFilter{ed7efae u0 ReceiverList{96bf029 2658 com.android.bluetooth/1002/u0 remote:52409b0}}
+        android.intent.action.BATTERY_LOW:
+          BroadcastFilter{db86450 u0 ReceiverList{81caa13 2044 system/1000/u0 local:1a13102}}
+        android.os.action.LIGHT_DEVICE_IDLE_MODE_CHANGED:
+          BroadcastFilter{5b87581 u-1 ReceiverList{a546d68 2044 system/1000/u-1 local:5d488b}}
+          BroadcastFilter{53691aa u0 ReceiverList{2902c95 2044 system/1000/u0 local:5f3044c}}
+        android.hardware.usb.action.USB_PORT_CHANGED:
+          BroadcastFilter{ccbdeb2 u0 ReceiverList{8f5e8bd 2044 system/1000/u0 local:8b6f814}}
+        android.intent.action.TIMEZONE_CHANGED:
+--
+          BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+        android.net.conn.INET_CONDITION_ACTION:
+          BroadcastFilter{5ef7839 u0 ReceiverList{67f6800 2044 system/1000/u0 local:933ae83}}
+        com.desaysv.vrservice.action.dialog.NO_MORE_REMINDER:
+          BroadcastFilter{8b4e076 u0 ReceiverList{f268711 2283 com.android.systemui/10016/u0 remote:df08b38}}
+        android.bluetooth.mapmce.profile.action.CONNECTION_STATE_CHANGED:
+          BroadcastFilter{443bda9 u0 ReceiverList{76c9d30 2210 com.android.car/1000/u0 remote:64cba73}}
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{a066c59 u0 ReceiverList{c718a0 2578 com.desaysv.service.bluetooth/1000/u0 remote:a3f3da3}}
+          BroadcastFilter{44d5a8c u0 ReceiverList{846e3bf 2658 com.android.bluetooth/1002/u0 remote:a86d5de}}
+          BroadcastFilter{7f9d970 u0 ReceiverList{e943fb3 2658 com.android.bluetooth/1002/u0 remote:5c91922}}
+        com.android.server.pm.DISABLE_QUIET_MODE_AFTER_UNLOCK:
+          BroadcastFilter{e481167 u0 ReceiverList{c4f1126 2044 system/1000/u0 local:4dd4c81}}
+        android.bluetooth.device.action.DISAPPEARED:
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        android.intent.action.USER_FOREGROUND:
+          BroadcastFilter{6039487 u-1 ReceiverList{cc82cc6 2044 system/1000/u-1 local:7a112a1}}
+        android.bluetooth.pbap.profile.action.DOWNLOAD_STATE_CHANGED:
+          BroadcastFilter{f70b75d u0 ReceiverList{4775d34 2578 com.desaysv.service.bluetooth/1000/u0 remote:4b22807}}
+        com.android.server.am.DELETE_DUMPHEAP:
+          BroadcastFilter{a1eaa30 u0 ReceiverList{d7adb73 2044 system/1000/u0 local:57dcbe2}}
+        ARARARARARARARARARAR:
+          BroadcastFilter{22eb52b u0 ReceiverList{f46997a 2283 com.android.systemui/10016/u0 remote:75f31a5}}
+        com.android.server.wifi.WifiApConfigStoreUtil.HOTSPOT_CONFIG_USER_TAPPED_CONTENT:
+          BroadcastFilter{6d8742d u0 ReceiverList{d07cb44 2044 system/1000/u0 local:4464457}}
+        com.android.server.usb.ACTION_OPEN_IN_APPS:
+          BroadcastFilter{e489e12 u0 ReceiverList{f3a899d 2044 system/1000/u0 local:3581074}}
+        android.bluetooth.hfp.action.EV_AUDIO_CONN_RELEASED:
+          BroadcastFilter{2023222 u0 ReceiverList{1eca3ed 2180 dsv.carstate.service/1000/u0 remote:593e204}}
+        android.intent.action.BOOT_COMPLETED:
+          BroadcastFilter{67fa39e u-1 ReceiverList{9333dd9 2044 system/1000/u-1 local:7464020}}
+          BroadcastFilter{2a7b893 u0 ReceiverList{b4d6982 2044 system/1000/u0 local:cce9ccd}}
+          BroadcastFilter{bd125e0 u0 ReceiverList{2a037e3 2210 com.android.car/1000/u0 remote:6061412}}
+          BroadcastFilter{3754740 u-1 ReceiverList{7675b27 2044 system/1000/u-1 local:a1a69e6}}
+          BroadcastFilter{3b253dd u0 ReceiverList{5839bb4 2044 system/1000/u0 local:6665087}}
+        android.intent.action.USER_PRESENT:
+          BroadcastFilter{d353490 u-1 ReceiverList{5c59353 2044 system/1000/u-1 local:2a2f742}}
+          BroadcastFilter{4c74ae7 u0 ReceiverList{3c940a6 2044 system/1000/u0 local:52c8a01}}
+          BroadcastFilter{d62aa63 u0 ReceiverList{258c092 2044 system/1000/u0 local:7c3a61d}}
+          BroadcastFilter{9564963 u0 ReceiverList{36b7b92 2044 system/1000/u0 local:8d06d1d}}
+        android.intent.action.USER_UNLOCKED:
+          BroadcastFilter{d353490 u-1 ReceiverList{5c59353 2044 system/1000/u-1 local:2a2f742}}
+          BroadcastFilter{7909452 u-1 ReceiverList{beb70dd 2044 system/1000/u-1 local:6ab0cb4}}
+          BroadcastFilter{67fa39e u-1 ReceiverList{9333dd9 2044 system/1000/u-1 local:7464020}}
+          BroadcastFilter{9a9a68 u0 ReceiverList{a5c098b 2044 system/1000/u0 local:efd035a}}
+          BroadcastFilter{fb1290b u-1 ReceiverList{fcf0da 2044 system/1000/u-1 local:ae4ca85}}
+          BroadcastFilter{d62aa63 u0 ReceiverList{258c092 2044 system/1000/u0 local:7c3a61d}}
+          BroadcastFilter{baba8e7 u-1 ReceiverList{c2c56a6 2044 system/1000/u-1 local:f763801}}
+          BroadcastFilter{70f63c3 u-1 ReceiverList{8090372 2044 system/1000/u-1 local:791a87d}}
+          BroadcastFilter{f5cd0a7 u0 ReceiverList{a4e4566 2658 com.android.bluetooth/1002/u0 remote:1c3a9c1}}
+--
+        com.astrob.turbodog.test.search:
+          BroadcastFilter{fd8dec7 u0 ReceiverList{1573806 14428 com.astrob.turbodog/1069/u0 remote:4a442e1}}
+        CPGPSLOG:
+          BroadcastFilter{61ece92 u0 ReceiverList{1c12c1d 14428 com.astrob.turbodog/1069/u0 remote:821acf4}}
+        android.bluetooth.hiddevice.profile.action.CONNECTION_STATE_CHANGED:
+          BroadcastFilter{44d5a8c u0 ReceiverList{846e3bf 2658 com.android.bluetooth/1002/u0 remote:a86d5de}}
+        android.bluetooth.map.profile.action.CONNECTION_STATE_CHANGED:
+          BroadcastFilter{44d5a8c u0 ReceiverList{846e3bf 2658 com.android.bluetooth/1002/u0 remote:a86d5de}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        android.os.action.CHARGING:
+          BroadcastFilter{70cc768 u0 ReceiverList{9b6ca8b 2044 system/1000/u0 local:5f6285a}}
+          BroadcastFilter{db86450 u0 ReceiverList{81caa13 2044 system/1000/u0 local:1a13102}}
+        android.intent.action.USER_SWITCHED:
+          BroadcastFilter{ab0ccd7 u0 ReceiverList{9a0d456 2044 system/1000/u0 local:1fc5e71}}
+          BroadcastFilter{c0e182e u0 ReceiverList{b776aa9 2044 system/1000/u0 local:39ede30}}
+          BroadcastFilter{d353490 u-1 ReceiverList{5c59353 2044 system/1000/u-1 local:2a2f742}}
+          BroadcastFilter{67fa39e u-1 ReceiverList{9333dd9 2044 system/1000/u-1 local:7464020}}
+          BroadcastFilter{d62aa63 u0 ReceiverList{258c092 2044 system/1000/u0 local:7c3a61d}}
+          BroadcastFilter{6039487 u-1 ReceiverList{cc82cc6 2044 system/1000/u-1 local:7a112a1}}
+          BroadcastFilter{4d5236f u0 ReceiverList{94c864e 2044 system/1000/u0 local:9503d49}}
+          BroadcastFilter{547687b u0 ReceiverList{96fc80a 2210 com.android.car/1000/u0 remote:d6cc075}}
+          BroadcastFilter{e4c179d u0 ReceiverList{9f1674 2044 system/1000/u0 local:6abfe47}}
+          BroadcastFilter{70f63c3 u-1 ReceiverList{8090372 2044 system/1000/u-1 local:791a87d}}
+          BroadcastFilter{9b9e80f u-1 ReceiverList{facf96e 2044 system/1000/u-1 local:92c08e9}}
+          BroadcastFilter{d5d35b8 u0 ReceiverList{485c01b 2044 system/1000/u0 local:a183a2a}}
+          BroadcastFilter{651873b u0 ReceiverList{56829ca 2210 com.android.car/1000/u0 remote:be69135}}
+          BroadcastFilter{353a525 u0 ReceiverList{2cdc51c 2044 system/1000/u0 local:4d31e8f}}
+          BroadcastFilter{64860c u-1 ReceiverList{1d98d3f 2044 system/1000/u-1 local:7c355e}}
+          BroadcastFilter{8235ec8 u-1 ReceiverList{8f5a36b 2658 com.android.bluetooth/1002/u-1 remote:4b758ba}}
+          BroadcastFilter{f5cd0a7 u0 ReceiverList{a4e4566 2658 com.android.bluetooth/1002/u0 remote:1c3a9c1}}
+          BroadcastFilter{7402917 u0 ReceiverList{21ef996 2658 com.android.bluetooth/1002/u0 remote:332d0b1}}
+          BroadcastFilter{97b1c9c u0 ReceiverList{209240f 2658 com.android.bluetooth/1002/u0 remote:f03a56e}}
+          BroadcastFilter{2ae7ea0 u0 ReceiverList{b2c7ba3 2658 com.android.bluetooth/1002/u0 remote:d4e0ed2}}
+          BroadcastFilter{c60a62a u0 ReceiverList{77bc315 2658 com.android.bluetooth/1002/u0 remote:c8ce4cc}}
+          BroadcastFilter{89a4065 u0 ReceiverList{96cc55c 2658 com.android.bluetooth/1002/u0 remote:508f7cf}}
+        android.app.action.DEVICE_POLICY_MANAGER_STATE_CHANGED:
+          BroadcastFilter{37853c9 u0 ReceiverList{a1b37d0 2044 system/1000/u0 local:ac09b93}}
+          BroadcastFilter{e895e u0 ReceiverList{33b2299 2044 system/1000/u0 local:a1fbfe0}}
+          BroadcastFilter{adb5669 u-1 ReceiverList{d3420f0 2044 system/1000/u-1 local:9b4f533}}
+        com.desaysv.vehicle.externallink.service.LAUNCH_APP_ACTION:
+          BroadcastFilter{f9a4a42 u0 ReceiverList{c33888d 3735 com.desaysv.vehicle.externallink/1000/u0 remote:f0af524}}
+        EventConditionProvider.EVALUATE:
+          BroadcastFilter{30e1dc9 u0 ReceiverList{aa1e9d0 2044 system/1000/u0 local:74ad593}}
+        android.intent.action.ACTION_POWER_CONNECTED:
+          BroadcastFilter{8f1bdc u0 ReceiverList{d7c984f 2044 system/1000/u0 local:18742ae}}
+        android.intent.action.DATE_CHANGED:
+          BroadcastFilter{d924170 u0 ReceiverList{32d47b3 2044 system/1000/u0 local:8814122}}
+          BroadcastFilter{c9f3e4c u-1 ReceiverList{9333dd9 2044 system/1000/u-1 local:7464020}}
+        android.intent.action.MANAGED_PROFILE_REMOVED:
+          BroadcastFilter{9084ca0 u0 ReceiverList{ab4c1a3 2044 system/1000/u0 local:c53acd2}}
+          BroadcastFilter{36c1444 u0 ReceiverList{9da1157 2044 system/1000/u0 local:74a5ad6}}
+          BroadcastFilter{9b9e80f u-1 ReceiverList{facf96e 2044 system/1000/u-1 local:92c08e9}}
+        android.bluetooth.define.CONNECTION_EVENT:
+          BroadcastFilter{2023222 u0 ReceiverList{1eca3ed 2180 dsv.carstate.service/1000/u0 remote:593e204}}
+--
+        desay.phonelink.navigation:
+          BroadcastFilter{69ce46b u0 ReceiverList{95efdba 2604 com.desaysv.mapservice/1000/u0 remote:9457ee5}}
+        com.android.server.notification.CountdownConditionProvider:
+          BroadcastFilter{78158a u0 ReceiverList{457d3f5 2044 system/1000/u0 local:4bd2d2c}}
+        android.intent.action.USER_ADDED:
+          BroadcastFilter{ae77e50 u-1 ReceiverList{28fec13 2044 system/1000/u-1 local:b03b02}}
+          BroadcastFilter{db6cef9 u0 ReceiverList{586e1c0 2044 system/1000/u0 local:fa9f743}}
+          BroadcastFilter{56c6869 u-1 ReceiverList{5f63af0 2044 system/1000/u-1 local:6273733}}
+          BroadcastFilter{67fa39e u-1 ReceiverList{9333dd9 2044 system/1000/u-1 local:7464020}}
+          BroadcastFilter{fb1290b u-1 ReceiverList{fcf0da 2044 system/1000/u-1 local:ae4ca85}}
+          BroadcastFilter{d62aa63 u0 ReceiverList{258c092 2044 system/1000/u0 local:7c3a61d}}
+          BroadcastFilter{9084ca0 u0 ReceiverList{ab4c1a3 2044 system/1000/u0 local:c53acd2}}
+          BroadcastFilter{adb5669 u-1 ReceiverList{d3420f0 2044 system/1000/u-1 local:9b4f533}}
+          BroadcastFilter{dc7d0e2 u0 ReceiverList{85e85ad 2044 system/1000/u0 local:e7d32c4}}
+          BroadcastFilter{63ee74c u0 ReceiverList{f87ab7f 2044 system/1000/u0 local:832e49e}}
+          BroadcastFilter{a1654b2 u-1 ReceiverList{7a876bd 2044 system/1000/u-1 local:b82fe14}}
+        android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED:
+          BroadcastFilter{9564963 u0 ReceiverList{36b7b92 2044 system/1000/u0 local:8d06d1d}}
+          BroadcastFilter{104b54b u0 ReceiverList{2f2061a 2283 com.android.systemui/10016/u0 remote:657ecc5}}
+        android.bluetooth.pbap.profile.action.SYNC_STATE_CHANGED:
+          BroadcastFilter{f70b75d u0 ReceiverList{4775d34 2578 com.desaysv.service.bluetooth/1000/u0 remote:4b22807}}
+        com.android.systemui.OPEN_PANEL:
+          BroadcastFilter{7952e1c u0 ReceiverList{5e28b8f 2283 com.android.systemui/10016/u0 remote:14bfaee}}
+        android.bluetooth.headsetclient.profile.action.AG_EVENT:
+          BroadcastFilter{104b54b u0 ReceiverList{2f2061a 2283 com.android.systemui/10016/u0 remote:657ecc5}}
+          BroadcastFilter{8eca045 u0 ReceiverList{cf38bc 2044 system/1000/u0 local:f299caf}}
+          BroadcastFilter{8dc5158 u0 ReceiverList{2a7863b 2578 com.desaysv.service.bluetooth/1000/u0 remote:b6ac4ca}}
+        android.bluetooth.device.action.FOUND:
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+          BroadcastFilter{c35a359 u0 ReceiverList{3e4cba0 2871 com.desaysv.vehicle.carplayapp/1000/u0 remote:347dca3}}
+          BroadcastFilter{8a9f293 u0 ReceiverList{f6c4b82 3665 com.desaysv.setting/1000/u0 remote:873c6cd}}
+        android.media.MASTER_MUTE_CHANGED_ACTION:
+          BroadcastFilter{cb2b333 u0 ReceiverList{3532aa2 2210 com.android.car/1000/u0 remote:f7c2e6d}}
+        android.bluetooth.device.action.ALIAS_CHANGED:
+          BroadcastFilter{64d58cc u0 ReceiverList{ceaf2ff 2044 system/1000/u0 local:e809a1e}}
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+        android.bluetooth.hearingaid.profile.action.ACTIVE_DEVICE_CHANGED:
+          BroadcastFilter{ed7efae u0 ReceiverList{96bf029 2658 com.android.bluetooth/1002/u0 remote:52409b0}}
+        android.bluetooth.mapmce.profile.action.MESSAGE_DELIVERED_SUCCESSFULLY:
+          BroadcastFilter{a066c59 u0 ReceiverList{c718a0 2578 com.desaysv.service.bluetooth/1000/u0 remote:a3f3da3}}
+        android.bluetooth.hfp.action.EV_AUDIO_CONN_ESTABLISHED:
+          BroadcastFilter{2023222 u0 ReceiverList{1eca3ed 2180 dsv.carstate.service/1000/u0 remote:593e204}}
+        android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED:
+          BroadcastFilter{ed7efae u0 ReceiverList{96bf029 2658 com.android.bluetooth/1002/u0 remote:52409b0}}
+          BroadcastFilter{44d5a8c u0 ReceiverList{846e3bf 2658 com.android.bluetooth/1002/u0 remote:a86d5de}}
+          BroadcastFilter{7f9d970 u0 ReceiverList{e943fb3 2658 com.android.bluetooth/1002/u0 remote:5c91922}}
+        com.desaysv.vrservice.action.OPEN_AVM:
+          BroadcastFilter{f91724f u0 ReceiverList{1df44ae 2501 com.desaysv.launcher/1000/u0 remote:3577929}}
+        android.bluetooth.adapter.action.LOCAL_NAME_CHANGED:
+          BroadcastFilter{667893a u0 ReceiverList{5330865 2044 system/1000/u0 local:94bad5c}}
+          BroadcastFilter{a35c47 u0 ReceiverList{3ef3b86 2578 com.desaysv.service.bluetooth/1000/u0 remote:d542461}}
+--
+    BroadcastRecord{811f7c u0 turbodog.system.navigation.message} to user 0
+    Intent { act=turbodog.system.navigation.message flg=0x400010 (has extras) }
+      extras: Bundle[{CODE=202, DATA=1}]
+    caller=null null pid=17240 uid=2000
+    enqueueClockTime=2025-11-15 20:12:46 dispatchClockTime=2025-11-15 20:12:46
+    dispatchTime=-6s589ms (+1ms since enq) finishTime=-6s587ms (+2ms since disp)
+    resultTo=null resultCode=0 resultData=null
+    resultAbort=false ordered=true sticky=false initialSticky=false
+    nextReceiver=1 receiver=null
+    Deliver #0: BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+  Historical Broadcast background #19:
+    BroadcastRecord{36c6986 u0 android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:46 dispatchClockTime=2025-11-15 20:12:46
+    dispatchTime=-7s332ms (0 since enq) finishTime=-7s331ms (+1ms since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #20:
+    BroadcastRecord{f3f247 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:46 dispatchClockTime=2025-11-15 20:12:46
+    dispatchTime=-7s336ms (+1ms since enq) finishTime=-7s335ms (+1ms since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #21:
+    BroadcastRecord{599fa74 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:46 dispatchClockTime=2025-11-15 20:12:46
+    dispatchTime=-7s338ms (+1ms since enq) finishTime=-7s337ms (+1ms since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #22:
+    BroadcastRecord{31a8849 u0 turbodog.system.navigation.message} to user 0
+    Intent { act=turbodog.system.navigation.message flg=0x400010 (has extras) }
+      extras: Bundle[{TURN_DIST=50, TURN_TYPE=2, REMAINING_DIST=1000, CODE=201}]
+    caller=null null pid=17236 uid=2000
+    enqueueClockTime=2025-11-15 20:12:45 dispatchClockTime=2025-11-15 20:12:45
+    dispatchTime=-7s722ms (0 since enq) finishTime=-7s719ms (+3ms since disp)
+    resultTo=null resultCode=0 resultData=null
+    resultAbort=false ordered=true sticky=false initialSticky=false
+    nextReceiver=1 receiver=null
+    Deliver #0: BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+  Historical Broadcast background #23:
+    BroadcastRecord{6972b9d u0 android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:45 dispatchClockTime=2025-11-15 20:12:45
+    dispatchTime=-8s368ms (+1ms since enq) finishTime=-8s368ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #24:
+    BroadcastRecord{6159812 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:45 dispatchClockTime=2025-11-15 20:12:45
+    dispatchTime=-8s371ms (0 since enq) finishTime=-8s371ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #25:
+    BroadcastRecord{b736be3 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:45 dispatchClockTime=2025-11-15 20:12:45
+    dispatchTime=-8s381ms (0 since enq) finishTime=-8s381ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #26:
+    BroadcastRecord{c96ab02 u0 turbodog.system.navigation.message} to user 0
+    Intent { act=turbodog.system.navigation.message flg=0x400010 (has extras) }
+      extras: Bundle[{CODE=202, DATA=1}]
+    caller=null null pid=17228 uid=2000
+    enqueueClockTime=2025-11-15 20:12:44 dispatchClockTime=2025-11-15 20:12:44
+    dispatchTime=-9s88ms (0 since enq) finishTime=-9s86ms (+2ms since disp)
+    resultTo=null resultCode=0 resultData=null
+    resultAbort=false ordered=true sticky=false initialSticky=false
+    nextReceiver=1 receiver=null
+    Deliver #0: BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+  Historical Broadcast background #27:
+    BroadcastRecord{f9649e0 u0 android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:44 dispatchClockTime=2025-11-15 20:12:44
+    dispatchTime=-9s434ms (+2ms since enq) finishTime=-9s434ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #28:
+    BroadcastRecord{bfe499 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:44 dispatchClockTime=2025-11-15 20:12:44
+    dispatchTime=-9s447ms (+1ms since enq) finishTime=-9s446ms (+1ms since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #29:
+    BroadcastRecord{b1235e u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:44 dispatchClockTime=2025-11-15 20:12:44
+    dispatchTime=-9s449ms (0 since enq) finishTime=-9s448ms (+1ms since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #30:
+    BroadcastRecord{3ba7f77 u0 turbodog.system.navigation.message} to user 0
+    Intent { act=turbodog.system.navigation.message flg=0x400010 (has extras) }
+      extras: Bundle[{TURN_DIST=50, TURN_TYPE=2, REMAINING_DIST=1000, CODE=201}]
+    caller=null null pid=17224 uid=2000
+    enqueueClockTime=2025-11-15 20:12:43 dispatchClockTime=2025-11-15 20:12:43
+    dispatchTime=-10s313ms (+3ms since enq) finishTime=-10s310ms (+3ms since disp)
+    resultTo=null resultCode=0 resultData=null
+    resultAbort=false ordered=true sticky=false initialSticky=false
+    nextReceiver=1 receiver=null
+    Deliver #0: BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+  Historical Broadcast background #31:
+    BroadcastRecord{ce6e33f u0 android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:43 dispatchClockTime=2025-11-15 20:12:43
+    dispatchTime=-10s510ms (+1ms since enq) finishTime=-10s510ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #32:
+    BroadcastRecord{946240c u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:43 dispatchClockTime=2025-11-15 20:12:43
+    dispatchTime=-10s512ms (0 since enq) finishTime=-10s512ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #33:
+    BroadcastRecord{f213155 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:43 dispatchClockTime=2025-11-15 20:12:43
+    dispatchTime=-10s520ms (+2ms since enq) finishTime=-10s520ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #34:
+    BroadcastRecord{79ad038 u0 turbodog.system.navigation.message} to user 0
+    Intent { act=turbodog.system.navigation.message flg=0x400010 (has extras) }
+      extras: Bundle[{CODE=202, DATA=1}]
+    caller=null null pid=17220 uid=2000
+    enqueueClockTime=2025-11-15 20:12:42 dispatchClockTime=2025-11-15 20:12:42
+    dispatchTime=-11s470ms (0 since enq) finishTime=-11s464ms (+6ms since disp)
+    resultTo=null resultCode=0 resultData=null
+    resultAbort=false ordered=true sticky=false initialSticky=false
+    nextReceiver=1 receiver=null
+    Deliver #0: BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+  Historical Broadcast background #35:
+    BroadcastRecord{ae8176a u0 android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:41 dispatchClockTime=2025-11-15 20:12:41
+    dispatchTime=-11s590ms (+1ms since enq) finishTime=-11s590ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #36:
+    BroadcastRecord{1f0745b u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:41 dispatchClockTime=2025-11-15 20:12:41
+    dispatchTime=-11s593ms (0 since enq) finishTime=-11s592ms (+1ms since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #37:
+    BroadcastRecord{3774f8 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:41 dispatchClockTime=2025-11-15 20:12:41
+    dispatchTime=-11s595ms (0 since enq) finishTime=-11s594ms (+1ms since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #38:
+    BroadcastRecord{d108dd1 u0 android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:40 dispatchClockTime=2025-11-15 20:12:40
+    dispatchTime=-12s621ms (0 since enq) finishTime=-12s620ms (+1ms since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #39:
+    BroadcastRecord{be84036 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:40 dispatchClockTime=2025-11-15 20:12:40
+    dispatchTime=-12s623ms (0 since enq) finishTime=-12s623ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #40:
+    BroadcastRecord{537fb37 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+--
+    BroadcastRecord{6c61f7f u0 turbodog.system.navigation.message} to user 0
+    Intent { act=turbodog.system.navigation.message flg=0x400010 (has extras) }
+      extras: Bundle[{TURN_DIST=50, TURN_TYPE=2, REMAINING_DIST=1000, CODE=201}]
+    caller=null null pid=17211 uid=2000
+    enqueueClockTime=2025-11-15 20:12:40 dispatchClockTime=2025-11-15 20:12:40
+    dispatchTime=-12s649ms (0 since enq) finishTime=-12s646ms (+3ms since disp)
+    resultTo=null resultCode=0 resultData=null
+    resultAbort=false ordered=true sticky=false initialSticky=false
+    nextReceiver=1 receiver=null
+    Deliver #0: BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+  Historical Broadcast background #42:
+    BroadcastRecord{aeae8a4 u0 android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:39 dispatchClockTime=2025-11-15 20:12:39
+    dispatchTime=-13s713ms (+1ms since enq) finishTime=-13s713ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #43:
+    BroadcastRecord{bbf360d u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:39 dispatchClockTime=2025-11-15 20:12:39
+    dispatchTime=-13s719ms (+5ms since enq) finishTime=-13s718ms (+1ms since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #44:
+    BroadcastRecord{df029c2 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:39 dispatchClockTime=2025-11-15 20:12:39
+    dispatchTime=-13s727ms (+1ms since enq) finishTime=-13s726ms (+1ms since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #45:
+    BroadcastRecord{50e7d20 u0 turbodog.system.navigation.message} to user 0
+    Intent { act=turbodog.system.navigation.message flg=0x400010 (has extras) }
+      extras: Bundle[{CODE=202, DATA=1}]
+    caller=null null pid=17207 uid=2000
+    enqueueClockTime=2025-11-15 20:12:39 dispatchClockTime=2025-11-15 20:12:39
+    dispatchTime=-13s833ms (0 since enq) finishTime=-13s829ms (+4ms since disp)
+    resultTo=null resultCode=0 resultData=null
+    resultAbort=false ordered=true sticky=false initialSticky=false
+    nextReceiver=1 receiver=null
+    Deliver #0: BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+  Historical Broadcast background #46:
+    BroadcastRecord{a0713d3 u0 android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:38 dispatchClockTime=2025-11-15 20:12:38
+    dispatchTime=-14s789ms (+1ms since enq) finishTime=-14s789ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #47:
+    BroadcastRecord{53feb10 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:38 dispatchClockTime=2025-11-15 20:12:38
+    dispatchTime=-14s791ms (0 since enq) finishTime=-14s791ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #48:
+    BroadcastRecord{4362609 u0 android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT} to user 0
+    Intent { act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras) }
+      extras: Bundle[{STRIPPED=1}]
+    caller=com.android.bluetooth 2658:com.android.bluetooth/1002 pid=2658 uid=1002
+    requiredPermissions=[android.permission.BLUETOOTH]  appOp=-1
+    enqueueClockTime=2025-11-15 20:12:38 dispatchClockTime=2025-11-15 20:12:38
+    dispatchTime=-14s792ms (0 since enq) finishTime=-14s792ms (0 since disp)
+    Deliver #0: BroadcastFilter{68114e3 u0 ReceiverList{d9c4512 2658 com.android.bluetooth/1002/u0 remote:4886c9d}}
+  Historical Broadcast background #49:
+    BroadcastRecord{905d9dd u0 turbodog.system.navigation.message} to user 0
+    Intent { act=turbodog.system.navigation.message flg=0x400010 (has extras) }
+      extras: Bundle[{TURN_DIST=50, TURN_TYPE=2, REMAINING_DIST=1000, CODE=201}]
+    caller=null null pid=17199 uid=2000
+    enqueueClockTime=2025-11-15 20:12:38 dispatchClockTime=2025-11-15 20:12:38
+    dispatchTime=-14s988ms (+1ms since enq) finishTime=-14s985ms (+3ms since disp)
+    resultTo=null resultCode=0 resultData=null
+    resultAbort=false ordered=true sticky=false initialSticky=false
+    nextReceiver=1 receiver=null
+    Deliver #0: BroadcastFilter{840d368 u0 ReceiverList{643868b 14428 com.astrob.turbodog/1069/u0 remote:610545a}}
+
+  Historical broadcasts summary [background]:
+  #0: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +1ms dispatch +1ms finish
+    enq=2025-11-15 20:12:52 disp=2025-11-15 20:12:52 fin=2025-11-15 20:12:52
+    extras: Bundle[{STRIPPED=1}]
+  #1: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +1ms dispatch +1ms finish
+    enq=2025-11-15 20:12:52 disp=2025-11-15 20:12:52 fin=2025-11-15 20:12:52
+    extras: Bundle[{STRIPPED=1}]
+  #2: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch +1ms finish
+    enq=2025-11-15 20:12:52 disp=2025-11-15 20:12:52 fin=2025-11-15 20:12:52
+    extras: Bundle[{STRIPPED=1}]
+  #3: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:51 disp=2025-11-15 20:12:51 fin=2025-11-15 20:12:51
+    extras: Bundle[{STRIPPED=1}]
+  #4: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:51 disp=2025-11-15 20:12:51 fin=2025-11-15 20:12:51
+    extras: Bundle[{STRIPPED=1}]
+  #5: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch +1ms finish
+    enq=2025-11-15 20:12:51 disp=2025-11-15 20:12:51 fin=2025-11-15 20:12:51
+    extras: Bundle[{STRIPPED=1}]
+  #6: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +2ms dispatch 0 finish
+    enq=2025-11-15 20:12:50 disp=2025-11-15 20:12:50 fin=2025-11-15 20:12:50
+    extras: Bundle[{STRIPPED=1}]
+  #7: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +2ms dispatch +1ms finish
+    enq=2025-11-15 20:12:50 disp=2025-11-15 20:12:50 fin=2025-11-15 20:12:50
+    extras: Bundle[{STRIPPED=1}]
+  #8: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +3ms dispatch 0 finish
+    enq=2025-11-15 20:12:50 disp=2025-11-15 20:12:50 fin=2025-11-15 20:12:50
+    extras: Bundle[{STRIPPED=1}]
+  #9: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    0 dispatch +1ms finish
+    enq=2025-11-15 20:12:49 disp=2025-11-15 20:12:49 fin=2025-11-15 20:12:49
+    extras: Bundle[{STRIPPED=1}]
+  #10: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:49 disp=2025-11-15 20:12:49 fin=2025-11-15 20:12:49
+    extras: Bundle[{STRIPPED=1}]
+  #11: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch +1ms finish
+    enq=2025-11-15 20:12:49 disp=2025-11-15 20:12:49 fin=2025-11-15 20:12:49
+    extras: Bundle[{STRIPPED=1}]
+--
+  #18: act=turbodog.system.navigation.message flg=0x400010 (has extras)
+    +1ms dispatch +2ms finish
+    enq=2025-11-15 20:12:46 disp=2025-11-15 20:12:46 fin=2025-11-15 20:12:46
+    extras: Bundle[{CODE=202, DATA=1}]
+  #19: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    0 dispatch +1ms finish
+    enq=2025-11-15 20:12:46 disp=2025-11-15 20:12:46 fin=2025-11-15 20:12:46
+    extras: Bundle[{STRIPPED=1}]
+  #20: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:46 disp=2025-11-15 20:12:46 fin=2025-11-15 20:12:46
+    extras: Bundle[{STRIPPED=1}]
+  #21: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:46 disp=2025-11-15 20:12:46 fin=2025-11-15 20:12:46
+    extras: Bundle[{STRIPPED=1}]
+  #22: act=turbodog.system.navigation.message flg=0x400010 (has extras)
+    0 dispatch +4ms finish
+    enq=2025-11-15 20:12:45 disp=2025-11-15 20:12:45 fin=2025-11-15 20:12:45
+    extras: Bundle[{TURN_DIST=50, TURN_TYPE=2, REMAINING_DIST=1000, CODE=201}]
+  #23: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:45 disp=2025-11-15 20:12:45 fin=2025-11-15 20:12:45
+    extras: Bundle[{STRIPPED=1}]
+  #24: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch +1ms finish
+    enq=2025-11-15 20:12:45 disp=2025-11-15 20:12:45 fin=2025-11-15 20:12:45
+    extras: Bundle[{STRIPPED=1}]
+  #25: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:45 disp=2025-11-15 20:12:45 fin=2025-11-15 20:12:45
+    extras: Bundle[{STRIPPED=1}]
+  #26: act=turbodog.system.navigation.message flg=0x400010 (has extras)
+    0 dispatch +3ms finish
+    enq=2025-11-15 20:12:44 disp=2025-11-15 20:12:44 fin=2025-11-15 20:12:44
+    extras: Bundle[{CODE=202, DATA=1}]
+  #27: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +2ms dispatch 0 finish
+    enq=2025-11-15 20:12:44 disp=2025-11-15 20:12:44 fin=2025-11-15 20:12:44
+    extras: Bundle[{STRIPPED=1}]
+  #28: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +1ms dispatch +3ms finish
+    enq=2025-11-15 20:12:44 disp=2025-11-15 20:12:44 fin=2025-11-15 20:12:44
+    extras: Bundle[{STRIPPED=1}]
+  #29: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:44 disp=2025-11-15 20:12:44 fin=2025-11-15 20:12:44
+    extras: Bundle[{STRIPPED=1}]
+  #30: act=turbodog.system.navigation.message flg=0x400010 (has extras)
+    +3ms dispatch +3ms finish
+    enq=2025-11-15 20:12:43 disp=2025-11-15 20:12:43 fin=2025-11-15 20:12:43
+    extras: Bundle[{TURN_DIST=50, TURN_TYPE=2, REMAINING_DIST=1000, CODE=201}]
+  #31: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:43 disp=2025-11-15 20:12:43 fin=2025-11-15 20:12:43
+    extras: Bundle[{STRIPPED=1}]
+  #32: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:43 disp=2025-11-15 20:12:43 fin=2025-11-15 20:12:43
+    extras: Bundle[{STRIPPED=1}]
+  #33: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +2ms dispatch +1ms finish
+    enq=2025-11-15 20:12:43 disp=2025-11-15 20:12:43 fin=2025-11-15 20:12:43
+    extras: Bundle[{STRIPPED=1}]
+  #34: act=turbodog.system.navigation.message flg=0x400010 (has extras)
+    0 dispatch +6ms finish
+    enq=2025-11-15 20:12:42 disp=2025-11-15 20:12:42 fin=2025-11-15 20:12:42
+    extras: Bundle[{CODE=202, DATA=1}]
+  #35: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:41 disp=2025-11-15 20:12:41 fin=2025-11-15 20:12:41
+    extras: Bundle[{STRIPPED=1}]
+  #36: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch +1ms finish
+    enq=2025-11-15 20:12:41 disp=2025-11-15 20:12:41 fin=2025-11-15 20:12:41
+    extras: Bundle[{STRIPPED=1}]
+  #37: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch +1ms finish
+    enq=2025-11-15 20:12:41 disp=2025-11-15 20:12:41 fin=2025-11-15 20:12:41
+    extras: Bundle[{STRIPPED=1}]
+  #38: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    0 dispatch +1ms finish
+    enq=2025-11-15 20:12:40 disp=2025-11-15 20:12:40 fin=2025-11-15 20:12:40
+    extras: Bundle[{STRIPPED=1}]
+  #39: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:40 disp=2025-11-15 20:12:40 fin=2025-11-15 20:12:40
+    extras: Bundle[{STRIPPED=1}]
+  #40: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch +1ms finish
+    enq=2025-11-15 20:12:40 disp=2025-11-15 20:12:40 fin=2025-11-15 20:12:40
+    extras: Bundle[{STRIPPED=1}]
+  #41: act=turbodog.system.navigation.message flg=0x400010 (has extras)
+    0 dispatch +4ms finish
+    enq=2025-11-15 20:12:40 disp=2025-11-15 20:12:40 fin=2025-11-15 20:12:40
+    extras: Bundle[{TURN_DIST=50, TURN_TYPE=2, REMAINING_DIST=1000, CODE=201}]
+  #42: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +1ms dispatch +1ms finish
+    enq=2025-11-15 20:12:39 disp=2025-11-15 20:12:39 fin=2025-11-15 20:12:39
+    extras: Bundle[{STRIPPED=1}]
+  #43: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +5ms dispatch +1ms finish
+    enq=2025-11-15 20:12:39 disp=2025-11-15 20:12:39 fin=2025-11-15 20:12:39
+    extras: Bundle[{STRIPPED=1}]
+  #44: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:39 disp=2025-11-15 20:12:39 fin=2025-11-15 20:12:39
+    extras: Bundle[{STRIPPED=1}]
+  #45: act=turbodog.system.navigation.message flg=0x400010 (has extras)
+    0 dispatch +4ms finish
+    enq=2025-11-15 20:12:39 disp=2025-11-15 20:12:39 fin=2025-11-15 20:12:39
+    extras: Bundle[{CODE=202, DATA=1}]
+  #46: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:38 disp=2025-11-15 20:12:38 fin=2025-11-15 20:12:38
+    extras: Bundle[{STRIPPED=1}]
+  #47: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:38 disp=2025-11-15 20:12:38 fin=2025-11-15 20:12:38
+    extras: Bundle[{STRIPPED=1}]
+  #48: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:38 disp=2025-11-15 20:12:38 fin=2025-11-15 20:12:38
+    extras: Bundle[{STRIPPED=1}]
+  #49: act=turbodog.system.navigation.message flg=0x400010 (has extras)
+    +1ms dispatch +3ms finish
+    enq=2025-11-15 20:12:38 disp=2025-11-15 20:12:38 fin=2025-11-15 20:12:38
+    extras: Bundle[{TURN_DIST=50, TURN_TYPE=2, REMAINING_DIST=1000, CODE=201}]
+  #50: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:37 disp=2025-11-15 20:12:37 fin=2025-11-15 20:12:37
+    extras: Bundle[{STRIPPED=1}]
+  #51: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:37 disp=2025-11-15 20:12:37 fin=2025-11-15 20:12:37
+    extras: Bundle[{STRIPPED=1}]
+  #52: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:37 disp=2025-11-15 20:12:37 fin=2025-11-15 20:12:37
+    extras: Bundle[{STRIPPED=1}]
+  #53: act=turbodog.system.navigation.message flg=0x400010 (has extras)
+    0 dispatch +3ms finish
+    enq=2025-11-15 20:12:37 disp=2025-11-15 20:12:37 fin=2025-11-15 20:12:37
+    extras: Bundle[{CODE=202, DATA=1}]
+  #54: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +3ms dispatch 0 finish
+    enq=2025-11-15 20:12:36 disp=2025-11-15 20:12:36 fin=2025-11-15 20:12:36
+    extras: Bundle[{STRIPPED=1}]
+  #55: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +2ms dispatch 0 finish
+    enq=2025-11-15 20:12:36 disp=2025-11-15 20:12:36 fin=2025-11-15 20:12:36
+    extras: Bundle[{STRIPPED=1}]
+  #56: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:36 disp=2025-11-15 20:12:36 fin=2025-11-15 20:12:36
+    extras: Bundle[{STRIPPED=1}]
+  #57: act=turbodog.system.navigation.message flg=0x400010 (has extras)
+    +1ms dispatch +3ms finish
+    enq=2025-11-15 20:12:35 disp=2025-11-15 20:12:35 fin=2025-11-15 20:12:35
+    extras: Bundle[{TURN_DIST=50, TURN_TYPE=2, REMAINING_DIST=1000, CODE=201}]
+  #58: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:35 disp=2025-11-15 20:12:35 fin=2025-11-15 20:12:35
+    extras: Bundle[{STRIPPED=1}]
+  #59: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:35 disp=2025-11-15 20:12:35 fin=2025-11-15 20:12:35
+    extras: Bundle[{STRIPPED=1}]
+  #60: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch +2ms finish
+    enq=2025-11-15 20:12:35 disp=2025-11-15 20:12:35 fin=2025-11-15 20:12:35
+    extras: Bundle[{STRIPPED=1}]
+  #61: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:34 disp=2025-11-15 20:12:34 fin=2025-11-15 20:12:34
+    extras: Bundle[{STRIPPED=1}]
+  #62: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch +1ms finish
+    enq=2025-11-15 20:12:34 disp=2025-11-15 20:12:34 fin=2025-11-15 20:12:34
+    extras: Bundle[{STRIPPED=1}]
+  #63: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:34 disp=2025-11-15 20:12:34 fin=2025-11-15 20:12:34
+    extras: Bundle[{STRIPPED=1}]
+  #64: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +2ms dispatch 0 finish
+    enq=2025-11-15 20:12:33 disp=2025-11-15 20:12:33 fin=2025-11-15 20:12:33
+    extras: Bundle[{STRIPPED=1}]
+  #65: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +3ms dispatch 0 finish
+    enq=2025-11-15 20:12:33 disp=2025-11-15 20:12:33 fin=2025-11-15 20:12:33
+    extras: Bundle[{STRIPPED=1}]
+  #66: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    +1ms dispatch 0 finish
+    enq=2025-11-15 20:12:33 disp=2025-11-15 20:12:33 fin=2025-11-15 20:12:33
+    extras: Bundle[{STRIPPED=1}]
+  #67: act=android.bluetooth.avrcp-controller.profile.PLAY_STATUS_CHANGED flg=0x10 (has extras)
+    +2ms dispatch 0 finish
+    enq=2025-11-15 20:12:32 disp=2025-11-15 20:12:32 fin=2025-11-15 20:12:32
+    extras: Bundle[{STRIPPED=1}]
+  #68: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:32 disp=2025-11-15 20:12:32 fin=2025-11-15 20:12:32
+    extras: Bundle[{STRIPPED=1}]
+  #69: act=android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT flg=0x10 (has extras)
+    0 dispatch 0 finish
+    enq=2025-11-15 20:12:32 disp=2025-11-15 20:12:32 fin=2025-11-15 20:12:32

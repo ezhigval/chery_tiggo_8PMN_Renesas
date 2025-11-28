@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chery Emulator UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #05060a;
+      --panel: #101320;
+      --accent: #2dd4bf;
+      --accent-soft: rgba(45, 212, 191, 0.12);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --danger: #f97373;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      background: radial-gradient(circle at top, #1e293b 0, #020617 55%, #000 100%);
+      color: var(--text);
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .root {
+      display: flex;
+      min-height: 100vh;
+      width: 100%;
+      overflow-x: hidden;
+      transition: background 0.18s ease-out;
+    }
+    :root {
+      --sidebar-expanded-width: 260px;
+      --sidebar-rail-width: 72px;
+    }
+    .sidebar {
+      flex: 0 0 var(--sidebar-expanded-width);
+      min-width: var(--sidebar-rail-width);
+      max-width: var(--sidebar-expanded-width);
+      padding: 0;
+      background: linear-gradient(180deg, #020617 0, #020617 40%, #020617cc 100%);
+      border-right: 1px solid #111827;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      transition:
+        flex-basis 0.2s ease-out,
+        max-width 0.2s ease-out,
+        min-width 0.2s ease-out;
+    }
+    .sidebar-inner {
+      width: var(--sidebar-expanded-width);
+      padding: 20px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: transform 0.2s ease-out;
+    }
+    .brand {
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .sidebar h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .tabs {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .tab {
+      padding: 6px 10px;
+      border-radius: 10px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      color: var(--muted);
+      user-select: none;
+    }
+    .tab--active {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .tab span.badge {
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: #020617;
+      font-size: 11px;
+    }
+    .tab-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 30% 10%, #020617 0, #020617 70%, #000 100%);
+      box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 0.9),
+        0 3px 6px rgba(15, 23, 42, 0.9);
+      flex-shrink: 0;
+    }
+    .tab-icon {
+      margin-left: auto;
+    }
+    .tab-icon svg {
+      width: 16px;
+      height: 16px;
+      stroke: #e5e7eb;
+      fill: none;
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .content {
+      flex: 1;
+      padding: 20px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      max-width: 100%;
+      overflow-x: hidden;
+      transition:
+        padding 0.18s ease-out,
+        max-width 0.18s ease-out;
+    }
+    .top-row {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+      width: 100%;
+      transition: flex-basis 0.18s ease-out;
+    }
+    .display {
+      position: relative;
+      border-radius: 16px;
+      background: radial-gradient(circle at top, #020617 0, #020617 40%, #020617 100%);
+      box-shadow:
+        0 24px 60px rgba(15, 23, 42, 0.85),
+        inset 0 0 0 1px rgba(148, 163, 184, 0.15);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+      transition:
+        box-shadow 0.18s ease-out,
+        background 0.18s ease-out,
+        transform 0.1s ease-out;
+    }
+    .panel {
+      display: none;
+      flex: 1 1 auto;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .panel.panel--active {
+      display: flex;
+    }
+    .display--hu {
+      aspect-ratio: 1920 / 720;
+    }
+    .display--cluster {
+      aspect-ratio: 2.6 / 1;
+    }
+    .splitter {
+      flex: 0 0 6px;
+      background: radial-gradient(circle at center, rgba(148, 163, 184, 0.4) 0, rgba(15, 23, 42, 0.95) 55%, transparent 100%);
+      position: relative;
+      z-index: 5;
+      transition: background 0.12s ease-out;
+    }
+    .splitter::before {
+      content: "";
+      position: absolute;
+      inset: 22%;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.5);
+    }
+    .splitter--vertical {
+      cursor: col-resize;
+    }
+    .splitter--horizontal {
+      cursor: row-resize;
+      flex: 0 0 6px;
+      background: radial-gradient(circle at center, rgba(148, 163, 184, 0.4) 0, rgba(15, 23, 42, 0.95) 55%, transparent 100%);
+      position: relative;
+      z-index: 5;
+    }
+    .splitter--horizontal::before {
+      content: "";
+      position: absolute;
+      inset-inline: 22%;
+      inset-block: 18%;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.5);
+    }
+    .root.root--resizing-horizontal,
+    .root.root--resizing-vertical {
+      user-select: none;
+    }
+    .root.root--resizing-horizontal {
+      cursor: col-resize;
+    }
+    .root.root--resizing-vertical {
+      cursor: row-resize;
+    }
+    .root.root--sidebar-hidden .sidebar {
+      flex: 0 0 var(--sidebar-rail-width);
+      max-width: var(--sidebar-rail-width);
+      min-width: var(--sidebar-rail-width);
+    }
+    .root.root--sidebar-hidden .sidebar-inner {
+      transform: translateX(calc(var(--sidebar-rail-width) - var(--sidebar-expanded-width)));
+    }
+    .display__label {
+      position: absolute;
+      top: 10px;
+      left: 14px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+    .display__stub {
+      opacity: 0.7;
+      font-size: 13px;
+      text-align: center;
+      color: var(--muted);
+    }
+    .console-panel {
+      border-radius: 16px;
+      background: rgba(15, 23, 42, 0.9);
+      box-shadow:
+        0 20px 40px rgba(15, 23, 42, 0.9),
+        inset 0 0 0 1px rgba(148, 163, 184, 0.15);
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-height: 120px;
+    }
+    .console-panel__title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .console-panel__title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+    }
+    .console-panel__actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .console-panel__filter {
+      position: relative;
+      font-size: 11px;
+    }
+    .console-panel__refresh {
+      border-radius: 999px;
+      width: 24px;
+      height: 24px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: rgba(15, 23, 42, 0.96);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 0;
+      box-shadow:
+        0 4px 12px rgba(15, 23, 42, 0.9),
+        0 0 0 1px rgba(15, 23, 42, 0.9);
+    }
+    .console-panel__refresh svg {
+      width: 14px;
+      height: 14px;
+      stroke: #e5e7eb;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .console-panel__filter-button {
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(15, 23, 42, 0.95);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 3px 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .console-panel__filter-button span.chevron {
+      font-size: 10px;
+    }
+    .console-panel__filter-menu {
+      position: absolute;
+      right: 0;
+      top: 110%;
+      min-width: 200px;
+      background: #020617;
+      border-radius: 10px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(30, 64, 175, 0.8);
+      padding: 6px 0;
+      z-index: 20;
+      display: none;
+    }
+    .console-panel__filter-menu.open {
+      display: block;
+    }
+    .console-filter-group-label {
+      padding: 4px 12px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+    .console-filter-item {
+      padding: 4px 12px;
+      font-size: 11px;
+      cursor: pointer;
+      color: var(--text);
+      display: block;
+    }
+    .console-filter-item:hover {
+      background: rgba(15, 23, 42, 0.9);
+    }
+    .console-panel__body {
+      flex: 1;
+      border-radius: 10px;
+      background: #020617;
+      padding: 6px 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 11px;
+      color: #e5e7eb;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .console-panel__header {
+      display: grid;
+      grid-template-columns: 110px 80px 70px minmax(0, 1fr);
+      gap: 4px;
+      padding: 2px 8px 4px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+    }
+    .console-row {
+      display: grid;
+      grid-template-columns: 110px 80px 70px minmax(0, 1fr);
+      gap: 4px;
+      padding: 2px 6px;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.85);
+      font-size: 11px;
+      line-height: 1.35;
+    }
+    .console-row:nth-child(even) {
+      background: rgba(15, 23, 42, 0.9);
+    }
+    .console-col--message {
+      overflow: hidden;
+      text-overflow: clip;
+      white-space: normal;
+        word-break: break-word;
+      }
+    .console-col--source {
+      font-weight: 500;
+    }
+    .console-col--type {
+      font-weight: 500;
+    }
+    /* Source colors */
+    .log-source--qemu {
+      color: #38bdf8;
+    }
+    .log-source--qemu-serial {
+      color: #22c55e;
+    }
+    .log-source--qemu-stdout {
+      color: #0ea5e9;
+    }
+    .log-source--qnx {
+      color: #f97316;
+    }
+    .log-source--qnx-uart {
+      color: #fb923c;
+    }
+    .log-source--emulator {
+      color: #a855f7;
+    }
+    .log-source--android {
+      color: #22c55e;
+    }
+    /* Level colors */
+    .log-type--debug {
+      color: #6b7280;
+    }
+    .log-type--info {
+      color: #e5e7eb;
+    }
+    .log-type--warn {
+      color: #facc15;
+    }
+    .log-type--error {
+      color: #f97373;
+    }
+    .log-type--fatal {
+      color: #f97373;
+      text-decoration: underline;
+    }
+    .bottom-panel {
+      border-radius: 16px;
+      background: rgba(15, 23, 42, 0.9);
+      box-shadow:
+        0 20px 40px rgba(15, 23, 42, 0.9),
+        inset 0 0 0 1px rgba(148, 163, 184, 0.15);
+      padding: 14px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 16px;
+    }
+    .vertical-stack {
+      flex: 1 1 auto;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      overflow: hidden;
+    }
+    .bottom-spacer {
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+    .bottom-layout {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+    }
+    .bottom-row {
+      display: flex;
+      align-items: stretch;
+      gap: 24px;
+    }
+    .engine-layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .engine-main {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .engine-button-wrapper {
+      width: 140px;
+      height: 140px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .engine-button {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      border-radius: 999px;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      background: transparent;
+    }
+    .engine-button-ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 999px;
+      background: rgba(45, 212, 191, 0.16);
+      box-shadow:
+        0 0 0 4px rgba(45, 212, 191, 0.45),
+        0 18px 38px rgba(15, 23, 42, 0.95);
+    }
+    .engine-button-core {
+      position: absolute;
+      inset: 8px;
+      border-radius: 999px;
+      background: radial-gradient(circle at top, #1d1bff 0, #4c1d95 60%, #312e81 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .engine-button-pill {
+      width: 70px;
+      height: 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.8);
+    }
+    .engine-button-label {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: none;
+    }
+    .engine-button-label span {
+      display: block;
+    }
+    .engine-info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .engine-info span.label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+    }
+    .engine-info span.value {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .engine-legend {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .engine-indicator-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .engine-indicator-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 999px;
+      opacity: 0.25;
+      box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.85);
+    }
+    .engine-indicator--red { background: #ef4444; }
+    .engine-indicator--yellow { background: #facc15; }
+    .engine-indicator--green { background: #22c55e; }
+    .engine-indicator--teal { background: var(--accent); }
+    .engine-indicator--active {
+      opacity: 1;
+      box-shadow:
+        0 0 0 2px rgba(15, 23, 42, 0.9),
+        0 0 0 6px rgba(45, 212, 191, 0.22);
+    }
+    .emulator-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      font-size: 11px;
+      color: var(--muted);
+      max-width: 320px;
+    }
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.25);
+      flex-shrink: 0;
+    }
+    .pill-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+    button {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text);
+      box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.4);
+      transition: background 0.12s ease, transform 0.08s ease, box-shadow 0.12s ease;
+    }
+    button.primary {
+      background: linear-gradient(135deg, var(--accent) 0%, #22c55e 80%);
+      color: #020617;
+      box-shadow:
+        0 12px 30px rgba(34, 197, 94, 0.45),
+        0 0 0 1px rgba(15, 23, 42, 0.8);
+    }
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.9);
+    }
+    button.primary:hover {
+      box-shadow:
+        0 14px 30px rgba(34, 197, 94, 0.6),
+        0 0 0 1px rgba(15, 23, 42, 0.8);
+    }
+    button:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+    .tab-content {
+      display: none;
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .tab-content h3 {
+      margin: 0 0 6px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+    .tab-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .chip {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      font-size: 12px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .sidebar-toggle-btn {
+      border: none;
+      border-radius: 999px;
+      padding: 4px 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      background: #b91c1c;
+      color: #f9fafb;
+      box-shadow: 0 6px 14px rgba(15, 23, 42, 0.7);
+      transition: background 0.18s ease-out, color 0.18s ease-out;
+    }
+    .root.root--sidebar-hidden .sidebar-toggle-btn {
+      background: rgba(15, 23, 42, 0.96);
+      color: #e5e7eb;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-bottom: 10px;
+    }
+    .field label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+    .field input {
+      padding: 6px 8px;
+      border-radius: 8px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text);
+      font-size: 12px;
+    }
+
+    /* Responsive layout: stack displays vertically on narrow screens */
+    @media (max-width: 1024px) {
+      .top-row {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .splitter--vertical,
+      .splitter--horizontal {
+        display: none;
+      }
+      .display--cluster {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="root">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-header">
+          <div>
+            <div class="brand">CHERY T18FL3</div>
+            <h2>Emulator Console</h2>
+          </div>
+          <button class="sidebar-toggle-btn sidebar-toggle-btn--close" id="sidebarClose" aria-label="Toggle sidebar">✕</button>
+        </div>
+        <div>
+          <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 6px;">Panels</div>
+          <div class="tabs">
+            <div class="tab tab--active" data-tab="vehicle">
+              <span>Vehicle</span>
+              <span class="badge">IGNITION</span>
+              <span class="tab-icon tab-icon--vehicle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M4 15.5v-2.5c0-.7.3-1.3.8-1.7l2.3-1.8A3 3 0 0 1 8.9 9h6.2c.8 0 1.5.4 2 1l2 2.8c.3.4.4.8.4 1.2v1.5" />
+                <path d="M5 16.5h14" />
+                <circle cx="8" cy="16.5" r="1.4" />
+                <circle cx="16" cy="16.5" r="1.4" />
+              </svg>
+            </span>
+          </div>
+          <div class="tab" data-tab="cabin">
+            <span>Cabin</span>
+            <span class="tab-icon tab-icon--cabin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M7 17v-7.5c0-.8.4-1.5 1.2-1.8l2.6-1c.4-.1.7.1.7.5V9" />
+                <path d="M11 17v-4" />
+                <path d="M14 10.5c.8-.6 1.6-.6 2.4 0 .6.5 1 1.2 1 2s-.4 1.5-1 2" />
+                <path d="M14 14.5c.8-.6 1.6-.6 2.4 0 .6.5 1 1.2 1 2" />
+              </svg>
+            </span>
+          </div>
+          <div class="tab" data-tab="steering">
+            <span>Steering_Wheel</span>
+            <span class="tab-icon tab-icon--steering" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <circle cx="12" cy="12" r="5.5" />
+                <circle cx="12" cy="12" r="1.6" />
+                <path d="M7 12h3.5M16.9 12H13.5" />
+                <path d="M9 9.2 7.4 7.6M15 9.2l1.6-1.6" />
+              </svg>
+            </span>
+          </div>
+          <div class="tab" data-tab="infotainment">
+            <span>Infotainment</span>
+            <span class="tab-icon tab-icon--infotainment" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M10 17.5a2 2 0 1 1-2-2" />
+                <path d="M10 17.5V6.5l7-1.5v11" />
+                <path d="M17 16a2 2 0 1 1-2 2" />
+              </svg>
+            </span>
+          </div>
+          <div class="tab" data-tab="system">
+            <span>System</span>
+            <span class="tab-icon tab-icon--system" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 5V3" />
+                <path d="M17 7l1.4-1.4" />
+                <path d="M19 12h2" />
+                <path d="M17 17l1.4 1.4" />
+                <path d="M12 19v2" />
+                <path d="M7 17 5.6 18.4" />
+                <path d="M5 12H3" />
+                <path d="M7 7 5.6 5.6" />
+              </svg>
+            </span>
+          </div>
+          <div class="tab" data-tab="emulator">
+            <span>Emulator</span>
+            <span class="tab-icon tab-icon--emulator" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M9.5 5.5h5" />
+                <path d="M10.5 5.5v5.5L8 17a1.5 1.5 0 0 0 1.4 2h5.2A1.5 1.5 0 0 0 16 17l-2.5-6V5.5" />
+                <path d="M9 13.5h6" />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="tab-content" id="sidebarTabContent">
+          <h3 id="sidebarTabTitle">Vehicle</h3>
+          <div class="tab-controls" id="sidebarTabControls"></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content" id="mainContent">
+      <div class="top-row" id="topRow">
+        <section class="display display--hu" id="huDisplay">
+          <div class="display__label">HU Display</div>
+          <canvas id="huCanvas" style="width: 100%; height: 100%; background: #020617; display: block;"></canvas>
+        </section>
+        <div class="splitter splitter--vertical splitter--hu-cluster" data-split-id="hu-cluster"></div>
+        <section class="display display--cluster" id="clusterDisplay">
+          <div class="display__label">Cluster</div>
+          <canvas id="clusterCanvas" style="width: 100%; height: 100%; background: #020617; display: block;"></canvas>
+        </section>
+      </div>
+
+      <div class="splitter splitter--horizontal splitter--top-middle" data-split-id="top-middle"></div>
+
+      <div class="panel panel--active" data-panel="vehicle">
+        <div class="vertical-stack" id="verticalStack">
+          <section class="console-panel" id="logsPanel">
+            <div class="console-panel__title-row">
+              <div class="console-panel__title">Logs</div>
+              <div class="console-panel__actions">
+                <button class="console-panel__refresh" id="logRefreshButton" title="Clear and reload log">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M6 8V4h4" />
+                    <path d="M6 4a8 8 0 0 1 13 4" />
+                    <path d="M18 16v4h-4" />
+                    <path d="M18 20a8 8 0 0 1-13-4" />
+                  </svg>
+                </button>
+                <div class="console-panel__filter">
+                  <button class="console-panel__filter-button" id="logFilterButton">
+                    <span id="logFilterLabel">Общие</span>
+                    <span class="chevron">▾</span>
+                  </button>
+                  <div class="console-panel__filter-menu" id="logFilterMenu">
+                    <div class="console-filter-group-label">Общие</div>
+                    <div class="console-filter-item" data-filter="all">Общие</div>
+                    <div class="console-filter-group-label">Андроид</div>
+                    <div class="console-filter-item" data-filter="android">Все логи Android</div>
+                    <div class="console-filter-group-label">QNX</div>
+                    <div class="console-filter-item" data-filter="qnx">Все логи QNX</div>
+                    <div class="console-filter-group-label">Эмулятор</div>
+                    <div class="console-filter-item" data-filter="emulator">Эмулятор</div>
+                    <div class="console-filter-item" data-filter="emulator-internal">Внутренние логи эмулятора</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="console-panel__header">
+              <span>Time</span>
+              <span>Source</span>
+              <span>Type</span>
+              <span>Message</span>
+            </div>
+            <div class="console-panel__body" id="huConsoleInner">
+              <span class="display__stub">Waiting for emulator output...</span>
+            </div>
+          </section>
+
+          <div class="splitter splitter--horizontal splitter--logs-bottom" data-split-id="logs-bottom"></div>
+
+          <div class="vertical-stack" id="bottomStack">
+            <div class="bottom-row" id="bottomRow">
+              <section class="bottom-panel" id="bottomPanel">
+                <div class="engine-layout">
+                  <div class="engine-main">
+                    <div class="engine-button-wrapper">
+                      <button class="engine-button" id="btnIgnition">
+                        <div class="engine-button-ring"></div>
+                        <div class="engine-button-core">
+                          <div class="engine-button-pill"></div>
+                          <div class="engine-button-label">
+                            <span>Start/Stop</span>
+                            <span>Engine</span>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="engine-info">
+                      <span class="label">Ignition state</span>
+                      <span class="value" id="ignitionState">OFF</span>
+                    </div>
+                  </div>
+                  <div class="engine-legend">
+                    <div class="engine-indicator-row">
+                      <span class="engine-indicator-dot engine-indicator--red" id="indEngineOff"></span>
+                      <span>Engine off</span>
+                    </div>
+                    <div class="engine-indicator-row">
+                      <span class="engine-indicator-dot engine-indicator--yellow" id="indPowerReady"></span>
+                      <span>Power ready</span>
+                    </div>
+                    <div class="engine-indicator-row">
+                      <span class="engine-indicator-dot engine-indicator--green" id="indAccOn"></span>
+                      <span>ACC ON</span>
+                    </div>
+                    <div class="engine-indicator-row">
+                      <span class="engine-indicator-dot engine-indicator--teal" id="indEngineRunning"></span>
+                      <span>Engine is working</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="splitter splitter--vertical splitter--engine-emu" data-split-id="engine-emu"></div>
+
+              <section class="bottom-panel" id="emuPanel">
+                <div class="emulator-card" id="emulatorCard">
+                  <div class="emulator-card__title">Emulator control</div>
+                  <div class="emulator-card__content">
+                    <div class="pill" id="emulatorPill">
+                      <span class="pill-dot" id="emulatorDot"></span>
+                      <span class="pill-text" id="emulatorStatusText">Emulator: STOPPED</span>
+                    </div>
+                    <div class="actions">
+                      <button id="btnEmuToggle">Emulator Start / Stop</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="splitter splitter--horizontal splitter--bottom-spacer" data-split-id="bottom-spacer"></div>
+
+            <div class="bottom-spacer" id="bottomSpacer"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" data-panel="cabin">
+        <section class="console-panel">
+          <div class="console-panel__title-row">
+            <div class="console-panel__title">Cabin controls</div>
+          </div>
+          <div class="console-panel__body">
+            <span class="display__stub">Cabin control UI will appear here.</span>
+          </div>
+        </section>
+      </div>
+
+      <div class="panel" data-panel="steering">
+        <section class="console-panel">
+          <div class="console-panel__title-row">
+            <div class="console-panel__title">Steering wheel</div>
+          </div>
+          <div class="console-panel__body">
+            <span class="display__stub">Steering wheel buttons UI will appear here.</span>
+          </div>
+        </section>
+      </div>
+
+      <div class="panel" data-panel="infotainment">
+        <section class="console-panel">
+          <div class="console-panel__title-row">
+            <div class="console-panel__title">Infotainment</div>
+          </div>
+          <div class="console-panel__body">
+            <span class="display__stub">Infotainment controls UI will appear here.</span>
+          </div>
+        </section>
+      </div>
+
+      <div class="panel" data-panel="system">
+        <section class="console-panel">
+          <div class="console-panel__title-row">
+            <div class="console-panel__title">System</div>
+          </div>
+          <div class="console-panel__body">
+            <span class="display__stub">System tools UI will appear here.</span>
+          </div>
+        </section>
+      </div>
+
+      <div class="panel" data-panel="emulator">
+        <section class="console-panel">
+          <div class="console-panel__title-row">
+            <div class="console-panel__title">Emulator</div>
+          </div>
+          <div class="console-panel__body">
+            <span class="display__stub">Emulator configuration UI will appear here.</span>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const ignitionStateEl = document.getElementById('ignitionState');
+    const emulatorStatusTextEl = document.getElementById('emulatorStatusText');
+    const emulatorDotEl = document.getElementById('emulatorDot');
+    const btnIgnition = document.getElementById('btnIgnition');
+    const btnEmuToggle = document.getElementById('btnEmuToggle');
+    const huConsoleInnerEl = document.getElementById('huConsoleInner');
+    const btnLogRefresh = document.getElementById('logRefreshButton');
+    const huCanvas = document.getElementById('huCanvas');
+    const clusterCanvas = document.getElementById('clusterCanvas');
+
+    const sidebarTabs = document.querySelectorAll('.tab[data-tab]');
+
+    const BASE_URL = window.location.origin.replace(/\/$/, '');
+    let currentLogFilter = 'all';
+
+    const TAB_COMMANDS = {
+      // Vehicle tab: controls moved to ignition button, no extra chips needed.
+      vehicle: {},
+      cabin: {
+        cabin: ['CLIMATE_AUTO', 'CLIMATE_SYNC', 'REAR_DEFROST'],
+      },
+      steering: {
+        steering: ['NAV', 'MEDIA', 'VOICE', 'VOL_UP', 'VOL_DOWN'],
+      },
+      infotainment: {
+        infotainment: ['OPEN_NAV', 'OPEN_MEDIA', 'SPLIT_SCREEN'],
+      },
+      system: {
+        system: ['RELOAD_STATE', 'DUMP_QEMU_CMD'],
+      },
+      emulator: {},
+    };
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>"']/g, (ch) => {
+        switch (ch) {
+          case '&': return '&amp;';
+          case '<': return '&lt;';
+          case '>': return '&gt;';
+          case '"': return '&quot;';
+          case "'": return '&#39;';
+          default: return ch;
+        }
+      });
+    }
+
+    function updateIgnitionIndicators(ignitionState) {
+      const indOff = document.getElementById('indEngineOff');
+      const indPower = document.getElementById('indPowerReady');
+      const indAcc = document.getElementById('indAccOn');
+      const indRun = document.getElementById('indEngineRunning');
+
+      const isOff = ignitionState === 'OFF';
+      const isAcc = ignitionState === 'ACC';
+      const isIgn = ignitionState === 'IGN';
+      const isRunning = ignitionState === 'ENGINE_RUNNING';
+
+      // Семантика:
+      // - Красный: OFF
+      // - Жёлтый: ACC (первый короткий клик)
+      // - Зелёный: IGN или ENGINE_RUNNING (ACC ON)
+      // - Бирюзовый: только ENGINE_RUNNING
+      const redOn = isOff;
+      const yellowOn = isAcc;
+      const greenOn = isIgn || isRunning;
+      const tealOn = isRunning;
+
+      function setActive(el, on) {
+        if (!el) return;
+        el.classList.toggle('engine-indicator--active', !!on);
+      }
+
+      setActive(indOff, redOn);
+      setActive(indPower, yellowOn);
+      setActive(indAcc, greenOn);
+      setActive(indRun, tealOn);
+    }
+
+    function updateMainPanel(tab) {
+      const panels = document.querySelectorAll('[data-panel]');
+      panels.forEach(el => {
+        if (!(el instanceof HTMLElement)) return;
+        el.classList.toggle('panel--active', el.dataset.panel === tab);
+      });
+    }
+
+    function updateSidebarTab(tab) {
+      sidebarTabs.forEach(el => {
+        el.classList.toggle('tab--active', el.dataset.tab === tab);
+      });
+      try {
+        if (window.localStorage) {
+          window.localStorage.setItem('ui:selectedTab', tab);
+        }
+      } catch (e) {
+        // ignore storage errors
+      }
+      updateMainPanel(tab);
+    }
+
+    sidebarTabs.forEach(el => {
+      el.addEventListener('click', () => {
+        updateSidebarTab(el.dataset.tab);
+      });
+    });
+
+    function updateEmulatorPill(status, error, pid) {
+      let label = 'Emulator: ' + status;
+      if (pid) {
+        label += ' (PID ' + pid + ')';
+      }
+      if (error) {
+        label += ' – ' + error;
+      }
+      emulatorStatusTextEl.textContent = label;
+
+      if (status === 'RUNNING') {
+        emulatorDotEl.style.background = '#22c55e';
+        emulatorDotEl.style.boxShadow = '0 0 0 4px rgba(34, 197, 94, 0.25)';
+      } else if (status === 'STOPPED') {
+        emulatorDotEl.style.background = '#9ca3af';
+        emulatorDotEl.style.boxShadow = 'none';
+      } else if (status === 'ERROR') {
+        emulatorDotEl.style.background = '#f97373';
+        emulatorDotEl.style.boxShadow = '0 0 0 4px rgba(248, 113, 113, 0.25)';
+      } else {
+        emulatorDotEl.style.background = '#eab308';
+        emulatorDotEl.style.boxShadow = '0 0 0 4px rgba(234, 179, 8, 0.25)';
+      }
+    }
+
+    // --- Live display streaming over WebSocket ---
+
+    function makeWsUrl(path) {
+      const proto = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
+      return proto + window.location.host + path;
+    }
+
+    function setupDisplayWebSocket(canvas, path) {
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      let ws;
+      const url = makeWsUrl(path);
+
+      function connect() {
+        ws = new WebSocket(url);
+        ws.binaryType = 'arraybuffer';
+
+        ws.onmessage = async (event) => {
+          try {
+            const data = event.data;
+            const blob = data instanceof Blob ? data : new Blob([data]);
+            const bitmap = await createImageBitmap(blob);
+
+            // Match canvas size to bitmap, then scale to CSS size by browser.
+            if (canvas.width !== bitmap.width || canvas.height !== bitmap.height) {
+              canvas.width = bitmap.width;
+              canvas.height = bitmap.height;
+            }
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+          } catch (e) {
+            console.debug('Failed to draw display frame', e);
+          }
+        };
+
+        ws.onclose = () => {
+          // Simple reconnect with backoff
+          setTimeout(connect, 2000);
+        };
+
+        ws.onerror = () => {
+          try {
+            ws.close();
+          } catch (_) {
+            // ignore
+          }
+        };
+      }
+
+      connect();
+    }
+
+    async function fetchState() {
+      try {
+        const res = await fetch(BASE_URL + '/state');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        ignitionStateEl.textContent = data.ignition_state;
+        updateIgnitionIndicators(data.ignition_state);
+        updateEmulatorPill(data.emulator_status, data.emulator_error, data.emulator_pid);
+        window.__emulatorStatus = data.emulator_status;
+      } catch (e) {
+        console.error('Failed to fetch state', e);
+        updateEmulatorPill('ERROR', 'core unreachable', null);
+      }
+    }
+
+    function mapSourceClass(source) {
+      const s = (source || '').toLowerCase();
+      if (s.startsWith('qemu-console')) return 'log-source--qemu';
+      if (s.startsWith('qemu-stdout')) return 'log-source--qemu-stdout';
+      if (s.startsWith('qemu-serial')) return 'log-source--qemu-serial';
+      if (s.startsWith('qnx-qemu')) return 'log-source--qnx';
+      if (s.startsWith('qnx-uart')) return 'log-source--qnx-uart';
+      if (s.startsWith('android-adb') || s.includes('adb')) return 'log-source--android';
+      if (s.startsWith('emu')) return 'log-source--emulator';
+      return '';
+    }
+
+    function mapLevelClass(level) {
+      const l = (level || '').toUpperCase();
+      if (l === 'DEBUG') return 'log-type--debug';
+      if (l === 'WARN') return 'log-type--warn';
+      if (l === 'ERROR') return 'log-type--error';
+      if (l === 'FATAL') return 'log-type--fatal';
+      return 'log-type--info';
+    }
+
+    function passesLogFilter(entry) {
+      const src = (entry.source || '').toLowerCase();
+      switch (currentLogFilter) {
+        case 'android':
+          return src.includes('android') || src.includes('adb');
+        case 'qnx':
+          return src.includes('qnx');
+        case 'emulator':
+          return src.startsWith('emu');
+        case 'emulator-internal':
+          return src.startsWith('emu-core');
+        case 'all':
+        default:
+          return true;
+      }
+    }
+
+    async function fetchHuConsole() {
+      if (!huConsoleInnerEl) return;
+      try {
+        const res = await fetch(BASE_URL + '/logs/combined');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        const entries = (data.entries || []).filter(passesLogFilter);
+
+        huConsoleInnerEl.innerHTML = '';
+
+        if (!entries.length) {
+          const stub = document.createElement('span');
+          stub.className = 'display__stub';
+          stub.textContent = 'No console output yet. Start the emulator and wait for Android and QNX to boot.';
+          huConsoleInnerEl.appendChild(stub);
+          return;
+        }
+
+        const now = new Date();
+        const timeLabel = now.toLocaleTimeString();
+
+        // Последние строки идут первыми: новый лог сверху.
+        for (let i = entries.length - 1; i >= 0; i--) {
+          const entry = entries[i];
+          const row = document.createElement('div');
+          row.className = 'console-row';
+          const msg = escapeHtml(String(entry.message ?? ''));
+          const source = String(entry.source ?? 'UNKNOWN');
+          const level = String(entry.level ?? 'INFO');
+          const sourceClass = mapSourceClass(source);
+          const levelClass = mapLevelClass(level);
+          row.innerHTML = `
+            <span class="console-col console-col--time">${timeLabel}</span>
+            <span class="console-col console-col--source ${sourceClass}">${escapeHtml(source)}</span>
+            <span class="console-col console-col--type ${levelClass}">${escapeHtml(level)}</span>
+            <span class="console-col console-col--message" title="${msg}">${msg}</span>
+          `;
+          huConsoleInnerEl.appendChild(row);
+        }
+
+        huConsoleInnerEl.scrollTop = 0;
+      } catch (e) {
+        console.debug('Failed to fetch combined logs', e);
+      }
+    }
+
+    async function clearHuConsole() {
+      if (!huConsoleInnerEl) return;
+      try {
+        const res = await fetch(BASE_URL + '/emulator/console/clear', { method: 'POST' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        await res.json();
+      } catch (e) {
+        console.error('Failed to clear HU console', e);
+      }
+      // After clearing on backend, refresh the view (will show stub).
+      fetchHuConsole();
+    }
+
+    async function postAction(path) {
+      try {
+        const res = await fetch(BASE_URL + path, { method: 'POST' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        ignitionStateEl.textContent = data.ignition_state;
+        updateEmulatorPill(data.emulator_status, data.emulator_error, data.emulator_pid);
+        window.__emulatorStatus = data.emulator_status;
+      } catch (e) {
+        console.error('Failed to post action', e);
+        updateEmulatorPill('ERROR', 'request failed', null);
+      }
+    }
+
+    async function postJson(path, body) {
+      try {
+        const res = await fetch(BASE_URL + path, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        // Controls API does not affect ignition/emulator state directly; ignore response for now.
+        await res.json();
+      } catch (e) {
+        console.error('Failed to post JSON', e);
+      }
+    }
+
+    // Single physical button: short vs long press
+    (function setupIgnitionButton() {
+      let downTime = 0;
+      let longFired = false;
+      const LONG_THRESHOLD_MS = 700;
+
+      function handleDown() {
+        downTime = Date.now();
+        longFired = false;
+      }
+
+      function handleUp() {
+        const dt = Date.now() - downTime;
+        if (dt >= LONG_THRESHOLD_MS) {
+          // long press
+          postAction('/ignition/press_long');
+          longFired = true;
+        } else if (!longFired) {
+          // short press
+          postAction('/ignition/press_short');
+        }
+      }
+
+      btnIgnition.addEventListener('mousedown', handleDown);
+      btnIgnition.addEventListener('mouseup', handleUp);
+      btnIgnition.addEventListener('mouseleave', () => { longFired = false; });
+
+      btnIgnition.addEventListener('touchstart', (ev) => {
+        ev.preventDefault();
+        handleDown();
+      }, { passive: false });
+      btnIgnition.addEventListener('touchend', (ev) => {
+        ev.preventDefault();
+        handleUp();
+      }, { passive: false });
+    })();
+
+    btnEmuToggle.addEventListener('click', () => {
+      const status = window.__emulatorStatus || 'STOPPED';
+      if (status === 'RUNNING') {
+        postAction('/emulator/stop');
+      } else {
+        postAction('/emulator/start');
+      }
+    });
+
+    async function loadEmulatorConfig() {
+      try {
+        const res = await fetch(BASE_URL + '/emulator/config');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        const android = data.android || {};
+        const boot = document.getElementById('emuBootImg');
+        const system = document.getElementById('emuSystemImg');
+        const vendor = document.getElementById('emuVendorImg');
+        const product = document.getElementById('emuProductImg');
+        if (boot) boot.value = android.boot_img || '';
+        if (system) system.value = android.system_img || '';
+        if (vendor) vendor.value = android.vendor_img || '';
+        if (product) product.value = android.product_img || '';
+        const btn = document.getElementById('btnSaveEmuConfig');
+        if (btn) {
+          btn.addEventListener('click', async () => {
+            const body = {
+              android: {
+                boot_img: boot && boot.value ? boot.value : null,
+                system_img: system && system.value ? system.value : null,
+                vendor_img: vendor && vendor.value ? vendor.value : null,
+                product_img: product && product.value ? product.value : null,
+              },
+            };
+            try {
+              const res2 = await fetch(BASE_URL + '/emulator/config', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(body),
+              });
+              if (!res2.ok) throw new Error('HTTP ' + res2.status);
+              await res2.json();
+              fetchState();
+            } catch (e) {
+              console.error('Failed to save emulator config', e);
+            }
+          }, { once: true });
+        }
+      } catch (e) {
+        console.error('Failed to load emulator config', e);
+      }
+    }
+
+    // Log filter dropdown
+    (function setupLogFilter() {
+      const btn = document.getElementById('logFilterButton');
+      const menu = document.getElementById('logFilterMenu');
+      const label = document.getElementById('logFilterLabel');
+
+      if (!btn || !menu || !label) return;
+
+      // Restore previously selected filter
+      try {
+        if (window.localStorage) {
+          const saved = window.localStorage.getItem('ui:logFilter');
+          if (saved) {
+            const item = menu.querySelector('.console-filter-item[data-filter="' + saved + '"]');
+            if (item) {
+              currentLogFilter = saved;
+              label.textContent = item.textContent || 'Общие';
+            }
+          }
+        }
+      } catch (e) {
+        // ignore storage errors
+      }
+
+      btn.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        menu.classList.toggle('open');
+      });
+
+      menu.addEventListener('click', (ev) => {
+        const target = ev.target;
+        if (!(target instanceof HTMLElement)) return;
+        if (!target.classList.contains('console-filter-item')) return;
+        const filter = target.dataset.filter || 'all';
+        currentLogFilter = filter;
+        label.textContent = target.textContent || 'Общие';
+        try {
+          if (window.localStorage) {
+            window.localStorage.setItem('ui:logFilter', filter);
+          }
+        } catch (e) {
+          // ignore storage errors
+        }
+        menu.classList.remove('open');
+        fetchHuConsole();
+      });
+
+      document.addEventListener('click', () => {
+        menu.classList.remove('open');
+      });
+    })();
+
+    if (btnLogRefresh) {
+      btnLogRefresh.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        clearHuConsole();
+      });
+    }
+
+    // Generic horizontal resize setup between two panes with a splitter
+    function setupHorizontalResize(options) {
+      const {
+        container,
+        first,
+        second,
+        splitter,
+        storageKey,
+      } = options;
+
+      if (!container || !first || !second || !splitter) return;
+
+      const root = document.querySelector('.root');
+      const MIN_RATIO = 0.15; // 15% min width for each pane
+      const DEFAULT_RATIO = 0.5;
+      let currentRatio = DEFAULT_RATIO;
+      let startX = 0;
+      let startWidth = 0;
+      let containerWidth = 0;
+      let isResizing = false;
+      let lastDblClickTime = 0;
+      const DBLCLICK_THRESHOLD = 250;
+
+      // Restore from localStorage if present
+      if (storageKey && window.localStorage) {
+        const saved = window.localStorage.getItem(storageKey);
+        if (saved) {
+          const r = parseFloat(saved);
+          if (!Number.isNaN(r) && r > MIN_RATIO && r < 1 - MIN_RATIO) {
+            currentRatio = r;
+          }
+        }
+      }
+
+      function applyRatio(ratio) {
+        currentRatio = Math.max(MIN_RATIO, Math.min(1 - MIN_RATIO, ratio));
+        first.style.flex = '0 0 ' + (currentRatio * 100) + '%';
+        second.style.flex = '1 1 auto';
+        if (storageKey && window.localStorage) {
+          window.localStorage.setItem(storageKey, String(currentRatio));
+        }
+      }
+
+      applyRatio(currentRatio);
+
+      function onPointerMove(ev) {
+        if (!isResizing) return;
+        const clientX = ev.clientX ?? (ev.touches && ev.touches[0] && ev.touches[0].clientX);
+        if (typeof clientX !== 'number') return;
+        const delta = clientX - startX;
+        const newWidth = startWidth + delta;
+        const ratio = newWidth / containerWidth;
+        applyRatio(ratio);
+      }
+
+      function stopResize() {
+        if (!isResizing) return;
+        isResizing = false;
+        document.removeEventListener('mousemove', onPointerMove);
+        document.removeEventListener('mouseup', stopResize);
+        document.removeEventListener('touchmove', onPointerMove);
+        document.removeEventListener('touchend', stopResize);
+        document.removeEventListener('touchcancel', stopResize);
+        if (root) {
+          root.classList.remove('root--resizing-horizontal');
+        }
+      }
+
+      function startResize(ev) {
+        ev.preventDefault();
+        const clientX = ev.clientX ?? (ev.touches && ev.touches[0] && ev.touches[0].clientX);
+        if (typeof clientX !== 'number') return;
+        const rect = container.getBoundingClientRect();
+        containerWidth = rect.width;
+        startX = clientX;
+        startWidth = first.getBoundingClientRect().width;
+        isResizing = true;
+
+        document.addEventListener('mousemove', onPointerMove);
+        document.addEventListener('mouseup', stopResize);
+        document.addEventListener('touchmove', onPointerMove, { passive: false });
+        document.addEventListener('touchend', stopResize);
+        document.addEventListener('touchcancel', stopResize);
+        if (root) {
+          root.classList.add('root--resizing-horizontal');
+        }
+      }
+
+      splitter.addEventListener('mousedown', startResize);
+      splitter.addEventListener('touchstart', (ev) => {
+        startResize(ev);
+      }, { passive: false });
+
+      // Double-click / double-tap to toggle between default and maximized first pane
+      splitter.addEventListener('click', (ev) => {
+        const now = Date.now();
+        if (now - lastDblClickTime < DBLCLICK_THRESHOLD) {
+          // treat as double click
+          ev.preventDefault();
+          ev.stopPropagation();
+          const maximized = currentRatio > 0.95;
+          if (maximized) {
+            applyRatio(DEFAULT_RATIO);
+          } else {
+            applyRatio(0.98);
+          }
+          lastDblClickTime = 0;
+        } else {
+          lastDblClickTime = now;
+        }
+      });
+    }
+
+    // Generic vertical resize setup between two panes with a splitter
+    function setupVerticalResize(options) {
+      const {
+        container,
+        first,
+        second,
+        splitter,
+        storageKey,
+      } = options;
+
+      if (!container || !first || !second || !splitter) return;
+
+      const root = document.querySelector('.root');
+      const MIN_RATIO = 0.15; // 15% min height for each pane
+      const DEFAULT_RATIO = 0.5;
+      let currentRatio = DEFAULT_RATIO;
+      let startY = 0;
+      let startHeight = 0;
+      let containerHeight = 0;
+      let isResizing = false;
+      let lastDblClickTime = 0;
+      const DBLCLICK_THRESHOLD = 250;
+
+      if (storageKey && window.localStorage) {
+        const saved = window.localStorage.getItem(storageKey);
+        if (saved) {
+          const r = parseFloat(saved);
+          if (!Number.isNaN(r) && r > MIN_RATIO && r < 1 - MIN_RATIO) {
+            currentRatio = r;
+          }
+        }
+      }
+
+      function applyRatio(ratio) {
+        currentRatio = Math.max(MIN_RATIO, Math.min(1 - MIN_RATIO, ratio));
+        first.style.flex = '0 0 ' + (currentRatio * 100) + '%';
+        second.style.flex = '1 1 auto';
+        if (storageKey && window.localStorage) {
+          window.localStorage.setItem(storageKey, String(currentRatio));
+        }
+      }
+
+      applyRatio(currentRatio);
+
+      function onPointerMove(ev) {
+        if (!isResizing) return;
+        const clientY = ev.clientY ?? (ev.touches && ev.touches[0] && ev.touches[0].clientY);
+        if (typeof clientY !== 'number') return;
+        const delta = clientY - startY;
+        const newHeight = startHeight + delta;
+        const ratio = newHeight / containerHeight;
+        applyRatio(ratio);
+      }
+
+      function stopResize() {
+        if (!isResizing) return;
+        isResizing = false;
+        document.removeEventListener('mousemove', onPointerMove);
+        document.removeEventListener('mouseup', stopResize);
+        document.removeEventListener('touchmove', onPointerMove);
+        document.removeEventListener('touchend', stopResize);
+        document.removeEventListener('touchcancel', stopResize);
+        if (root) {
+          root.classList.remove('root--resizing-vertical');
+        }
+      }
+
+      function startResize(ev) {
+        ev.preventDefault();
+        const clientY = ev.clientY ?? (ev.touches && ev.touches[0] && ev.touches[0].clientY);
+        if (typeof clientY !== 'number') return;
+        const rect = container.getBoundingClientRect();
+        containerHeight = rect.height;
+        startY = clientY;
+        startHeight = first.getBoundingClientRect().height;
+        isResizing = true;
+
+        document.addEventListener('mousemove', onPointerMove);
+        document.addEventListener('mouseup', stopResize);
+        document.addEventListener('touchmove', onPointerMove, { passive: false });
+        document.addEventListener('touchend', stopResize);
+        document.addEventListener('touchcancel', stopResize);
+        if (root) {
+          root.classList.add('root--resizing-vertical');
+        }
+      }
+
+      splitter.addEventListener('mousedown', startResize);
+      splitter.addEventListener('touchstart', (ev) => {
+        startResize(ev);
+      }, { passive: false });
+
+      splitter.addEventListener('click', (ev) => {
+        const now = Date.now();
+        if (now - lastDblClickTime < DBLCLICK_THRESHOLD) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          const maximized = currentRatio > 0.95;
+          if (maximized) {
+            applyRatio(DEFAULT_RATIO);
+          } else {
+            applyRatio(0.98);
+          }
+          lastDblClickTime = 0;
+        } else {
+          lastDblClickTime = now;
+        }
+      });
+    }
+
+    // Initial state
+    (function initUiState() {
+      let initialTab = 'vehicle';
+      try {
+        if (window.localStorage) {
+          const savedTab = window.localStorage.getItem('ui:selectedTab');
+          if (savedTab && Object.prototype.hasOwnProperty.call(TAB_COMMANDS, savedTab)) {
+            initialTab = savedTab;
+          }
+        }
+      } catch (e) {
+        // ignore storage errors
+      }
+      updateSidebarTab(initialTab);
+      fetchState();
+      fetchHuConsole();
+    })();
+
+    // Setup resizable layout + sidebar visibility
+    window.addEventListener('load', () => {
+      const root = document.querySelector('.root');
+      const mainContent = document.getElementById('mainContent');
+      const btnSidebarClose = document.getElementById('sidebarClose');
+
+      if (root && mainContent) {
+        root.style.display = 'flex';
+        root.style.alignItems = 'stretch';
+        mainContent.style.flex = '1 1 auto';
+      }
+
+      function applySidebarHidden(hidden) {
+        if (!root) return;
+        root.classList.toggle('root--sidebar-hidden', hidden);
+        if (btnSidebarClose) {
+          btnSidebarClose.textContent = hidden ? '☰' : '✕';
+        }
+      }
+
+      // Restore sidebar visibility
+      try {
+        if (window.localStorage) {
+          const savedHidden = window.localStorage.getItem('ui:sidebarHidden');
+          if (savedHidden === '1') {
+            applySidebarHidden(true);
+          }
+        }
+      } catch (e) {
+        // ignore storage errors
+      }
+
+      if (btnSidebarClose) {
+        btnSidebarClose.addEventListener('click', () => {
+          const hidden = !root?.classList.contains('root--sidebar-hidden');
+          applySidebarHidden(hidden);
+          try {
+            if (window.localStorage) {
+              window.localStorage.setItem('ui:sidebarHidden', hidden ? '1' : '0');
+            }
+          } catch (e) {
+            // ignore storage errors
+          }
+        });
+      }
+
+      const topRow = document.getElementById('topRow');
+      const huDisplay = document.getElementById('huDisplay');
+      const clusterDisplay = document.getElementById('clusterDisplay');
+      const huClusterSplitter = document.querySelector('.splitter--hu-cluster');
+      if (topRow && huDisplay && clusterDisplay && huClusterSplitter) {
+        huDisplay.style.flex = '0 0 50%';
+        clusterDisplay.style.flex = '1 1 auto';
+        setupHorizontalResize({
+          container: topRow,
+          first: huDisplay,
+          second: clusterDisplay,
+          splitter: huClusterSplitter,
+          storageKey: 'layout:hu-cluster',
+        });
+      }
+
+      const verticalStack = document.getElementById('verticalStack');
+      const logsPanel = document.getElementById('logsPanel');
+      const bottomStack = document.getElementById('bottomStack');
+      const logsBottomSplitter = document.querySelector('.splitter--logs-bottom');
+      if (verticalStack && logsPanel && bottomStack && logsBottomSplitter) {
+        logsPanel.style.flex = '0 0 55%';
+        bottomStack.style.flex = '1 1 auto';
+        setupVerticalResize({
+          container: verticalStack,
+          first: logsPanel,
+          second: bottomStack,
+          splitter: logsBottomSplitter,
+          storageKey: 'layout:logs-bottom',
+        });
+      }
+
+      const bottomPanel = document.getElementById('bottomPanel');
+      const emuPanel = document.getElementById('emuPanel');
+      const bottomRow = document.getElementById('bottomRow');
+      const engineEmuSplitter = document.querySelector('.splitter--engine-emu');
+      const bottomSpacer = document.getElementById('bottomSpacer');
+      const bottomSpacerSplitter = document.querySelector('.splitter--bottom-spacer');
+      if (bottomRow && bottomPanel && emuPanel && engineEmuSplitter) {
+        bottomPanel.style.flex = '0 0 55%';
+        emuPanel.style.flex = '1 1 auto';
+        setupHorizontalResize({
+          container: bottomRow,
+          first: bottomPanel,
+          second: emuPanel,
+          splitter: engineEmuSplitter,
+          storageKey: 'layout:engine-emu',
+        });
+      }
+      if (bottomStack && bottomSpacer && bottomSpacerSplitter) {
+        bottomSpacer.style.flex = '1 1 auto';
+        setupVerticalResize({
+          container: bottomStack,
+          first: bottomRow,
+          second: bottomSpacer,
+          splitter: bottomSpacerSplitter,
+          storageKey: 'layout:bottom-spacer',
+        });
+      }
+
+      // Start live display streams after layout is ready.
+      setupDisplayWebSocket(huCanvas, '/ws/hu');
+      setupDisplayWebSocket(clusterCanvas, '/ws/cluster');
+    });
+
+    setInterval(fetchState, 5000);
+    setInterval(fetchHuConsole, 2000);
+  </script>
+</body>
+</html>

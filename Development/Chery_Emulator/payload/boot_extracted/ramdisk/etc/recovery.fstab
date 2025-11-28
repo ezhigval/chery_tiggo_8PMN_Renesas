@@ -1,0 +1,29 @@
+# Android fstab file.
+#<src>                                           <mnt_point> <type> <mnt_flags and options> <fs_mgr_flags>
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+#/dev/block/platform/soc/ee140000.sd/by-name/bootloader       /bootloader     emmc      defaults      slotselect
+#/dev/block/platform/soc/ee140000.sd/by-name/misc             /misc           emmc      defaults      defaults
+#/dev/block/platform/soc/ee140000.sd/by-name/vbmeta           /vbmeta         emmc      defaults      slotselect
+#/dev/block/platform/soc/ee140000.sd/by-name/boot             /boot           emmc      defaults      slotselect
+#/dev/block/platform/soc/ee140000.sd/by-name/system           /               ext4      defaults      slotselect
+#/dev/block/platform/soc/ee140000.sd/by-name/vendor           /vendor         ext4      defaults      slotselect
+#/dev/block/platform/soc/ee140000.sd/by-name/userdata         /data           ext4      defaults      defaults
+
+# External SD-Card
+#/dev/block/mmcblk1p1                                         /sdcard         vfat      defaults      defaults
+
+
+
+
+/dev/block/platform/vdevs/1c0d0000.virtio_blk/by-name/bootloader       /bootloader     emmc      defaults      slotselect
+/dev/block/platform/vdevs/1c0d0000.virtio_blk/by-name/misc             /misc           emmc      defaults      defaults
+/dev/block/platform/vdevs/1c0d0000.virtio_blk/by-name/vbmeta           /vbmeta         emmc      defaults      slotselect
+/dev/block/platform/vdevs/1c0d0000.virtio_blk/by-name/boot             /boot           emmc      defaults      slotselect
+/dev/block/platform/vdevs/1c0d0000.virtio_blk/by-name/system           /               ext4      defaults      slotselect
+/dev/block/platform/vdevs/1c0d0000.virtio_blk/by-name/vendor           /vendor         ext4      defaults      slotselect
+/dev/block/platform/vdevs/1c0d0000.virtio_blk/by-name/userdata         /data           ext4      defaults      defaults
+
+# External SD-Card
+/dev/block/mmcblk1p1                                         /sdcard         vfat      defaults      defaults

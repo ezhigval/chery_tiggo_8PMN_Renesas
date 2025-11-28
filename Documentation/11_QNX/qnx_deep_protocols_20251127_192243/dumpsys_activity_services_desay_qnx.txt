@@ -1,0 +1,1285 @@
+  * ServiceRecord{9b62010 u0 com.desaysv.mediaapp/com.desaysv.moduleradio.service.RDSSubscribeService}
+    intent={act=com.desaysv.moduleradio.rdsSubscribe pkg=com.desaysv.mediaapp}
+    packageName=com.desaysv.mediaapp
+    processName=com.desaysv.mediaapp
+    baseDir=/product/app/SVMedia/SVMedia.apk
+    dataDir=/data/user/0/com.desaysv.mediaapp
+    app=ProcessRecord{56cdf98 2868:com.desaysv.mediaapp/1000}
+    createTime=-50m16s306ms startingBgTimeout=--
+    lastActivity=-50m16s306ms restartTime=-50m16s306ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{aae8acf u0 com.desaysv.mapservice/.service.LocalService}
+    intent={cmp=com.desaysv.mapservice/.service.LocalService}
+    packageName=com.desaysv.mapservice
+    processName=com.desaysv.mapservice
+    baseDir=/product/app/SVMapService/SVMapService.apk
+    dataDir=/data/user/0/com.desaysv.mapservice
+    app=ProcessRecord{ccf6d78 2569:com.desaysv.mapservice/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=LocalService pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m19s731ms startingBgTimeout=--
+    lastActivity=-50m19s731ms restartTime=-50m19s731ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{30dd2f0 u0 com.desaysv.svhvac/.service.HvacService}
+    intent={cmp=com.desaysv.svhvac/.service.HvacService}
+    packageName=com.desaysv.svhvac
+    processName=com.desaysv.svhvac
+    baseDir=/product/app/SVHvac/SVHvac.apk
+    dataDir=/data/user/0/com.desaysv.svhvac
+    app=ProcessRecord{2a44a6d 3453:com.desaysv.svhvac/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=HvacService pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m10s579ms startingBgTimeout=--
+    lastActivity=-50m10s579ms restartTime=-50m10s579ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{60363a5 u0 com.desaysv.ivi.adapterservice/.services.sdvc.SdvcService}
+    intent={act=desaysv.android.car.ISdvc pkg=com.desaysv.ivi.adapterservice}
+    packageName=com.desaysv.ivi.adapterservice
+    processName=com.desaysv.ivi.adapterservice:sdvc
+    permission=desaysv.permission.PLATFORM_ADAPTER_SERVICE
+    baseDir=/system/app/PlatformAdapter/PlatformAdapter.apk
+    dataDir=/data/user/0/com.desaysv.ivi.adapterservice
+    app=ProcessRecord{359ce00 2225:com.desaysv.ivi.adapterservice:sdvc/1000}
+    createTime=-50m22s613ms startingBgTimeout=--
+    lastActivity=-50m22s471ms restartTime=-50m22s471ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{faffd9b u0 android.ext.services/.notification.Assistant}
+--
+      * Client AppBindRecord{6091b0c ProcessRecord{250679 2457:com.desaysv.svcarinfo/1000}}
+        Per-process Connections:
+          ConnectionRecord{382881f u0 CR com.android.car/.CarService:@252cfbe}
+      * Client AppBindRecord{f665c55 ProcessRecord{2982d0a 2156:com.desaysv.ivi.adapterservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{2095144 u0 CR com.android.car/.CarService:@9e22257}
+          ConnectionRecord{3b29398 u0 CR com.android.car/.CarService:@840697b}
+          ConnectionRecord{9995362 u0 CR com.android.car/.CarService:@352822d}
+      * Client AppBindRecord{d75666a ProcessRecord{359ce00 2225:com.desaysv.ivi.adapterservice:sdvc/1000}}
+        Per-process Connections:
+          ConnectionRecord{59d947e u0 CR com.android.car/.CarService:@e00e639}
+      * Client AppBindRecord{2d175b ProcessRecord{56cdf98 2868:com.desaysv.mediaapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{89c7d7d u0 CR com.android.car/.CarService:@ebbe7d4}
+      * Client AppBindRecord{bb2dbf8 ProcessRecord{666187c 1999:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{7dfbd9a u0 CR com.android.car/.CarService:@b13d245}
+      * Client AppBindRecord{3fd68d1 ProcessRecord{7d1babe 2615:com.desaysv.launcher/1000}}
+        Per-process Connections:
+          ConnectionRecord{b73fa6c u0 CR com.android.car/.CarService:@826971f}
+      * Client AppBindRecord{b7b7f36 ProcessRecord{85dea53 3740:com.desaysv.vehiclesetting/1000}}
+        Per-process Connections:
+          ConnectionRecord{6fe50cb u0 CR com.android.car/.CarService:@faadf9a}
+      * Client AppBindRecord{e1bce37 ProcessRecord{8eed3ab 2527:com.iflytek.cutefly.speechclient.hmi/1000}}
+        Per-process Connections:
+          ConnectionRecord{5812eff u0 CR com.android.car/.CarService:@6da461e}
+      * Client AppBindRecord{35bfa4 ProcessRecord{a441727 3599:com.desaysv.update/1000}}
+        Per-process Connections:
+          ConnectionRecord{5bac41f u0 CR com.android.car/.CarService:@d967bbe}
+          ConnectionRecord{cbbe279 u0 CR com.android.car/.CarService:@2ee1340}
+      * Client AppBindRecord{41ec10d ProcessRecord{b133a3f 3565:com.android.engmode/1000}}
+        Per-process Connections:
+--
+      * Client AppBindRecord{8d516d3 ProcessRecord{ccf6d78 2569:com.desaysv.mapservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{96de0c0 u0 CR com.android.car/.CarService:@ce19243}
+      * Client AppBindRecord{9e13210 ProcessRecord{ed7efae 2839:com.desaysv.vehicle.carplayapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{4b758ba u0 CR com.android.car/.CarService:@1aa65e5}
+          ConnectionRecord{5c52d3c u0 CR com.android.car/.CarService:@c24932f}
+          ConnectionRecord{8b810dc u0 CR com.android.car/.CarService:@b8c414f}
+      * Client AppBindRecord{a836109 ProcessRecord{f3a95ca 3658:com.desaysv.setting/1000}}
+        Per-process Connections:
+          ConnectionRecord{9e0afad u0 CR com.android.car/.CarService:@d65c4c4}
+      * Client AppBindRecord{7773f0e ProcessRecord{f4a6f3d 2915:com.google.android.projection.sink/1000}}
+        Per-process Connections:
+          ConnectionRecord{ee86883 u0 CR com.android.car/.CarService:@6c42332}
+--
+      * Client AppBindRecord{a7804c5 ProcessRecord{69ce46b 2545:com.desaysv.service.bluetooth/1000}}
+        Per-process Connections:
+          ConnectionRecord{f57fadf u0 CR com.android.bluetooth/.a2dpsink.mbs.A2dpMediaBrowserService:@a9f557e}
+    All Connections:
+      ConnectionRecord{f57fadf u0 CR com.android.bluetooth/.a2dpsink.mbs.A2dpMediaBrowserService:@a9f557e}
+
+  * ServiceRecord{36a3050 u0 com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService}
+    intent={cmp=com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService}
+    packageName=com.desaysv.vrservice
+    processName=com.desaysv.vrservice
+    baseDir=/product/app/SVVRService/SVVRService.apk
+    dataDir=/data/user/0/com.desaysv.vrservice
+    app=ProcessRecord{46da82 2596:com.desaysv.vrservice/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=SvVrAdapter pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m19s417ms startingBgTimeout=--
+    lastActivity=-50m6s128ms restartTime=-50m19s416ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Delivered Starts:
+--
+      intent=Intent { cmp=com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService }
+    Bindings:
+    * IntentBindRecord{bec3e1a CREATE}:
+      intent={cmp=com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService}
+      binder=android.os.BinderProxy@9e8d4b
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{5913328 ProcessRecord{2a44a6d 3453:com.desaysv.svhvac/1000}}
+        Per-process Connections:
+          ConnectionRecord{871fa9d u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@3f2a574}
+      * Client AppBindRecord{5592841 ProcessRecord{30879c0 3423:com.desaysv.vrcontrolmgr/1000}}
+        Per-process Connections:
+          ConnectionRecord{aad99b5 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@8db71ec}
+      * Client AppBindRecord{48021e6 ProcessRecord{56cdf98 2868:com.desaysv.mediaapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{cf5ae96 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@f0f39b1}
+      * Client AppBindRecord{2c6b327 ProcessRecord{69ce46b 2545:com.desaysv.service.bluetooth/1000}}
+        Per-process Connections:
+          ConnectionRecord{18718a5 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@fa0d69c}
+      * Client AppBindRecord{5a59d4 ProcessRecord{9072b7e 3330:com.desaysv.usbpicture/1000}}
+        Per-process Connections:
+          ConnectionRecord{4283c18 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@cd963fb}
+      * Client AppBindRecord{bcf077d ProcessRecord{dee21bc 3366:com.desaysv.usbvideoapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{42180c1 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@8599da8}
+      * Client AppBindRecord{31c7672 ProcessRecord{f3a95ca 3658:com.desaysv.setting/1000}}
+        Per-process Connections:
+          ConnectionRecord{2c3673 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@6ffb2e2}
+    All Connections:
+      ConnectionRecord{871fa9d u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@3f2a574}
+      ConnectionRecord{2c3673 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@6ffb2e2}
+      ConnectionRecord{42180c1 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@8599da8}
+      ConnectionRecord{aad99b5 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@8db71ec}
+      ConnectionRecord{4283c18 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@cd963fb}
+      ConnectionRecord{cf5ae96 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@f0f39b1}
+      ConnectionRecord{18718a5 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@fa0d69c}
+
+  * ServiceRecord{8ec1966 u0 com.android.bluetooth/.btservice.AdapterService}
+    intent={act=android.bluetooth.IBluetooth cmp=com.android.bluetooth/.btservice.AdapterService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+--
+  * ServiceRecord{56829ca u0 com.desaysv.svcarinfo/.common.service.CommonService}
+    intent={cmp=com.desaysv.svcarinfo/.common.service.CommonService}
+    packageName=com.desaysv.svcarinfo
+    processName=com.desaysv.svcarinfo
+    baseDir=/product/app/SVCarInfoService/SVCarInfoService.apk
+    dataDir=/data/user/0/com.desaysv.svcarinfo
+    app=ProcessRecord{250679 2457:com.desaysv.svcarinfo/1000}
+    createTime=-50m20s582ms startingBgTimeout=--
+    lastActivity=-50m20s582ms restartTime=-50m20s582ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{f66a61f u0 com.android.bluetooth/.gatt.GattService}
+--
+  * ServiceRecord{64cba73 u0 com.desaysv.bluetooth.phone/.service.PhoneCallService}
+    intent={cmp=com.desaysv.bluetooth.phone/.service.PhoneCallService}
+    packageName=com.desaysv.bluetooth.phone
+    processName=com.desaysv.bluetooth.phone
+    baseDir=/product/app/SVBtPhone/SVBtPhone.apk
+    dataDir=/data/user/0/com.desaysv.bluetooth.phone
+    app=ProcessRecord{6bd6a7e 2493:com.desaysv.bluetooth.phone/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=PhoneCallService pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m19s844ms startingBgTimeout=--
+    lastActivity=-50m19s843ms restartTime=-50m19s843ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{f9b80d3 u0 com.desaysv.carlan/.CarLanService}
+    intent={act=com.desaysv.carlan.ICarLan pkg=com.desaysv.carlan}
+    packageName=com.desaysv.carlan
+    processName=com.desaysv.carlan
+    baseDir=/system/priv-app/CarLanService/CarLanService.apk
+    dataDir=/data/user/0/com.desaysv.carlan
+    app=ProcessRecord{27186eb 2207:com.desaysv.carlan/1000}
+    createTime=-50m22s682ms startingBgTimeout=--
+    lastActivity=-50m6s113ms restartTime=-50m22s558ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{39ba3b1 CREATE}:
+      intent={act=com.desaysv.carlan.ICarLan pkg=com.desaysv.carlan}
+      binder=android.os.BinderProxy@10ad096
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{72cb417 ProcessRecord{250679 2457:com.desaysv.svcarinfo/1000}}
+        Per-process Connections:
+          ConnectionRecord{be69135 u0 CR com.desaysv.carlan/.CarLanService:@b07976c}
+      * Client AppBindRecord{db1e004 ProcessRecord{27186eb 2207:com.desaysv.carlan/1000}}
+        Per-process Connections:
+          ConnectionRecord{374d4f4 u0 CR com.desaysv.carlan/.CarLanService:@55fa6c7}
+          ConnectionRecord{64bcae1 u0 CR com.desaysv.carlan/.CarLanService:@6343c48}
+      * Client AppBindRecord{e15c9ed ProcessRecord{2982d0a 2156:com.desaysv.ivi.adapterservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{b140fd6 u0 CR com.desaysv.carlan/.CarLanService:@b9157f1}
+      * Client AppBindRecord{d1b6022 ProcessRecord{33ef6e9 2639:com.desaysv.meterinteraction/1000}}
+        Per-process Connections:
+          ConnectionRecord{aa9860f u0 CR com.desaysv.carlan/.CarLanService:@2404f6e}
+      * Client AppBindRecord{83e7ab3 ProcessRecord{56cdf98 2868:com.desaysv.mediaapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{282df35 u0 CR com.desaysv.carlan/.CarLanService:@4c5d6c}
+      * Client AppBindRecord{56ef870 ProcessRecord{666187c 1999:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{285dd54 u0 CR com.desaysv.carlan/.CarLanService:@72814a7}
+      * Client AppBindRecord{69217e9 ProcessRecord{69ce46b 2545:com.desaysv.service.bluetooth/1000}}
+        Per-process Connections:
+          ConnectionRecord{d542461 u0 CR com.desaysv.carlan/.CarLanService:@4280bc8}
+      * Client AppBindRecord{6b35c6e ProcessRecord{6e69656 2694:com.desaysv.tboxservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{d4b7bc4 u0 CR com.desaysv.carlan/.CarLanService:@e8066d7}
+      * Client AppBindRecord{b9c0f0f ProcessRecord{7d1babe 2615:com.desaysv.launcher/1000}}
+        Per-process Connections:
+          ConnectionRecord{9ca98d2 u0 CR com.desaysv.carlan/.CarLanService:@f70b75d}
+          ConnectionRecord{a066c59 u0 CR com.desaysv.carlan/.CarLanService:@c718a0}
+      * Client AppBindRecord{2a32b9c ProcessRecord{9072b7e 3330:com.desaysv.usbpicture/1000}}
+        Per-process Connections:
+          ConnectionRecord{766818a u0 CR com.desaysv.carlan/.CarLanService:@98c6ff5}
+      * Client AppBindRecord{d6b49a5 ProcessRecord{a441727 3599:com.desaysv.update/1000}}
+        Per-process Connections:
+          ConnectionRecord{4650b7d u0 CR com.desaysv.carlan/.CarLanService:@d35edd4}
+      * Client AppBindRecord{1bcd17a ProcessRecord{b133a3f 3565:com.android.engmode/1000}}
+        Per-process Connections:
+          ConnectionRecord{bc22cd1 u0 CR com.desaysv.carlan/.CarLanService:@402ff8}
+      * Client AppBindRecord{3948d2b ProcessRecord{c0b19b2 2161:dsv.carstate.service/1000}}
+        Per-process Connections:
+          ConnectionRecord{68e2ac2 u0 CR com.desaysv.carlan/.CarLanService:@6009b0d}
+      * Client AppBindRecord{3856588 ProcessRecord{ccf6d78 2569:com.desaysv.mapservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{2ba2cb6 u0 CR com.desaysv.carlan/.CarLanService:@a7c5c51}
+      * Client AppBindRecord{3ebdb21 ProcessRecord{dee21bc 3366:com.desaysv.usbvideoapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{bcb049a u0 CR com.desaysv.carlan/.CarLanService:@13d545}
+      * Client AppBindRecord{4b68b46 ProcessRecord{ed7efae 2839:com.desaysv.vehicle.carplayapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{8235ec8 u0 CR com.desaysv.carlan/.CarLanService:@8f5a36b}
+      * Client AppBindRecord{e4cd107 ProcessRecord{f3a95ca 3658:com.desaysv.setting/1000}}
+        Per-process Connections:
+          ConnectionRecord{6d6e85c u0 CR com.desaysv.carlan/.CarLanService:@909c6cf}
+      * Client AppBindRecord{cf5234 ProcessRecord{f4a6f3d 2915:com.google.android.projection.sink/1000}}
+        Per-process Connections:
+          ConnectionRecord{b012d9f u0 CR com.desaysv.carlan/.CarLanService:@2b69b3e}
+    All Connections:
+      ConnectionRecord{bcb049a u0 CR com.desaysv.carlan/.CarLanService:@13d545}
+      ConnectionRecord{bc22cd1 u0 CR com.desaysv.carlan/.CarLanService:@402ff8}
+      ConnectionRecord{282df35 u0 CR com.desaysv.carlan/.CarLanService:@4c5d6c}
+      ConnectionRecord{a066c59 u0 CR com.desaysv.carlan/.CarLanService:@c718a0}
+      ConnectionRecord{aa9860f u0 CR com.desaysv.carlan/.CarLanService:@2404f6e}
+      ConnectionRecord{b012d9f u0 CR com.desaysv.carlan/.CarLanService:@2b69b3e}
+      ConnectionRecord{d542461 u0 CR com.desaysv.carlan/.CarLanService:@4280bc8}
+      ConnectionRecord{374d4f4 u0 CR com.desaysv.carlan/.CarLanService:@55fa6c7}
+      ConnectionRecord{68e2ac2 u0 CR com.desaysv.carlan/.CarLanService:@6009b0d}
+      ConnectionRecord{64bcae1 u0 CR com.desaysv.carlan/.CarLanService:@6343c48}
+      ConnectionRecord{285dd54 u0 CR com.desaysv.carlan/.CarLanService:@72814a7}
+      ConnectionRecord{8235ec8 u0 CR com.desaysv.carlan/.CarLanService:@8f5a36b}
+      ConnectionRecord{6d6e85c u0 CR com.desaysv.carlan/.CarLanService:@909c6cf}
+      ConnectionRecord{766818a u0 CR com.desaysv.carlan/.CarLanService:@98c6ff5}
+      ConnectionRecord{2ba2cb6 u0 CR com.desaysv.carlan/.CarLanService:@a7c5c51}
+      ConnectionRecord{be69135 u0 CR com.desaysv.carlan/.CarLanService:@b07976c}
+      ConnectionRecord{b140fd6 u0 CR com.desaysv.carlan/.CarLanService:@b9157f1}
+      ConnectionRecord{4650b7d u0 CR com.desaysv.carlan/.CarLanService:@d35edd4}
+      ConnectionRecord{d4b7bc4 u0 CR com.desaysv.carlan/.CarLanService:@e8066d7}
+      ConnectionRecord{9ca98d2 u0 CR com.desaysv.carlan/.CarLanService:@f70b75d}
+
+  * ServiceRecord{59ca509 u0 com.android.engmode/.ui.ActJumpService}
+    intent={cmp=com.android.engmode/.ui.ActJumpService}
+    packageName=com.android.engmode
+    processName=com.android.engmode
+--
+  * ServiceRecord{4dd4c81 u0 com.desaysv.ivi.adapterservice/.base.SvAdapterService}
+    intent={act=desaysv.adapterservice.base.SvAdapterService pkg=com.desaysv.ivi.adapterservice}
+    packageName=com.desaysv.ivi.adapterservice
+    processName=com.desaysv.ivi.adapterservice
+    permission=desaysv.permission.PLATFORM_ADAPTER_SERVICE
+    baseDir=/system/app/PlatformAdapter/PlatformAdapter.apk
+    dataDir=/data/user/0/com.desaysv.ivi.adapterservice
+    app=ProcessRecord{2982d0a 2156:com.desaysv.ivi.adapterservice/1000}
+    createTime=-50m23s73ms startingBgTimeout=--
+    lastActivity=-50m22s992ms restartTime=-50m22s992ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{b480ae6 u0 com.android.bluetooth/.avrcpcontroller.AvrcpControllerService}
+--
+      * Client AppBindRecord{d5b76a3 ProcessRecord{69ce46b 2545:com.desaysv.service.bluetooth/1000}}
+        Per-process Connections:
+          ConnectionRecord{1b50cd5 u0 com.android.bluetooth/.avrcpcontroller.AvrcpControllerService:@79a3d8c}
+    All Connections:
+      ConnectionRecord{1b50cd5 u0 com.android.bluetooth/.avrcpcontroller.AvrcpControllerService:@79a3d8c}
+
+--
+      * Client AppBindRecord{b24d9ff ProcessRecord{69ce46b 2545:com.desaysv.service.bluetooth/1000}}
+        Per-process Connections:
+          ConnectionRecord{87a63f4 u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@1d611c7}
+      * Client AppBindRecord{356b3cc ProcessRecord{85b22a9 2254:com.android.bluetooth/1002}}
+        Per-process Connections:
+          ConnectionRecord{508f7cf u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@b13702e}
+--
+      * Client AppBindRecord{12140b8 ProcessRecord{ed7efae 2839:com.desaysv.vehicle.carplayapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{fd99255 u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@c0f690c}
+      * Client AppBindRecord{330ce91 ProcessRecord{f3a95ca 3658:com.desaysv.setting/1000}}
+        Per-process Connections:
+          ConnectionRecord{27724ef u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@7179dce}
+      * Client AppBindRecord{fde51f6 ProcessRecord{f4a6f3d 2915:com.google.android.projection.sink/1000}}
+        Per-process Connections:
+          ConnectionRecord{30d5706 u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@6f37de1}
+--
+  * ServiceRecord{f95701e u0 com.desaysv.launcher/com.desaysv.appmenu.service.MenuUpdateService}
+    intent={cmp=com.desaysv.launcher/com.desaysv.appmenu.service.MenuUpdateService}
+    packageName=com.desaysv.launcher
+    processName=com.desaysv.launcher
+    baseDir=/product/priv-app/Launcher2_T1D/Launcher2_T1D.apk
+    dataDir=/data/user/0/com.desaysv.launcher
+    app=ProcessRecord{7d1babe 2615:com.desaysv.launcher/1000}
+    isForeground=true foregroundId=2 foregroundNoti=Notification(channel=MenuUpdateService pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m19s77ms startingBgTimeout=--
+    lastActivity=-50m19s77ms restartTime=-50m19s77ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{55a4f47 u0 com.desaysv.ivi.adapterservice/.services.udis.UploadDeviceInfoService}
+    intent={cmp=com.desaysv.ivi.adapterservice/.services.udis.UploadDeviceInfoService}
+    packageName=com.desaysv.ivi.adapterservice
+    processName=com.desaysv.ivi.adapterservice
+    baseDir=/system/app/PlatformAdapter/PlatformAdapter.apk
+    dataDir=/data/user/0/com.desaysv.ivi.adapterservice
+    app=ProcessRecord{2982d0a 2156:com.desaysv.ivi.adapterservice/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=1 pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE)
+    createTime=-50m22s626ms startingBgTimeout=--
+    lastActivity=-50m22s626ms restartTime=-50m22s626ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{8e609f7 CREATE}:
+      intent={cmp=com.desaysv.ivi.adapterservice/.services.udis.UploadDeviceInfoService}
+      binder=android.os.BinderProxy@d05b064
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{882c2cd ProcessRecord{2982d0a 2156:com.desaysv.ivi.adapterservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{c2e1a86 u0 CR com.desaysv.ivi.adapterservice/.services.udis.UploadDeviceInfoService:@bd71f61}
+    All Connections:
+      ConnectionRecord{c2e1a86 u0 CR com.desaysv.ivi.adapterservice/.services.udis.UploadDeviceInfoService:@bd71f61}
+
+  * ServiceRecord{3bfecf0 u0 com.desaysv.vehicle.carplayapp/.CarplayService}
+    intent={act=com.desaysv.vehicle.carplayapp.carplayservice pkg=com.desaysv.vehicle.carplayapp}
+    packageName=com.desaysv.vehicle.carplayapp
+    processName=com.desaysv.vehicle.carplayapp
+    baseDir=/product/app/Carplay/Carplay.apk
+    dataDir=/data/user/0/com.desaysv.vehicle.carplayapp
+    app=ProcessRecord{ed7efae 2839:com.desaysv.vehicle.carplayapp/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=Carplay_Service_Channel_Id pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m19s33ms startingBgTimeout=--
+    lastActivity=-50m6s453ms restartTime=-50m18s269ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+    Bindings:
+--
+      intent={act=com.desaysv.vehicle.carplayapp.carplayservice pkg=com.desaysv.vehicle.carplayapp}
+      binder=android.os.BinderProxy@a674e93
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{9f6ed0 ProcessRecord{2a44a6d 3453:com.desaysv.svhvac/1000}}
+        Per-process Connections:
+          ConnectionRecord{2565d87 u0 CR com.desaysv.vehicle.carplayapp/.CarplayService:@8f479c6}
+      * Client AppBindRecord{c85bec9 ProcessRecord{33ef6e9 2639:com.desaysv.meterinteraction/1000}}
+        Per-process Connections:
+          ConnectionRecord{6f331cd u0 CR com.desaysv.vehicle.carplayapp/.CarplayService:@c467b64}
+      * Client AppBindRecord{d89a9ce ProcessRecord{f3a95ca 3658:com.desaysv.setting/1000}}
+        Per-process Connections:
+          ConnectionRecord{2993b1b u0 CR com.desaysv.vehicle.carplayapp/.CarplayService:@cb0c12a}
+    All Connections:
+      ConnectionRecord{2565d87 u0 CR com.desaysv.vehicle.carplayapp/.CarplayService:@8f479c6}
+      ConnectionRecord{6f331cd u0 CR com.desaysv.vehicle.carplayapp/.CarplayService:@c467b64}
+      ConnectionRecord{2993b1b u0 CR com.desaysv.vehicle.carplayapp/.CarplayService:@cb0c12a}
+
+  * ServiceRecord{6ef4106 u0 com.iflytek.autofly.sceneengine/.VpaDataService}
+    intent={act=com.iflytek.autofly.sceneengine.DATAUPLOAD pkg=com.iflytek.autofly.sceneengine}
+    packageName=com.iflytek.autofly.sceneengine
+    processName=com.iflytek.autofly.sceneengine
+--
+  * ServiceRecord{db0a46e u0 com.desaysv.service.bluetooth/.service.BootResumeSourceService}
+    intent={act=com.desaysv.action.resumeSource cmp=com.desaysv.service.bluetooth/.service.BootResumeSourceService}
+    packageName=com.desaysv.service.bluetooth
+    processName=com.desaysv.service.bluetooth
+    baseDir=/product/app/SVBtService/SVBtService.apk
+    dataDir=/data/user/0/com.desaysv.service.bluetooth
+    app=ProcessRecord{69ce46b 2545:com.desaysv.service.bluetooth/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=com.desaysv.service.bluetooth pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m20s750ms startingBgTimeout=--
+    lastActivity=-50m20s482ms restartTime=-50m20s482ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{a3f3da3 u0 com.desaysv.launcher/com.desaysv.screensaver.service.ScreensaverService}
+    intent={cmp=com.desaysv.launcher/com.desaysv.screensaver.service.ScreensaverService}
+    packageName=com.desaysv.launcher
+    processName=com.desaysv.launcher
+    baseDir=/product/priv-app/Launcher2_T1D/Launcher2_T1D.apk
+    dataDir=/data/user/0/com.desaysv.launcher
+    app=ProcessRecord{7d1babe 2615:com.desaysv.launcher/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=ScreensaverService pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m19s90ms startingBgTimeout=--
+    lastActivity=-50m19s89ms restartTime=-50m19s89ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+--
+  * ServiceRecord{c3afaf6 u0 com.desaysv.ftpserver/.FtpServiceDeamon}
+    intent={act=android.intent.action.ftpserver pkg=com.desaysv.ftpserver cmp=com.desaysv.ftpserver/.FtpServiceDeamon}
+    packageName=com.desaysv.ftpserver
+    processName=com.desaysv.ftpserver
+    baseDir=/product/app/FtpServer/FtpServer.apk
+    dataDir=/data/user/0/com.desaysv.ftpserver
+    app=ProcessRecord{1d4a7fc 3276:com.desaysv.ftpserver/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=Desaysv_FtpService pri=0 contentView=null vibrate=null sound=null tick defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE)
+    createTime=-50m12s995ms startingBgTimeout=--
+    lastActivity=-50m12s995ms restartTime=-50m12s995ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{e7eff85 u0 android/.hardware.location.GeofenceHardwareService}
+--
+      * Client AppBindRecord{f9d24a6 ProcessRecord{69ce46b 2545:com.desaysv.service.bluetooth/1000}}
+        Per-process Connections:
+          ConnectionRecord{8a0fab7 u0 com.android.bluetooth/.mapclient.MapClientService:@a5f8db6}
+      * Client AppBindRecord{5775ee7 ProcessRecord{bb7c0a1 2190:com.android.car/1000}}
+        Per-process Connections:
+          ConnectionRecord{2f2061a u0 com.android.bluetooth/.mapclient.MapClientService:@657ecc5}
+--
+      * Client AppBindRecord{4e6e532 ProcessRecord{69ce46b 2545:com.desaysv.service.bluetooth/1000}}
+        Per-process Connections:
+          ConnectionRecord{573a678 u0 com.android.bluetooth/.pbapclient.PbapClientService:@9a07bdb}
+      * Client AppBindRecord{6d10283 ProcessRecord{bb7c0a1 2190:com.android.car/1000}}
+        Per-process Connections:
+          ConnectionRecord{20fe3f8 u0 com.android.bluetooth/.pbapclient.PbapClientService:@1393f5b}
+--
+      * Client AppBindRecord{a142c00 ProcessRecord{f3a95ca 3658:com.desaysv.setting/1000}}
+        Per-process Connections:
+          ConnectionRecord{cf78e94 u0 com.android.bluetooth/.pbapclient.PbapClientService:@af8c2e7}
+    All Connections:
+      ConnectionRecord{20fe3f8 u0 com.android.bluetooth/.pbapclient.PbapClientService:@1393f5b}
+      ConnectionRecord{9192c38 u0 com.android.bluetooth/.pbapclient.PbapClientService:@375809b}
+--
+      * Client AppBindRecord{39743df ProcessRecord{33ef6e9 2639:com.desaysv.meterinteraction/1000}}
+        Per-process Connections:
+          ConnectionRecord{ddb56ea u0 CR com.iflytek.cutefly.speechclient.hmi/com.iflytek.auto.speechclient.sdk.tts.TtsAdapterService:@7e3bed5}
+      * Client AppBindRecord{b90082c ProcessRecord{a1a69e6 2275:com.android.systemui/u0a16}}
+        Per-process Connections:
+          ConnectionRecord{a8cbe58 u0 CR com.iflytek.cutefly.speechclient.hmi/com.iflytek.auto.speechclient.sdk.tts.TtsAdapterService:@651873b}
+--
+  * ServiceRecord{9d6ec41 u0 com.desaysv.update/.UpdateService}
+    intent={act=com.desaysv.update.UpdateApi pkg=com.desaysv.update}
+    packageName=com.desaysv.update
+    processName=com.desaysv.update
+    baseDir=/product/app/SVUpdateApp/SVUpdateApp.apk
+    dataDir=/data/user/0/com.desaysv.update
+    app=ProcessRecord{a441727 3599:com.desaysv.update/1000}
+    createTime=-50m8s227ms startingBgTimeout=--
+    lastActivity=-50m7s931ms restartTime=-50m7s931ms createdFromFg=false
+    Bindings:
+    * IntentBindRecord{cd912f5 CREATE}:
+      intent={act=com.desaysv.update.UpdateApi pkg=com.desaysv.update}
+      binder=android.os.BinderProxy@ab1e88a
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{7563efb ProcessRecord{b133a3f 3565:com.android.engmode/1000}}
+        Per-process Connections:
+          ConnectionRecord{3b83237 u0 CR com.desaysv.update/.UpdateService:@5faf336}
+    All Connections:
+      ConnectionRecord{3b83237 u0 CR com.desaysv.update/.UpdateService:@5faf336}
+
+  * ServiceRecord{4265caa u0 com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService}
+    intent={cmp=com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService}
+    packageName=com.estrongs.android.pop
+    processName=com.estrongs.android.pop
+--
+  * ServiceRecord{f110012 u0 com.desaysv.mediaprovider/.service.MediaScanService}
+    intent={cmp=com.desaysv.mediaprovider/.service.MediaScanService}
+    packageName=com.desaysv.mediaprovider
+    processName=com.desaysv.mediaprovider
+    baseDir=/product/app/SVMediaProvider/SVMediaProvider.apk
+    dataDir=/data/user/0/com.desaysv.mediaprovider
+    app=ProcessRecord{3fcfd7 3009:com.desaysv.mediaprovider/1000}
+    createTime=-50m14s10ms startingBgTimeout=--
+    lastActivity=-50m14s10ms restartTime=-50m14s10ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{c67843b u0 com.android.bluetooth/.hfpclient.connserv.HfpClientConnectionService}
+--
+  * ServiceRecord{44e1add u0 com.google.android.projection.sink/com.desaysv.auto.projection.AndroidAutoService}
+    intent={cmp=com.google.android.projection.sink/com.desaysv.auto.projection.AndroidAutoService}
+    packageName=com.google.android.projection.sink
+    processName=com.google.android.projection.sink
+    permission=com.desaysv.permission.ACCESS_ANDROID_AUTO_SERVICE
+    baseDir=/product/app/DesaySVAndroidAuto/DesaySVAndroidAuto.apk
+    dataDir=/data/user/0/com.google.android.projection.sink
+    app=ProcessRecord{f4a6f3d 2915:com.google.android.projection.sink/1000}
+    isForeground=true foregroundId=2915 foregroundNoti=Notification(channel=AndroidAuto_Service_Channel_Id pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m17s726ms startingBgTimeout=--
+    lastActivity=-50m12s916ms restartTime=-50m17s639ms createdFromFg=true
+--
+      intent={cmp=com.google.android.projection.sink/com.desaysv.auto.projection.AndroidAutoService}
+      binder=android.os.BinderProxy@51dabad
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{cbefee2 ProcessRecord{5d063c6 2779:com.desaysv.service.link/u0a24}}
+        Per-process Connections:
+          ConnectionRecord{1a61eb4 u0 CR com.google.android.projection.sink/com.desaysv.auto.projection.AndroidAutoService:@944ff87}
+    All Connections:
+      ConnectionRecord{1a61eb4 u0 CR com.google.android.projection.sink/com.desaysv.auto.projection.AndroidAutoService:@944ff87}
+
+  * ServiceRecord{1c3a9c1 u0 com.iqqijni.car.keyboard/com.iqqijni.car.imeservice.IMEService}
+    intent={act=android.view.InputMethod cmp=com.iqqijni.car.keyboard/com.iqqijni.car.imeservice.IMEService}
+    packageName=com.iqqijni.car.keyboard
+    processName=com.iqqijni.car.keyboard
+--
+  * ServiceRecord{da8adb7 u0 com.desaysv.tboxservice/.service.TBoxManagerService}
+    intent={cmp=com.desaysv.tboxservice/.service.TBoxManagerService}
+    packageName=com.desaysv.tboxservice
+    processName=com.desaysv.tboxservice
+    baseDir=/product/app/SVTBoxService/SVTBoxService.apk
+    dataDir=/data/user/0/com.desaysv.tboxservice
+    app=ProcessRecord{6e69656 2694:com.desaysv.tboxservice/1000}
+    createTime=-50m20s399ms startingBgTimeout=--
+    lastActivity=-50m6s669ms restartTime=-50m19s640ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{fee2cf CREATE}:
+      intent={cmp=com.desaysv.tboxservice/.service.TBoxManagerService}
+      binder=android.os.BinderProxy@bbd45c
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{5d5a365 ProcessRecord{a1a69e6 2275:com.android.systemui/u0a16}}
+        Per-process Connections:
+          ConnectionRecord{5bcc563 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@138552a}
+          ConnectionRecord{76b3f1b u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@138552a}
+          ConnectionRecord{fc648b8 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@138552a}
+      * Client AppBindRecord{8dd883a ProcessRecord{b133a3f 3565:com.android.engmode/1000}}
+        Per-process Connections:
+          ConnectionRecord{450610 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@5d3bad3}
+          ConnectionRecord{1881422 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@5d3bad3}
+          ConnectionRecord{bf1330e u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@5d3bad3}
+    All Connections:
+      ConnectionRecord{76b3f1b u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@138552a}
+      ConnectionRecord{fc648b8 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@138552a}
+      ConnectionRecord{5bcc563 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@138552a}
+      ConnectionRecord{450610 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@5d3bad3}
+      ConnectionRecord{bf1330e u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@5d3bad3}
+      ConnectionRecord{1881422 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@5d3bad3}
+
+  * ServiceRecord{bba878b u0 com.android.server.telecom/.components.TelecomService}
+    intent={act=com.android.ITelecomService cmp=com.android.server.telecom/.components.TelecomService}
+    packageName=com.android.server.telecom
+    processName=system
+--
+  * ServiceRecord{4a07b61 u0 com.desaysv.mediaservice/.service.AIDLAudioFocusService}
+    intent={cmp=com.desaysv.mediaservice/.service.AIDLAudioFocusService}
+    packageName=com.desaysv.mediaservice
+    processName=com.desaysv.mediaservice
+    baseDir=/product/app/SVMediaService/SVMediaService.apk
+    dataDir=/data/user/0/com.desaysv.mediaservice
+    app=ProcessRecord{7595990 2983:com.desaysv.mediaservice/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=com.desaysv.mediaservice pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m16s637ms startingBgTimeout=--
+    lastActivity=-50m16s503ms restartTime=-50m16s503ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{2dda1d CREATE}:
+      intent={cmp=com.desaysv.mediaservice/.service.AIDLAudioFocusService}
+      binder=android.os.BinderProxy@b68e492
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{c39fe63 ProcessRecord{56cdf98 2868:com.desaysv.mediaapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{a353bd6 u0 CR com.desaysv.mediaservice/.service.AIDLAudioFocusService:@30bb3f1}
+    All Connections:
+      ConnectionRecord{a353bd6 u0 CR com.desaysv.mediaservice/.service.AIDLAudioFocusService:@30bb3f1}
+
+  * ServiceRecord{6c3ef7d u0 com.desaysv.svcarinfo/.CarInfoService}
+    intent={cmp=com.desaysv.svcarinfo/.CarInfoService}
+    packageName=com.desaysv.svcarinfo
+    processName=com.desaysv.svcarinfo
+    baseDir=/product/app/SVCarInfoService/SVCarInfoService.apk
+    dataDir=/data/user/0/com.desaysv.svcarinfo
+    app=ProcessRecord{250679 2457:com.desaysv.svcarinfo/1000}
+    createTime=-50m20s744ms startingBgTimeout=--
+    lastActivity=-48m12s152ms restartTime=-50m20s744ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{3c5aa60 CREATE}:
+      intent={cmp=com.desaysv.svcarinfo/.CarInfoService}
+      binder=android.os.BinderProxy@b52fb19
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{92cb7de ProcessRecord{2a44a6d 3453:com.desaysv.svhvac/1000}}
+        Per-process Connections:
+          ConnectionRecord{fe2f33 u0 CR com.desaysv.svcarinfo/.CarInfoService:@bef16a2}
+      * Client AppBindRecord{bc41dbf ProcessRecord{30879c0 3423:com.desaysv.vrcontrolmgr/1000}}
+        Per-process Connections:
+          ConnectionRecord{713863e u0 CR com.desaysv.svcarinfo/.CarInfoService:@a3486f9}
+      * Client AppBindRecord{44b0c8c ProcessRecord{33ef6e9 2639:com.desaysv.meterinteraction/1000}}
+        Per-process Connections:
+          ConnectionRecord{8acbe1b u0 CR com.desaysv.svcarinfo/.CarInfoService:@6a4702a}
+      * Client AppBindRecord{20f2fd5 ProcessRecord{6bd6a7e 2493:com.desaysv.bluetooth.phone/1000}}
+        Per-process Connections:
+          ConnectionRecord{443bda9 u0 CR com.desaysv.svcarinfo/.CarInfoService:@76c9d30}
+      * Client AppBindRecord{4c873ea ProcessRecord{6e69656 2694:com.desaysv.tboxservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{5ba34a9 u0 CR com.desaysv.svcarinfo/.CarInfoService:@9669030}
+      * Client AppBindRecord{da6d6db ProcessRecord{7d1babe 2615:com.desaysv.launcher/1000}}
+        Per-process Connections:
+          ConnectionRecord{e21324e u0 CR com.desaysv.svcarinfo/.CarInfoService:@71c1949}
+      * Client AppBindRecord{de26578 ProcessRecord{85dea53 3740:com.desaysv.vehiclesetting/1000}}
+        Per-process Connections:
+          ConnectionRecord{fdd2089 u0 CR com.desaysv.svcarinfo/.CarInfoService:@c943f90}
+      * Client AppBindRecord{71ff451 ProcessRecord{8eed3ab 2527:com.iflytek.cutefly.speechclient.hmi/1000}}
+        Per-process Connections:
+          ConnectionRecord{15bc5a1 u0 CR com.desaysv.svcarinfo/.CarInfoService:@3706a08}
+      * Client AppBindRecord{cb1e4b6 ProcessRecord{a1a69e6 2275:com.android.systemui/u0a16}}
+        Per-process Connections:
+          ConnectionRecord{bf1e1d4 u0 CR com.desaysv.svcarinfo/.CarInfoService:@7675b27}
+      * Client AppBindRecord{63205b7 ProcessRecord{a441727 3599:com.desaysv.update/1000}}
+        Per-process Connections:
+          ConnectionRecord{950fec3 u0 CR com.desaysv.svcarinfo/.CarInfoService:@8342a72}
+      * Client AppBindRecord{3946124 ProcessRecord{b133a3f 3565:com.android.engmode/1000}}
+        Per-process Connections:
+          ConnectionRecord{9a6e055 u0 CR com.desaysv.svcarinfo/.CarInfoService:@ea92f0c}
+      * Client AppBindRecord{19e848d ProcessRecord{c0bf278 4129:com.desaysv.assistant/1000}}
+        Per-process Connections:
+          ConnectionRecord{48eb9b6 u0 CR com.desaysv.svcarinfo/.CarInfoService:@5c6fd51}
+      * Client AppBindRecord{eef9642 ProcessRecord{ccf6d78 2569:com.desaysv.mapservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{9fb9233 u0 CR com.desaysv.svcarinfo/.CarInfoService:@cc825a2}
+      * Client AppBindRecord{4d74653 ProcessRecord{f3a95ca 3658:com.desaysv.setting/1000}}
+        Per-process Connections:
+          ConnectionRecord{ed30a58 u0 CR com.desaysv.svcarinfo/.CarInfoService:@9d1833b}
+      * Client AppBindRecord{e486b90 ProcessRecord{f4a6f3d 2915:com.google.android.projection.sink/1000}}
+        Per-process Connections:
+          ConnectionRecord{c6caba9 u0 CR com.desaysv.svcarinfo/.CarInfoService:@c8330}
+    All Connections:
+      ConnectionRecord{c6caba9 u0 CR com.desaysv.svcarinfo/.CarInfoService:@c8330}
+      ConnectionRecord{15bc5a1 u0 CR com.desaysv.svcarinfo/.CarInfoService:@3706a08}
+      ConnectionRecord{48eb9b6 u0 CR com.desaysv.svcarinfo/.CarInfoService:@5c6fd51}
+      ConnectionRecord{8acbe1b u0 CR com.desaysv.svcarinfo/.CarInfoService:@6a4702a}
+      ConnectionRecord{e21324e u0 CR com.desaysv.svcarinfo/.CarInfoService:@71c1949}
+      ConnectionRecord{bf1e1d4 u0 CR com.desaysv.svcarinfo/.CarInfoService:@7675b27}
+      ConnectionRecord{443bda9 u0 CR com.desaysv.svcarinfo/.CarInfoService:@76c9d30}
+      ConnectionRecord{950fec3 u0 CR com.desaysv.svcarinfo/.CarInfoService:@8342a72}
+      ConnectionRecord{5ba34a9 u0 CR com.desaysv.svcarinfo/.CarInfoService:@9669030}
+      ConnectionRecord{ed30a58 u0 CR com.desaysv.svcarinfo/.CarInfoService:@9d1833b}
+      ConnectionRecord{713863e u0 CR com.desaysv.svcarinfo/.CarInfoService:@a3486f9}
+      ConnectionRecord{fe2f33 u0 CR com.desaysv.svcarinfo/.CarInfoService:@bef16a2}
+      ConnectionRecord{fdd2089 u0 CR com.desaysv.svcarinfo/.CarInfoService:@c943f90}
+      ConnectionRecord{9fb9233 u0 CR com.desaysv.svcarinfo/.CarInfoService:@cc825a2}
+      ConnectionRecord{9a6e055 u0 CR com.desaysv.svcarinfo/.CarInfoService:@ea92f0c}
+
+  * ServiceRecord{485c01b u0 com.android.location.fused/.FusedLocationService}
+    intent={act=com.android.location.service.FusedLocationProvider cmp=com.android.location.fused/.FusedLocationService}
+    packageName=com.android.location.fused
+    processName=system
+--
+  * ServiceRecord{eb10164 u0 com.desaysv.logmanager/.LogService}
+    intent={cmp=com.desaysv.logmanager/.LogService}
+    packageName=com.desaysv.logmanager
+    processName=com.desaysv.logmanager
+    baseDir=/product/app/LogManagerService/LogManagerService.apk
+    dataDir=/data/user/0/com.desaysv.logmanager
+    app=ProcessRecord{bf0b0bc 3227:com.desaysv.logmanager/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel= pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m12s977ms startingBgTimeout=--
+    lastActivity=-50m12s976ms restartTime=-50m12s976ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+--
+  * ServiceRecord{ff98c25 u0 com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService}
+    intent={cmp=com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService}
+    packageName=com.desaysv.mediaapp
+    processName=com.desaysv.mediaapp
+    baseDir=/product/app/SVMedia/SVMedia.apk
+    dataDir=/data/user/0/com.desaysv.mediaapp
+    app=ProcessRecord{56cdf98 2868:com.desaysv.mediaapp/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=com.desaysv.mediaapp pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m18s851ms startingBgTimeout=--
+    lastActivity=-50m15s553ms restartTime=-50m18s199ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{8bcb845 CREATE}:
+      intent={cmp=com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService}
+      binder=android.os.BinderProxy@2ddab9a
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{5c72ccb ProcessRecord{33ef6e9 2639:com.desaysv.meterinteraction/1000}}
+        Per-process Connections:
+          ConnectionRecord{8dc7f5c u0 CR com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:@5db59cf}
+      * Client AppBindRecord{5761ca8 ProcessRecord{56cdf98 2868:com.desaysv.mediaapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{155e128 u0 CR com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:@ef1334b}
+      * Client AppBindRecord{1f593c1 ProcessRecord{7595990 2983:com.desaysv.mediaservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{482728e u0 CR com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:@fb53289}
+    All Connections:
+      ConnectionRecord{8dc7f5c u0 CR com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:@5db59cf}
+      ConnectionRecord{155e128 u0 CR com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:@ef1334b}
+      ConnectionRecord{482728e u0 CR com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:@fb53289}
+
+  * ServiceRecord{8a9abde u0 com.desaysv.vehicle.externallink/.service.ExternalLinkService}
+    intent={cmp=com.desaysv.vehicle.externallink/.service.ExternalLinkService}
+    packageName=com.desaysv.vehicle.externallink
+    processName=com.desaysv.vehicle.externallink
+    baseDir=/product/app/ExternalLinkService/ExternalLinkService.apk
+    dataDir=/data/user/0/com.desaysv.vehicle.externallink
+    app=ProcessRecord{dae766 3716:com.desaysv.vehicle.externallink/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=External_Link_Service_Channel_Id pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m5s450ms startingBgTimeout=--
+    lastActivity=-50m5s450ms restartTime=-50m5s450ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+--
+  * ServiceRecord{ff0bd79 u0 com.desaysv.meterinteraction/.service.MeterService}
+    intent={cmp=com.desaysv.meterinteraction/.service.MeterService}
+    packageName=com.desaysv.meterinteraction
+    processName=com.desaysv.meterinteraction
+    baseDir=/product/app/SVMeterInteraction/SVMeterInteraction.apk
+    dataDir=/data/user/0/com.desaysv.meterinteraction
+    app=ProcessRecord{33ef6e9 2639:com.desaysv.meterinteraction/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=MeterService pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m19s316ms startingBgTimeout=--
+    lastActivity=-50m19s316ms restartTime=-50m19s316ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{82b3c9f u0 com.desaysv.vrcontrolmgr/.service.VrControlService}
+    intent={cmp=com.desaysv.vrcontrolmgr/.service.VrControlService}
+    packageName=com.desaysv.vrcontrolmgr
+    processName=com.desaysv.vrcontrolmgr
+    baseDir=/product/app/SVVRControlMgr/SVVRControlMgr.apk
+    dataDir=/data/user/0/com.desaysv.vrcontrolmgr
+    app=ProcessRecord{30879c0 3423:com.desaysv.vrcontrolmgr/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=VrControlService pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m11s65ms startingBgTimeout=--
+    lastActivity=-50m11s65ms restartTime=-50m11s65ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{f9221fa u0 com.desaysv.mediaapp/.service.MusicAidlService}
+    intent={cmp=com.desaysv.mediaapp/.service.MusicAidlService}
+    packageName=com.desaysv.mediaapp
+    processName=com.desaysv.mediaapp
+    baseDir=/product/app/SVMedia/SVMedia.apk
+    dataDir=/data/user/0/com.desaysv.mediaapp
+    app=ProcessRecord{56cdf98 2868:com.desaysv.mediaapp/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=com.desaysv.mediaapp pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m18s812ms startingBgTimeout=--
+    lastActivity=-50m15s548ms restartTime=-50m18s199ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{e1e13f2 CREATE}:
+      intent={cmp=com.desaysv.mediaapp/.service.MusicAidlService}
+      binder=android.os.BinderProxy@c0e6a43
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{955d8c0 ProcessRecord{33ef6e9 2639:com.desaysv.meterinteraction/1000}}
+        Per-process Connections:
+          ConnectionRecord{ae2cfe1 u0 CR com.desaysv.mediaapp/.service.MusicAidlService:@4603548}
+      * Client AppBindRecord{617f9f9 ProcessRecord{56cdf98 2868:com.desaysv.mediaapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{4d77fe6 u0 CR com.desaysv.mediaapp/.service.MusicAidlService:@91b3e41}
+      * Client AppBindRecord{5f57d3e ProcessRecord{7595990 2983:com.desaysv.mediaservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{227ebc u0 CR com.desaysv.mediaapp/.service.MusicAidlService:@2463aaf}
+    All Connections:
+      ConnectionRecord{227ebc u0 CR com.desaysv.mediaapp/.service.MusicAidlService:@2463aaf}
+      ConnectionRecord{ae2cfe1 u0 CR com.desaysv.mediaapp/.service.MusicAidlService:@4603548}
+      ConnectionRecord{4d77fe6 u0 CR com.desaysv.mediaapp/.service.MusicAidlService:@91b3e41}
+
+  * ServiceRecord{8bf5813 u0 com.estrongs.android.pop/com.estrongs.dlna.core.DlnaUpnpService}
+    intent={cmp=com.estrongs.android.pop/com.estrongs.dlna.core.DlnaUpnpService}
+    packageName=com.estrongs.android.pop
+    processName=com.estrongs.android.pop
+--
+  * ServiceRecord{4aafaf5 u0 com.desaysv.service.bluetooth/.service.AndLinkerService}
+    intent={act=com.desaysv.service.bluetooth.REMOTE_SERVICE_ACTION pkg=com.desaysv.service.bluetooth}
+    packageName=com.desaysv.service.bluetooth
+    processName=com.desaysv.service.bluetooth
+    baseDir=/product/app/SVBtService/SVBtService.apk
+    dataDir=/data/user/0/com.desaysv.service.bluetooth
+    app=ProcessRecord{69ce46b 2545:com.desaysv.service.bluetooth/1000}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=com.desaysv.service.bluetooth pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m19s939ms startingBgTimeout=--
+    lastActivity=-50m12s162ms restartTime=-50m19s938ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{8482f4a CREATE}:
+      intent={act=com.desaysv.service.bluetooth.REMOTE_SERVICE_ACTION pkg=com.desaysv.service.bluetooth}
+      binder=android.os.BinderProxy@260debb
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{6bdffd8 ProcessRecord{56cdf98 2868:com.desaysv.mediaapp/1000}}
+        Per-process Connections:
+          ConnectionRecord{31c5d44 u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@e69de57}
+      * Client AppBindRecord{be9ef31 ProcessRecord{6bd6a7e 2493:com.desaysv.bluetooth.phone/1000}}
+        Per-process Connections:
+          ConnectionRecord{958902c u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@8cebdf}
+      * Client AppBindRecord{a61f616 ProcessRecord{8eed3ab 2527:com.iflytek.cutefly.speechclient.hmi/1000}}
+        Per-process Connections:
+          ConnectionRecord{60981b8 u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@643bc1b}
+      * Client AppBindRecord{fb4ab97 ProcessRecord{9072b7e 3330:com.desaysv.usbpicture/1000}}
+        Per-process Connections:
+          ConnectionRecord{9b2b92c u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@8c218df}
+    All Connections:
+      ConnectionRecord{958902c u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@8cebdf}
+      ConnectionRecord{60981b8 u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@643bc1b}
+      ConnectionRecord{9b2b92c u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@8c218df}
+      ConnectionRecord{31c5d44 u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@e69de57}
+
+  * ServiceRecord{723ee31 u0 com.desaysv.service.link/.TestLinkDeviceService}
+    intent={cmp=com.desaysv.service.link/.TestLinkDeviceService}
+    packageName=com.desaysv.service.link
+    processName=com.desaysv.service.link
+    baseDir=/product/app/CommonLinkService/CommonLinkService.apk
+    dataDir=/data/user/0/com.desaysv.service.link
+    app=ProcessRecord{5d063c6 2779:com.desaysv.service.link/u0a24}
+    isForeground=true foregroundId=2779 foregroundNoti=Notification(channel=PhoneLink_Service_Test_Channel_Id pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0xff607d8b vis=PRIVATE)
+    createTime=-50m19s64ms startingBgTimeout=--
+    lastActivity=-50m5s916ms restartTime=-50m18s505ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=5
+    Bindings:
+--
+      intent={cmp=com.desaysv.service.link/.TestLinkDeviceService}
+      binder=android.os.BinderProxy@7bd4d6d
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{87f5da2 ProcessRecord{46da82 2596:com.desaysv.vrservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{aa1e9d0 u0 CR com.desaysv.service.link/.TestLinkDeviceService:@74ad593}
+      * Client AppBindRecord{a0e6a33 ProcessRecord{7595990 2983:com.desaysv.mediaservice/1000}}
+        Per-process Connections:
+          ConnectionRecord{e2020fd u0 CR com.desaysv.service.link/.TestLinkDeviceService:@a41e954}
+      * Client AppBindRecord{2f0f1f0 ProcessRecord{f3a95ca 3658:com.desaysv.setting/1000}}
+        Per-process Connections:
+          ConnectionRecord{c00bc3a u0 CR com.desaysv.service.link/.TestLinkDeviceService:@7752765}
+      * Client AppBindRecord{9ee5369 ProcessRecord{f4a6f3d 2915:com.google.android.projection.sink/1000}}
+        Per-process Connections:
+          ConnectionRecord{bd26f24 u0 CR com.desaysv.service.link/.TestLinkDeviceService:@b878bb7}
+    All Connections:
+      ConnectionRecord{aa1e9d0 u0 CR com.desaysv.service.link/.TestLinkDeviceService:@74ad593}
+      ConnectionRecord{c00bc3a u0 CR com.desaysv.service.link/.TestLinkDeviceService:@7752765}
+      ConnectionRecord{e2020fd u0 CR com.desaysv.service.link/.TestLinkDeviceService:@a41e954}
+      ConnectionRecord{bd26f24 u0 CR com.desaysv.service.link/.TestLinkDeviceService:@b878bb7}
+
+  * ServiceRecord{30521c5 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService}
+    intent={act=android.bluetooth.IBluetoothA2dpSink cmp=com.android.bluetooth/.a2dpsink.A2dpSinkService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+--
+      * Client AppBindRecord{c0b3d1c ProcessRecord{69ce46b 2545:com.desaysv.service.bluetooth/1000}}
+        Per-process Connections:
+          ConnectionRecord{ad240de u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@7650819}
+      * Client AppBindRecord{d0fbd25 ProcessRecord{a1a69e6 2275:com.android.systemui/u0a16}}
+        Per-process Connections:
+          ConnectionRecord{ecada34 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@617907}
+--
+      * Client AppBindRecord{282ecab ProcessRecord{f3a95ca 3658:com.desaysv.setting/1000}}
+        Per-process Connections:
+          ConnectionRecord{ff34201 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@5c09be8}
+      * Client AppBindRecord{d1d0f08 ProcessRecord{f4a6f3d 2915:com.google.android.projection.sink/1000}}
+        Per-process Connections:
+          ConnectionRecord{dd3cb60 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@5180363}
+--
+  * ConnectionRecord{c6caba9 u0 CR com.desaysv.svcarinfo/.CarInfoService:@c8330}
+    binding=AppBindRecord{e486b90 com.desaysv.svcarinfo/.CarInfoService:com.google.android.projection.sink}
+    conn=android.os.BinderProxy@c8330 flags=0x1
+  * ConnectionRecord{bcb049a u0 CR com.desaysv.carlan/.CarLanService:@13d545}
+    binding=AppBindRecord{3ebdb21 com.desaysv.carlan/.CarLanService:com.desaysv.usbvideoapp}
+    conn=android.os.BinderProxy@13d545 flags=0x1
+  * ConnectionRecord{bc22cd1 u0 CR com.desaysv.carlan/.CarLanService:@402ff8}
+    binding=AppBindRecord{1bcd17a com.desaysv.carlan/.CarLanService:com.android.engmode}
+    conn=android.os.BinderProxy@402ff8 flags=0x1
+  * ConnectionRecord{282df35 u0 CR com.desaysv.carlan/.CarLanService:@4c5d6c}
+    binding=AppBindRecord{83e7ab3 com.desaysv.carlan/.CarLanService:com.desaysv.mediaapp}
+    conn=android.os.BinderProxy@4c5d6c flags=0x1
+  * ConnectionRecord{ecada34 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@617907}
+    binding=AppBindRecord{d0fbd25 com.android.bluetooth/.a2dpsink.A2dpSinkService:com.android.systemui}
+    conn=android.os.BinderProxy@617907 flags=0x0
+  * ConnectionRecord{958902c u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@8cebdf}
+    binding=AppBindRecord{be9ef31 com.desaysv.service.bluetooth/.service.AndLinkerService:com.desaysv.bluetooth.phone}
+    conn=android.os.BinderProxy@8cebdf flags=0x1
+  * ConnectionRecord{a00acf5 u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@8dca2c}
+    binding=AppBindRecord{6c99e79 com.android.bluetooth/.btservice.AdapterService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@8dca2c flags=0x41
+  * ConnectionRecord{589d702 u0 CR com.estrongs.android.pop/com.estrongs.dlna.core.DlnaUpnpService:@aa504d}
+--
+  * ConnectionRecord{a066c59 u0 CR com.desaysv.carlan/.CarLanService:@c718a0}
+    binding=AppBindRecord{b9c0f0f com.desaysv.carlan/.CarLanService:com.desaysv.launcher}
+    conn=android.os.BinderProxy@c718a0 flags=0x1
+  * ConnectionRecord{4eeb95a u0 CR IMP FGS com.android.server.telecom/.components.TelecomService:@d66505}
+    binding=AppBindRecord{210e1 com.android.server.telecom/.components.TelecomService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@d66505 flags=0x4000041
+  * ConnectionRecord{76b3f1b u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@138552a}
+    binding=AppBindRecord{5d5a365 com.desaysv.tboxservice/.service.TBoxManagerService:com.android.systemui}
+    conn=android.os.BinderProxy@138552a flags=0x1
+  * ConnectionRecord{fc648b8 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@138552a}
+    binding=AppBindRecord{5d5a365 com.desaysv.tboxservice/.service.TBoxManagerService:com.android.systemui}
+    conn=android.os.BinderProxy@138552a flags=0x1
+  * ConnectionRecord{5bcc563 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@138552a}
+    binding=AppBindRecord{5d5a365 com.desaysv.tboxservice/.service.TBoxManagerService:com.android.systemui}
+    conn=android.os.BinderProxy@138552a flags=0x1
+  * ConnectionRecord{20fe3f8 u0 com.android.bluetooth/.pbapclient.PbapClientService:@1393f5b}
+    binding=AppBindRecord{6d10283 com.android.bluetooth/.pbapclient.PbapClientService:com.android.car}
+    conn=android.os.BinderProxy@1393f5b flags=0x0
+  * ConnectionRecord{4b758ba u0 CR com.android.car/.CarService:@1aa65e5}
+    binding=AppBindRecord{9e13210 com.android.car/.CarService:com.desaysv.vehicle.carplayapp}
+    conn=android.os.BinderProxy@1aa65e5 flags=0x1
+  * ConnectionRecord{87a63f4 u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@1d611c7}
+    binding=AppBindRecord{b24d9ff com.android.bluetooth/.hfpclient.HeadsetClientService:com.desaysv.service.bluetooth}
+    conn=android.os.BinderProxy@1d611c7 flags=0x0
+  * ConnectionRecord{aa9860f u0 CR com.desaysv.carlan/.CarLanService:@2404f6e}
+    binding=AppBindRecord{d1b6022 com.desaysv.carlan/.CarLanService:com.desaysv.meterinteraction}
+    conn=android.os.BinderProxy@2404f6e flags=0x1
+  * ConnectionRecord{227ebc u0 CR com.desaysv.mediaapp/.service.MusicAidlService:@2463aaf}
+    binding=AppBindRecord{5f57d3e com.desaysv.mediaapp/.service.MusicAidlService:com.desaysv.mediaservice}
+    conn=android.os.BinderProxy@2463aaf flags=0x1
+  * ConnectionRecord{382881f u0 CR com.android.car/.CarService:@252cfbe}
+    binding=AppBindRecord{6091b0c com.android.car/.CarService:com.desaysv.svcarinfo}
+    conn=android.os.BinderProxy@252cfbe flags=0x1
+  * ConnectionRecord{b6ec1a4 u0 CR com.android.car/.CarService:@26f9837}
+    binding=AppBindRecord{cf858c2 com.android.car/.CarService:dsv.carstate.service}
+    conn=android.os.BinderProxy@26f9837 flags=0x1
+  * ConnectionRecord{85fe4be u0 CR FGSA UI com.android.systemui/.ImageWallpaper:@2954f79}
+--
+  * ConnectionRecord{b012d9f u0 CR com.desaysv.carlan/.CarLanService:@2b69b3e}
+    binding=AppBindRecord{cf5234 com.desaysv.carlan/.CarLanService:com.google.android.projection.sink}
+    conn=android.os.BinderProxy@2b69b3e flags=0x1
+  * ConnectionRecord{cbbe279 u0 CR com.android.car/.CarService:@2ee1340}
+    binding=AppBindRecord{35bfa4 com.android.car/.CarService:com.desaysv.update}
+    conn=android.os.BinderProxy@2ee1340 flags=0x1
+  * ConnectionRecord{a353bd6 u0 CR com.desaysv.mediaservice/.service.AIDLAudioFocusService:@30bb3f1}
+    binding=AppBindRecord{c39fe63 com.desaysv.mediaservice/.service.AIDLAudioFocusService:com.desaysv.mediaapp}
+    conn=android.os.BinderProxy@30bb3f1 flags=0x1
+  * ConnectionRecord{9995362 u0 CR com.android.car/.CarService:@352822d}
+    binding=AppBindRecord{f665c55 com.android.car/.CarService:com.desaysv.ivi.adapterservice}
+    conn=android.os.BinderProxy@352822d flags=0x1
+  * ConnectionRecord{d364321 u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@3586d88}
+    binding=AppBindRecord{27ae615 com.android.bluetooth/.hfpclient.HeadsetClientService:com.android.systemui}
+    conn=android.os.BinderProxy@3586d88 flags=0x0
+  * ConnectionRecord{15bc5a1 u0 CR com.desaysv.svcarinfo/.CarInfoService:@3706a08}
+    binding=AppBindRecord{71ff451 com.desaysv.svcarinfo/.CarInfoService:com.iflytek.cutefly.speechclient.hmi}
+    conn=android.os.BinderProxy@3706a08 flags=0x1
+  * ConnectionRecord{9192c38 u0 com.android.bluetooth/.pbapclient.PbapClientService:@375809b}
+    binding=AppBindRecord{6d10283 com.android.bluetooth/.pbapclient.PbapClientService:com.android.car}
+    conn=android.os.BinderProxy@375809b flags=0x0
+  * ConnectionRecord{871fa9d u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@3f2a574}
+    binding=AppBindRecord{5913328 com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:com.desaysv.svhvac}
+    conn=android.os.BinderProxy@3f2a574 flags=0x1
+  * ConnectionRecord{d542461 u0 CR com.desaysv.carlan/.CarLanService:@4280bc8}
+    binding=AppBindRecord{69217e9 com.desaysv.carlan/.CarLanService:com.desaysv.service.bluetooth}
+    conn=android.os.BinderProxy@4280bc8 flags=0x1
+  * ConnectionRecord{882b480 u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@43a5d03}
+    binding=AppBindRecord{9f7171b com.android.bluetooth/.hfpclient.HeadsetClientService:dsv.carstate.service}
+    conn=android.os.BinderProxy@43a5d03 flags=0x0
+  * ConnectionRecord{9844395 u0 CR com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService:@45d174c}
+--
+  * ConnectionRecord{ae2cfe1 u0 CR com.desaysv.mediaapp/.service.MusicAidlService:@4603548}
+    binding=AppBindRecord{955d8c0 com.desaysv.mediaapp/.service.MusicAidlService:com.desaysv.meterinteraction}
+    conn=android.os.BinderProxy@4603548 flags=0x1
+  * ConnectionRecord{58282a6 u0 CR !FG IMPB !VIS com.iqqijni.car.keyboard/com.iqqijni.car.imeservice.IMEService:@4d99401}
+    binding=AppBindRecord{4d2272e com.iqqijni.car.keyboard/com.iqqijni.car.imeservice.IMEService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@4d99401 flags=0x40800005
+  * ConnectionRecord{dd3cb60 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@5180363}
+--
+  * ConnectionRecord{374d4f4 u0 CR com.desaysv.carlan/.CarLanService:@55fa6c7}
+    binding=AppBindRecord{db1e004 com.desaysv.carlan/.CarLanService:com.desaysv.carlan}
+    conn=android.os.BinderProxy@55fa6c7 flags=0x1
+  * ConnectionRecord{ff34201 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@5c09be8}
+    binding=AppBindRecord{282ecab com.android.bluetooth/.a2dpsink.A2dpSinkService:com.desaysv.setting}
+    conn=android.os.BinderProxy@5c09be8 flags=0x0
+  * ConnectionRecord{48eb9b6 u0 CR com.desaysv.svcarinfo/.CarInfoService:@5c6fd51}
+    binding=AppBindRecord{19e848d com.desaysv.svcarinfo/.CarInfoService:com.desaysv.assistant}
+    conn=android.os.BinderProxy@5c6fd51 flags=0x1
+  * ConnectionRecord{450610 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@5d3bad3}
+    binding=AppBindRecord{8dd883a com.desaysv.tboxservice/.service.TBoxManagerService:com.android.engmode}
+    conn=android.os.BinderProxy@5d3bad3 flags=0x1
+  * ConnectionRecord{bf1330e u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@5d3bad3}
+    binding=AppBindRecord{8dd883a com.desaysv.tboxservice/.service.TBoxManagerService:com.android.engmode}
+    conn=android.os.BinderProxy@5d3bad3 flags=0x1
+  * ConnectionRecord{1881422 u0 CR com.desaysv.tboxservice/.service.TBoxManagerService:@5d3bad3}
+    binding=AppBindRecord{8dd883a com.desaysv.tboxservice/.service.TBoxManagerService:com.android.engmode}
+    conn=android.os.BinderProxy@5d3bad3 flags=0x1
+  * ConnectionRecord{8dc7f5c u0 CR com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:@5db59cf}
+    binding=AppBindRecord{5c72ccb com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:com.desaysv.meterinteraction}
+    conn=android.os.BinderProxy@5db59cf flags=0x1
+  * ConnectionRecord{3b83237 u0 CR com.desaysv.update/.UpdateService:@5faf336}
+    binding=AppBindRecord{7563efb com.desaysv.update/.UpdateService:com.android.engmode}
+    conn=android.os.BinderProxy@5faf336 flags=0x1
+  * ConnectionRecord{68e2ac2 u0 CR com.desaysv.carlan/.CarLanService:@6009b0d}
+    binding=AppBindRecord{3948d2b com.desaysv.carlan/.CarLanService:dsv.carstate.service}
+    conn=android.os.BinderProxy@6009b0d flags=0x1
+  * ConnectionRecord{64bcae1 u0 CR com.desaysv.carlan/.CarLanService:@6343c48}
+    binding=AppBindRecord{db1e004 com.desaysv.carlan/.CarLanService:com.desaysv.carlan}
+    conn=android.os.BinderProxy@6343c48 flags=0x1
+  * ConnectionRecord{409d395 u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@63ee74c}
+    binding=AppBindRecord{9ac8d2a com.android.bluetooth/.hfpclient.HeadsetClientService:com.android.car}
+    conn=android.os.BinderProxy@63ee74c flags=0x0
+  * ConnectionRecord{60981b8 u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@643bc1b}
+    binding=AppBindRecord{a61f616 com.desaysv.service.bluetooth/.service.AndLinkerService:com.iflytek.cutefly.speechclient.hmi}
+    conn=android.os.BinderProxy@643bc1b flags=0x1
+  * ConnectionRecord{a8cbe58 u0 CR com.iflytek.cutefly.speechclient.hmi/com.iflytek.auto.speechclient.sdk.tts.TtsAdapterService:@651873b}
+    binding=AppBindRecord{b90082c com.iflytek.cutefly.speechclient.hmi/com.iflytek.auto.speechclient.sdk.tts.TtsAdapterService:com.android.systemui}
+    conn=android.os.BinderProxy@651873b flags=0x1
+  * ConnectionRecord{2f2061a u0 com.android.bluetooth/.mapclient.MapClientService:@657ecc5}
+--
+  * ConnectionRecord{8acbe1b u0 CR com.desaysv.svcarinfo/.CarInfoService:@6a4702a}
+    binding=AppBindRecord{44b0c8c com.desaysv.svcarinfo/.CarInfoService:com.desaysv.meterinteraction}
+    conn=android.os.BinderProxy@6a4702a flags=0x1
+  * ConnectionRecord{ee86883 u0 CR com.android.car/.CarService:@6c42332}
+    binding=AppBindRecord{7773f0e com.android.car/.CarService:com.google.android.projection.sink}
+    conn=android.os.BinderProxy@6c42332 flags=0x1
+  * ConnectionRecord{5812eff u0 CR com.android.car/.CarService:@6da461e}
+--
+  * ConnectionRecord{2c3673 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@6ffb2e2}
+    binding=AppBindRecord{31c7672 com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:com.desaysv.setting}
+    conn=android.os.BinderProxy@6ffb2e2 flags=0x1
+  * ConnectionRecord{27724ef u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@7179dce}
+    binding=AppBindRecord{330ce91 com.android.bluetooth/.hfpclient.HeadsetClientService:com.desaysv.setting}
+    conn=android.os.BinderProxy@7179dce flags=0x0
+  * ConnectionRecord{e21324e u0 CR com.desaysv.svcarinfo/.CarInfoService:@71c1949}
+    binding=AppBindRecord{da6d6db com.desaysv.svcarinfo/.CarInfoService:com.desaysv.launcher}
+    conn=android.os.BinderProxy@71c1949 flags=0x1
+  * ConnectionRecord{285dd54 u0 CR com.desaysv.carlan/.CarLanService:@72814a7}
+    binding=AppBindRecord{56ef870 com.desaysv.carlan/.CarLanService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@72814a7 flags=0x1
+  * ConnectionRecord{aa1e9d0 u0 CR com.desaysv.service.link/.TestLinkDeviceService:@74ad593}
+    binding=AppBindRecord{87f5da2 com.desaysv.service.link/.TestLinkDeviceService:com.desaysv.vrservice}
+    conn=android.os.BinderProxy@74ad593 flags=0x1
+  * ConnectionRecord{ad240de u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@7650819}
+    binding=AppBindRecord{c0b3d1c com.android.bluetooth/.a2dpsink.A2dpSinkService:com.desaysv.service.bluetooth}
+    conn=android.os.BinderProxy@7650819 flags=0x0
+  * ConnectionRecord{bf1e1d4 u0 CR com.desaysv.svcarinfo/.CarInfoService:@7675b27}
+    binding=AppBindRecord{cb1e4b6 com.desaysv.svcarinfo/.CarInfoService:com.android.systemui}
+    conn=android.os.BinderProxy@7675b27 flags=0x1
+  * ConnectionRecord{443bda9 u0 CR com.desaysv.svcarinfo/.CarInfoService:@76c9d30}
+    binding=AppBindRecord{20f2fd5 com.desaysv.svcarinfo/.CarInfoService:com.desaysv.bluetooth.phone}
+    conn=android.os.BinderProxy@76c9d30 flags=0x1
+  * ConnectionRecord{c00bc3a u0 CR com.desaysv.service.link/.TestLinkDeviceService:@7752765}
+    binding=AppBindRecord{2f0f1f0 com.desaysv.service.link/.TestLinkDeviceService:com.desaysv.setting}
+    conn=android.os.BinderProxy@7752765 flags=0x1
+  * ConnectionRecord{1b50cd5 u0 com.android.bluetooth/.avrcpcontroller.AvrcpControllerService:@79a3d8c}
+    binding=AppBindRecord{d5b76a3 com.android.bluetooth/.avrcpcontroller.AvrcpControllerService:com.desaysv.service.bluetooth}
+    conn=android.os.BinderProxy@79a3d8c flags=0x0
+  * ConnectionRecord{ddb56ea u0 CR com.iflytek.cutefly.speechclient.hmi/com.iflytek.auto.speechclient.sdk.tts.TtsAdapterService:@7e3bed5}
+    binding=AppBindRecord{39743df com.iflytek.cutefly.speechclient.hmi/com.iflytek.auto.speechclient.sdk.tts.TtsAdapterService:com.desaysv.meterinteraction}
+    conn=android.os.BinderProxy@7e3bed5 flags=0x1
+  * ConnectionRecord{b73fa6c u0 CR com.android.car/.CarService:@826971f}
+    binding=AppBindRecord{3fd68d1 com.android.car/.CarService:com.desaysv.launcher}
+    conn=android.os.BinderProxy@826971f flags=0x1
+  * ConnectionRecord{8a3f52f u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@830870e}
+    binding=AppBindRecord{af2fefa com.android.bluetooth/.a2dpsink.A2dpSinkService:com.android.car}
+    conn=android.os.BinderProxy@830870e flags=0x0
+  * ConnectionRecord{950fec3 u0 CR com.desaysv.svcarinfo/.CarInfoService:@8342a72}
+    binding=AppBindRecord{63205b7 com.desaysv.svcarinfo/.CarInfoService:com.desaysv.update}
+    conn=android.os.BinderProxy@8342a72 flags=0x1
+  * ConnectionRecord{3b29398 u0 CR com.android.car/.CarService:@840697b}
+    binding=AppBindRecord{f665c55 com.android.car/.CarService:com.desaysv.ivi.adapterservice}
+    conn=android.os.BinderProxy@840697b flags=0x1
+  * ConnectionRecord{42180c1 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@8599da8}
+    binding=AppBindRecord{bcf077d com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:com.desaysv.usbvideoapp}
+    conn=android.os.BinderProxy@8599da8 flags=0x1
+  * ConnectionRecord{9b6fdaa u0 CR FGS android.ext.services/.notification.Assistant:@85ec895}
+    binding=AppBindRecord{e785f99 android.ext.services/.notification.Assistant:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@85ec895 flags=0x5000001
+  * ConnectionRecord{63e8cfc u0 CR android/.hardware.location.GeofenceHardwareService:@8ac99ef}
+--
+  * ConnectionRecord{9b2b92c u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@8c218df}
+    binding=AppBindRecord{fb4ab97 com.desaysv.service.bluetooth/.service.AndLinkerService:com.desaysv.usbpicture}
+    conn=android.os.BinderProxy@8c218df flags=0x1
+  * ConnectionRecord{aad99b5 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@8db71ec}
+    binding=AppBindRecord{5592841 com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:com.desaysv.vrcontrolmgr}
+    conn=android.os.BinderProxy@8db71ec flags=0x1
+  * ConnectionRecord{2565d87 u0 CR com.desaysv.vehicle.carplayapp/.CarplayService:@8f479c6}
+    binding=AppBindRecord{9f6ed0 com.desaysv.vehicle.carplayapp/.CarplayService:com.desaysv.svhvac}
+    conn=android.os.BinderProxy@8f479c6 flags=0x1
+  * ConnectionRecord{8235ec8 u0 CR com.desaysv.carlan/.CarLanService:@8f5a36b}
+    binding=AppBindRecord{4b68b46 com.desaysv.carlan/.CarLanService:com.desaysv.vehicle.carplayapp}
+    conn=android.os.BinderProxy@8f5a36b flags=0x1
+  * ConnectionRecord{6d6e85c u0 CR com.desaysv.carlan/.CarLanService:@909c6cf}
+    binding=AppBindRecord{e4cd107 com.desaysv.carlan/.CarLanService:com.desaysv.setting}
+    conn=android.os.BinderProxy@909c6cf flags=0x1
+  * ConnectionRecord{4d77fe6 u0 CR com.desaysv.mediaapp/.service.MusicAidlService:@91b3e41}
+    binding=AppBindRecord{617f9f9 com.desaysv.mediaapp/.service.MusicAidlService:com.desaysv.mediaapp}
+    conn=android.os.BinderProxy@91b3e41 flags=0x1
+  * ConnectionRecord{1a61eb4 u0 CR com.google.android.projection.sink/com.desaysv.auto.projection.AndroidAutoService:@944ff87}
+    binding=AppBindRecord{cbefee2 com.google.android.projection.sink/com.desaysv.auto.projection.AndroidAutoService:com.desaysv.service.link}
+    conn=android.os.BinderProxy@944ff87 flags=0x1
+  * ConnectionRecord{c0111d8 u0 CR com.estrongs.android.pop/dbgc.DService:@95cf8bb}
+    binding=AppBindRecord{a2df69d com.estrongs.android.pop/dbgc.DService:com.estrongs.android.pop}
+    conn=android.os.BinderProxy@95cf8bb flags=0x1
+  * ConnectionRecord{5ba34a9 u0 CR com.desaysv.svcarinfo/.CarInfoService:@9669030}
+    binding=AppBindRecord{4c873ea com.desaysv.svcarinfo/.CarInfoService:com.desaysv.tboxservice}
+    conn=android.os.BinderProxy@9669030 flags=0x1
+  * ConnectionRecord{766818a u0 CR com.desaysv.carlan/.CarLanService:@98c6ff5}
+    binding=AppBindRecord{2a32b9c com.desaysv.carlan/.CarLanService:com.desaysv.usbpicture}
+    conn=android.os.BinderProxy@98c6ff5 flags=0x1
+  * ConnectionRecord{573a678 u0 com.android.bluetooth/.pbapclient.PbapClientService:@9a07bdb}
+    binding=AppBindRecord{4e6e532 com.android.bluetooth/.pbapclient.PbapClientService:com.desaysv.service.bluetooth}
+    conn=android.os.BinderProxy@9a07bdb flags=0x0
+  * ConnectionRecord{dfd5eac u0 CR com.android.car/.PerUserCarService:@9a1e45f}
+    binding=AppBindRecord{abc52f4 com.android.car/.PerUserCarService:com.android.car}
+    conn=android.os.BinderProxy@9a1e45f flags=0x1
+  * ConnectionRecord{a183a2a u0 CR !FG !VIS com.android.location.fused/.FusedLocationService:@9c52715}
+--
+  * ConnectionRecord{ed30a58 u0 CR com.desaysv.svcarinfo/.CarInfoService:@9d1833b}
+    binding=AppBindRecord{4d74653 com.desaysv.svcarinfo/.CarInfoService:com.desaysv.setting}
+    conn=android.os.BinderProxy@9d1833b flags=0x1
+  * ConnectionRecord{2095144 u0 CR com.android.car/.CarService:@9e22257}
+    binding=AppBindRecord{f665c55 com.android.car/.CarService:com.desaysv.ivi.adapterservice}
+    conn=android.os.BinderProxy@9e22257 flags=0x1
+  * ConnectionRecord{c02fe0a u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@a130e75}
+    binding=AppBindRecord{165bd1e com.android.bluetooth/.hfpclient.HeadsetClientService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@a130e75 flags=0x0
+  * ConnectionRecord{713863e u0 CR com.desaysv.svcarinfo/.CarInfoService:@a3486f9}
+    binding=AppBindRecord{bc41dbf com.desaysv.svcarinfo/.CarInfoService:com.desaysv.vrcontrolmgr}
+    conn=android.os.BinderProxy@a3486f9 flags=0x1
+  * ConnectionRecord{e2020fd u0 CR com.desaysv.service.link/.TestLinkDeviceService:@a41e954}
+    binding=AppBindRecord{a0e6a33 com.desaysv.service.link/.TestLinkDeviceService:com.desaysv.mediaservice}
+    conn=android.os.BinderProxy@a41e954 flags=0x1
+  * ConnectionRecord{8a0fab7 u0 com.android.bluetooth/.mapclient.MapClientService:@a5f8db6}
+    binding=AppBindRecord{f9d24a6 com.android.bluetooth/.mapclient.MapClientService:com.desaysv.service.bluetooth}
+    conn=android.os.BinderProxy@a5f8db6 flags=0x0
+  * ConnectionRecord{6846bf3 u0 com.android.bluetooth/.mapclient.MapClientService:@a694e62}
+    binding=AppBindRecord{5775ee7 com.android.bluetooth/.mapclient.MapClientService:com.android.car}
+    conn=android.os.BinderProxy@a694e62 flags=0x0
+  * ConnectionRecord{2ba2cb6 u0 CR com.desaysv.carlan/.CarLanService:@a7c5c51}
+    binding=AppBindRecord{3856588 com.desaysv.carlan/.CarLanService:com.desaysv.mapservice}
+    conn=android.os.BinderProxy@a7c5c51 flags=0x1
+  * ConnectionRecord{f57fadf u0 CR com.android.bluetooth/.a2dpsink.mbs.A2dpMediaBrowserService:@a9f557e}
+    binding=AppBindRecord{a7804c5 com.android.bluetooth/.a2dpsink.mbs.A2dpMediaBrowserService:com.desaysv.service.bluetooth}
+    conn=android.os.BinderProxy@a9f557e flags=0x1
+  * ConnectionRecord{cf78e94 u0 com.android.bluetooth/.pbapclient.PbapClientService:@af8c2e7}
+    binding=AppBindRecord{a142c00 com.android.bluetooth/.pbapclient.PbapClientService:com.desaysv.setting}
+    conn=android.os.BinderProxy@af8c2e7 flags=0x0
+  * ConnectionRecord{be69135 u0 CR com.desaysv.carlan/.CarLanService:@b07976c}
+    binding=AppBindRecord{72cb417 com.desaysv.carlan/.CarLanService:com.desaysv.svcarinfo}
+    conn=android.os.BinderProxy@b07976c flags=0x1
+  * ConnectionRecord{a7bc65f u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@b0d1efe}
+    binding=AppBindRecord{9f7171b com.android.bluetooth/.hfpclient.HeadsetClientService:dsv.carstate.service}
+    conn=android.os.BinderProxy@b0d1efe flags=0x0
+  * ConnectionRecord{508f7cf u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@b13702e}
+--
+  * ConnectionRecord{bd26f24 u0 CR com.desaysv.service.link/.TestLinkDeviceService:@b878bb7}
+    binding=AppBindRecord{9ee5369 com.desaysv.service.link/.TestLinkDeviceService:com.google.android.projection.sink}
+    conn=android.os.BinderProxy@b878bb7 flags=0x1
+  * ConnectionRecord{8b810dc u0 CR com.android.car/.CarService:@b8c414f}
+    binding=AppBindRecord{9e13210 com.android.car/.CarService:com.desaysv.vehicle.carplayapp}
+    conn=android.os.BinderProxy@b8c414f flags=0x1
+  * ConnectionRecord{b140fd6 u0 CR com.desaysv.carlan/.CarLanService:@b9157f1}
+    binding=AppBindRecord{e15c9ed com.desaysv.carlan/.CarLanService:com.desaysv.ivi.adapterservice}
+    conn=android.os.BinderProxy@b9157f1 flags=0x1
+  * ConnectionRecord{388ae09 u0 CR IMP com.android.bluetooth/.gatt.GattService:@ba79310}
+    binding=AppBindRecord{10bb658 com.android.bluetooth/.gatt.GattService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@ba79310 flags=0x41
+  * ConnectionRecord{c2e1a86 u0 CR com.desaysv.ivi.adapterservice/.services.udis.UploadDeviceInfoService:@bd71f61}
+    binding=AppBindRecord{882c2cd com.desaysv.ivi.adapterservice/.services.udis.UploadDeviceInfoService:com.desaysv.ivi.adapterservice}
+    conn=android.os.BinderProxy@bd71f61 flags=0x1
+  * ConnectionRecord{61687d9 u0 CR FGSA com.iflytek.cutefly.speechclient.hmi/com.iflytek.autofly.access.UiAccessibilityServices:@be07220}
+    binding=AppBindRecord{86aafd com.iflytek.cutefly.speechclient.hmi/com.iflytek.autofly.access.UiAccessibilityServices:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@be07220 flags=0x2000001
+  * ConnectionRecord{fe2f33 u0 CR com.desaysv.svcarinfo/.CarInfoService:@bef16a2}
+    binding=AppBindRecord{92cb7de com.desaysv.svcarinfo/.CarInfoService:com.desaysv.svhvac}
+    conn=android.os.BinderProxy@bef16a2 flags=0x1
+  * ConnectionRecord{fd99255 u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@c0f690c}
+    binding=AppBindRecord{12140b8 com.android.bluetooth/.hfpclient.HeadsetClientService:com.desaysv.vehicle.carplayapp}
+    conn=android.os.BinderProxy@c0f690c flags=0x0
+  * ConnectionRecord{5c52d3c u0 CR com.android.car/.CarService:@c24932f}
+    binding=AppBindRecord{9e13210 com.android.car/.CarService:com.desaysv.vehicle.carplayapp}
+    conn=android.os.BinderProxy@c24932f flags=0x1
+  * ConnectionRecord{6f331cd u0 CR com.desaysv.vehicle.carplayapp/.CarplayService:@c467b64}
+    binding=AppBindRecord{c85bec9 com.desaysv.vehicle.carplayapp/.CarplayService:com.desaysv.meterinteraction}
+    conn=android.os.BinderProxy@c467b64 flags=0x1
+  * ConnectionRecord{fdd2089 u0 CR com.desaysv.svcarinfo/.CarInfoService:@c943f90}
+    binding=AppBindRecord{de26578 com.desaysv.svcarinfo/.CarInfoService:com.desaysv.vehiclesetting}
+    conn=android.os.BinderProxy@c943f90 flags=0x1
+  * ConnectionRecord{2993b1b u0 CR com.desaysv.vehicle.carplayapp/.CarplayService:@cb0c12a}
+    binding=AppBindRecord{d89a9ce com.desaysv.vehicle.carplayapp/.CarplayService:com.desaysv.setting}
+    conn=android.os.BinderProxy@cb0c12a flags=0x1
+  * ConnectionRecord{9fb9233 u0 CR com.desaysv.svcarinfo/.CarInfoService:@cc825a2}
+    binding=AppBindRecord{eef9642 com.desaysv.svcarinfo/.CarInfoService:com.desaysv.mapservice}
+    conn=android.os.BinderProxy@cc825a2 flags=0x1
+  * ConnectionRecord{4283c18 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@cd963fb}
+    binding=AppBindRecord{5a59d4 com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:com.desaysv.usbpicture}
+    conn=android.os.BinderProxy@cd963fb flags=0x1
+  * ConnectionRecord{96de0c0 u0 CR com.android.car/.CarService:@ce19243}
+    binding=AppBindRecord{8d516d3 com.android.car/.CarService:com.desaysv.mapservice}
+    conn=android.os.BinderProxy@ce19243 flags=0x1
+  * ConnectionRecord{4650b7d u0 CR com.desaysv.carlan/.CarLanService:@d35edd4}
+    binding=AppBindRecord{d6b49a5 com.desaysv.carlan/.CarLanService:com.desaysv.update}
+    conn=android.os.BinderProxy@d35edd4 flags=0x1
+  * ConnectionRecord{9e0afad u0 CR com.android.car/.CarService:@d65c4c4}
+    binding=AppBindRecord{a836109 com.android.car/.CarService:com.desaysv.setting}
+    conn=android.os.BinderProxy@d65c4c4 flags=0x1
+  * ConnectionRecord{5bac41f u0 CR com.android.car/.CarService:@d967bbe}
+    binding=AppBindRecord{35bfa4 com.android.car/.CarService:com.desaysv.update}
+    conn=android.os.BinderProxy@d967bbe flags=0x1
+  * ConnectionRecord{59d947e u0 CR com.android.car/.CarService:@e00e639}
+    binding=AppBindRecord{d75666a com.android.car/.CarService:com.desaysv.ivi.adapterservice:sdvc}
+    conn=android.os.BinderProxy@e00e639 flags=0x1
+  * ConnectionRecord{31c5d44 u0 CR com.desaysv.service.bluetooth/.service.AndLinkerService:@e69de57}
+    binding=AppBindRecord{6bdffd8 com.desaysv.service.bluetooth/.service.AndLinkerService:com.desaysv.mediaapp}
+    conn=android.os.BinderProxy@e69de57 flags=0x1
+  * ConnectionRecord{d4b7bc4 u0 CR com.desaysv.carlan/.CarLanService:@e8066d7}
+    binding=AppBindRecord{6b35c6e com.desaysv.carlan/.CarLanService:com.desaysv.tboxservice}
+    conn=android.os.BinderProxy@e8066d7 flags=0x1
+  * ConnectionRecord{9a6e055 u0 CR com.desaysv.svcarinfo/.CarInfoService:@ea92f0c}
+    binding=AppBindRecord{3946124 com.desaysv.svcarinfo/.CarInfoService:com.android.engmode}
+    conn=android.os.BinderProxy@ea92f0c flags=0x1
+  * ConnectionRecord{89c7d7d u0 CR com.android.car/.CarService:@ebbe7d4}
+    binding=AppBindRecord{2d175b com.android.car/.CarService:com.desaysv.mediaapp}
+    conn=android.os.BinderProxy@ebbe7d4 flags=0x1
+  * ConnectionRecord{155e128 u0 CR com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:@ef1334b}
+    binding=AppBindRecord{5761ca8 com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:com.desaysv.mediaapp}
+    conn=android.os.BinderProxy@ef1334b flags=0x1
+  * ConnectionRecord{cf5ae96 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@f0f39b1}
+    binding=AppBindRecord{48021e6 com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:com.desaysv.mediaapp}
+    conn=android.os.BinderProxy@f0f39b1 flags=0x1
+  * ConnectionRecord{9a18b77 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@f38e976}
+    binding=AppBindRecord{af2fefa com.android.bluetooth/.a2dpsink.A2dpSinkService:com.android.car}
+    conn=android.os.BinderProxy@f38e976 flags=0x0
+  * ConnectionRecord{9ca98d2 u0 CR com.desaysv.carlan/.CarLanService:@f70b75d}
+    binding=AppBindRecord{b9c0f0f com.desaysv.carlan/.CarLanService:com.desaysv.launcher}
+    conn=android.os.BinderProxy@f70b75d flags=0x1
+  * ConnectionRecord{18718a5 u0 CR com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:@fa0d69c}
+    binding=AppBindRecord{2c6b327 com.desaysv.vrservice/com.desaysv.vradapter.service.VrBinderService:com.desaysv.service.bluetooth}
+    conn=android.os.BinderProxy@fa0d69c flags=0x1
+  * ConnectionRecord{6fe50cb u0 CR com.android.car/.CarService:@faadf9a}
+    binding=AppBindRecord{b7b7f36 com.android.car/.CarService:com.desaysv.vehiclesetting}
+    conn=android.os.BinderProxy@faadf9a flags=0x1
+  * ConnectionRecord{482728e u0 CR com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:@fb53289}
+    binding=AppBindRecord{1f593c1 com.desaysv.mediaapp/com.desaysv.moduleradio.service.RadioAidlService:com.desaysv.mediaservice}
+    conn=android.os.BinderProxy@fb53289 flags=0x1
+
+Active foreground apps - user 0:
+  #20: com.desaysv.ftpserver
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m12s990ms mStartVisibleTime=-50m12s990ms
+  #19: com.desaysv.vrservice
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m18s899ms mStartVisibleTime=-50m18s899ms
+  #18: com.desaysv.vehicle.externallink
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m5s443ms mStartVisibleTime=-50m5s443ms
+  #17: com.desaysv.mapservice
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m19s532ms mStartVisibleTime=-50m19s532ms
+  #16: com.desaysv.ivi.adapterservice
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m22s647ms mStartVisibleTime=-50m22s647ms
+  #15: com.iflytek.autofly.sceneengine
+    mNumActive=3 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m16s387ms mStartVisibleTime=-50m16s387ms
+--
+  #12: com.desaysv.meterinteraction
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m18s680ms mStartVisibleTime=-50m18s680ms
+  #11: com.desaysv.mediaapp
+    mNumActive=2 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m16s56ms mStartVisibleTime=-50m16s56ms
+  #10: com.desaysv.service.bluetooth
+    mNumActive=2 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m19s184ms mStartVisibleTime=-50m19s184ms
+  #9: com.google.android.projection.sink
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m14s625ms mStartVisibleTime=-50m14s625ms
+  #8: com.desaysv.launcher
+    mNumActive=2 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m17s966ms mStartVisibleTime=-50m17s966ms
+  #7: com.iflytek.cutefly.speechclient.hmi
+    mNumActive=2 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m18s184ms mStartVisibleTime=-50m18s184ms
+  #6: com.desaysv.mediaservice
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m15s400ms mStartVisibleTime=-50m15s400ms
+  #5: com.desaysv.service.link
+    mNumActive=1 mAppOnTop=false mShownWhileTop=false mShownWhileScreenOn=true
+    mStartTime=-50m17s725ms mStartVisibleTime=-50m17s725ms
+  #4: com.desaysv.vehicle.carplayapp
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m17s943ms mStartVisibleTime=-50m17s943ms
+  #3: com.desaysv.svhvac
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m8s880ms mStartVisibleTime=-50m8s880ms
+  #2: com.desaysv.vrcontrolmgr
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m10s989ms mStartVisibleTime=-50m10s989ms
+  #1: com.desaysv.logmanager
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m12s961ms mStartVisibleTime=-50m12s961ms
+  #0: com.desaysv.bluetooth.phone
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-50m19s789ms mStartVisibleTime=-50m19s789ms

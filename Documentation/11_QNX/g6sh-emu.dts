@@ -1,0 +1,121 @@
+/dts-v1/;
+
+/ {
+    compatible = "desaysv,g6sh-emu", "renesas,r8a7795";
+    model = "DesaySV G6SH Emulator";
+    #address-cells = <2>;
+    #size-cells = <2>;
+
+    chosen {
+        bootargs = "console=ttyAMA0,115200 androidboot.selinux=permissive androidboot.hardware=g6sh init=/init loop.max_part=7 androidboot.revision=1.1 androidboot.board_id=0x0779611 init_time=1577808000 androidboot.serialno=00002260 skip_initramfs androidboot.slot_suffix_bootloader=_b androidboot.slot_suffix_qnx=_b androidboot.slot_suffix=_b androidboot.veritymode=eio rootwait ro root=/dev/vda25 rootfstype=ext4 lpj=33333 quiet cma=64M clk_ignore_unused";
+        stdout-path = "serial0:115200n8";
+    };
+
+    aliases {
+        serial0 = &uart0;  // ttyAMA0 - QNX Console
+        serial1 = &uart1;  // ttySC1 - GPS
+        serial6 = &uart6;  // ttySC6 - Bluetooth
+    };
+
+    cpus {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        cpu0: cpu@0 {
+            device_type = "cpu";
+            compatible = "arm,cortex-a57";
+            reg = <0x0>;
+            enable-method = "psci";
+        };
+
+        cpu1: cpu@1 {
+            device_type = "cpu";
+            compatible = "arm,cortex-a57";
+            reg = <0x1>;
+            enable-method = "psci";
+        };
+
+        cpu2: cpu@2 {
+            device_type = "cpu";
+            compatible = "arm,cortex-a57";
+            reg = <0x2>;
+            enable-method = "psci";
+        };
+
+        cpu3: cpu@3 {
+            device_type = "cpu";
+            compatible = "arm,cortex-a57";
+            reg = <0x3>;
+            enable-method = "psci";
+        };
+    };
+
+    psci {
+        compatible = "arm,psci-0.2";
+        method = "smc";
+    };
+
+    memory@40000000 {
+        device_type = "memory";
+        reg = <0x0 0x40000000 0x0 0x80000000>; // 2GB
+    };
+
+    gic: interrupt-controller@f0000000 {
+        compatible = "arm,gic-v3";
+        #interrupt-cells = <3>;
+        interrupt-controller;
+        reg = <0x0 0xf0000000 0x0 0x10000>,
+              <0x0 0xf00010000 0x0 0x80000>;
+    };
+
+    uartclk: uart-clock {
+        compatible = "fixed-clock";
+        #clock-cells = <0>;
+        clock-frequency = <48000000>;
+    };
+
+    soc {
+        #address-cells = <2>;
+        #size-cells = <2>;
+        compatible = "simple-bus";
+        ranges;
+
+        // ttySC6 (Bluetooth) - заменяем HSCIF на PL011 для эмулятора
+        uart6: serial@e6540000 {
+            compatible = "arm,pl011", "arm,primecell";
+            reg = <0x0 0xe6540000 0x0 0x1000>;
+            interrupts = <0x0 0x9a 0x4>;
+            clocks = <&uartclk>, <&uartclk>;
+            clock-names = "uartclk", "apb_pclk";
+            status = "okay";
+        };
+
+        // ttySC1 (GPS) - заменяем HSCIF на PL011 для эмулятора
+        uart1: serial@e6550000 {
+            compatible = "arm,pl011", "arm,primecell";
+            reg = <0x0 0xe6550000 0x0 0x1000>;
+            interrupts = <0x0 0x9b 0x4>;
+            clocks = <&uartclk>, <&uartclk>;
+            clock-names = "uartclk", "apb_pclk";
+            status = "okay";
+        };
+    };
+
+    vdevs {
+        #address-cells = <2>;
+        #size-cells = <2>;
+        compatible = "simple-bus";
+        ranges;
+
+        // ttyAMA0 (QNX Console) - PL011 через virtio
+        uart0: uart@1c090000 {
+            compatible = "arm,pl011", "arm,primecell";
+            reg = <0x0 0x1c090000 0x0 0x1000>;
+            interrupts = <0x0 0x41 0x4>;
+            clocks = <&uartclk>, <&uartclk>;
+            clock-names = "uartclk", "apb_pclk";
+            status = "okay";
+        };
+    };
+};
+

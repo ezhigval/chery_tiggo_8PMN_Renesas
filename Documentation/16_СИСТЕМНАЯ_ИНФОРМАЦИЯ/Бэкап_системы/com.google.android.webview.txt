@@ -1,0 +1,84 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.android.webview.SHOW_DEV_UI:
+        24f23f5 com.google.android.webview/org.chromium.android_webview.devui.MainActivity filter 6880369
+          Action: "com.android.webview.SHOW_DEV_UI"
+          Category: "android.intent.category.DEFAULT"
+      android.settings.WEBVIEW_LICENSE:
+        cc2c95c com.google.android.webview/org.chromium.android_webview.nonembedded.LicenseActivity filter 529a1ee
+          Action: "android.settings.WEBVIEW_LICENSE"
+          Category: "android.intent.category.DEFAULT"
+
+Registered ContentProviders:
+  com.google.android.webview/org.chromium.android_webview.services.DeveloperModeContentProvider:
+    Provider{531a31f com.google.android.webview/org.chromium.android_webview.services.DeveloperModeContentProvider}
+  com.google.android.webview/org.chromium.android_webview.nonembedded.LicenseContentProvider:
+    Provider{d6a9dcd com.google.android.webview/org.chromium.android_webview.nonembedded.LicenseContentProvider}
+
+ContentProvider Authorities:
+  [com.google.android.webview.LicenseContentProvider]:
+    Provider{d6a9dcd com.google.android.webview/org.chromium.android_webview.nonembedded.LicenseContentProvider}
+      applicationInfo=ApplicationInfo{7b512f2 com.google.android.webview}
+  [com.google.android.webview.DeveloperModeContentProvider]:
+    Provider{531a31f com.google.android.webview/org.chromium.android_webview.services.DeveloperModeContentProvider}
+      applicationInfo=ApplicationInfo{7b512f2 com.google.android.webview}
+
+Key Set Manager:
+  [com.google.android.webview]
+      Signing KeySets: 6
+
+Packages:
+  Package [com.google.android.webview] (b4492ef):
+    userId=10014
+    pkg=Package{4d191fc com.google.android.webview}
+    codePath=/system/app/GoogleWebView
+    resourcePath=/system/app/GoogleWebView
+    legacyNativeLibraryDir=/system/app/GoogleWebView/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=arm64-v8a
+    versionCode=418310153 minSdk=21 targetSdk=30
+    versionName=85.0.4183.101
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{7b512f2 com.google.android.webview}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ]
+    dataDir=/data/user/0/com.google.android.webview
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 06:59:20
+    firstInstallTime=2024-12-25 11:44:12
+    lastUpdateTime=2025-08-08 06:59:20
+    signatures=PackageSignatures{c9e2085 version:1, signatures:[f4ae824f], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+    User 0: ceDataInode=262357 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.google.android.webview]
+    path: /system/app/GoogleWebView/GoogleWebView.apk
+      arm: [status=quicken] [reason=first-boot]
+      arm64: [status=quicken] [reason=first-boot]
+      used by other apps: [ru.yandex.yandexmaps, ru.kinopoisk]
+
+
+Compiler stats:
+  [com.google.android.webview]
+    (No recorded stats)

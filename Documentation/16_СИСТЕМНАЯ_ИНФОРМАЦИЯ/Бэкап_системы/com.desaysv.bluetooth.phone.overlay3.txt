@@ -1,0 +1,48 @@
+Key Set Manager:
+  [com.desaysv.bluetooth.phone.overlay3]
+      Signing KeySets: 1
+
+Packages:
+  Package [com.desaysv.bluetooth.phone.overlay3] (2b9513b):
+    userId=10028
+    pkg=Package{e49c058 com.desaysv.bluetooth.phone.overlay3}
+    codePath=/product/app/SVBtPhoneThrOverlay
+    resourcePath=/product/app/SVBtPhoneThrOverlay
+    legacyNativeLibraryDir=/product/app/SVBtPhoneThrOverlay/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 minSdk=27 targetSdk=28
+    versionName=SVAppBluetoothPhoneOverlay_eb3059c95_2025-08-07_250808_0211
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{a11e5b1 com.desaysv.bluetooth.phone.overlay3}
+    flags=[ SYSTEM ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PRODUCT ]
+    dataDir=/data/user/0/com.desaysv.bluetooth.phone.overlay3
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 06:59:19
+    firstInstallTime=2024-12-25 11:44:10
+    lastUpdateTime=2025-08-08 06:59:19
+    signatures=PackageSignatures{580ea96 version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    overlayTarget=com.desaysv.bluetooth.phone
+    overlayCategory=null
+    User 0: ceDataInode=262324 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.desaysv.bluetooth.phone.overlay3]
+
+
+Compiler stats:
+  [com.desaysv.bluetooth.phone.overlay3]
+    (No recorded stats)

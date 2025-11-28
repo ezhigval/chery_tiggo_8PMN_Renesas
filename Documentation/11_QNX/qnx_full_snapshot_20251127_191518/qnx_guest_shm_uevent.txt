@@ -1,0 +1,6 @@
+DRIVER=qnx-virtio-du
+OF_NAME=qnx,guest_shm
+OF_FULLNAME=/vdevs/qnx,guest_shm@1c050000
+OF_COMPATIBLE_0=qvm,guest_shm
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nqnx,guest_shmT<NULL>Cqvm,guest_shm

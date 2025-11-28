@@ -1,0 +1,70 @@
+# Emulator configuration for Chery Tiggo 8 Pro Max (T18FL3)
+#
+# All paths are relative to the repository root.
+# Images/OTA packages are documented in:
+# - Documentation/11_QNX/*
+# - Documentation/12_T18FL3/T18FL3_KNOWLEDGE_BASE.md
+# - Documentation/12_T18FL3/T18FL3_SIMULATION_README.md
+# - Documentation/11_QNX/FULL_SYSTEM_INSTALL_PLAN.md
+
+android:
+  # Source OTA package that contains Android boot/system/vendor images.
+  ota_zip: firmware/T18FL3__703000765AA_MOD_SW_02.09.00_+_CHIME_+_VR_+_DSP_+_MAPS/T18FL3_703000765AA_MOD_SW_02.09.00_+_CHIME_+_VR_+_DSP_+_MAPS.zip
+
+  # Extracted images (ext2, no MBR/GPT) – expected paths after payload extraction.
+  # See T18FL3_SIMULATION_README.md for the original layout.
+  boot_img: Development/Chery_Emulator/payload/boot_patched_adb_tcp.img
+  system_img: Development/Chery_Emulator/payload/system.img
+  vendor_img: Development/Chery_Emulator/payload/vendor.img
+  product_img: Development/Chery_Emulator/payload/product.img
+
+  boot_partition: boot_b
+  system_partition: system_b
+  vendor_partition: vendor_b
+
+qnx:
+  # QNX images are also delivered in the same OTA; exact extraction paths
+  # are defined in the QNX documentation.
+  ota_zip: firmware/T18FL3__703000765AA_MOD_SW_02.09.00_+_CHIME_+_VR_+_DSP_+_MAPS/T18FL3_703000765AA_MOD_SW_02.09.00_+_CHIME_+_VR_+_DSP_+_MAPS.zip
+
+  qnx_boot_img: Development/Chery_Emulator/payload/qnx_boot.img
+  qnx_system_img: Development/Chery_Emulator/payload/qnx_system.img
+
+  boot_partition: qnx_boot_b
+  system_partition: qnx_system_b
+
+  # Включать ли монтирование QNX образов в QEMU как дополнительные диски.
+  # Это делает qnx_boot.img и qnx_system.img доступными внутри виртуальной машины,
+  # но само по себе не запускает QNX (для этого позже понадобится отдельный
+  # загрузчик / второй инстанс QEMU).
+  enable: true
+
+qemu:
+  # Optional custom QEMU binary. If not set, system qemu-system-aarch64 is used.
+  # Для SCIF/QNX форка используем отдельный бинарь:
+  #   Development/Chery_Emulator/qemu_scif_fork/qemu-system-aarch64
+  # Оригинальные образы при этом не изменяются.
+  binary: Development/Chery_Emulator/qemu_scif_fork/qemu-system-aarch64
+
+  # QEMU machine name:
+  #   - "virt" (стандартная машина)
+  #   - "g6sh" (кастомная машина для T18FL3, сейчас обёртка над virt)
+  machine: "g6sh"
+
+  # Необязательный путь к dtb. Например:
+  #   Development/Chery_Emulator/qemu_g6sh/g6sh-emu.dtb
+  dtb: Development/Chery_Emulator/qemu_g6sh/g6sh-emu.dtb
+
+graphics:
+  # VNC endpoints for the emulator displays. These ports are intentionally
+  # localhost-only; see isolation docs for details. QEMU should be started
+  # with matching -display / -vnc options (for example:
+  #   -display vnc=127.0.0.1:5900  for HU
+  #   -display vnc=127.0.0.1:5901  for cluster/QNX
+  # Actual wiring is handled by the QEMU builder; the core only consumes VNC.
+  hu:
+    vnc_host: 127.0.0.1
+    vnc_port: 5900
+  cluster:
+    vnc_host: 127.0.0.1
+    vnc_port: 5901

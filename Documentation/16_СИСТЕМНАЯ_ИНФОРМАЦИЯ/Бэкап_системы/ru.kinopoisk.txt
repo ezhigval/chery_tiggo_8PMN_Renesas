@@ -1,0 +1,844 @@
+Activity Resolver Table:
+  Schemes:
+      ru.kinopoisk.passport:
+        ddeb5c2 ru.kinopoisk/com.yandex.passport.internal.ui.browser.SocialBrowserDataActivity filter b673631
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ru.kinopoisk.passport"
+          Authority: "social": -1
+        ddeb5c2 ru.kinopoisk/com.yandex.passport.internal.ui.browser.SocialBrowserDataActivity filter 85b3116
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ru.kinopoisk.passport"
+          Authority: "n2b_auth": -1
+      kp:
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter d47dcbf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "movielist": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 7955f8c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "film": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter ffe86d5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "player": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter a327eea
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "filmDetail": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter d2785db
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "peopleDetail": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 6fee878
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "premiere": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter a2dbb51
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "series": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 6319fb6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "search": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter e8ea4b7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "trailers": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 5761424
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "newsPreview": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 541bb8d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "cinemaDetail": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 300142
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "filmSeances": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter fded553
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "cinemaSeances": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 8124e90
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "online": -1
+          Path: "PatternMatcher{PREFIX: /selection}"
+          Path: "PatternMatcher{LITERAL: /my}"
+          Path: "PatternMatcher{LITERAL: /subscription}"
+          Path: "PatternMatcher{LITERAL: /store}"
+          Path: "PatternMatcher{LITERAL: /films}"
+          Path: "PatternMatcher{LITERAL: /downloads}"
+          Path: "PatternMatcher{LITERAL: /sport}"
+          Path: "PatternMatcher{GLOB: /sportevent/.*}"
+          Path: "PatternMatcher{GLOB: /sporthighlight/.*}"
+          Path: "PatternMatcher{GLOB: /sportcompetition/.*}"
+          Path: "PatternMatcher{GLOB: /subscriptions_screen}"
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 71b8389
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "afisha": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter dc0ef8e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "top": -1
+          Path: "PatternMatcher{GLOB: /lists/.*}"
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 9f773af
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "top250activity": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter bf5c3bc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "auth": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 8afcf45
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "mainView": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 860769a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "personalcontent": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter a519bcb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "tv": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter c395fa8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "profile": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 3831ac1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "action": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 33f6266
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "mp": -1
+          Path: "PatternMatcher{LITERAL: /products}"
+          Path: "PatternMatcher{LITERAL: /profile}"
+          Path: "PatternMatcher{GLOB: /product/.*}"
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 2dc29a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "webview": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter a98ce54
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "purchase": -1
+          Path: "PatternMatcher{GLOB: /subscription}"
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter ae5a1fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "results2021": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 1cf3ef2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "communications": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter b97b943
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "payment": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 6de7bc0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "plus-home-sdk": -1
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter cef60f9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kp"
+          Authority: "supportChat": -1
+      http:
+        3dc762f ru.kinopoisk/com.yandex.passport.internal.links.LinksHandlingActivity filter 1e50dbb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "passport.yandex.ru": -1
+          Authority: "passport-rc.yandex.ru": -1
+          Authority: "passport.yandex-team.ru": -1
+          Path: "PatternMatcher{PREFIX: /am/push/qrsecure}"
+          AutoVerify=true
+        83ad43c ru.kinopoisk/com.yandex.passport.QrWithoutQr filter 25802d8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "passport.yandex.ru": -1
+          Authority: "passport-rc.yandex.ru": -1
+          Authority: "passport.yandex-team.ru": -1
+          Path: "PatternMatcher{PREFIX: /am/pssp/browser/account}"
+          AutoVerify=true
+      plus:
+        2fef828 ru.kinopoisk/com.yandex.plus.paymentsdk.common.PlusSbpRedirectActivity filter 10f93ec
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "plus"
+          Authority: "ru.kinopoisk": -1
+          Path: "PatternMatcher{LITERAL: /sbp/redirect}"
+          AutoVerify=true
+      https:
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter b0e583e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "13c8.app.link": -1
+          AutoVerify=true
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 1f2a69f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "hd.kinopoisk.ru": -1
+          Authority: "testing.hd.kinopoisk.ru": -1
+          Path: "PatternMatcher{PREFIX: /sport}"
+          Path: "PatternMatcher{GLOB: /sport/event/.*}"
+          Path: "PatternMatcher{GLOB: /sport/watch/.*}"
+          AutoVerify=true
+        3dc762f ru.kinopoisk/com.yandex.passport.internal.links.LinksHandlingActivity filter 1e50dbb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "passport.yandex.ru": -1
+          Authority: "passport-rc.yandex.ru": -1
+          Authority: "passport.yandex-team.ru": -1
+          Path: "PatternMatcher{PREFIX: /am/push/qrsecure}"
+          AutoVerify=true
+        83ad43c ru.kinopoisk/com.yandex.passport.QrWithoutQr filter 25802d8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "passport.yandex.ru": -1
+          Authority: "passport-rc.yandex.ru": -1
+          Authority: "passport.yandex-team.ru": -1
+          Path: "PatternMatcher{PREFIX: /am/pssp/browser/account}"
+          AutoVerify=true
+        907eee6 ru.kinopoisk/com.yandex.passport.internal.ui.YxAuthActivity filter 16854f0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "yxcc01d5dbc7de4925bdf07f33bd3dfd61.oauth.yandex.ru": -1
+          Path: "PatternMatcher{LITERAL: /magic-link/ru.kinopoisk/finish}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.yandex.passport.action.NATIVE_MAILISH_GOOGLE_AUTH:
+        db9ba35 ru.kinopoisk/com.yandex.passport.internal.social.GoogleNativeSocialAuthActivity filter c5148a2
+          Action: "com.yandex.passport.action.NATIVE_MAILISH_GOOGLE_AUTH"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.passport.action.SEND_AUTH_TO_TRACK:
+        e97583b ru.kinopoisk/com.yandex.passport.internal.ui.authwithtrack.SendAuthToTrackActivity filter 2097933
+          Action: "com.yandex.passport.action.SEND_AUTH_TO_TRACK"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.passport.action.NATIVE_SOCIAL_VKONTAKTE_AUTH:
+        658c4b1 ru.kinopoisk/com.yandex.passport.internal.social.VkNativeSocialAuthActivity filter 8b67484
+          Action: "com.yandex.passport.action.NATIVE_SOCIAL_VKONTAKTE_AUTH"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.messenger.ChatSummary.OPEN:
+        e993d17 ru.kinopoisk/com.yandex.messaging.ChatOpenAlias filter 4ed7a69
+          Action: "com.yandex.messenger.Chat.OPEN"
+          Action: "com.yandex.messenger.ChatSummary.OPEN"
+          Action: "com.yandex.messenger.Sharing.OPEN"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.messenger.Sharing.OPEN:
+        e993d17 ru.kinopoisk/com.yandex.messaging.ChatOpenAlias filter 4ed7a69
+          Action: "com.yandex.messenger.Chat.OPEN"
+          Action: "com.yandex.messenger.ChatSummary.OPEN"
+          Action: "com.yandex.messenger.Sharing.OPEN"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        940afd3 ru.kinopoisk/.presentation.screen.tabs.RedirectTabsIntentsActivity filter 97c12de
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.yandex.messenger.Chat.NOTIFICATION_CLICK:
+        890acdf ru.kinopoisk/com.yandex.messaging.activity.MessengerNotificationActivity filter a9f4cee
+          Action: "com.yandex.messenger.Chat.NOTIFICATION_CLICK"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.passport.ACTION_SYSTEM_ADD_ACCOUNT:
+        a8815eb ru.kinopoisk/com.yandex.passport.internal.ui.router.LoginRouterActivity filter 593ba4a
+          Action: "com.yandex.passport.ACTION_SYSTEM_ADD_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.intent.ADD_ACCOUNT:
+        a8815eb ru.kinopoisk/com.yandex.passport.internal.ui.router.LoginRouterActivity filter 73c13b5
+          Action: "com.yandex.intent.ADD_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.messenger.Chat.OPEN:
+        e993d17 ru.kinopoisk/com.yandex.messaging.ChatOpenAlias filter 4ed7a69
+          Action: "com.yandex.messenger.Chat.OPEN"
+          Action: "com.yandex.messenger.ChatSummary.OPEN"
+          Action: "com.yandex.messenger.Sharing.OPEN"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.metrica.push.action.NOTIFICATION_ACTION:
+        5180192 ru.kinopoisk/com.yandex.metrica.push.core.notification.MetricaPushDummyActivity filter 3b749fa
+          Action: "com.yandex.metrica.push.action.NOTIFICATION_ACTION"
+      com.yandex.passport.action.NATIVE_SOCIAL_GOOGLE_AUTH:
+        db9ba35 ru.kinopoisk/com.yandex.passport.internal.social.GoogleNativeSocialAuthActivity filter f48046d
+          Action: "com.yandex.passport.action.NATIVE_SOCIAL_GOOGLE_AUTH"
+          Category: "android.intent.category.DEFAULT"
+      com.yandex.auth.action.YA_SDK_LOGIN:
+        fc413a7 ru.kinopoisk/com.yandex.passport.AuthSdk filter 4ccca97
+          Action: "com.yandex.auth.action.YA_SDK_LOGIN"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.CREATE_SHORTCUT:
+        39fb0f2 ru.kinopoisk/com.yandex.alice.shortcut.activities.ChatListShortcutActivity filter d58758f
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+        144343 ru.kinopoisk/com.yandex.alice.shortcut.activities.MessengerShortcutActivity filter e15d01c
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+        df13dc0 ru.kinopoisk/com.yandex.alice.shortcut.activities.AliceShortcutActivity filter 65a5425
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+      ru.yandex.speechkit.action.voice_recognition:
+        e73ea3e ru.kinopoisk/ru.yandex.speechkit.gui.RecognizerActivity filter ef0dbab
+          Action: "ru.yandex.speechkit.action.voice_recognition"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        321f8f ru.kinopoisk/com.yandex.passport.internal.core.announcing.PackageRemovedReceiver filter 19563c4
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+          Ssp: "PatternMatcher{PREFIX: com.yandex.}"
+          Ssp: "PatternMatcher{PREFIX: ru.yandex.}"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        b915a4c ru.kinopoisk/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f7b675c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED:
+        c9fcf38 ru.kinopoisk/com.yandex.alice.reminders.notifications.RemindersBroadcastReceiver filter c967ca9
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        57fc476 ru.kinopoisk/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 984e1cf
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.google.android.gms.auth.api.phone.SMS_RETRIEVED:
+        51bb202 ru.kinopoisk/com.yandex.passport.internal.smsretriever.SmsRetrieverReceiver filter e9962ad
+          Action: "com.google.android.gms.auth.api.phone.SMS_RETRIEVED"
+      com.huawei.android.push.intent.REGISTRATION:
+        345ee7c ru.kinopoisk/com.huawei.hms.support.api.push.PushReceiver filter 62ae219
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        f797f5a ru.kinopoisk/androidx.profileinstaller.ProfileInstallReceiver filter be88f92
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        f093f67 ru.kinopoisk/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e313a65
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        ae06b03 ru.kinopoisk/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 9ded33a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.huawei.intent.action.PUSH_DELAY_NOTIFY:
+        82dc8b9 ru.kinopoisk/com.huawei.hms.support.api.push.PushMsgReceiver filter b00cd60
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        60730a ru.kinopoisk/com.yandex.passport.internal.core.announcing.AccountsChangedReceiver filter fa0eed7
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "com.yandex.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        f093f67 ru.kinopoisk/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e313a65
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.huawei.android.push.intent.RECEIVE:
+        345ee7c ru.kinopoisk/com.huawei.hms.support.api.push.PushReceiver filter 62ae219
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      com.yandex.metrica.push.action.NOTIFICATION_ACTION:
+        f2a4086 ru.kinopoisk/com.yandex.metrica.push.core.notification.MetricaPushBroadcastReceiver filter 80017e1
+          Action: "com.yandex.metrica.push.action.NOTIFICATION_ACTION"
+      com.yandex.metrica.push.action.EXPIRED_BY_TTL_ACTION:
+        8b42e9d ru.kinopoisk/com.yandex.metrica.push.core.notification.TtlBroadcastReceiver filter 8a53bc7
+          Action: "com.yandex.metrica.push.action.EXPIRED_BY_TTL_ACTION"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        f797f5a ru.kinopoisk/androidx.profileinstaller.ProfileInstallReceiver filter 97b45f4
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      ru.kinopoisk.action.ymp.SILENT_PUSH_RECEIVE:
+        d72da5e ru.kinopoisk/.appmetrica.push.receiver.SilentPushReceiver filter d943e56
+          Action: "ru.kinopoisk.action.ymp.SILENT_PUSH_RECEIVE"
+      ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_CANCEL:
+        b23ce3f ru.kinopoisk/.utils.download.DownloadNotificationReceiver filter d533071
+          Action: "ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_RESUME"
+          Action: "ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_CANCEL"
+          Action: "ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_PAUSE"
+      com.google.android.c2dm.intent.RECEIVE:
+        ad0330c ru.kinopoisk/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 9c4c22e
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        3c7d7a4 ru.kinopoisk/com.yandex.metrica.push.core.notification.MetricaPushNotificationStatusChangeHandler filter 856e906
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      android.intent.action.BATTERY_LOW:
+        b915a4c ru.kinopoisk/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f7b675c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        bf0854b ru.kinopoisk/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 117cbeb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        bf0854b ru.kinopoisk/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 117cbeb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        f797f5a ru.kinopoisk/androidx.profileinstaller.ProfileInstallReceiver filter 785511d
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.yandex.passport.ACTION_SSO_ANNOUNCEMENT:
+        927e041 ru.kinopoisk/com.yandex.passport.internal.sso.announcing.SsoAnnouncingReceiver filter 22de9e2
+          Action: "com.yandex.passport.ACTION_SSO_ANNOUNCEMENT"
+      com.android.launcher.action.INSTALL_SHORTCUT:
+        d402b27 ru.kinopoisk/com.yandex.alice.shortcut.AlicengerShortcutsResultReceiver filter c66f830
+          Action: "com.android.launcher.action.INSTALL_SHORTCUT"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        f797f5a ru.kinopoisk/androidx.profileinstaller.ProfileInstallReceiver filter aafcd63
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        c9fcf38 ru.kinopoisk/com.yandex.alice.reminders.notifications.RemindersBroadcastReceiver filter c967ca9
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+        bf0854b ru.kinopoisk/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 117cbeb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_RESUME:
+        b23ce3f ru.kinopoisk/.utils.download.DownloadNotificationReceiver filter d533071
+          Action: "ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_RESUME"
+          Action: "ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_CANCEL"
+          Action: "ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_PAUSE"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        3c7d7a4 ru.kinopoisk/com.yandex.metrica.push.core.notification.MetricaPushNotificationStatusChangeHandler filter 856e906
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      com.yandex.passport.NOTIFICATION_DISMISS:
+        f036a34 ru.kinopoisk/com.yandex.passport.internal.push.NotificationDismissedReceiver filter 19ba173
+          Action: "com.yandex.passport.NOTIFICATION_DISMISS"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        57fc476 ru.kinopoisk/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 984e1cf
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        3c7d7a4 ru.kinopoisk/com.yandex.metrica.push.core.notification.MetricaPushNotificationStatusChangeHandler filter 856e906
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+      com.yandex.accounts.LOGIN_ACCOUNTS_CHANGED:
+        60730a ru.kinopoisk/com.yandex.passport.internal.core.announcing.AccountsChangedReceiver filter fa0eed7
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "com.yandex.accounts.LOGIN_ACCOUNTS_CHANGED"
+      ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_PAUSE:
+        b23ce3f ru.kinopoisk/.utils.download.DownloadNotificationReceiver filter d533071
+          Action: "ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_RESUME"
+          Action: "ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_CANCEL"
+          Action: "ru.kinopoisk.action.DOWNLOAD_NOTIFICATION_PAUSE"
+      com.huawei.intent.action.PUSH:
+        82dc8b9 ru.kinopoisk/com.huawei.hms.support.api.push.PushMsgReceiver filter b00cd60
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        c6fc864 ru.kinopoisk/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter a059d48
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      appmetrica:
+        20a4693 ru.kinopoisk/io.appmetrica.analytics.internal.AppMetricaService filter e936dfb
+          Action: "io.appmetrica.analytics.IAppMetricaService"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "appmetrica"
+
+  Non-Data Actions:
+      com.yandex.accounts.AccountAuthenticator:
+        a881294 ru.kinopoisk/com.yandex.passport.internal.core.auth.AuthenticationService filter 1f4db2c permission com.yandex.permission.READ_CREDENTIALS.kinopoisk
+          Action: "android.accounts.AccountAuthenticator"
+          Action: "com.yandex.accounts.AccountAuthenticator"
+      android.content.SyncAdapter:
+        64a439 ru.kinopoisk/com.yandex.passport.internal.core.sync.SyncService filter 10e9f5
+          Action: "android.content.SyncAdapter"
+      com.yandex.messenger.ChatSummary.DISMISS:
+        83f47d7 ru.kinopoisk/com.yandex.messaging.NotificationActionService filter 6fa738a
+          Action: "com.yandex.messenger.Chat.MARK_AS_READ"
+          Action: "com.yandex.messenger.Chat.DISMISS"
+          Action: "com.yandex.messenger.ChatSummary.DISMISS"
+      com.yandex.messenger.Chat.MARK_AS_READ:
+        83f47d7 ru.kinopoisk/com.yandex.messaging.NotificationActionService filter 6fa738a
+          Action: "com.yandex.messenger.Chat.MARK_AS_READ"
+          Action: "com.yandex.messenger.Chat.DISMISS"
+          Action: "com.yandex.messenger.ChatSummary.DISMISS"
+      com.huawei.push.msg.NOTIFY_MSG:
+        2cebc92 ru.kinopoisk/com.huawei.hms.support.api.push.service.HmsMsgService filter b6a7e18
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.google.firebase.MESSAGING_EVENT:
+        27ff045 ru.kinopoisk/.appmetrica.push.service.YaMetricaFirebaseMessagingService filter edffd7e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=100, mOrder=0, mHasPartialTypes=false
+      android.accounts.AccountAuthenticator:
+        a881294 ru.kinopoisk/com.yandex.passport.internal.core.auth.AuthenticationService filter 1f4db2c permission com.yandex.permission.READ_CREDENTIALS.kinopoisk
+          Action: "android.accounts.AccountAuthenticator"
+          Action: "com.yandex.accounts.AccountAuthenticator"
+      com.huawei.push.msg.PASSBY_MSG:
+        2cebc92 ru.kinopoisk/com.huawei.hms.support.api.push.service.HmsMsgService filter b6a7e18
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.huawei.push.action.MESSAGING_EVENT:
+        f133977 ru.kinopoisk/.appmetrica.push.service.YaMetricaHmsMessagingService filter 20f82df permission ru.kinopoisk.permission.PROCESS_PUSH_MSG
+          Action: "com.huawei.push.action.MESSAGING_EVENT"
+      com.yandex.messenger.Chat.DISMISS:
+        83f47d7 ru.kinopoisk/com.yandex.messaging.NotificationActionService filter 6fa738a
+          Action: "com.yandex.messenger.Chat.MARK_AS_READ"
+          Action: "com.yandex.messenger.Chat.DISMISS"
+          Action: "com.yandex.messenger.ChatSummary.DISMISS"
+
+Permissions:
+  Permission [ru.kinopoisk.permission.PUSH_WRITE_PROVIDER] (aa5142f):
+    sourcePackage=ru.kinopoisk
+    uid=10055 gids=null type=0 prot=signature
+    perm=Permission{fca1a3c ru.kinopoisk.permission.PUSH_WRITE_PROVIDER}
+    packageSetting=PackageSetting{373a3c5 ru.kinopoisk/10055}
+
+Permissions:
+  Permission [ru.kinopoisk.permission.PUSH_PROVIDER] (f924380):
+    sourcePackage=ru.kinopoisk
+    uid=10055 gids=null type=0 prot=signature
+    perm=Permission{6d7edb9 ru.kinopoisk.permission.PUSH_PROVIDER}
+    packageSetting=PackageSetting{373a3c5 ru.kinopoisk/10055}
+
+Permissions:
+  Permission [ru.kinopoisk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (58e561e):
+    sourcePackage=ru.kinopoisk
+    uid=10055 gids=null type=0 prot=signature
+    perm=Permission{50bfeff ru.kinopoisk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    packageSetting=PackageSetting{373a3c5 ru.kinopoisk/10055}
+
+Permissions:
+  Permission [com.yandex.permission.READ_CREDENTIALS.kinopoisk] (13591c4):
+    sourcePackage=ru.kinopoisk
+    uid=10055 gids=null type=0 prot=signature
+    perm=Permission{7d0f8ad com.yandex.permission.READ_CREDENTIALS.kinopoisk}
+    packageSetting=PackageSetting{373a3c5 ru.kinopoisk/10055}
+
+Permissions:
+  Permission [ru.kinopoisk.permission.PROCESS_PUSH_MSG] (c3d3644):
+    sourcePackage=ru.kinopoisk
+    uid=10055 gids=null type=0 prot=signature
+    perm=Permission{931032d ru.kinopoisk.permission.PROCESS_PUSH_MSG}
+    packageSetting=PackageSetting{373a3c5 ru.kinopoisk/10055}
+
+Registered ContentProviders:
+  ru.kinopoisk/com.yandex.attachments.chooser.ChooserFileProvider:
+    Provider{b50a27d ru.kinopoisk/com.yandex.attachments.chooser.ChooserFileProvider}
+  ru.kinopoisk/androidx.core.content.FileProvider:
+    Provider{563d640 ru.kinopoisk/androidx.core.content.FileProvider}
+  ru.kinopoisk/.content.KinopoiskFileProvider:
+    Provider{8f6a435 ru.kinopoisk/.content.KinopoiskFileProvider}
+  ru.kinopoisk/com.huawei.hms.support.api.push.PushProvider:
+    Provider{dbd402b ru.kinopoisk/com.huawei.hms.support.api.push.PushProvider}
+  ru.kinopoisk/com.huawei.hms.aaid.InitProvider:
+    Provider{5f5235d ru.kinopoisk/com.huawei.hms.aaid.InitProvider}
+  ru.kinopoisk/com.yandex.messaging.files.SharingFileProvider:
+    Provider{78789a3 ru.kinopoisk/com.yandex.messaging.files.SharingFileProvider}
+  ru.kinopoisk/com.yandex.plus.home.common.PlusContentProvider:
+    Provider{2659859 ru.kinopoisk/com.yandex.plus.home.common.PlusContentProvider}
+  ru.kinopoisk/io.appmetrica.analytics.internal.PreloadInfoContentProvider:
+    Provider{82f3acc ru.kinopoisk/io.appmetrica.analytics.internal.PreloadInfoContentProvider}
+  ru.kinopoisk/com.yandex.passport.internal.provider.InternalProvider:
+    Provider{7c0f991 ru.kinopoisk/com.yandex.passport.internal.provider.InternalProvider}
+  ru.kinopoisk/androidx.startup.InitializationProvider:
+    Provider{44ab985 ru.kinopoisk/androidx.startup.InitializationProvider}
+  ru.kinopoisk/com.yandex.passport.internal.sso.SsoContentProvider:
+    Provider{a46300b ru.kinopoisk/com.yandex.passport.internal.sso.SsoContentProvider}
+  ru.kinopoisk/com.yandex.messaging.MessagingFileProvider:
+    Provider{607fee8 ru.kinopoisk/com.yandex.messaging.MessagingFileProvider}
+  ru.kinopoisk/com.yandex.passport.internal.authsdk.AuthSdkProvider:
+    Provider{125c1e7 ru.kinopoisk/com.yandex.passport.internal.authsdk.AuthSdkProvider}
+  ru.kinopoisk/com.huawei.agconnect.core.provider.AGConnectInitializeProvider:
+    Provider{5acf218 ru.kinopoisk/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+  ru.kinopoisk/com.yandex.mobile.ads.core.initializer.MobileAdsInitializeProvider:
+    Provider{23cbde2 ru.kinopoisk/com.yandex.mobile.ads.core.initializer.MobileAdsInitializeProvider}
+  ru.kinopoisk/.appinitializer.AppInitializeProvider:
+    Provider{cad65cf ru.kinopoisk/.appinitializer.AppInitializeProvider}
+  ru.kinopoisk/com.yandex.updater.lib.ApkFileProvider:
+    Provider{8abf51d ru.kinopoisk/com.yandex.updater.lib.ApkFileProvider}
+  ru.kinopoisk/com.yandex.plus.core.data.provider.PlusSdkFileProvider:
+    Provider{d17c619 ru.kinopoisk/com.yandex.plus.core.data.provider.PlusSdkFileProvider}
+  ru.kinopoisk/com.yandex.passport.internal.core.sync.SyncProvider:
+    Provider{2d5aad5 ru.kinopoisk/com.yandex.passport.internal.core.sync.SyncProvider}
+
+ContentProvider Authorities:
+  [ru.kinopoisk.PlusSdkFileProvider]:
+    Provider{d17c619 ru.kinopoisk/com.yandex.plus.core.data.provider.PlusSdkFileProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.MobileAdsInitializeProvider]:
+    Provider{23cbde2 ru.kinopoisk/com.yandex.mobile.ads.core.initializer.MobileAdsInitializeProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.AppInitializer]:
+    Provider{cad65cf ru.kinopoisk/.appinitializer.AppInitializeProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.appmetrica.preloadinfo.retail]:
+    Provider{82f3acc ru.kinopoisk/io.appmetrica.analytics.internal.PreloadInfoContentProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.huawei.push.provider]:
+    Provider{dbd402b ru.kinopoisk/com.huawei.hms.support.api.push.PushProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.chooser.fileprovider]:
+    Provider{b50a27d ru.kinopoisk/com.yandex.attachments.chooser.ChooserFileProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.messaging.fileprovider]:
+    Provider{607fee8 ru.kinopoisk/com.yandex.messaging.MessagingFileProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.fileprovider]:
+    Provider{8f6a435 ru.kinopoisk/.content.KinopoiskFileProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [com.yandex.passport.sync.ru.kinopoisk]:
+    Provider{2d5aad5 ru.kinopoisk/com.yandex.passport.internal.core.sync.SyncProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.AGCInitializeProvider]:
+    Provider{5acf218 ru.kinopoisk/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.PlusContentProvider]:
+    Provider{2659859 ru.kinopoisk/com.yandex.plus.home.common.PlusContentProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.monetization.ads.inspector.fileprovider]:
+    Provider{563d640 ru.kinopoisk/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.aaidinitprovider]:
+    Provider{5f5235d ru.kinopoisk/com.huawei.hms.aaid.InitProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [com.yandex.passport.internal.sso.ru.kinopoisk]:
+    Provider{a46300b ru.kinopoisk/com.yandex.passport.internal.sso.SsoContentProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [com.yandex.passport.internal.provider.ru.kinopoisk]:
+    Provider{7c0f991 ru.kinopoisk/com.yandex.passport.internal.provider.InternalProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.sharing.fileprovider]:
+    Provider{78789a3 ru.kinopoisk/com.yandex.messaging.files.SharingFileProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.androidx-startup]:
+    Provider{44ab985 ru.kinopoisk/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [ru.kinopoisk.ApkFileProvider]:
+    Provider{8abf51d ru.kinopoisk/com.yandex.updater.lib.ApkFileProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+  [com.yandex.passport.authsdk.provider.ru.kinopoisk]:
+    Provider{125c1e7 ru.kinopoisk/com.yandex.passport.internal.authsdk.AuthSdkProvider}
+      applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+
+Key Set Manager:
+  [ru.kinopoisk]
+      Signing KeySets: 16
+
+Packages:
+  Package [ru.kinopoisk] (373a3c5):
+    userId=10055
+    pkg=Package{b7d0f02 ru.kinopoisk}
+    codePath=/data/app/ru.kinopoisk-UGcPUFmfrge8XA0hVBSzrA==
+    resourcePath=/data/app/ru.kinopoisk-UGcPUFmfrge8XA0hVBSzrA==
+    legacyNativeLibraryDir=/data/app/ru.kinopoisk-UGcPUFmfrge8XA0hVBSzrA==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=1031800 minSdk=24 targetSdk=33
+    versionName=6.144.0
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{5096789 ru.kinopoisk}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/ru.kinopoisk
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.boot.jar
+    timeStamp=2025-11-12 07:36:17
+    firstInstallTime=2025-11-12 07:36:18
+    lastUpdateTime=2025-11-12 07:36:18
+    signatures=PackageSignatures{c5e3013 version:3, signatures:[3a28d0db], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    declared permissions:
+      com.yandex.permission.READ_CREDENTIALS.kinopoisk: prot=signature, INSTALLED
+      ru.kinopoisk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+      ru.kinopoisk.permission.PROCESS_PUSH_MSG: prot=signature, INSTALLED
+      ru.kinopoisk.permission.PUSH_PROVIDER: prot=signature, INSTALLED
+      ru.kinopoisk.permission.PUSH_WRITE_PROVIDER: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.gms.permission.AD_ID
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_UPDATES
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WAKE_LOCK
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.USE_CREDENTIALS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.WRITE_SYNC_SETTINGS
+      com.yandex.permission.READ_CREDENTIALS.kinopoisk
+      com.yandex.permission.AM_COMMUNICATION
+      android.permission.VIBRATE
+      android.permission.CAMERA
+      android.permission.FOREGROUND_SERVICE_PHONE_CALL
+      android.permission.MANAGE_OWN_CALLS
+      com.yandex.messaging.permission.ONLINE_CHECK
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECORD_AUDIO
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.REQUEST_INSTALL_PACKAGES
+      com.android.vending.BILLING
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      ru.kinopoisk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      ru.kinopoisk.permission.PROCESS_PUSH_MSG
+      ru.kinopoisk.permission.PUSH_PROVIDER
+      android.permission.BLUETOOTH_CONNECT
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      ru.kinopoisk.permission.PUSH_PROVIDER: granted=true
+      ru.kinopoisk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.yandex.permission.READ_CREDENTIALS.kinopoisk: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.MANAGE_OWN_CALLS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      ru.kinopoisk.permission.PROCESS_PUSH_MSG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=262498 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=true
+        android.permission.READ_EXTERNAL_STORAGE: granted=true
+        android.permission.ACCESS_COARSE_LOCATION: granted=true
+        android.permission.CAMERA: granted=true
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true
+        android.permission.RECORD_AUDIO: granted=true
+      disabledComponents:
+        com.yandex.passport.AuthSdk
+        io.appmetrica.analytics.internal.PreloadInfoContentProvider
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [ru.kinopoisk]
+    path: /data/app/ru.kinopoisk-UGcPUFmfrge8XA0hVBSzrA==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [ru.kinopoisk]
+    (No recorded stats)

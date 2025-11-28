@@ -1,0 +1,481 @@
+
+WINDOW MANAGER LAST ANR (dumpsys window lastanr)
+  <no ANR has occurred since boot>
+
+WINDOW MANAGER POLICY STATE (dumpsys window policy)
+    mSafeMode=false mSystemReady=true mSystemBooted=true
+    mLidState=LID_ABSENT mLidOpenRotation=-1
+    mCameraLensCoverState=CAMERA_LENS_COVER_ABSENT mHdmiPlugged=false
+    mLastSystemUiFlags=0x80008708 mResettingSystemUiFlags=0x0 mForceClearedSystemUiFlags=0x0
+    mWakeGestureEnabledSetting=true
+    mSupportAutoRotation=false mOrientationSensorEnabled=false
+    mUiMode=UI_MODE_TYPE_CAR mDockMode=EXTRA_DOCK_STATE_UNDOCKED
+    mEnableCarDockHomeCapture=false mCarDockRotation=-1 mDeskDockRotation=-1
+    mUserRotationMode=USER_ROTATION_FREE mUserRotation=ROTATION_0 mAllowAllRotations=unknown
+    mCurrentAppOrientation=SCREEN_ORIENTATION_UNSPECIFIED
+    mCarDockEnablesAccelerometer=true mDeskDockEnablesAccelerometer=true
+    mLidKeyboardAccessibility=0 mLidNavigationAccessibility=0 mLidControlsScreenLock=false
+    mLidControlsSleep=false
+    mLongPressOnBackBehavior=LONG_PRESS_BACK_NOTHING
+    mLongPressOnHomeBehavior=LONG_PRESS_HOME_NOTHING
+    mDoubleTapOnHomeBehavior=DOUBLE_TAP_HOME_NOTHING
+    mShortPressOnPowerBehavior=SHORT_PRESS_POWER_GO_TO_SLEEP
+    mLongPressOnPowerBehavior=LONG_PRESS_POWER_GLOBAL_ACTIONS
+    mVeryLongPressOnPowerBehavior=VERY_LONG_PRESS_POWER_NOTHING
+    mDoublePressOnPowerBehavior=MULTI_PRESS_POWER_NOTHING
+    mTriplePressOnPowerBehavior=MULTI_PRESS_POWER_NOTHING
+    mShortPressOnSleepBehavior=SHORT_PRESS_SLEEP_GO_TO_SLEEP
+    mShortPressOnWindowBehavior=SHORT_PRESS_WINDOW_PICTURE_IN_PICTURE
+    mAllowStartActivityForLongPressOnPowerDuringSetup=false
+    mHasSoftInput=true mDismissImeOnBackKeyPressed=false
+    mIncallPowerBehavior=sleep mIncallBackBehavior=<nothing> mEndcallBehavior=sleep
+    mHomePressed=false
+    mAwake=truemScreenOnEarly=true mScreenOnFully=true
+    mKeyguardDrawComplete=true mWindowManagerDrawComplete=true
+    mDockLayer=268435456 mStatusBarLayer=0
+    mShowingDream=false mDreamingLockscreen=false mDreamingSleepToken=null
+    mStatusBar=Window{dad03c u0 StatusBar} isStatusBarKeyguard=false
+    mNavigationBar=Window{c72367d u0 NavigationBar}
+    mFocusedWindow=Window{a5741de u0 com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}
+    mFocusedApp=Token{d3ab0c9 ActivityRecord{428e8d0 u0 com.astrob.turbodog/.WelcomeActivity t209}}
+    mTopFullscreenOpaqueWindowState=Window{a5741de u0 com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}
+    mTopFullscreenOpaqueOrDimmingWindowState=Window{a5741de u0 com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}
+    mTopIsFullscreen=true mKeyguardOccluded=false
+    mKeyguardOccludedChanged=false mPendingKeyguardOccluded=false
+    mForceStatusBar=false mForceStatusBarFromKeyguard=false
+    mAllowLockscreenWhenOn=false mLockScreenTimeout=60000 mLockScreenTimerActive=false
+    mLandscapeRotation=ROTATION_0 mSeascapeRotation=ROTATION_180
+    mPortraitRotation=ROTATION_270 mUpsideDownRotation=ROTATION_90
+    mDemoHdmiRotation=ROTATION_0 mDemoHdmiRotationLock=false
+    mUndockedHdmiRotation=-1
+    mKeyMapping.size=0
+    BarController.StatusBar
+      mState=WINDOW_STATE_HIDDEN
+      mTransientBar=TRANSIENT_BAR_NONE
+      mContentFrame=Rect(1824, 0 - 1920, 720)
+    BarController.NavigationBar
+      mState=WINDOW_STATE_SHOWING
+      mTransientBar=TRANSIENT_BAR_NONE
+      mContentFrame=Rect(0, 0 - 288, 720)
+    PolicyControl.sImmersiveStatusFilter=null
+    PolicyControl.sImmersiveNavigationFilter=null
+    PolicyControl.sImmersivePreconfirmationsFilter=null
+    WakeGestureListener
+      mTriggerRequested=false
+      mSensor=null
+    WindowOrientationListener
+      mEnabled=false
+      mCurrentRotation=ROTATION_0
+      mSensorType=null
+      mSensor={Sensor name="ASM330LHH Accelerometer Sensor", vendor="STMicroelectronics", version=1, type=1, maxRange=19.594666, resolution=5.98E-4, power=0.001, minDelay=19230}
+      mRate=2
+      AccelSensorJudge
+        mProposedRotation=0
+        mPredictedRotation=0
+        mLastFilteredX=0.0
+        mLastFilteredY=0.0
+        mLastFilteredZ=0.0
+        mLastFilteredTimestampNanos=0 (6768261.5ms ago)
+        mTiltHistory={last: 0.0}
+        mFlat=false
+        mSwinging=false
+        mAccelerating=false
+        mOverhead=false
+        mTouched=false
+        mTiltToleranceConfig=[[-25, 70], [-25, 65], [-25, 60], [-25, 65]]
+    Looper state:
+      Looper (android.ui, tid 19) {d6b5371}
+        (Total messages: 0, polling=true, quitting=false)
+
+WINDOW MANAGER ANIMATOR STATE (dumpsys window animator)
+    DisplayContentsAnimator #0:
+      Window #0: WindowStateAnimator{4852556 com.android.systemui.ImageWallpaper}
+      Window #1: WindowStateAnimator{49549d7 org.kman.WifiManager/org.kman.WifiManager.WifiControlActivity}
+      Window #2: WindowStateAnimator{35a22c4 com.desaysv.launcher/com.desaysv.appmenu.activity.AppMenuActivity}
+      Window #3: WindowStateAnimator{b90b5ad com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}
+      Window #4: WindowStateAnimator{4c640e2 }
+      Window #5: WindowStateAnimator{faac73 StatusBar}
+      Window #6: WindowStateAnimator{f38a730 NavigationBar}
+      Window #7: WindowStateAnimator{d2fffa9 }
+      Window #8: WindowStateAnimator{30b892e }
+      Window #9: WindowStateAnimator{7499ccf SystemUI_Container}
+      Window #10: WindowStateAnimator{f39065c SystemUI_smallPanel}
+      Window #11: WindowStateAnimator{25fed65 SVAirCondition}
+      Window #12: WindowStateAnimator{e4b0a3a }
+
+    DisplayContentsAnimator #1:
+      Window #0: WindowStateAnimator{5ed36eb Sys2037:com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}
+
+
+    mBulkUpdateParams=0x8 ORIENTATION_CHANGE_COMPLETE
+
+WINDOW MANAGER SESSIONS (dumpsys window sessions)
+  Session Session{300285 3111:1000}:
+    mNumWindow=2 mCanAddInternalSystemWindow=true mAppOverlaySurfaces=[] mAlertWindowSurfaces=[] mClientDead=false mSurfaceSession=android.view.SurfaceSession@17e2c48
+    mPackageName=com.iflytek.avatarService
+  Session Session{1f8415b 2180:1000}:
+    mNumWindow=0 mCanAddInternalSystemWindow=true mAppOverlaySurfaces=[] mAlertWindowSurfaces=[] mClientDead=false mSurfaceSession=android.view.SurfaceSession@be6fae1
+    mPackageName=dsv.carstate.service
+  Session Session{29e04c8 3480:1000}:
+    mNumWindow=2 mCanAddInternalSystemWindow=true mAppOverlaySurfaces=[] mAlertWindowSurfaces=[] mClientDead=false mSurfaceSession=android.view.SurfaceSession@ccf9006
+    mPackageName=com.desaysv.svhvac
+  Session Session{3a0b545 11130:u0a10053}:
+    mNumWindow=0 mCanAddInternalSystemWindow=false mAppOverlaySurfaces=[] mAlertWindowSurfaces=[] mClientDead=false mSurfaceSession=android.view.SurfaceSession@ce656c7
+    mPackageName=com.bird.processmanager
+  Session Session{4faa063 14428:1069}:
+    mNumWindow=2 mCanAddInternalSystemWindow=false mAppOverlaySurfaces=[] mAlertWindowSurfaces=[] mClientDead=false mSurfaceSession=android.view.SurfaceSession@16dc4f4
+    mPackageName=com.astrob.turbodog
+  Session Session{5bc902d 2044:1000}:
+    mNumWindow=0 mCanAddInternalSystemWindow=true mAppOverlaySurfaces=[] mAlertWindowSurfaces=[] mClientDead=false mSurfaceSession=android.view.SurfaceSession@677641d
+    mPackageName=com.astrob.turbodog
+  Session Session{76dfed1 2827:1000}:
+    mNumWindow=1 mCanAddInternalSystemWindow=true mAppOverlaySurfaces=[Surface(name=)/@0xcc4a692] mAlertWindowSurfaces=[] mClientDead=false mSurfaceSession=android.view.SurfaceSession@1679863
+    mPackageName=com.iflytek.autofly.sceneengine
+  Session Session{78aa239 10951:u0a10047}:
+    mNumWindow=1 mCanAddInternalSystemWindow=false mAppOverlaySurfaces=[] mAlertWindowSurfaces=[] mClientDead=false mSurfaceSession=android.view.SurfaceSession@91c3c60
+    mPackageName=org.kman.WifiManager
+  Session Session{edaf0d6 2283:u0a10016}:
+    mNumWindow=5 mCanAddInternalSystemWindow=true mAppOverlaySurfaces=[] mAlertWindowSurfaces=[] mClientDead=false mSurfaceSession=android.view.SurfaceSession@dab2519
+    mPackageName=com.android.systemui
+  Session Session{ff0bd79 2501:1000}:
+    mNumWindow=1 mCanAddInternalSystemWindow=true mAppOverlaySurfaces=[] mAlertWindowSurfaces=[] mClientDead=false mSurfaceSession=android.view.SurfaceSession@18299de
+    mPackageName=com.desaysv.launcher
+
+WINDOW MANAGER DISPLAY CONTENTS (dumpsys window displays)
+  Display: mDisplayId=1
+    init=1920x720 213dpi cur=1920x720 app=1920x720 rng=720x720-1920x1920
+    deferred=false mLayoutNeeded=false mTouchExcludeRegion=SkRegion()
+
+  mLayoutSeq=10
+
+  Application tokens in top down Z order:
+
+
+
+  DockedStackDividerController
+    mLastVisibility=false
+    mMinimizedDock=false
+    mAdjustedForIme=false
+    mAdjustedForDivider=false
+
+  PinnedStackController
+    defaultBounds=[1606,534][1899,699]
+    movementBounds=[309,21][1899,699]
+    mIsImeShowing=false
+    mImeHeight=0
+    mIsShelfShowing=false
+    mShelfHeight=0
+    mReentrySnapFraction=-1.0
+    mIsMinimized=false
+    mActions=[]
+   mDisplayInfo=DisplayInfo{"Экран HDMI", uniqueId "local:1", app 1920 x 720, real 1920 x 720, largest app 1920 x 1920, smallest app 720 x 720, mode 2, defaultMode 2, modes [{id=2, width=1920, height=720, fps=55.0}], colorMode 0, supportedColorModes [], hdrCapabilities android.view.Display$HdrCapabilities@40f16308, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 1, appVsyncOff 1000000, presDeadline 18181818, type HDMI, state ON, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, FLAG_PRESENTATION, removeMode 0}
+
+  DisplayFrames w=1920 h=720 r=0
+    mStable=[0,0][1920,720]
+    mStableFullscreen=[0,0][1920,720]
+    mDock=[0,0][1920,720]
+    mCurrent=[0,0][1920,720]
+    mSystem=[0,0][1920,720]
+    mContent=[0,0][1920,720]
+    mVoiceContent=[0,0][1920,720]
+    mOverscan=[0,0][1920,720]
+    mRestrictedOverscan=[0,0][1920,720]
+    mRestricted=[0,0][1920,720]
+    mUnrestricted=[0,0][1920,720]
+    mDisplayInfoOverscan=[0,0][0,0]
+    mRotatedDisplayInfoOverscan=[0,0][0,0]
+    mDisplayCutout=com.android.server.wm.utils.WmDisplayCutout@3c1
+  Display: mDisplayId=0
+    init=1920x720 160dpi cur=1920x720 app=1920x720 rng=624x720-1824x1872
+    deferred=false mLayoutNeeded=true mTouchExcludeRegion=SkRegion((0,0,1920,720))
+
+  mLayoutSeq=332
+
+  Application tokens in top down Z order:
+    mStackId=7
+    mDeferRemoval=false
+    mBounds=[0,0][1920,720]
+      taskId=209
+        mBounds=[0,0][1920,720]
+        mdr=false
+        appTokens=[AppWindowToken{850b3ce token=Token{d3ab0c9 ActivityRecord{428e8d0 u0 com.astrob.turbodog/.WelcomeActivity t209}}}]
+        mTempInsetBounds=[0,0][0,0]
+          Activity #0 AppWindowToken{850b3ce token=Token{d3ab0c9 ActivityRecord{428e8d0 u0 com.astrob.turbodog/.WelcomeActivity t209}}}
+            windows=[Window{a5741de u0 com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}]
+            windowType=2 hidden=false hasVisible=true
+            app=true mVoiceInteraction=false
+            task={taskId=209 appTokens=[AppWindowToken{850b3ce token=Token{d3ab0c9 ActivityRecord{428e8d0 u0 com.astrob.turbodog/.WelcomeActivity t209}}}] mdr=false}
+             mFillsParent=true mOrientation=0
+            hiddenRequested=false mClientHidden=false reportedDrawn=true reportedVisible=true
+            mNumInterestingWindows=1 mNumDrawnWindows=1 inPendingTransaction=false allDrawn=true lastAllDrawn=true)
+            startingData=null removed=false firstWindowDrawn=true mIsExiting=false
+            controller=AppWindowContainerController{ token=Token{d3ab0c9 ActivityRecord{428e8d0 u0 com.astrob.turbodog/.WelcomeActivity t209}} mContainer=AppWindowToken{850b3ce token=Token{d3ab0c9 ActivityRecord{428e8d0 u0 com.astrob.turbodog/.WelcomeActivity t209}}} mListener=ActivityRecord{428e8d0 u0 com.astrob.turbodog/.WelcomeActivity t209}}
+    mStackId=0
+    mDeferRemoval=false
+    mBounds=[0,0][1920,720]
+      taskId=202
+        mBounds=[0,0][1920,720]
+        mdr=false
+        appTokens=[AppWindowToken{e657ce8 token=Token{7d2e60b ActivityRecord{3cb81da u0 com.desaysv.launcher/com.desaysv.appmenu.activity.AppMenuActivity t202}}}]
+        mTempInsetBounds=[0,0][0,0]
+          Activity #0 AppWindowToken{e657ce8 token=Token{7d2e60b ActivityRecord{3cb81da u0 com.desaysv.launcher/com.desaysv.appmenu.activity.AppMenuActivity t202}}}
+            windows=[Window{8a87515 u0 com.desaysv.launcher/com.desaysv.appmenu.activity.AppMenuActivity}]
+            windowType=2 hidden=true hasVisible=true
+            app=true mVoiceInteraction=false
+            task={taskId=202 appTokens=[AppWindowToken{e657ce8 token=Token{7d2e60b ActivityRecord{3cb81da u0 com.desaysv.launcher/com.desaysv.appmenu.activity.AppMenuActivity t202}}}] mdr=false}
+             mFillsParent=true mOrientation=-1
+            hiddenRequested=true mClientHidden=true reportedDrawn=false reportedVisible=false
+            mAppStopped=true
+            mNumInterestingWindows=1 mNumDrawnWindows=1 inPendingTransaction=false allDrawn=true lastAllDrawn=true)
+            startingData=null removed=false firstWindowDrawn=true mIsExiting=false
+            controller=AppWindowContainerController{ token=Token{7d2e60b ActivityRecord{3cb81da u0 com.desaysv.launcher/com.desaysv.appmenu.activity.AppMenuActivity t202}} mContainer=AppWindowToken{e657ce8 token=Token{7d2e60b ActivityRecord{3cb81da u0 com.desaysv.launcher/com.desaysv.appmenu.activity.AppMenuActivity t202}}} mListener=ActivityRecord{3cb81da u0 com.desaysv.launcher/com.desaysv.appmenu.activity.AppMenuActivity t202}}
+    mStackId=1
+    mDeferRemoval=false
+    mBounds=[0,0][1920,720]
+      taskId=203
+        mBounds=[0,0][1920,720]
+        mdr=false
+        appTokens=[AppWindowToken{1ef1a17 token=Token{95f0e96 ActivityRecord{fc219b1 u0 org.kman.WifiManager/.WifiControlActivity t203}}}]
+        mTempInsetBounds=[0,0][0,0]
+          Activity #0 AppWindowToken{1ef1a17 token=Token{95f0e96 ActivityRecord{fc219b1 u0 org.kman.WifiManager/.WifiControlActivity t203}}}
+            windows=[Window{ffb62c u0 org.kman.WifiManager/org.kman.WifiManager.WifiControlActivity}]
+            windowType=2 hidden=true hasVisible=true
+            app=true mVoiceInteraction=false
+            task={taskId=203 appTokens=[AppWindowToken{1ef1a17 token=Token{95f0e96 ActivityRecord{fc219b1 u0 org.kman.WifiManager/.WifiControlActivity t203}}}] mdr=false}
+             mFillsParent=true mOrientation=-1
+            hiddenRequested=true mClientHidden=true reportedDrawn=false reportedVisible=false
+            mAppStopped=true
+            mNumInterestingWindows=1 mNumDrawnWindows=1 inPendingTransaction=false allDrawn=true lastAllDrawn=true)
+            startingData=null removed=false firstWindowDrawn=true mIsExiting=false
+            controller=AppWindowContainerController{ token=Token{95f0e96 ActivityRecord{fc219b1 u0 org.kman.WifiManager/.WifiControlActivity t203}} mContainer=AppWindowToken{1ef1a17 token=Token{95f0e96 ActivityRecord{fc219b1 u0 org.kman.WifiManager/.WifiControlActivity t203}}} mListener=ActivityRecord{fc219b1 u0 org.kman.WifiManager/.WifiControlActivity t203}}
+
+
+  homeStack=Stack=0
+
+  DockedStackDividerController
+    mLastVisibility=false
+    mMinimizedDock=false
+    mAdjustedForIme=false
+    mAdjustedForDivider=false
+
+  PinnedStackController
+    defaultBounds=[1611,539][1904,704]
+    movementBounds=[304,16][1904,704]
+    mIsImeShowing=false
+    mImeHeight=0
+    mIsShelfShowing=false
+    mShelfHeight=0
+    mReentrySnapFraction=-1.0
+    mIsMinimized=false
+    mActions=[]
+   mDisplayInfo=DisplayInfo{"Built-in Screen", uniqueId "local:0", app 1920 x 720, real 1920 x 720, largest app 1824 x 1872, smallest app 624 x 720, mode 1, defaultMode 1, modes [{id=1, width=1920, height=720, fps=55.0}], colorMode 0, supportedColorModes [], hdrCapabilities android.view.Display$HdrCapabilities@40f16308, rotation 0, density 160 (243.84 x 182.88) dpi, layerStack 0, appVsyncOff 1000000, presDeadline 18181818, type BUILT_IN, state ON, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, removeMode 0}
+
+  DisplayFrames w=1920 h=720 r=0
+    mStable=[288,0][1824,720]
+    mStableFullscreen=[288,0][1920,720]
+    mDock=[288,0][1920,720]
+    mCurrent=[288,0][1920,720]
+    mSystem=[0,0][1920,720]
+    mContent=[288,0][1920,720]
+    mVoiceContent=[288,0][1920,720]
+    mOverscan=[0,0][1920,720]
+    mRestrictedOverscan=[288,0][1920,720]
+    mRestricted=[288,0][1920,720]
+    mUnrestricted=[0,0][1920,720]
+    mDisplayInfoOverscan=[0,0][0,0]
+    mRotatedDisplayInfoOverscan=[0,0][0,0]
+    mDisplayCutout=com.android.server.wm.utils.WmDisplayCutout@3c1
+
+WINDOW MANAGER TOKENS (dumpsys window tokens)
+  All tokens:
+  Display #0
+  WindowToken{7338aa4 android.os.BinderProxy@c95e537}
+  WindowToken{cb0b709 android.os.BinderProxy@9b62010}
+  AppWindowToken{1ef1a17 token=Token{95f0e96 ActivityRecord{fc219b1 u0 org.kman.WifiManager/.WifiControlActivity t203}}}
+  WindowToken{7752765 android.os.BinderProxy@6d6e85c}
+  WindowToken{630386c android.os.BinderProxy@f550d1f}
+  WallpaperWindowToken{791eeae token=android.os.Binder@ee28b29}
+  WindowToken{5c09be8 android.os.BinderProxy@b3b210b}
+  AppWindowToken{850b3ce token=Token{d3ab0c9 ActivityRecord{428e8d0 u0 com.astrob.turbodog/.WelcomeActivity t209}}}
+  WindowToken{4a2fb9e android.os.BinderProxy@6ecf5d9}
+  WindowToken{388ae09 android.os.BinderProxy@ba79310}
+  AppWindowToken{e657ce8 token=Token{7d2e60b ActivityRecord{3cb81da u0 com.desaysv.launcher/com.desaysv.appmenu.activity.AppMenuActivity t202}}}
+  WindowToken{2a2c0c3 android.os.Binder@48bb472}
+  WindowToken{1e86947 android.os.BinderProxy@c1c5c86}
+  WindowToken{9b14b23 android.os.BinderProxy@5ae6c52}
+  WindowToken{b8662c7 android.os.Binder@8f84c06}
+  Display #1
+  WindowToken{bf8e823 android.os.BinderProxy@e0e5d52}
+
+WINDOW MANAGER WINDOWS (dumpsys window windows)
+  Window #0 Window{3411e35 u0 com.desaysv.svhvac}:
+    mDisplayId=0 stackId=0 mSession=Session{29e04c8 3480:1000} mClient=android.os.BinderProxy@f550d1f
+    mOwnerUid=1000 mShowToOwnerOnly=true package=com.desaysv.svhvac appop=NONE
+    mAttrs={(0,0)(fillxfill) gr=CENTER sim={adjust=pan forwardNavigation} ty=FIRST_DESAYSV_CUSTOM_WINDOW fmt=TRANSPARENT wanim=0x1030002
+      fl=DIM_BEHIND NOT_FOCUSABLE LAYOUT_IN_SCREEN LAYOUT_NO_LIMITS FULLSCREEN SPLIT_TOUCH HARDWARE_ACCELERATED}
+    Requested w=1920 h=720 mLayoutSeq=321
+    mHasSurface=false isReadyForDisplay()=false mWindowRemovalAllowed=false
+    WindowStateAnimator{e4b0a3a }:
+    isOnScreen=false
+    isVisible=false
+  Window #1 Window{3f2a574 u0 SVAirCondition}:
+    mDisplayId=0 stackId=0 mSession=Session{29e04c8 3480:1000} mClient=android.os.BinderProxy@c1c5c86
+    mOwnerUid=1000 mShowToOwnerOnly=true package=com.desaysv.svhvac appop=NONE
+    mAttrs={(0,0)(fillx20) gr=TOP CENTER_VERTICAL sim={adjust=pan} ty=FIRST_DESAYSV_CUSTOM_WINDOW fmt=TRANSLUCENT
+      fl=NOT_FOCUSABLE LAYOUT_IN_SCREEN HARDWARE_ACCELERATED}
+    Requested w=1920 h=20 mLayoutSeq=332
+    mHasSurface=true isReadyForDisplay()=true mWindowRemovalAllowed=false
+    WindowStateAnimator{25fed65 SVAirCondition}:
+      Surface: shown=true layer=0 alpha=1.0 rect=(0.0,0.0) 1920 x 20 transform=(1.0, 0.0, 1.0, 0.0)
+    isOnScreen=true
+    isVisible=true
+  Window #2 Window{c43767f u0 SystemUI_smallPanel}:
+    mDisplayId=0 stackId=0 mSession=Session{edaf0d6 2283:u0a10016} mClient=android.os.BinderProxy@6ecf5d9
+    mOwnerUid=10016 mShowToOwnerOnly=true package=com.android.systemui appop=NONE
+    mAttrs={(0,0)(18x720) gr=START CENTER_HORIZONTAL sim={adjust=pan} ty=FIRST_DESAYSV_CUSTOM_WINDOW fmt=TRANSLUCENT
+      fl=NOT_FOCUSABLE LAYOUT_IN_SCREEN LAYOUT_NO_LIMITS FULLSCREEN HARDWARE_ACCELERATED
+      sysui=HIDE_NAVIGATION}
+    Requested w=18 h=720 mLayoutSeq=332
+    mHasSurface=true isReadyForDisplay()=true mWindowRemovalAllowed=false
+    WindowStateAnimator{f39065c SystemUI_smallPanel}:
+      Surface: shown=true layer=0 alpha=1.0 rect=(0.0,0.0) 18 x 720 transform=(1.0, 0.0, 1.0, 0.0)
+    isOnScreen=true
+    isVisible=true
+  Window #3 Window{573d820 u0 SystemUI_Container}:
+    mDisplayId=0 stackId=0 mSession=Session{edaf0d6 2283:u0a10016} mClient=android.os.BinderProxy@5ae6c52
+    mOwnerUid=10016 mShowToOwnerOnly=true package=com.android.systemui appop=NONE
+    mAttrs={(0,0)(1920x720) gr=START CENTER_HORIZONTAL sim={adjust=pan} ty=FIRST_DESAYSV_CUSTOM_WINDOW fmt=TRANSLUCENT
+      fl=DIM_BEHIND NOT_FOCUSABLE LAYOUT_IN_SCREEN LAYOUT_NO_LIMITS FULLSCREEN HARDWARE_ACCELERATED
+      sysui=HIDE_NAVIGATION}
+    Requested w=0 h=0 mLayoutSeq=38
+    mHasSurface=false isReadyForDisplay()=false mWindowRemovalAllowed=false
+    WindowStateAnimator{7499ccf SystemUI_Container}:
+      mShownAlpha=0.0 mAlpha=1.0 mLastAlpha=0.0
+    isOnScreen=false
+    isVisible=false
+  Window #4 Window{c00bc3a u0 com.iflytek.avatarService}:
+    mDisplayId=0 stackId=0 mSession=Session{300285 3111:1000} mClient=android.os.BinderProxy@6d6e85c
+    mOwnerUid=1000 mShowToOwnerOnly=true package=com.iflytek.avatarService appop=SYSTEM_ALERT_WINDOW
+    mAttrs={(0,21)(398x350) gr=TOP LEFT CENTER sim={adjust=pan} ty=SYSTEM_OVERLAY fmt=TRANSLUCENT
+      fl=NOT_FOCUSABLE NOT_TOUCHABLE LAYOUT_IN_SCREEN LAYOUT_NO_LIMITS FULLSCREEN ALT_FOCUSABLE_IM HARDWARE_ACCELERATED
+      sysui=HIDE_NAVIGATION}
+    Requested w=398 h=350 mLayoutSeq=332
+    mHasSurface=true isReadyForDisplay()=true mWindowRemovalAllowed=false
+    WindowStateAnimator{30b892e }:
+      Surface: shown=true layer=0 alpha=1.0 rect=(0.0,0.0) 398 x 350 transform=(1.0, 0.0, 1.0, 0.0)
+    isOnScreen=true
+    isVisible=true
+  Window #5 Window{ff34201 u0 com.iflytek.avatarService}:
+    mDisplayId=0 stackId=0 mSession=Session{300285 3111:1000} mClient=android.os.BinderProxy@b3b210b
+    mOwnerUid=1000 mShowToOwnerOnly=false package=com.iflytek.avatarService appop=NONE
+    mAttrs={(0,0)(fillxwrap) gr=TOP START CENTER sim={adjust=pan} ty=BOOT_PROGRESS fmt=TRANSLUCENT
+      fl=NOT_FOCUSABLE NOT_TOUCHABLE LAYOUT_IN_SCREEN LAYOUT_NO_LIMITS ALT_FOCUSABLE_IM HARDWARE_ACCELERATED}
+    Requested w=1824 h=0 mLayoutSeq=332
+    mHasSurface=true isReadyForDisplay()=true mWindowRemovalAllowed=false
+    WindowStateAnimator{d2fffa9 }:
+      Surface: shown=false layer=0 alpha=1.0 rect=(0.0,0.0) 1920 x 1 transform=(1.0, 0.0, 0.0, 1.0)
+    isOnScreen=true
+    isVisible=true
+  Window #6 Window{c72367d u0 NavigationBar}:
+    mDisplayId=0 stackId=0 mSession=Session{edaf0d6 2283:u0a10016} mClient=android.os.BinderProxy@3c39236
+    mOwnerUid=10016 mShowToOwnerOnly=false package=com.android.systemui appop=NONE
+    mAttrs={(0,0)(288x720) gr=START CENTER_HORIZONTAL sim={adjust=pan} ty=NAVIGATION_BAR fmt=TRANSLUCENT
+      fl=NOT_FOCUSABLE NOT_TOUCH_MODAL TOUCHABLE_WHEN_WAKING WATCH_OUTSIDE_TOUCH SPLIT_TOUCH HARDWARE_ACCELERATED FLAG_SLIPPERY}
+    Requested w=288 h=720 mLayoutSeq=332
+    mHasSurface=true isReadyForDisplay()=true mWindowRemovalAllowed=false
+    WindowStateAnimator{f38a730 NavigationBar}:
+       mAnimationIsEntrance=true      Surface: shown=true layer=0 alpha=1.0 rect=(0.0,0.0) 288 x 720 transform=(1.0, 0.0, 1.0, 0.0)
+    isOnScreen=true
+    isVisible=true
+  Window #7 Window{dad03c u0 StatusBar}:
+    mDisplayId=0 stackId=0 mSession=Session{edaf0d6 2283:u0a10016} mClient=android.os.BinderProxy@ba79310
+    mOwnerUid=10016 mShowToOwnerOnly=false package=com.android.systemui appop=NONE
+    mAttrs={(0,0)(96x720) gr=END CENTER_HORIZONTAL sim={adjust=pan} ty=STATUS_BAR fmt=TRANSLUCENT
+      fl=NOT_FOCUSABLE TOUCHABLE_WHEN_WAKING HARDWARE_ACCELERATED}
+    Requested w=96 h=720 mLayoutSeq=332
+    mPolicyVisibility=false mPolicyVisibilityAfterAnim=false mAppOpVisibility=true parentHidden=false mPermanentlyHidden=false mHiddenWhileSuspended=false mForceHideNonSystemOverlayWindow=false
+    mHasSurface=true isReadyForDisplay()=false mWindowRemovalAllowed=false
+    WindowStateAnimator{faac73 StatusBar}:
+      Surface: shown=false layer=0 alpha=1.0 rect=(0.0,0.0) 96 x 720 transform=(1.0, 0.0, 1.0, 0.0)
+    isOnScreen=false
+    isVisible=false
+  Window #8 Window{124bac5 u0 com.iflytek.autofly.sceneengine}:
+    mDisplayId=0 stackId=0 mSession=Session{76dfed1 2827:1000} mClient=android.os.BinderProxy@9b62010
+    mOwnerUid=1000 mShowToOwnerOnly=true package=com.iflytek.autofly.sceneengine appop=SYSTEM_ALERT_WINDOW
+    mAttrs={(0,0)(1x1) gr=TOP START CENTER sim={adjust=pan} ty=APPLICATION_OVERLAY fmt=RGB_565 sysuil=true
+      fl=NOT_FOCUSABLE NOT_TOUCHABLE NOT_TOUCH_MODAL HARDWARE_ACCELERATED}
+    Requested w=1 h=1 mLayoutSeq=332
+    mHasSurface=true isReadyForDisplay()=true mWindowRemovalAllowed=false
+    WindowStateAnimator{4c640e2 }:
+      Surface: shown=true layer=0 alpha=1.0 rect=(0.0,0.0) 1 x 1 transform=(1.0, 0.0, 1.0, 0.0)
+    isOnScreen=true
+    isVisible=true
+  Window #9 Window{a5741de u0 com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}:
+    mDisplayId=0 stackId=7 mSession=Session{4faa063 14428:1069} mClient=android.os.BinderProxy@7c96d19
+    mOwnerUid=1069 mShowToOwnerOnly=true package=com.astrob.turbodog appop=NONE
+    mAttrs={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x10302f8
+      fl=KEEP_SCREEN_ON LAYOUT_IN_SCREEN FULLSCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH TRANSLUCENT_STATUS TRANSLUCENT_NAVIGATION DRAWS_SYSTEM_BAR_BACKGROUNDS
+      pfl=FORCE_DRAW_STATUS_BAR_BACKGROUND
+      vsysui=LAYOUT_STABLE LAYOUT_HIDE_NAVIGATION LAYOUT_FULLSCREEN}
+    Requested w=1920 h=720 mLayoutSeq=332
+    mHasSurface=true isReadyForDisplay()=true mWindowRemovalAllowed=false
+    WindowStateAnimator{b90b5ad com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}:
+      Surface: shown=true layer=0 alpha=1.0 rect=(0.0,0.0) 1920 x 720 transform=(1.0, 0.0, 1.0, 0.0)
+    isOnScreen=true
+    isVisible=true
+  Window #10 Window{8a87515 u0 com.desaysv.launcher/com.desaysv.appmenu.activity.AppMenuActivity}:
+    mDisplayId=0 stackId=0 mSession=Session{ff0bd79 2501:1000} mClient=android.os.BinderProxy@c951ecc
+    mOwnerUid=1000 mShowToOwnerOnly=true package=com.desaysv.launcher appop=NONE
+    mAttrs={(0,0)(fillxfill) sim={adjust=pan} ty=BASE_APPLICATION
+      fl=LAYOUT_IN_SCREEN LAYOUT_NO_LIMITS LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+      pfl=FORCE_DRAW_STATUS_BAR_BACKGROUND}
+    Requested w=1920 h=720 mLayoutSeq=323
+    mHasSurface=false isReadyForDisplay()=false mWindowRemovalAllowed=false
+    WindowStateAnimator{35a22c4 com.desaysv.launcher/com.desaysv.appmenu.activity.AppMenuActivity}:
+    isOnScreen=false
+    isVisible=false
+  Window #11 Window{ffb62c u0 org.kman.WifiManager/org.kman.WifiManager.WifiControlActivity}:
+    mDisplayId=0 stackId=1 mSession=Session{78aa239 10951:u0a10047} mClient=android.os.BinderProxy@b60e9df
+    mOwnerUid=10047 mShowToOwnerOnly=true package=org.kman.WifiManager appop=NONE
+    mAttrs={(0,0)(fillxfill) sim={adjust=pan} ty=BASE_APPLICATION wanim=0x10302f8
+      fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS}
+    Requested w=1920 h=720 mLayoutSeq=191
+    mHasSurface=false isReadyForDisplay()=false mWindowRemovalAllowed=false
+    WindowStateAnimator{49549d7 org.kman.WifiManager/org.kman.WifiManager.WifiControlActivity}:
+    isOnScreen=false
+    isVisible=false
+  Window #12 Window{1db891d u0 com.android.systemui.ImageWallpaper}:
+    mDisplayId=0 stackId=0 mSession=Session{edaf0d6 2283:u0a10016} mClient=android.os.BinderProxy@ae75df4
+    mOwnerUid=10016 mShowToOwnerOnly=true package=com.android.systemui appop=NONE
+    mAttrs={(0,0)(1920x720) gr=TOP START CENTER layoutInDisplayCutoutMode=always ty=WALLPAPER fmt=RGBX_8888 wanim=0x1030308
+      fl=NOT_FOCUSABLE NOT_TOUCHABLE LAYOUT_IN_SCREEN LAYOUT_NO_LIMITS LAYOUT_INSET_DECOR}
+    Requested w=1920 h=720 mLayoutSeq=21
+    mIsImWindow=false mIsWallpaper=true mIsFloatingLayer=true mWallpaperVisible=false
+    mHasSurface=true isReadyForDisplay()=false mWindowRemovalAllowed=false
+    WindowStateAnimator{4852556 com.android.systemui.ImageWallpaper}:
+       mAnimationIsEntrance=true      Surface: shown=false layer=0 alpha=0.0 rect=(0.0,0.0) 1920 x 720 transform=(1.0, 0.0, 1.0, 0.0)
+      mShownAlpha=1.0 mAlpha=1.0 mLastAlpha=-1.0
+    mWallpaperX=0.0 mWallpaperY=0.5
+    isOnScreen=true
+    isVisible=false
+  Window #13 Window{dc7b120 u0 Sys2037:com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}:
+    mDisplayId=1 mSession=Session{4faa063 14428:1069} mClient=android.os.BinderProxy@40ebddd
+    mOwnerUid=1069 mShowToOwnerOnly=true package=com.astrob.turbodog appop=NONE
+    mAttrs={(0,0)(fillxfill) gr=FILL CENTER sim={adjust=pan forwardNavigation} ty=PRESENTATION fmt=TRANSLUCENT wanim=0x10302f8
+      fl=LAYOUT_IN_SCREEN FULLSCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH DRAWS_SYSTEM_BAR_BACKGROUNDS
+      pfl=FORCE_DRAW_STATUS_BAR_BACKGROUND}
+    Requested w=1920 h=720 mLayoutSeq=10
+    mHasSurface=true isReadyForDisplay()=true mWindowRemovalAllowed=false
+    WindowStateAnimator{5ed36eb Sys2037:com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}:
+      Surface: shown=true layer=0 alpha=1.0 rect=(0.0,0.0) 1920 x 720 transform=(1.0, 0.0, 1.0, 0.0)
+    isOnScreen=true
+    isVisible=true
+
+  mGlobalConfiguration={1.0 ?mcc?mnc [ru_RU] ldltr sw624dp w1824dp h720dp 160dpi xlrg long land car finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1920, 720) mAppBounds=Rect(288, 0 - 2208, 720) mWindowingMode=fullscreen mActivityType=undefined} s.6}
+  mHasPermanentDpad=false
+  mCurrentFocus=Window{a5741de u0 com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}
+  mFocusedApp=AppWindowToken{850b3ce token=Token{d3ab0c9 ActivityRecord{428e8d0 u0 com.astrob.turbodog/.WelcomeActivity t209}}}
+  mInTouchMode=true
+  mLastDisplayFreezeDuration=+12ms due to new-config
+  mLastWakeLockHoldingWindow=Window{a5741de u0 com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity} mLastWakeLockObscuringWindow=null
+  SnapshotCache

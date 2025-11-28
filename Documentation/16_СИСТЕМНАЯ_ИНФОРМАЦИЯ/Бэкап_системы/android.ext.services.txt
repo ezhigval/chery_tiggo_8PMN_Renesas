@@ -1,0 +1,69 @@
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.autofill.AutofillFieldClassificationService:
+        921fa83 android.ext.services/.autofill.AutofillFieldClassificationServiceImpl filter ed89a43 permission android.permission.BIND_AUTOFILL_FIELD_CLASSIFICATION_SERVICE
+          Action: "android.service.autofill.AutofillFieldClassificationService"
+      android.service.notification.NotificationAssistantService:
+        e5a7248 android.ext.services/.notification.Assistant filter 1f303f2 permission android.permission.BIND_NOTIFICATION_ASSISTANT_SERVICE
+          Action: "android.service.notification.NotificationAssistantService"
+      android.service.resolver.ResolverRankerService:
+        57acedb android.ext.services/.resolver.LRResolverRankerService filter bd95afd permission android.permission.BIND_RESOLVER_RANKER_SERVICE
+          Action: "android.service.resolver.ResolverRankerService"
+      android.app.usage.CacheQuotaService:
+        8cef525 android.ext.services/.storage.CacheQuotaServiceImpl filter 693cb54 permission android.permission.BIND_CACHE_QUOTA_SERVICE
+          Action: "android.app.usage.CacheQuotaService"
+
+Key Set Manager:
+  [android.ext.services]
+      Signing KeySets: 1
+
+Packages:
+  Package [android.ext.services] (65cf600):
+    userId=10000
+    pkg=Package{c88ee39 android.ext.services}
+    codePath=/system/priv-app/ExtServices
+    resourcePath=/system/priv-app/ExtServices
+    legacyNativeLibraryDir=/system/priv-app/ExtServices/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 minSdk=28 targetSdk=28
+    versionName=1
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{7f8fc7e android.ext.services}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PRIVILEGED ]
+    dataDir=/data/user_de/0/android.ext.services
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    dynamic libraries:
+      android.ext.services
+    timeStamp=2025-08-08 07:05:28
+    firstInstallTime=2024-12-25 11:49:55
+    lastUpdateTime=2025-08-08 07:05:28
+    signatures=PackageSignatures{96615df version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    requested permissions:
+      android.permission.PROVIDE_RESOLVER_RANKER_SERVICE
+    install permissions:
+      android.permission.PROVIDE_RESOLVER_RANKER_SERVICE: granted=true
+    User 0: ceDataInode=262194 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [android.ext.services]
+    path: /system/priv-app/ExtServices/ExtServices.apk
+      arm64: [status=quicken] [reason=prebuilt]
+
+
+Compiler stats:
+  [android.ext.services]
+    (No recorded stats)

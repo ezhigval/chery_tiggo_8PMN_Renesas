@@ -1,0 +1,212 @@
+DISPLAY MANAGER (dumpsys display)
+  mOnlyCode=false
+  mSafeMode=false
+  mPendingTraversal=false
+  mGlobalDisplayState=ON
+  mNextNonDefaultDisplayId=2
+  mDefaultViewport=DisplayViewport{valid=true, displayId=0, uniqueId='null', orientation=0, logicalFrame=Rect(0, 0 - 1920, 720), physicalFrame=Rect(0, 0 - 1920, 720), deviceWidth=1920, deviceHeight=720}
+  mExternalTouchViewport=DisplayViewport{valid=true, displayId=0, uniqueId='null', orientation=0, logicalFrame=Rect(0, 0 - 1920, 720), physicalFrame=Rect(0, 0 - 1920, 720), deviceWidth=1920, deviceHeight=720}
+  mVirtualTouchViewports=[]
+  mDefaultDisplayDefaultColorMode=0
+  mSingleDisplayDemoMode=false
+  mWifiDisplayScanRequestCount=0
+  mStableDisplaySize=Point(1920, 720)
+
+Display Adapters: size=3
+  LocalDisplayAdapter
+  VirtualDisplayAdapter
+  OverlayDisplayAdapter
+    mCurrentOverlaySetting=
+    mOverlays: size=0
+
+Display Devices: size=2
+  DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 1920 x 720, modeId 1, defaultModeId 1, supportedModes [{id=1, width=1920, height=720, fps=55.0}], colorMode 0, supportedColorModes [], HdrCapabilities android.view.Display$HdrCapabilities@40f16308, density 160, 243.84 x 182.88 dpi, appVsyncOff 1000000, presDeadline 18181818, touch INTERNAL, rotation 0, type BUILT_IN, state ON, FLAG_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}
+    mAdapter=LocalDisplayAdapter
+    mUniqueId=local:0
+    mDisplayToken=android.os.BinderProxy@c9a1978
+    mCurrentLayerStack=0
+    mCurrentOrientation=0
+    mCurrentLayerStackRect=Rect(0, 0 - 1920, 720)
+    mCurrentDisplayRect=Rect(0, 0 - 1920, 720)
+    mCurrentSurface=null
+    mBuiltInDisplayId=0
+    mActivePhysIndex=0
+    mActiveModeId=1
+    mActiveColorMode=0
+    mState=ON
+    mBrightness=4
+    mBacklight=com.android.server.lights.LightsService$LightImpl@c2f9851
+    mDisplayInfos=
+      PhysicalDisplayInfo{1920 x 720, 55.0 fps, density 1.0, 243.84 x 182.88 dpi, secure true, appVsyncOffset 1000000, bufferDeadline 18181818}
+    mSupportedModes=
+      DisplayModeRecord{mMode={id=1, width=1920, height=720, fps=55.0}}
+    mSupportedColorModes=[]
+  DisplayDeviceInfo{"Экран HDMI": uniqueId="local:1", 1920 x 720, modeId 2, defaultModeId 2, supportedModes [{id=2, width=1920, height=720, fps=55.0}], colorMode 0, supportedColorModes [], HdrCapabilities android.view.Display$HdrCapabilities@40f16308, density 213, 213.0 x 213.0 dpi, appVsyncOff 1000000, presDeadline 18181818, touch EXTERNAL, rotation 0, type HDMI, state ON, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, FLAG_PRESENTATION}
+    mAdapter=LocalDisplayAdapter
+    mUniqueId=local:1
+    mDisplayToken=android.os.BinderProxy@52b8b6
+    mCurrentLayerStack=0
+    mCurrentOrientation=0
+    mCurrentLayerStackRect=Rect(0, 0 - 1920, 720)
+    mCurrentDisplayRect=Rect(0, 0 - 1920, 720)
+    mCurrentSurface=null
+    mBuiltInDisplayId=1
+    mActivePhysIndex=0
+    mActiveModeId=2
+    mActiveColorMode=0
+    mState=ON
+    mBrightness=-1
+    mBacklight=null
+    mDisplayInfos=
+      PhysicalDisplayInfo{1920 x 720, 55.0 fps, density 1.33125, 243.84 x 182.88 dpi, secure true, appVsyncOffset 1000000, bufferDeadline 18181818}
+    mSupportedModes=
+      DisplayModeRecord{mMode={id=2, width=1920, height=720, fps=55.0}}
+    mSupportedColorModes=[]
+
+Logical Displays: size=2
+  Display 0:
+    mDisplayId=0
+    mLayerStack=0
+    mHasContent=true
+    mRequestedMode=0
+    mRequestedColorMode=0
+    mDisplayOffset=(0, 0)
+    mPrimaryDisplayDevice=Built-in Screen
+    mBaseDisplayInfo=DisplayInfo{"Built-in Screen", uniqueId "local:0", app 1920 x 720, real 1920 x 720, largest app 1920 x 720, smallest app 1920 x 720, mode 1, defaultMode 1, modes [{id=1, width=1920, height=720, fps=55.0}], colorMode 0, supportedColorModes [], hdrCapabilities android.view.Display$HdrCapabilities@40f16308, rotation 0, density 160 (243.84 x 182.88) dpi, layerStack 0, appVsyncOff 1000000, presDeadline 18181818, type BUILT_IN, state ON, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, removeMode 0}
+    mOverrideDisplayInfo=DisplayInfo{"Built-in Screen", uniqueId "local:0", app 1920 x 720, real 1920 x 720, largest app 1824 x 1872, smallest app 624 x 720, mode 1, defaultMode 1, modes [{id=1, width=1920, height=720, fps=55.0}], colorMode 0, supportedColorModes [], hdrCapabilities android.view.Display$HdrCapabilities@40f16308, rotation 0, density 160 (243.84 x 182.88) dpi, layerStack 0, appVsyncOff 1000000, presDeadline 18181818, type BUILT_IN, state ON, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, removeMode 0}
+  Display 1:
+    mDisplayId=1
+    mLayerStack=1
+    mHasContent=false
+    mRequestedMode=0
+    mRequestedColorMode=0
+    mDisplayOffset=(0, 0)
+    mPrimaryDisplayDevice=Экран HDMI
+    mBaseDisplayInfo=DisplayInfo{"Экран HDMI", uniqueId "local:1", app 1920 x 720, real 1920 x 720, largest app 1920 x 720, smallest app 1920 x 720, mode 2, defaultMode 2, modes [{id=2, width=1920, height=720, fps=55.0}], colorMode 0, supportedColorModes [], hdrCapabilities android.view.Display$HdrCapabilities@40f16308, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 1, appVsyncOff 1000000, presDeadline 18181818, type HDMI, state ON, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, FLAG_PRESENTATION, removeMode 0}
+    mOverrideDisplayInfo=DisplayInfo{"Экран HDMI", uniqueId "local:1", app 1920 x 720, real 1920 x 720, largest app 1920 x 1920, smallest app 720 x 720, mode 2, defaultMode 2, modes [{id=2, width=1920, height=720, fps=55.0}], colorMode 0, supportedColorModes [], hdrCapabilities android.view.Display$HdrCapabilities@40f16308, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 1, appVsyncOff 1000000, presDeadline 18181818, type HDMI, state ON, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, FLAG_PRESENTATION, removeMode 0}
+
+Callbacks: size=44
+  0: mPid=1999, mWifiDisplayScanRequested=false
+  1: mPid=2156, mWifiDisplayScanRequested=false
+  2: mPid=2161, mWifiDisplayScanRequested=false
+  3: mPid=2190, mWifiDisplayScanRequested=false
+  4: mPid=2207, mWifiDisplayScanRequested=false
+  5: mPid=2225, mWifiDisplayScanRequested=false
+  6: mPid=2254, mWifiDisplayScanRequested=false
+  7: mPid=2275, mWifiDisplayScanRequested=false
+  8: mPid=2457, mWifiDisplayScanRequested=false
+  9: mPid=2493, mWifiDisplayScanRequested=false
+  10: mPid=2527, mWifiDisplayScanRequested=false
+  11: mPid=2545, mWifiDisplayScanRequested=false
+  12: mPid=2569, mWifiDisplayScanRequested=false
+  13: mPid=2596, mWifiDisplayScanRequested=false
+  14: mPid=2615, mWifiDisplayScanRequested=false
+  15: mPid=2639, mWifiDisplayScanRequested=false
+  16: mPid=2694, mWifiDisplayScanRequested=false
+  17: mPid=2768, mWifiDisplayScanRequested=false
+  18: mPid=2779, mWifiDisplayScanRequested=false
+  19: mPid=2839, mWifiDisplayScanRequested=false
+  20: mPid=2868, mWifiDisplayScanRequested=false
+  21: mPid=2915, mWifiDisplayScanRequested=false
+  22: mPid=2931, mWifiDisplayScanRequested=false
+  23: mPid=2983, mWifiDisplayScanRequested=false
+  24: mPid=3009, mWifiDisplayScanRequested=false
+  25: mPid=3039, mWifiDisplayScanRequested=false
+  26: mPid=3112, mWifiDisplayScanRequested=false
+  27: mPid=3141, mWifiDisplayScanRequested=false
+  28: mPid=3227, mWifiDisplayScanRequested=false
+  29: mPid=3276, mWifiDisplayScanRequested=false
+  30: mPid=3312, mWifiDisplayScanRequested=false
+  31: mPid=3330, mWifiDisplayScanRequested=false
+  32: mPid=3366, mWifiDisplayScanRequested=false
+  33: mPid=3423, mWifiDisplayScanRequested=false
+  34: mPid=3453, mWifiDisplayScanRequested=false
+  35: mPid=3565, mWifiDisplayScanRequested=false
+  36: mPid=3599, mWifiDisplayScanRequested=false
+  37: mPid=3614, mWifiDisplayScanRequested=false
+  38: mPid=3658, mWifiDisplayScanRequested=false
+  39: mPid=3716, mWifiDisplayScanRequested=false
+  40: mPid=3740, mWifiDisplayScanRequested=false
+  41: mPid=3798, mWifiDisplayScanRequested=false
+  42: mPid=4129, mWifiDisplayScanRequested=false
+  43: mPid=5721, mWifiDisplayScanRequested=false
+
+Display Power Controller Locked State:
+  mDisplayReadyLocked=false
+  mPendingRequestLocked=null
+  mPendingRequestChangedLocked=false
+  mPendingWaitForNegativeProximityLocked=false
+  mPendingUpdatePowerStateLocked=false
+
+Display Power Controller Configuration:
+  mScreenBrightnessDozeConfig=1
+  mScreenBrightnessDimConfig=10
+  mScreenBrightnessRangeMinimum=0
+  mScreenBrightnessRangeMaximum=9
+  mScreenBrightnessDefault=4
+  mScreenBrightnessForVrRangeMinimum=79
+  mScreenBrightnessForVrRangeMaximum=255
+  mScreenBrightnessForVrDefault=86
+  mUseSoftwareAutoBrightnessConfig=false
+  mAllowAutoBrightnessWhileDozingConfig=false
+  mBrightnessRampRateFast=180
+  mBrightnessRampRateSlow=60
+  mSkipScreenOnBrightnessRamp=false
+  mColorFadeFadesConfig=false
+  mColorFadeEnabled=true
+  mDisplayBlanksAfterDozeConfig=false
+  mBrightnessBucketsInDozeConfig=false
+
+Display Power Controller Thread State:
+  mPowerRequest=null
+  mUnfinishedBusiness=false
+  mWaitingForNegativeProximity=false
+  mProximitySensor=null
+  mProximitySensorEnabled=false
+  mProximityThreshold=0.0
+  mProximity=Unknown
+  mPendingProximity=Unknown
+  mPendingProximityDebounceTime=-1 (2599756 ms ago)
+  mScreenOffBecauseOfProximity=false
+  mLastUserSetScreenBrightness=0
+  mCurrentScreenBrightnessSetting=102
+  mPendingScreenBrightnessSetting=-1
+  mTemporaryScreenBrightness=-1
+  mAutoBrightnessAdjustment=0.0
+  mTemporaryAutoBrightnessAdjustment=NaN
+  mPendingAutoBrightnessAdjustment=NaN
+  mScreenBrightnessForVr=86
+  mAppliedAutoBrightness=false
+  mAppliedDimming=false
+  mAppliedLowPower=false
+  mAppliedScreenBrightnessOverride=false
+  mAppliedTemporaryBrightness=false
+  mDozing=false
+  mSkipRampState=RAMP_STATE_SKIP_NONE
+  mInitialAutoBrightness=0
+  mScreenOnBlockStartRealTime=0
+  mScreenOffBlockStartRealTime=0
+  mPendingScreenOnUnblocker=null
+  mPendingScreenOffUnblocker=null
+  mPendingScreenOff=false
+  mReportedToPolicy=REPORTED_TO_POLICY_SCREEN_OFF
+
+BrightnessTracker state:
+  mStarted=false
+  mLastBatteryLevel=NaN
+  mLastBrightness=-1.0
+  mLastSensorReadings.size=0
+  mEventsDirty=false
+  mEvents.size=0
+  mWriteBrightnessTrackerStateScheduled=false
+  mSensorRegistered=false
+
+PersistentDataStore
+  mLoaded=true
+  mDirty=false
+  RememberedWifiDisplays:
+  DisplayStates:
+  StableDeviceValues:
+      StableDisplayWidth=1920
+      StableDisplayHeight=720
+  BrightnessConfigurations:

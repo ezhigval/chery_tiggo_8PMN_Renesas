@@ -1,0 +1,76 @@
+11-16 16:29:35.051 I/ActivityManager( 2040): START u0 {flg=0x10000000 cmp=com.astrob.turbodog/.WelcomeActivity} from uid 2000, pid 18166
+11-16 16:29:35.094 I/SYS_ActivityUtils( 2286): onAppLaunch: packageName = com.astrob.turbodog
+11-16 16:29:35.161 I/ProgressUtilDemo( 2286): onAppLaunch: packageName = com.astrob.turbodog
+11-16 16:29:35.171 I/CAR.AM  ( 2205): New top task: TaskInfoContainer [topActivity=ComponentInfo{com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}, taskId=225, stackId=13, userId=0
+11-16 16:29:35.171 I/CAR.AM  ( 2205): activity launched:TaskInfoContainer [topActivity=ComponentInfo{com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}, taskId=225, stackId=13, userId=0
+11-16 16:29:35.181 I/CLAN.ACTIVITY( 2218): New top task: TaskInfoContainer [topActivity=ComponentInfo{com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}, taskId=225, stackId=13, userId=0, displayId=0
+11-16 16:29:35.197 I/TurboDogApplication(18132): onActivityCreated
+11-16 16:29:35.280 I/CLAN.ACTIVITY( 2218): currentTopTaskInfo:TaskInfoContainer [topActivity=ComponentInfo{com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}, taskId=225, stackId=13, userId=0, displayId=0
+11-16 16:29:35.280 I/CLAN.ACTIVITY( 2218): New top task: TaskInfoContainer [topActivity=ComponentInfo{com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}, taskId=225, stackId=13, userId=0, displayId=0
+11-16 16:29:35.311 I/astrob.turbodog(18132): type=1400 audit(0.0:18224): avc: denied { read } for name="u:object_r:persist_sys_car_config_one:s0" dev="tmpfs" ino=7803 scontext=u:r:navi_app:s0:c512,c768 tcontext=u:object_r:persist_sys_car_config_one:s0 tclass=file permissive=1
+11-16 16:29:35.311 I/astrob.turbodog(18132): type=1400 audit(0.0:18225): avc: denied { open } for path="/dev/__properties__/u:object_r:persist_sys_car_config_one:s0" dev="tmpfs" ino=7803 scontext=u:r:navi_app:s0:c512,c768 tcontext=u:object_r:persist_sys_car_config_one:s0 tclass=file permissive=1
+11-16 16:29:35.311 I/astrob.turbodog(18132): type=1400 audit(0.0:18226): avc: denied { getattr } for path="/dev/__properties__/u:object_r:persist_sys_car_config_one:s0" dev="tmpfs" ino=7803 scontext=u:r:navi_app:s0:c512,c768 tcontext=u:object_r:persist_sys_car_config_one:s0 tclass=file permissive=1
+11-16 16:29:35.311 I/astrob.turbodog(18132): type=1400 audit(0.0:18227): avc: denied { map } for path="/dev/__properties__/u:object_r:persist_sys_car_config_one:s0" dev="tmpfs" ino=7803 scontext=u:r:navi_app:s0:c512,c768 tcontext=u:object_r:persist_sys_car_config_one:s0 tclass=file permissive=1
+11-16 16:29:35.311 I/astrob.turbodog(18132): type=1400 audit(0.0:18228): avc: denied { read } for name="u:object_r:persist_sys_car_config_two:s0" dev="tmpfs" ino=7805 scontext=u:r:navi_app:s0:c512,c768 tcontext=u:object_r:persist_sys_car_config_two:s0 tclass=file permissive=1
+11-16 16:29:35.620 I/h       (18132): engine started, app version=TurboDog_V9.1.7_20250625_2_1, 46
+11-16 16:29:35.647 I/NaviAIDLService(18132): {"requestAuthor":"com.astrob.turbodog","protocolId":30200,"messageType":"dispatch","statusCode":200,"data":{"autoStatus":10}}
+11-16 16:29:35.656 I/TurboDogApplication(18132): onActivityStarted
+11-16 16:29:35.656 I/TurboDogApplication(18132): onActivityResumed
+11-16 16:29:35.750 I/UiAccessibilityServices( 2540): onAccessibilityEvent-->pkg: com.astrob.turbodog/class: android.widget.FrameLayout
+11-16 16:29:35.807 W/FunctionLayer(18132): CTurboDogDlg OnInitDialog, w=1920, h=720
+11-16 16:29:35.807 I/FunctionLayer(18132): Startup In Foreground--CTurboDogDlg::TurboDog_CreateGL
+11-16 16:29:35.813 W/FunctionLayer(18132): CTurboDogDlg::Preset eLang = 17
+11-16 16:29:35.813 W/FunctionLayer(18132): CTurboDogDlg::Preset eIllStatus=0
+11-16 16:29:35.815 I/NaviAIDLService(18132): {"requestAuthor":"com.astrob.turbodog","protocolId":30200,"messageType":"dispatch","statusCode":200,"data":{"autoStatus":7}}
+11-16 16:29:35.953 E/FunctionLayer(18132): CTurboDogDlg::CheckUDisk:bSupportUptData=1, bSupportUptEngine=0
+11-16 16:29:35.953 W/FunctionLayer(18132): CUDiskUpdateManager::SetPath MapDataPath=/data_extra/map/TurboDog/mapdata/, RundirPath=/data_extra/map/TurboDog/rundir
+11-16 16:29:35.972 W/FunctionLayer(18132): FL_ConfigImp::FLSetMapDataRegion /data_extra/map/TurboDog/mapdata/maps/mapv.dat exist
+11-16 16:29:35.974 W/FunctionLayer(18132): strUDiskPath=/storage/usb0;/storage/usb1, strUDiskMapdataDir=TurboDog/mapdata, strUDiskRundirDir=TurboDog/rundir
+11-16 16:29:35.975 W/FunctionLayer(18132): CTurboDogDlg::LaunchNavi:remove copying voice files from assets to map partitions
+11-16 16:29:36.032 I/ActivityManager( 2040): Displayed com.astrob.turbodog/.WelcomeActivity: +880ms
+11-16 16:29:36.059 W/FunctionLayer(18132): TurboDog_CreateNVG
+11-16 16:29:36.079 I/ProgressUtilDemo( 2286): onAppLaunch: packageName = com.astrob.turbodog
+11-16 16:29:36.095 I/CLAN.ACTIVITY( 2218): currentTopTaskInfo:TaskInfoContainer [topActivity=ComponentInfo{com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}, taskId=225, stackId=13, userId=0, displayId=0
+11-16 16:29:36.095 I/CLAN.ACTIVITY( 2218): New top task: TaskInfoContainer [topActivity=ComponentInfo{com.astrob.turbodog/com.astrob.turbodog.WelcomeActivity}, taskId=225, stackId=13, userId=0, displayId=0
+11-16 16:29:36.169 W/SurfaceFlinger( 1716): Attempting to set client state on removed layer: Splash Screen com.astrob.turbodog#0
+11-16 16:29:36.170 W/SurfaceFlinger( 1716): Attempting to destroy on removed layer: Splash Screen com.astrob.turbodog#0
+11-16 16:29:36.178 W/FunctionLayer(18132): FL_ConfigImp::FLSetMapDataRegion /data_extra/map/TurboDog/mapdata/maps/mapv.dat exist
+11-16 16:29:36.276 W/FunctionLayer(18132): FL_EncryptImp::SaveUserSNGFile save file /data_extra/map/TurboDog/rundir/UserData/licensekey.sng
+11-16 16:29:36.299 W/FunctionLayer(18132): FL_EncryptImp::SaveUserSNGFile save file /data_extra/map/TurboDog/rundir/Reg/licensekey.sng
+11-16 16:29:36.301 I/astrob.turbodo(18132): Compiler allocated 4MB to compile void androidx.constraintlayout.widget.ConstraintLayout.onMeasure(int, int)
+11-16 16:29:36.323 W/FunctionLayer(18132): /data_extra/map/TurboDog/mapdata/maps/
+11-16 16:29:36.323 W/FunctionLayer(18132): strBaseCfgPath = smf_base.cfg, strPath = /data_extra/map/TurboDog/rundir, strMapDataPath = /data_extra/map/TurboDog/mapdata/
+11-16 16:29:36.334 W/FunctionLayer(18132): Open /data_extra/map/TurboDog/mapdata/maps/rus_dis.smf Suc.
+11-16 16:29:36.334 W/FunctionLayer(18132): Open /data_extra/map/TurboDog/mapdata/maps/rus.smf Suc.
+11-16 16:29:36.443 W/FunctionLayer(18132): [CPackFileReader::Open]---open pack ui file:/data_extra/map/TurboDog/mapdata/extdata/sar
+11-16 16:29:36.463 I/UiAccessibilityServices( 2540): onAccessibilityEvent-->pkg: com.astrob.turbodog/class: com.astrob.turbodog.WelcomeActivity
+11-16 16:29:36.483 W/TMERoute(18132): TestWhetherDividRegion open-1 /data_extra/map/TurboDog/mapdata/route//regionindex.rdx.
+11-16 16:29:36.653 W/FunctionLayer(18132): [CPackFileReader::Open]---open pack ui file:/data_extra/map/TurboDog/mapdata/extdata/ejv
+11-16 16:29:36.661 W/FunctionLayer(18132): [CPackFileReader::Open]---open pack ui file:/data_extra/map/TurboDog/mapdata/extdata/gjv
+11-16 16:29:36.750 I/GenericCustomCenter(18132): Intent { act=turbodog.navigation.system.message (has extras) }Bundle[{CODE=200}]
+11-16 16:29:36.752 I/GenericCustomCenter(18132): Intent { act=turbodog.navigation.system.message (has extras) }Bundle[{CODE=207}]
+11-16 16:29:36.752 W/ContextImpl( 2587): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1005 android.content.ContextWrapper.sendBroadcast:444 com.desaysv.mapservice.util.ActivityUtil.sendBroadcast:188 com.desaysv.mapservice.adapter.map.turbodog.TurboDogAdapter.sendBroadcastToTurboDog:464 com.desaysv.mapservice.adapter.map.turbodog.TurboDogAdapter.sendHeadLightModelData:441 
+11-16 16:29:36.756 I/TurboDogGpsService(18132): onCreate
+11-16 16:29:36.759 E/ActivityManager( 2040): Sending non-protected broadcast turbodog.system.navigation.message from system 2587:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-16 16:29:36.759 E/ActivityManager( 2040): Sending non-protected broadcast turbodog.system.navigation.message from system 2587:com.desaysv.mapservice/1000 pkg com.desaysv.mapservice
+11-16 16:29:36.765 I/TurboDogGpsService(18132): onStartCommand
+11-16 16:29:36.765 I/TurboDogGpsService(18132): intent = Intent { cmp=com.astrob.turbodog/.TurboDogGpsService (has extras) }, engineInitFinished = true
+11-16 16:29:36.766 I/TurboDogGpsService(18132): sensorManager onCreate
+11-16 16:29:36.769 I/TurboDogGpsService(18132): SENSOR_SERVICE size is 6
+11-16 16:29:36.769 I/TurboDogGpsService(18132): No_0,  sensorManager: ASM330LHH Accelerometer Sensor, type: 1
+11-16 16:29:36.769 I/TurboDogGpsService(18132): No_1,  sensorManager: ASM330LHH Temperature Sensor, type: 7
+11-16 16:29:36.769 I/TurboDogGpsService(18132): No_2,  sensorManager: ASM330LHH Gyroscope Sensor, type: 4
+11-16 16:29:36.769 I/TurboDogGpsService(18132): No_3,  sensorManager: Dynamic Sensor Manager, type: 32
+11-16 16:29:36.769 I/TurboDogGpsService(18132): No_4,  sensorManager: Game Rotation Vector Sensor, type: 15
+11-16 16:29:36.769 I/TurboDogGpsService(18132): No_5,  sensorManager: Gravity Sensor, type: 9
+11-16 16:29:36.792 I/TurboDogGpsService(18132): partNumer=703000765AA
+11-16 16:29:36.793 I/TurboDogGpsService(18132): ins service initialization completed
+11-16 16:29:36.797 E/H3NCustomCenter(18132): Receive message:turbodog.system.navigation.message, code=100, data=2
+11-16 16:29:36.798 I/TurboDogGpsService(18132): car speed service is connected
+11-16 16:29:37.091 I/NaviAIDLService(18132): {"requestAuthor":"com.astrob.turbodog","protocolId":30200,"messageType":"dispatch","statusCode":200,"data":{"autoStatus":8}}
+11-16 16:29:37.095 I/FunctionLayer(18132): FL_ConfigImp::FLSaveSet(): strSaveFilePath = /data_extra/map/TurboDog/rundir/UserData/SystemSet.dat
+11-16 16:29:39.273 W/ContextImpl( 2587): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1005 android.content.ContextWrapper.sendBroadcast:444 com.desaysv.mapservice.util.ActivityUtil.sendTurboDogScreenBroadcast:229 com.desaysv.mapservice.manager.MeterControl.displayControl:48 com.desaysv.mapservice.manager.SVCarLanManager$1$1.onMessage:75 
+11-16 16:29:40.130 W/ContextImpl( 2587): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1005 android.content.ContextWrapper.sendBroadcast:444 com.desaysv.mapservice.util.ActivityUtil.sendTurboDogScreenBroadcast:229 com.desaysv.mapservice.manager.MeterControl.displayControl:55 com.desaysv.mapservice.manager.SVCarLanManager$1$1.onMessage:75 
+11-16 16:29:40.158 W/FunctionLayer(18132): CTurboDogDlg::AddSecondaryWnd w=0, h=0, dpi=0, nWndIdx=3
+11-16 16:29:40.158 I/SecondaryRenderThread(18132): SecondaryRenderThread():AddSecondaryWndGL(0, 0) index=3
+11-16 16:29:40.816 I/UiAccessibilityServices( 2540): onAccessibilityEvent-->pkg: com.astrob.turbodog/class: com.astrob.turbodog.b

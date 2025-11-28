@@ -1,0 +1,80 @@
+           CPU0       CPU1       CPU2       CPU3       CPU4       
+  3:     783584    1034023     583598     933950     943932     GIC-0  27 Level     arch_timer
+  5:        193          0          0          0          0     GIC-0  74 Level     virtio0
+  6:      54058          0          0          0          0     GIC-0 100 Level     virtio1
+  7:          0          0          0          0          0     GIC-0 101 Level     virtio2
+  8:          0          0          0          0          0     GIC-0 102 Level     virtio3
+  9:      25963          0          0          0          0     GIC-0 777 Level     virtio4
+ 10:          0          0          0          0          0     GIC-0  40 Level     e6054000.gpio, virtio5
+ 11:     392169          0          0          0          0     GIC-0  38 Level     qnx-virtio-du-irq
+ 12:          0          0          0          0          0     GIC-0  97 Level     uart-pl011
+ 13:          0          0          0          0          0     GIC-0  23 Level     arm-pmu
+ 14:          0          0          0          0          0     GIC-0  36 Level     e6050000.gpio
+ 15:          0          0          0          0          0     GIC-0  37 Level     e6051000.gpio
+ 16:      34813          0          0          0          0     GIC-0  42 Level     e6055400.gpio
+ 17:          0          0          0          0          0     GIC-0  43 Level     e6055800.gpio
+ 18:          6          0          0          0          0     GIC-0  51 Level     e66d8000.i2c
+ 19:    1079397          0          0          0          0     GIC-0  53 Level     e66e8000.i2c
+ 20:      86412          0          0          0          0     GIC-0 186 Level     e6540000.serial:mux
+ 21:      35031          0          0          0          0     GIC-0 187 Level     e6550000.serial:mux
+ 22:       1234          0          0          0          0     GIC-0 139 Level     e6590000.usb
+ 23:        231          0          0          0          0     GIC-0 141 Level     e65a0000.dma-controller:0, e65a0000.dma-controller:1
+ 24:          0          0          0          0          0     GIC-0 142 Level     e65b0000.dma-controller:0, e65b0000.dma-controller:1
+ 27:      12936          0          0          0          0     GIC-0 191 Level     e6c10000.spi
+ 28:          0          0          0          0          0     GIC-0 206 Level     rcar_vin
+ 29:          0          0          0          0          0     GIC-0 207 Level     rcar_vin
+ 31:       9861          0          0          0          0     GIC-0 352 Level     ec700000.dma-controller:0
+ 32:          0          0          0          0          0     GIC-0 353 Level     ec700000.dma-controller:1
+ 33:          0          0          0          0          0     GIC-0 354 Level     ec700000.dma-controller:2
+ 34:          0          0          0          0          0     GIC-0 355 Level     ec700000.dma-controller:3
+ 35:          0          0          0          0          0     GIC-0 356 Level     ec700000.dma-controller:4
+ 36:          0          0          0          0          0     GIC-0 357 Level     ec700000.dma-controller:5
+ 37:          0          0          0          0          0     GIC-0 358 Level     ec700000.dma-controller:6
+ 38:          0          0          0          0          0     GIC-0 359 Level     ec700000.dma-controller:7
+ 39:          0          0          0          0          0     GIC-0 360 Level     ec700000.dma-controller:8
+ 40:          0          0          0          0          0     GIC-0 361 Level     ec700000.dma-controller:9
+ 41:          0          0          0          0          0     GIC-0 362 Level     ec700000.dma-controller:10
+ 42:          0          0          0          0          0     GIC-0 363 Level     ec700000.dma-controller:11
+ 43:          0          0          0          0          0     GIC-0 364 Level     ec700000.dma-controller:12
+ 44:          0          0          0          0          0     GIC-0 365 Level     ec700000.dma-controller:13
+ 45:          0          0          0          0          0     GIC-0 366 Level     ec700000.dma-controller:14
+ 46:          0          0          0          0          0     GIC-0 367 Level     ec700000.dma-controller:15
+ 48:     160548          0          0          0          0     GIC-0 368 Level     ec720000.dma-controller:0
+ 49:          0          0          0          0          0     GIC-0 369 Level     ec720000.dma-controller:1
+ 50:          0          0          0          0          0     GIC-0 370 Level     ec720000.dma-controller:2
+ 51:          0          0          0          0          0     GIC-0 371 Level     ec720000.dma-controller:3
+ 52:          0          0          0          0          0     GIC-0 372 Level     ec720000.dma-controller:4
+ 53:          0          0          0          0          0     GIC-0 373 Level     ec720000.dma-controller:5
+ 54:          0          0          0          0          0     GIC-0 374 Level     ec720000.dma-controller:6
+ 55:          0          0          0          0          0     GIC-0 375 Level     ec720000.dma-controller:7
+ 56:          0          0          0          0          0     GIC-0 376 Level     ec720000.dma-controller:8
+ 57:          0          0          0          0          0     GIC-0 377 Level     ec720000.dma-controller:9
+ 58:          0          0          0          0          0     GIC-0 378 Level     ec720000.dma-controller:10
+ 59:          0          0          0          0          0     GIC-0 379 Level     ec720000.dma-controller:11
+ 60:          0          0          0          0          0     GIC-0 380 Level     ec720000.dma-controller:12
+ 61:          0          0          0          0          0     GIC-0 381 Level     ec720000.dma-controller:13
+ 62:          0          0          0          0          0     GIC-0 414 Level     ec720000.dma-controller:14
+ 63:          0          0          0          0          0     GIC-0 415 Level     ec720000.dma-controller:15
+ 64:          2          0          0          0          0     GIC-0 140 Level     ee080200.usb-phy, ehci_hcd:usb1
+ 65:      16190          0          0          0          0     GIC-0 144 Level     ehci_hcd:usb2
+ 66:     113970          0          0          0          0     GIC-0 197 Level     ee100000.sd
+ 67:     921494          0          0          0          0     GIC-0 151 Edge      pvrsrvkm
+ 77:          0          0          0          0          0     GIC-0 294 Level     fe940000.fdpm
+ 78:          0          0          0          0          0     GIC-0 295 Level     fe944000.fdpm
+ 79:     128405          0          0          0          0     GIC-0 298 Level     fe960000.vspm
+ 80:          0          0          0          0          0     GIC-0 216 Level     fea80000.csi2
+ 81:      34813          0          0          0          0  e6055400.gpio  16 Level     asm330lhh
+ 82:          0          0          0          0          0     GIC-0 402 Level     ec500000.sound
+ 83:          0          0          0          0          0     GIC-0 403 Level     ec500000.sound
+ 85:          0          0          0          0          0     GIC-0 405 Level     ec500000.sound
+ 86:          0          0          0          0          0     GIC-0 406 Level     ec500000.sound
+ 91:          0          0          0          0          0     GIC-0 411 Level     ec500000.sound
+102:          0          0          0          0          0  e6055400.gpio  31 Edge      RVC
+IPI0:    605401     838910     671683     786505     730650       Rescheduling interrupts
+IPI1:     12992      10889      10136       4040       3636       Function call interrupts
+IPI2:         0          0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0          0          0          0       Timer broadcast interrupts
+IPI5:     12196       2393       1067       3489       4103       IRQ work interrupts
+IPI6:         0          0          0          0          0       CPU wake-up interrupts
+Err:          0

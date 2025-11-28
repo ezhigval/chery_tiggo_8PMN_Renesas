@@ -1,0 +1,2 @@
+3	car_service: [android.car.ICar]
+4	dsv_car_power: [com.desaysv.ivi.platformadapter.app.carstate.ICarStateManager]

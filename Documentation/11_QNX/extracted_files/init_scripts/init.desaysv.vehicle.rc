@@ -1,0 +1,150 @@
+# COPYRIGHT NOTICE
+# Copyright (c) 2018, DesaySV
+
+on init
+    # create pipe floder
+    mkdir /dev/run 0775 root system
+
+#on boot
+#    start wlanload
+
+on post-fs-data
+    # We chown/chmod /data_fota and /data_extra again so because mount is run as root + defaults
+    chown system system /data_fota
+    chmod 0771 /data_fota
+    chown system system /data_extra
+    chmod 0771 /data_extra
+    # create vehicle for vehicle-platform
+    mkdir /data/vehicle 0771 system system
+    mkdir /data/vehicle/data 0775 system system
+    mkdir /data/vehicle/update 0771 system system
+    mkdir /data/vehicle/update/dsp 0771 system system
+    mkdir /data/vehicle/update/mcu 0771 system system
+    copy  /vendor/etc/ipconfig.txt /data/misc/ethernet/ipconfig.txt
+    chmod 0660 /data/misc/ethernet/ipconfig.txt
+    chown system system /data/misc/ethernet/ipconfig.txt
+    
+    chown root sdcard_rw /vr
+    chmod 0777 /vr
+    chown root sdcard_rw /vr/iflytek
+    chmod 0777 /vr/iflytek
+
+    start iflytek_chmod
+	
+    # create folder for navi and asr[temporary]
+    mkdir /data_extra/map 0771 navigation system
+    mkdir /data_extra/map/mcarnavi 0771 navigation system
+    mkdir /data_extra/map/mcarnavi/cn 0771 navigation system
+    mkdir /data_extra/map/mcarnavi/cn/cmr 0771 navigation system
+    # mkdir /data_extra/vr 0771 asr system
+    mkdir /data_extra/update 0771 ota_update system
+    mkdir /data/brlink/ 0777 root root
+    mkdir /data/misc/ethernethp 0770 system system
+    copy  /vendor/etc/ipconfighp.txt /data/misc/ethernethp/ipconfig.txt
+    chmod 0660 /data/misc/ethernethp/ipconfig.txt
+    chown system system /data/misc/ethernethp/ipconfig.txt
+    # create /data/update to store update.zip which copy from usb storage
+    mkdir /data/update 0700 system system
+    # create /data/someip_log to store someip log
+    mkdir /data/someip_log 0700 root root
+    # create /data/avm to store avm data
+    mkdir /data/avm 0700 system system
+
+#service vehicle.servicemanager /vendor/bin/vehicle.servicemanager -nice -20
+#    class main
+#    user root
+#    group root
+#    #disabled
+
+service wlanload /vendor/bin/wlandriverloader.sh
+    user root
+    group root
+    oneshot
+    disabled
+
+service direct_network_config  /vendor/bin/direct.network.config.sh
+    class early_hal
+    user root
+    group root
+    seclabel u:r:direct_network_config:s0
+
+#ivt added
+service brlinkd /system/bin/brlinkd
+    class main
+    socket brlinkd stream 0660 bluetooth bluetooth
+
+service svdebug /vendor/bin/svdebugservice init
+    user system
+    group shell
+    class main
+    disabled
+    oneshot
+
+on property:persist.sv.debug_service=1
+    start  svdebug
+
+service svbugreport /vendor/bin/svbugreport 2
+    user root
+    group system
+    class main
+    disabled
+    oneshot
+
+on property:sys.sv.svbugreport_service=1
+    start  svbugreport
+
+service svresetfactory /vendor/bin/svresetfactory 2
+    user root
+    group root
+    class main
+    disabled
+    oneshot
+
+on property:sys.sv.svresetfactory_service=1
+    start  svresetfactory
+
+service svdmesg /vendor/bin/svdmesg init
+    user root
+    group shell system
+    class main
+    disabled
+
+on property:persist.sv.dmesg_service=1
+    start  svdmesg
+
+service svtcpdump /vendor/bin/svtcpdump
+    class main
+    disabled
+    oneshot
+
+on property:persist.sv.svtcpdump_service=1
+    start  svtcpdump
+
+service reload_wifidriver /vendor/bin/reloadwifidriver.sh
+    user root
+    group root
+    seclabel u:r:pvrsrvctl:s0
+    disabled
+    oneshot
+
+on property:sys.sv.svwifidrivereload=1
+    start reload_wifidriver
+
+# adbdctl start, must keep same as adbdctl impl
+on property:persist.sv.debug.adb_enable=1 && property:sys.boot_completed=1
+    write /sys/devices/soc/6a00000.ssusb/mode "peripheral"
+
+# adbdctl stop, must keep same as adbdctl impl
+on property:persist.sv.debug.adb_enable=0
+    write /sys/devices/soc/6a00000.ssusb/mode "host"
+
+#Drop caches.
+on property:sys.boot_completed=1
+    write /proc/sys/vm/drop_caches "3"
+    start wipe_audiolog
+
+service wipe_audiolog /vendor/bin/wipe_audio_log.sh
+    user root
+    group shell
+    disabled
+    oneshot

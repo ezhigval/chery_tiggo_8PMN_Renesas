@@ -1,0 +1,63 @@
+Service Resolver Table:
+  Non-Data Actions:
+      com.desaysv.electronicmanual.overlay3.messenger:
+        eaec08a com.desaysv.electronicmanual.overlay3/com.blankj.utilcode.util.MessengerUtils$ServerService filter f2a62be
+          Action: "com.desaysv.electronicmanual.overlay3.messenger"
+
+Registered ContentProviders:
+  com.desaysv.electronicmanual.overlay3/com.blankj.utilcode.util.Utils$FileProvider4UtilCode:
+    Provider{79049c9 com.desaysv.electronicmanual.overlay3/com.blankj.utilcode.util.Utils$FileProvider4UtilCode}
+
+ContentProvider Authorities:
+  [com.desaysv.electronicmanual.overlay3.utilcode.provider]:
+    Provider{79049c9 com.desaysv.electronicmanual.overlay3/com.blankj.utilcode.util.Utils$FileProvider4UtilCode}
+      applicationInfo=ApplicationInfo{e32da7 com.desaysv.electronicmanual.overlay3}
+
+Key Set Manager:
+  [com.desaysv.electronicmanual.overlay3]
+      Signing KeySets: 1
+
+Packages:
+  Package [com.desaysv.electronicmanual.overlay3] (bf55438):
+    userId=10022
+    pkg=Package{26e1c11 com.desaysv.electronicmanual.overlay3}
+    codePath=/product/app/SVElectronicManualThrOverlay
+    resourcePath=/product/app/SVElectronicManualThrOverlay
+    legacyNativeLibraryDir=/product/app/SVElectronicManualThrOverlay/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 minSdk=27 targetSdk=28
+    versionName=T1D-PHEV_SVElectronicManualOverlay_02_31.01_250808_R
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{e32da7 com.desaysv.electronicmanual.overlay3}
+    flags=[ SYSTEM ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PRODUCT ]
+    dataDir=/data/user/0/com.desaysv.electronicmanual.overlay3
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 06:59:20
+    firstInstallTime=2024-12-25 11:44:11
+    lastUpdateTime=2025-08-08 06:59:20
+    signatures=PackageSignatures{b955176 version:3, signatures:[ced7ecff], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    overlayTarget=com.desaysv.electronicmanual
+    overlayCategory=null
+    User 0: ceDataInode=262427 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.desaysv.electronicmanual.overlay3]
+
+
+Compiler stats:
+  [com.desaysv.electronicmanual.overlay3]
+    (No recorded stats)

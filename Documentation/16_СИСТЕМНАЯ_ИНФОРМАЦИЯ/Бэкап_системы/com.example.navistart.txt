@@ -1,0 +1,135 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9ceb60b com.example.navistart/.MainActivity filter 842349d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        524d58b com.example.navistart/androidx.profileinstaller.ProfileInstallReceiver filter 32b9347
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.yandex.metrica.push.action.EXPIRED_BY_TTL_ACTION:
+        559df12 com.example.navistart/.SystemMessageReceiver filter 518c6c8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "desay.broadcast.map.meter.interaction"
+          Action: "com.yandex.metrica.push.action.EXPIRED_BY_TTL_ACTION"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        524d58b com.example.navistart/androidx.profileinstaller.ProfileInstallReceiver filter ecdc361
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        524d58b com.example.navistart/androidx.profileinstaller.ProfileInstallReceiver filter d29ee86
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      desay.broadcast.map.meter.interaction:
+        559df12 com.example.navistart/.SystemMessageReceiver filter 518c6c8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "desay.broadcast.map.meter.interaction"
+          Action: "com.yandex.metrica.push.action.EXPIRED_BY_TTL_ACTION"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        524d58b com.example.navistart/androidx.profileinstaller.ProfileInstallReceiver filter 578774
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        559df12 com.example.navistart/.SystemMessageReceiver filter 518c6c8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "desay.broadcast.map.meter.interaction"
+          Action: "com.yandex.metrica.push.action.EXPIRED_BY_TTL_ACTION"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b15e3ad com.example.navistart/.boot filter 43fab6b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Permissions:
+  Permission [com.example.navistart.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (f68143):
+    sourcePackage=com.example.navistart
+    uid=10056 gids=null type=0 prot=signature
+    perm=Permission{129a3c0 com.example.navistart.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    packageSetting=PackageSetting{51f68f9 com.example.navistart/10056}
+
+Registered ContentProviders:
+  com.example.navistart/androidx.startup.InitializationProvider:
+    Provider{5881764 com.example.navistart/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.example.navistart.androidx-startup]:
+    Provider{5881764 com.example.navistart/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{c2e45fd com.example.navistart}
+
+Key Set Manager:
+  [com.example.navistart]
+      Signing KeySets: 17
+
+Packages:
+  Package [com.example.navistart] (51f68f9):
+    userId=10056
+    pkg=Package{bcd0bee com.example.navistart}
+    codePath=/data/app/com.example.navistart-k7VP2yMFF9AxsEDD75mjWQ==
+    resourcePath=/data/app/com.example.navistart-k7VP2yMFF9AxsEDD75mjWQ==
+    legacyNativeLibraryDir=/data/app/com.example.navistart-k7VP2yMFF9AxsEDD75mjWQ==/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 minSdk=24 targetSdk=34
+    versionName=1.0
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{c2e45fd com.example.navistart}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ]
+    dataDir=/data/user/0/com.example.navistart
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2025-11-12 07:37:56
+    firstInstallTime=2025-11-12 07:37:56
+    lastUpdateTime=2025-11-12 07:37:56
+    signatures=PackageSignatures{804c88f version:2, signatures:[16e4158c], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    declared permissions:
+      com.example.navistart.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_PHONE_STATE
+      android.permission.REORDER_TASKS
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WAKE_LOCK
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.example.navistart.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      com.example.navistart.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=262612 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_PHONE_STATE: granted=true
+
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Dexopt state:
+  [com.example.navistart]
+    path: /data/app/com.example.navistart-k7VP2yMFF9AxsEDD75mjWQ==/base.apk
+      arm64: [status=verify] [reason=boot]
+
+
+Compiler stats:
+  [com.example.navistart]
+    (No recorded stats)

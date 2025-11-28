@@ -1,0 +1,4 @@
+172.20.10.0/28 dev wlan0 proto kernel scope link src 172.20.10.7 
+192.168.2.0/24 dev eth0 proto kernel scope link src 192.168.2.2 
+192.168.33.0/24 dev wlan1 proto kernel scope link src 192.168.33.10 
+192.168.225.0/24 dev usb0 proto kernel scope link src 192.168.225.10 

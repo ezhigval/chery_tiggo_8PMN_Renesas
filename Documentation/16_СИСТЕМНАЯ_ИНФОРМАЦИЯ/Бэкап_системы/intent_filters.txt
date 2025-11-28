@@ -1,0 +1,196 @@
+        38b69ef com.android.engmode/.MainActivity
+        434aa1e com.desaysv.vehiclesetting/.ui.activity.GuideActivity
+        4b33c21 android/com.android.internal.app.SystemUserHomeActivity
+        4c88564 com.astrob.turbodog/.WelcomeActivity
+        4ed901b com.iflytek.cutefly.speechclient.hmi/.CommonActivity
+        5fddef6 com.desaysv.electronicmanual/.hmi.activity.MainActivity
+        602e734 com.android.provision/.DefaultActivity
+        603faed com.desaysv.setting/.ui.activity.SettingActivity
+        6cbf4be org.kman.WifiManager/.WifiControlActivity
+        6da7fc9 com.desaysv.vrservice/.activity.MainActivity
+        739f1a6 ru.yandex.androidkeyboard/com.android.inputmethod.latin.settings.SettingsActivity
+        775c2ff com.desaysv.vehiclesetting/com.desaysv.newenergy.activitys.NewEnergyActivity
+        783366b com.browser.tssomas/com.google.android.apps.chrome.IntentDispatcher
+        7b0a7e7 ru.yandex.androidkeyboard/com.android.inputmethod.latin.spellcheck.SpellCheckerSettingsActivity
+--
+      android.intent.action.VIEW:
+        ce07e3 com.estrongs.android.pop/.app.SaveToESActivity
+        434aa1e com.desaysv.vehiclesetting/.ui.activity.GuideActivity
+        4c88564 com.astrob.turbodog/.WelcomeActivity
+        603faed com.desaysv.setting/.ui.activity.SettingActivity
+        7429100 com.estrongs.android.pop/.app.LocalFileSharingActivity
+        dd5db83 com.android.cts.ctsshim/.InstallPriority
+        e038232 com.android.cts.priv.ctsshim/.InstallPriority
+      android.intent.action.MANAGE_PERMISSION_APPS:
+        585ed39 com.android.packageinstaller/.permission.ui.ManagePermissionsActivity
+      com.desaysv.setting.ACTION_SOUND_BALANCE_FADER:
+        5e79f79 com.desaysv.setting/.ui.activity.SecondSettingActivity
+      com.google.android.apps.chrome.webapps.WebappManager.ACTION_START_WEBAPP:
+        b638f7e com.browser.tssomas/org.chromium.chrome.browser.webapps.WebappLauncherActivity
+--
+        6b5408 com.android.providers.media/.MediaScannerReceiver
+        74b45f com.desaysv.meterinteraction/.receive.BootCompleteReceiver
+        10572b3 com.desaysv.tboxservice/.service.BootBroadcastReceiver
+        1433822 com.astrob.turbodog/.SystemMessageReceiver
+        15dcfe9 com.desaysv.bluetooth.phone/.receiver.BootReceiver
+        180b46e com.desaysv.usbvideoapp/.receiver.BootUpReceiver
+        1a5581f com.android.packageinstaller/.TemporaryFileManager
+        1b69070 com.desaysv.service.bluetooth/.receiver.BootReceiver
+        3584e58 com.google.android.projection.sink/com.desaysv.auto.projection.BootReceiver
+        42ff804 com.desaysv.vehicle.externallink/.ExternalLinkReceiver
+        4885bb1 com.desaysv.svhvac/.receiver.BootCompleteReceiver
+        4c539ca com.desaysv.usbpicture/.receiver.PictureBootUpReceiver
+        53a81a5 com.android.engmode/.util.EngModeReceiver
+        559df12 com.example.navistart/.SystemMessageReceiver
+--
+        d180fde com.desaysv.carlan/.CarLanService
+      org.chromium.intent.action.UPDATE_PAYMENT_DETAILS:
+        bc895bf com.browser.tssomas/org.chromium.components.payments.PaymentDetailsUpdateService
+      com.astrob.turbodog.NAVI_AIDL_SERVICE:
+        2c2248c com.astrob.turbodog/.NaviAIDLService
+      com.iflytek.autofly.TtsService:
+        41467d5 com.iflytek.cutefly.speechclient.hmi/com.iflytek.autofly.voicecoreservice.tts.TtsService
+      android.bluetooth.IBluetoothPbapClient:
+        8114bea com.android.bluetooth/.pbapclient.PbapClientService
+      android.service.resolver.ResolverRankerService:
+        57acedb android.ext.services/.resolver.LRResolverRankerService
+      android.bluetooth.IBluetoothHeadset:
+        8b2fd78 com.android.bluetooth/.hfp.HeadsetService
+      com.ss.android.socialbase.downloader.remote:
+        40ac51 com.estrongs.android.pop/com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService
+--
+    com.iflytek.autofly.sceneengine
+    com.example.navistart
+    com.android.systemui
+    com.astrob.turbodog
+    com.desaysv.setting
+  AppOp Permission android.permission.PACKAGE_USAGE_STATS:
+    android
+    com.android.shell
+    com.android.bluetooth
+  AppOp Permission android.permission.REQUEST_INSTALL_PACKAGES:
+    com.estrongs.android.pop
+    com.browser.tssomas
+    ru.kinopoisk
+
+--
+      Signing KeySets: 1
+  [com.android.systemui]
+      Signing KeySets: 1
+  [com.astrob.turbodog]
+      Signing KeySets: 7
+  [com.desaysv.vrservice]
+      Signing KeySets: 1
+  [com.desaysv.electronicmanual.overlay2]
+      Signing KeySets: 1
+  [com.desaysv.electronicmanual.overlay3]
+      Signing KeySets: 1
+  [com.desaysv.ftpserver]
+      Signing KeySets: 1
+  [ru.kinopoisk]
+--
+    User 0: ceDataInode=262224 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+    overlay paths:
+      /product/app/SystemUITwoOverlay/SystemUITwoOverlay.apk
+  Package [com.astrob.turbodog] (4cb8ac3):
+    userId=1069
+    sharedUser=SharedUserSetting{e92ad52 android.uid.navigation/1069}
+    pkg=Package{4aef823 com.astrob.turbodog}
+    codePath=/product/app/TurboDog
+    resourcePath=/product/app/TurboDog
+    legacyNativeLibraryDir=/product/app/TurboDog/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=46 minSdk=26 targetSdk=29
+    versionName=TurboDog_V9.1.7_20250625_2_1
+    splits=[base]
+    apkSigningVersion=1
+    applicationInfo=ApplicationInfo{c2c8120 com.astrob.turbodog}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PRIVILEGED PRODUCT ]
+    dataDir=/data/user/0/com.astrob.turbodog
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-08 06:59:19
+    firstInstallTime=2024-12-25 11:44:09
+    lastUpdateTime=2025-08-08 06:59:19
+    signatures=PackageSignatures{d0aead9 version:1, signatures:[17d32687], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    User 0: ceDataInode=262418 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=1 instant=false virtual=false
+  Package [com.desaysv.vrservice] (4c3af40):
+    userId=1000
+--
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+        android.permission.READ_CONTACTS: granted=true, flags=[ SYSTEM_FIXED GRANTED_BY_DEFAULT ]
+  SharedUser [android.uid.navigation] (e92ad52):
+    userId=1069
+    install permissions:
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.WAKE_LOCK: granted=true
+--
+Package Changes:
+  Sequence number=3
+  User 0:
+    seq=0, package=com.astrob.turbodog
+    seq=1, package=com.desaysv.tiggo.bridge
+    seq=2, package=ru.yandex.yandexmaps
+
+
+Frozen packages:
+  (none)
+
+
+Loaded volumes:
+  (none)
+--
+  [com.android.systemui]
+    path: /product/priv-app/SystemUI_T1D/SystemUI_T1D.apk
+      arm64: [status=speed] [reason=prebuilt]
+  [com.astrob.turbodog]
+    path: /product/app/TurboDog/TurboDog.apk
+      arm64: [status=quicken] [reason=prebuilt]
+  [com.desaysv.vrservice]
+    path: /product/app/SVVRService/SVVRService.apk
+      arm64: [status=quicken] [reason=prebuilt]
+  [com.desaysv.electronicmanual.overlay2]
+  [com.desaysv.electronicmanual.overlay3]
+  [com.desaysv.ftpserver]
+    path: /product/app/FtpServer/FtpServer.apk
+      arm64: [status=quicken] [reason=prebuilt]
+--
+    (No recorded stats)
+  [com.android.systemui]
+    (No recorded stats)
+  [com.astrob.turbodog]
+    (No recorded stats)
+  [com.desaysv.vrservice]
+    (No recorded stats)
+  [com.desaysv.electronicmanual.overlay2]
+    (No recorded stats)
+  [com.desaysv.electronicmanual.overlay3]
+    (No recorded stats)
+  [com.desaysv.ftpserver]
+    (No recorded stats)
+  [ru.kinopoisk]
+--
+11/10/25 7:18 PM: Adding duplicate shared id: 1000 name=com.google.android.projection.sink
+11/10/25 7:18 PM: Adding duplicate shared id: 1000 name=com.desaysv.upgrade
+11/10/25 7:18 PM: Adding duplicate shared id: 1000 name=com.desaysv.assistant
+11/10/25 7:18 PM: Adding duplicate shared id: 1069 name=com.astrob.turbodog
+11/10/25 7:18 PM: Adding duplicate shared id: 1000 name=com.desaysv.mediaapp
+11/10/25 7:18 PM: Adding duplicate shared id: 1000 name=com.desaysv.meterinteraction
+11/10/25 7:18 PM: Adding duplicate shared id: 1000 name=com.dsv.update
+11/10/25 7:58 PM: Upgrading from Renesas/g6sh_t18fl3_international/g6sh:9/PQ2A.190405.003/207:user/dev-keys to Renesas/g6sh_t18fl3_international/g6sh:9/PQ2A.190405.003/229:user/dev-keys
+
+Active install sessions:
+  Session 1284049874:
+    userId=0 mOriginalInstallerUid=2000 mInstallerPackageName=null mInstallerUid=2000 createdMillis=1763199992756 
+    stageDir=/data/app/vmdl1284049874.tmp stageCid=null 
+    mode=1 installFlags=0x72 installLocation=1 sizeBytes=99278935 appPackageName=null appIcon=false appLabel=null 

@@ -1,0 +1,124 @@
+Sensor Device:
+Total 4 h/w sensors, 4 running:
+0x00000001) active-count = 3; sampling_period(ms) = {66.7, 19.2, 76.9}, selected = 19.23 ms; batching_period(ms) = {0.0, 0.0, 0.0}, selected = 0.00 ms
+0x00000003) active-count = 2; sampling_period(ms) = {66.7, 19.2}, selected = 19.23 ms; batching_period(ms) = {0.0, 0.0}, selected = 0.00 ms
+0x00000004) active-count = 1; sampling_period(ms) = {1.0}, selected = 1.00 ms; batching_period(ms) = {0.0}, selected = 0.00 ms
+Sensor List:
+0x00000001) ASM330LHH Accelerometer Sensor | STMicroelectronics | ver: 1 | type: android.sensor.accelerometer(1) | perm: n/a | flags: 0x00000000
+	continuous | minRate=13.00Hz | maxRate=52.00Hz | FIFO (max,reserved) = (416, 0) events | non-wakeUp | 
+0x00000002) ASM330LHH Temperature Sensor | STMicroelectronics | ver: 1 | type: android.sensor.temperature(7) | perm: n/a | flags: 0x00000002
+	on-change | minRate=2.00Hz | maxRate=52.00Hz | FIFO (max,reserved) = (416, 0) events | non-wakeUp | 
+0x00000003) ASM330LHH Gyroscope Sensor | STMicroelectronics | ver: 1 | type: android.sensor.gyroscope(4) | perm: n/a | flags: 0x00000000
+	continuous | minRate=13.00Hz | maxRate=52.00Hz | FIFO (max,reserved) = (416, 0) events | non-wakeUp | 
+0x00000004) Dynamic Sensor Manager    | Google          | ver: 1 | type: android.sensor.dynamic_sensor_meta(32) | perm: n/a | flags: 0x00000007
+	special-trigger | minRate=1000.00Hz | maxRate=1000.00Hz | no batching | wakeUp | 
+0x5f676172) Game Rotation Vector Sensor | AOSP            | ver: 3 | type: android.sensor.game_rotation_vector(15) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=52.00Hz | no batching | non-wakeUp | 
+0x5f677276) Gravity Sensor            | AOSP            | ver: 3 | type: android.sensor.gravity(9) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=52.00Hz | no batching | non-wakeUp | 
+Fusion States:
+9-axis fusion disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+game fusion(no mag) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+geomag fusion (no gyro) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+Recent Sensor events:
+ASM330LHH Gyroscope Sensor: last 10 events
+	 1 (ts=6775.393074864, wall=20:13:33.070) 0.01, -0.03, -0.01, 
+	 2 (ts=6775.411531099, wall=20:13:33.087) 0.02, -0.03, -0.01, 
+	 3 (ts=6775.429974169, wall=20:13:33.108) 0.01, -0.03, -0.01, 
+	 4 (ts=6775.448420534, wall=20:13:33.125) 0.02, -0.03, -0.01, 
+	 5 (ts=6775.466870933, wall=20:13:33.144) 0.02, -0.03, -0.01, 
+	 6 (ts=6775.485370346, wall=20:13:33.163) 0.02, -0.03, -0.01, 
+	 7 (ts=6775.503866271, wall=20:13:33.181) 0.02, -0.03, -0.01, 
+	 8 (ts=6775.522364730, wall=20:13:33.199) 0.02, -0.03, -0.01, 
+	 9 (ts=6775.540858268, wall=20:13:33.218) 0.02, -0.03, -0.01, 
+	10 (ts=6775.559352997, wall=20:13:33.237) 0.01, -0.03, -0.01, 
+ASM330LHH Accelerometer Sensor: last 50 events
+	 1 (ts=6774.653751945, wall=20:13:32.332) -0.23, 9.25, -2.64, 
+	 2 (ts=6774.672239334, wall=20:13:32.350) -0.23, 9.28, -2.65, 
+	 3 (ts=6774.690728260, wall=20:13:32.368) -0.24, 9.21, -2.65, 
+	 4 (ts=6774.709215013, wall=20:13:32.387) -0.22, 9.29, -2.62, 
+	 5 (ts=6774.727704341, wall=20:13:32.406) -0.24, 9.21, -2.63, 
+	 6 (ts=6774.746188786, wall=20:13:32.425) -0.24, 9.30, -2.65, 
+	 7 (ts=6774.764674412, wall=20:13:32.442) -0.24, 9.19, -2.65, 
+	 8 (ts=6774.783160763, wall=20:13:32.460) -0.22, 9.28, -2.64, 
+	 9 (ts=6774.801643572, wall=20:13:32.479) -0.21, 9.23, -2.63, 
+	10 (ts=6774.820135810, wall=20:13:32.497) -0.22, 9.29, -2.65, 
+	11 (ts=6774.838622196, wall=20:13:32.517) -0.23, 9.19, -2.64, 
+	12 (ts=6774.857105135, wall=20:13:32.534) -0.22, 9.30, -2.64, 
+	13 (ts=6774.875589904, wall=20:13:32.554) -0.22, 9.22, -2.63, 
+	14 (ts=6774.894074777, wall=20:13:32.574) -0.24, 9.29, -2.63, 
+	15 (ts=6774.912558301, wall=20:13:32.591) -0.22, 9.20, -2.66, 
+	16 (ts=6774.931058851, wall=20:13:32.609) -0.23, 9.30, -2.65, 
+	17 (ts=6774.949543534, wall=20:13:32.627) -0.21, 9.24, -2.64, 
+	18 (ts=6774.968027374, wall=20:13:32.645) -0.23, 9.29, -2.65, 
+	19 (ts=6774.986512688, wall=20:13:32.663) -0.22, 9.21, -2.66, 
+	20 (ts=6775.004992650, wall=20:13:32.682) -0.24, 9.27, -2.65, 
+	21 (ts=6775.023472372, wall=20:13:32.700) -0.22, 9.23, -2.63, 
+	22 (ts=6775.041953233, wall=20:13:32.719) -0.24, 9.27, -2.63, 
+	23 (ts=6775.060436549, wall=20:13:32.738) -0.23, 9.20, -2.65, 
+	24 (ts=6775.078922714, wall=20:13:32.757) -0.24, 9.28, -2.64, 
+	25 (ts=6775.097401966, wall=20:13:32.775) -0.21, 9.25, -2.63, 
+	26 (ts=6775.115875112, wall=20:13:32.793) -0.24, 9.28, -2.64, 
+	27 (ts=6775.134347199, wall=20:13:32.815) -0.22, 9.21, -2.65, 
+	28 (ts=6775.152819021, wall=20:13:32.831) -0.23, 9.27, -2.65, 
+	29 (ts=6775.171292273, wall=20:13:32.848) -0.22, 9.25, -2.63, 
+	30 (ts=6775.189775581, wall=20:13:32.866) -0.24, 9.27, -2.64, 
+	31 (ts=6775.208254780, wall=20:13:32.885) -0.22, 9.21, -2.66, 
+	32 (ts=6775.226732519, wall=20:13:32.904) -0.25, 9.27, -2.64, 
+	33 (ts=6775.245215271, wall=20:13:32.922) -0.20, 9.25, -2.63, 
+	34 (ts=6775.263703653, wall=20:13:32.941) -0.23, 9.27, -2.64, 
+	35 (ts=6775.282209755, wall=20:13:32.959) -0.22, 9.21, -2.66, 
+	36 (ts=6775.300692151, wall=20:13:32.979) -0.22, 9.27, -2.64, 
+	37 (ts=6775.319180244, wall=20:13:32.998) -0.22, 9.24, -2.63, 
+	38 (ts=6775.337669733, wall=20:13:33.015) -0.24, 9.26, -2.64, 
+	39 (ts=6775.356151824, wall=20:13:33.032) -0.22, 9.22, -2.66, 
+	40 (ts=6775.374622562, wall=20:13:33.051) -0.24, 9.28, -2.63, 
+	41 (ts=6775.393074864, wall=20:13:33.071) -0.23, 9.24, -2.61, 
+	42 (ts=6775.411531099, wall=20:13:33.088) -0.23, 9.29, -2.64, 
+	43 (ts=6775.429974169, wall=20:13:33.109) -0.23, 9.22, -2.65, 
+	44 (ts=6775.448420534, wall=20:13:33.125) -0.22, 9.30, -2.65, 
+	45 (ts=6775.466870933, wall=20:13:33.144) -0.22, 9.24, -2.63, 
+	46 (ts=6775.485370346, wall=20:13:33.163) -0.23, 9.26, -2.64, 
+	47 (ts=6775.503866271, wall=20:13:33.181) -0.23, 9.21, -2.66, 
+	48 (ts=6775.522364730, wall=20:13:33.199) -0.23, 9.28, -2.65, 
+	49 (ts=6775.540858268, wall=20:13:33.219) -0.22, 9.24, -2.63, 
+	50 (ts=6775.559352997, wall=20:13:33.236) -0.24, 9.26, -2.64, 
+Active sensors:
+ASM330LHH Accelerometer Sensor (handle=0x00000001, connections=3)
+ASM330LHH Gyroscope Sensor (handle=0x00000003, connections=2)
+Dynamic Sensor Manager (handle=0x00000004, connections=1)
+Socket Buffer size = 984 events
+WakeLock Status: not held 
+Mode : NORMAL
+5 active connections
+Connection Number: 0 
+	Operating Mode: NORMAL
+	 com.desaysv.mapservice.service.SensorManager | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 0
+	 ASM330LHH Gyroscope Sensor 0x00000003 | status: active | pending flush events 0 
+Connection Number: 1 
+	Operating Mode: NORMAL
+	 com.desaysv.mapservice.service.SensorManager | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 0
+	 ASM330LHH Accelerometer Sensor 0x00000001 | status: active | pending flush events 0 
+Connection Number: 2 
+	Operating Mode: NORMAL
+	 com.android.server.SensorNotificationService | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 0
+	 Dynamic Sensor Manager 0x00000004 | status: active | pending flush events 0 
+Connection Number: 3 
+	Operating Mode: NORMAL
+	 com.astrob.turbodog.TurboDogGpsService | WakeLockRefCount 0 | uid 1069 | cache size 0 | max cache size 0
+	 ASM330LHH Accelerometer Sensor 0x00000001 | status: active | pending flush events 0 
+	 ASM330LHH Gyroscope Sensor 0x00000003 | status: active | pending flush events 0 
+Connection Number: 4 
+	Operating Mode: NORMAL
+	 com.iflytek.autofly.datacenter.platform.SensorInfoManager | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 0
+	 ASM330LHH Accelerometer Sensor 0x00000001 | status: active | pending flush events 0 
+0 direct connections
+Previous Registrations:
+20:04:22 + 0x00000003 pid=14428 uid= 1069 package=com.astrob.turbodog.TurboDogGpsService samplingPeriod=19230us batchingPeriod=0us
+20:04:22 + 0x00000001 pid=14428 uid= 1069 package=com.astrob.turbodog.TurboDogGpsService samplingPeriod=19230us batchingPeriod=0us
+19:48:27 + 0x00000003 pid=13886 uid= 1069 package=com.astrob.turbodog.TurboDogGpsService samplingPeriod=19230us batchingPeriod=0us
+19:48:27 + 0x00000001 pid=13886 uid= 1069 package=com.astrob.turbodog.TurboDogGpsService samplingPeriod=19230us batchingPeriod=0us
+18:20:57 + 0x00000001 pid= 2827 uid= 1000 package=com.iflytek.autofly.datacenter.platform.SensorInfoManager samplingPeriod=76923us batchingPeriod=0us
+18:20:55 + 0x00000001 pid= 2604 uid= 1000 package=com.desaysv.mapservice.service.SensorManager samplingPeriod=66667us batchingPeriod=0us
+18:20:55 + 0x00000003 pid= 2604 uid= 1000 package=com.desaysv.mapservice.service.SensorManager samplingPeriod=66667us batchingPeriod=0us
+18:20:52 + 0x00000004 pid= 2044 uid= 1000 package=com.android.server.SensorNotificationService samplingPeriod=1000us batchingPeriod=0us

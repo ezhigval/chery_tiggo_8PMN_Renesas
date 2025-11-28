@@ -1,0 +1,130 @@
+#!/system/bin/sh
+
+if [ "$1" != "init" ]; then
+    exit -1;
+fi
+
+# auto boot adb
+enable_adb=`getprop persist.sv.debug.adb_enable`;
+if [ "$enable_adb" = "1" ]; then
+    adbdctl start
+fi
+
+mkdir /data_extra/logs
+chmod 770 /data_extra/logs
+chown shell:shell /data_extra/logs
+
+mkdir /data_extra/logcat
+chmod 770 /data_extra/logcat
+chown shell:shell /data_extra/logcat
+
+mkdir /data_extra/logcat_bak
+chmod 770 /data_extra/logcat_bak
+chown shell:shell /data_extra/logcat_bak
+
+mkdir /data_extra/sysinfo
+chmod 770 /data_extra/sysinfo
+chown shell:shell /data_extra/sysinfo
+
+#auto store system info
+save_sysinfo=`getprop persist.sv.debug_sysinfo`
+if [ "$save_sysinfo" = "1" ]; then
+   sysinfo_path="/data_extra/sysinfo" 
+   mkdir $sysinfo_path
+   file=$sysinfo_path"/sysinfo.txt"
+   if [ -f "$file" ]; then
+       mv $file $file"_bak"
+   fi
+   touch /data_extra/sysinfo/sysinfo.txt
+   chown shell:shell /data_extra/sysinfo/sysinfo.txt
+   #we just stop this until the selinux can rightly config
+   #svsysinfo>$file&
+fi
+
+cp -rf /data/tombstones/ /data_extra/logs/
+chown -R shell:shell /data_extra/logs/tombstones
+cp -rf /data/anr/ /data_extra/logs/
+chown -R shell:shell /data_extra/logs/anr
+
+product_device=`getprop ro.product.device`;
+if [ "$product_device" != "msm8996_gvmq" ]; then
+    touch /data_extra/logs/tinymix
+    chown shell:shell /data_extra/logs/tinymix
+    tinymix >/data_extra/logs/tinymix&
+fi
+
+# auto logcat store
+start_logcat=`getprop persist.sv.debug_logcat`
+if [ "$start_logcat" = "1" -o "$start_logcat" = "2" ]; then
+   logcat_path="/data_extra/logcat"
+   mkdir $logcat_path
+   file=$logcat_path"/logcat.txt"
+   #100M
+   rotate=102400
+   count=5
+
+   #qcom default set events,radio buffer to 0
+   #that will cause unexpected EOF! when run logcat -b all
+   # product_device=`getprop ro.product.device`;
+   if [ "$product_device" = "msm8996_gvmq" ]; then
+	logcat -G 4M -b events
+	logcat -G 4M -b radio
+   fi
+
+   service_init_status=`getprop sys.ivi.svdebugservice.inited`
+   if [ "$service_init_status" = "" ]; then
+	service_init_status=0
+   else
+	logcat -c
+   fi
+   setprop sys.ivi.svdebugservice.inited `expr $service_init_status + 1`
+
+   if [ -f "$file" -a "$start_logcat" = "2" ]; then
+       count=20
+   fi
+
+   for element in `ls -r $logcat_path`
+   do
+       ff=$logcat_path"/"$element
+       #echo $ff
+       #echo $element
+       index=${element##*.}
+       ##if [ ! -z "${num##*[!0-9]*}" ] 2>/dev/null; then
+       if [ ! -z "${index##*[!0-9]*}" -o "$index" = "txt" ]; then
+           if [ "$index" = "txt" ]; then
+               index=0
+           fi
+           if [ "$index" -lt "$count" ]; then
+               var1=`expr $index + 1`
+               var1_len=${#var1}
+               count_len=${#count}
+               if [ "$var1_len" -lt "$count_len" ];then
+                   zero="000000000"
+                   suffix_len=`expr $count_len - $var1_len`
+                   suffix=${zero:0:$suffix_len}
+                   var1=$suffix$var1
+                   #echo $suffix_len = $count_len - $var1_len
+                   #echo suffix $suffix
+               fi
+               newfile=$file"."$var1
+               #echo $count length is ${#count}
+               #echo $index is number $var1
+               ##echo move $ff to $newfile
+               mv $ff $newfile
+           else
+               ##echo delete not used $ff
+               rm -rf $ff
+           fi
+       else
+           echo $index not a valid index
+       fi
+   done
+
+   if [ -n "$2" ]; then
+       file=$2
+   fi
+   touch /data_extra/logcat/logcat.txt
+   #chmod 777 /data_extra/logcat/logcat.txt
+   chown shell:shell /data_extra/logcat/logcat.txt
+   logcat -v threadtime -r $rotate -n $count -b all -f $file
+fi

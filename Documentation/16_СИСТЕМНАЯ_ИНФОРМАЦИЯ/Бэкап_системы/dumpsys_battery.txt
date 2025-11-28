@@ -1,0 +1,15 @@
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1000
+  Max charging voltage: 12
+  Charge counter: 1000
+  status: 5
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 12
+  temperature: 1
+  technology: AC Power

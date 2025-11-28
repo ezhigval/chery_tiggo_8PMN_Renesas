@@ -1,0 +1,1 @@
+lsmod not available or no qnx modules

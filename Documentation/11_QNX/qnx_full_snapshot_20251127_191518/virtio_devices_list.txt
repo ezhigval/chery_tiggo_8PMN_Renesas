@@ -1,0 +1,6 @@
+/sys/devices/platform/vdevs/1c0e0000.virtio_blk/virtio2
+/sys/devices/platform/vdevs/1c0d0000.virtio_blk/virtio1
+/sys/devices/platform/vdevs/1c0c0000.virtio_net/virtio5
+/sys/devices/platform/vdevs/1c0f0000.virtio_blk/virtio3
+/sys/devices/platform/vdevs/1c060000.virtio_net/virtio4
+/sys/devices/platform/vdevs/1c0b0000.virtio_input_mtouch/virtio0

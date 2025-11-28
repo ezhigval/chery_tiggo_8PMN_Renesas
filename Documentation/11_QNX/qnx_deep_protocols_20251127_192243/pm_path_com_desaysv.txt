@@ -1,0 +1,1 @@
+pm path не вернул путей для com.desaysv.*
