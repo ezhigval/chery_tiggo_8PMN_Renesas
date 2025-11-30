@@ -1,9 +1,0 @@
-kernel_size=9098310
-kernel_addr=0x48080000
-ramdisk_size=5519955
-ramdisk_addr=0x4a180000
-second_size=0
-tags_addr=0x48000100
-page_size=2048
-dt_size=1
-cmdline=androidboot.selinux=permissive buildvariant=user

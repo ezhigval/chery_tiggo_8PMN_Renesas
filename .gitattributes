@@ -1,0 +1,25 @@
+# Автоматически нормализовать концы строк
+* text=auto
+
+# Исключить бинарные файлы из diff
+*.img binary
+*.bin binary
+*.so binary
+*.dylib binary
+*.dll binary
+*.exe binary
+*.o binary
+*.a binary
+
+# Оптимизация для текстовых файлов
+*.py text diff=python
+*.md text
+*.yaml text
+*.yml text
+*.json text
+*.sh text eol=lf
+*.txt text
+
+# Git LFS для очень больших файлов (если используется)
+# *.log filter=lfs diff=lfs merge=lfs -text
+
