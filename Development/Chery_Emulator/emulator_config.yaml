@@ -1,6 +1,6 @@
 android:
   ota_zip: firmware/T18FL3__703000765AA_MOD_SW_02.09.00_+_CHIME_+_VR_+_DSP_+_MAPS/T18FL3_703000765AA_MOD_SW_02.09.00_+_CHIME_+_VR_+_DSP_+_MAPS.zip
-  boot_img: Development/Chery_Emulator/payload/boot_patched_adb_tcp.img
+  boot_img: Development/Chery_Emulator/payload/boot.img
   system_img: Development/Chery_Emulator/payload/system.img
   vendor_img: Development/Chery_Emulator/payload/vendor.img
   product_img: Development/Chery_Emulator/payload/product.img

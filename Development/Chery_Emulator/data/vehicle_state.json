@@ -1,0 +1,15 @@
+{
+  "ignition_state": "ENGINE_RUNNING",
+  "alarm_armed": false,
+  "doors": {
+    "driver": true,
+    "passenger": false,
+    "rear_left": false,
+    "rear_right": false,
+    "trunk": false,
+    "hood": false
+  },
+  "driver_door_opened_since_disarm": true,
+  "proximity_detected": true,
+  "engine_running": true
+}

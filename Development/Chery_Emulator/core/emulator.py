@@ -11,6 +11,8 @@ import shutil
 import subprocess
 import yaml
 
+from .process_cleanup import cleanup_all_emulator_resources, wait_for_port_free
+
 
 class EmulatorStatus(str, Enum):
     STOPPED = "STOPPED"
@@ -216,6 +218,7 @@ class EmulatorManager:
 
         # Console log: используем первый UART платы (ttyAMA0 / PL011) и
         # направляем его в файл. Для g6sh это соответствует uart@1c090000.
+        # Используем chardev для более надежной работы с консолью
         logs_dir = self._logs_dir
         logs_dir.mkdir(parents=True, exist_ok=True)
         console_log = logs_dir / "qemu_console.log"
@@ -230,25 +233,81 @@ class EmulatorManager:
             "4",
             "-m",
             "4096",
-            "-serial",
-            f"file:{console_log}",
         ]
 
-        if cfg.qemu_dtb is not None:
-            args += ["-dtb", str(cfg.qemu_dtb)]
+        # Для g6sh создаем отдельный chardev для UART на 0x1c090000
+        # НЕ используем -serial, чтобы избежать конфликтов с serial_hd(0)
+        if machine == "g6sh":
+            args += [
+            "-chardev",
+                f"file,id=g6sh_uart,path={console_log},append=on",
+                # Явно отключаем автоматическое создание serial0
+            "-serial",
+                "none",
+            ]
+        else:
+            args += [
+                "-serial",
+                f"file:{console_log}",
+        ]
 
         if boot is not None:
-            args += ["-kernel", str(boot)]
+            # Для g6sh машины: используем boot.img напрямую
+            # QEMU имеет встроенный Android boot.img парсер, который загрузит kernel по адресу из header
+            # Это позволяет загружать оригинальное ядро без модификации boot.img
+            if machine == "g6sh":
+                # Используем boot.img напрямую - QEMU Android boot.img парсер загрузит kernel по адресу 0x48080000
+                args += ["-kernel", str(boot)]
+                self._kernel_addr = 0x48080000  # Expected address from boot.img header
+                self.log(f"Using boot.img directly for g6sh machine, kernel should load at 0x48080000")
+            else:
+                args += ["-kernel", str(boot)]
+                self._kernel_addr = 0x40080000
+        else:
+            self._kernel_addr = None
+
+        # DTB может вызывать проблемы, если не соответствует kernel
+        # Для g6sh машины используем предоставленный DTB
+        if cfg.qemu_dtb is not None and cfg.qemu_dtb.exists():
+            if machine == "g6sh":
+                args += ["-dtb", str(cfg.qemu_dtb)]
+            # Для virt машины DTB генерируется автоматически, не указываем явно
 
         # Kernel cmdline: use ttyAMA0 as console and enable earlycon on the
         # PL011 at 0x1c090000, matching uart@1c090000 in g6sh-emu.dtb.
-        cmdline = (
+        # Добавляем параметры для раннего вывода и предотвращения зависания
+        if machine == "g6sh":
+            # Для g6sh машины используем адреса реального железа
+            cmdline = (
             "console=ttyAMA0,115200 "
-            "earlycon=pl011,0x1c090000 "
+            "earlycon=pl011,0x1c090000,115200 "
             "androidboot.selinux=permissive "
             "androidboot.hardware=g6sh "
-            "root=/dev/vda rootfstype=ext4 rw"
+            "root=/dev/vda rootfstype=ext4 rw "
+            "init=/init "
+            "loglevel=8 "
+            "printk.time=1 "
+            "printk.always_kmsg_dump=1 "
+            "ignore_loglevel "
+            "earlyprintk=pl011,0x1c090000,115200 "
+            "keep_bootcon "
+            "no_console_suspend=1"
         )
+        else:
+            # Для virt машины используем стандартные адреса
+            cmdline = (
+                "console=ttyAMA0,115200 "
+                "earlycon=pl011,0x9000000,115200 "
+                "androidboot.selinux=permissive "
+                "root=/dev/vda rootfstype=ext4 rw "
+                "init=/init "
+                "loglevel=8 "
+                "printk.time=1 "
+                "ignore_loglevel "
+                "earlyprintk=pl011,0x9000000,115200 "
+                "keep_bootcon "
+                "no_console_suspend=1"
+            )
 
         args += ["-append", cmdline]
 
@@ -308,6 +367,21 @@ class EmulatorManager:
             # QEMU интерпретирует ":0" как TCP‑порт 5900.
             "-display",
             "vnc=127.0.0.1:0",
+            # QEMU monitor для мониторинга и отладки
+            # ВРЕМЕННО: Для g6sh отключаем монитор, чтобы избежать создания console0 chardev
+            # TODO: Найти способ использовать монитор без создания console0
+            "-monitor",
+            "tcp:127.0.0.1:5558,server,nowait" if machine != "g6sh" else "none",
+            # Предотвращаем зависание: не перезагружаемся и не выключаемся автоматически
+            "-no-reboot",
+            "-no-shutdown",
+            # QEMU debug режим для диагностики: guest_errors, unimp, mmu, int, exec
+            # Это поможет увидеть ошибки инициализации устройств и нереализованные функции
+            "-d",
+            "guest_errors,unimp,mmu,int,exec",
+            # Логируем debug вывод в отдельный файл
+            "-D",
+            str(logs_dir / "qemu_debug.log"),
         ]
 
         return args
@@ -352,15 +426,39 @@ class EmulatorManager:
         Validates configuration, builds QEMU command, spawns a subprocess and
         records PID and command. If QEMU is not available, sets ERROR status
         with a descriptive message.
+
+        Before starting, safely terminates any existing emulator processes
+        and cleans up ports to ensure a clean start.
         """
 
-        if self.runtime.status in {EmulatorStatus.STARTING, EmulatorStatus.RUNNING}:
-            return
+        # If already running, stop first to ensure clean restart
+        if self.runtime.status in {EmulatorStatus.RUNNING, EmulatorStatus.STARTING}:
+            self.log("Stopping existing emulator before restart")
+            self.stop()
 
         self.runtime.status = EmulatorStatus.STARTING
         self.runtime.last_error = None
         self.runtime.last_qemu_command = None
         self.runtime.pid = None
+
+        # Clean up any orphaned QEMU processes and ports before starting
+        qemu_bin = str(self.config.qemu_binary or "qemu-system-aarch64")
+        ports_to_clean = [5557, 5900]  # ADB port, VNC port
+
+        self.log("Cleaning up old processes and ports before start")
+        cleanup_stats = cleanup_all_emulator_resources(
+            qemu_binaries=[qemu_bin],
+            ports=ports_to_clean,
+        )
+        if cleanup_stats["qemu_processes_killed"] > 0:
+            self.log(f"Killed {cleanup_stats['qemu_processes_killed']} orphaned QEMU processes")
+        if cleanup_stats["port_processes_killed"] > 0:
+            self.log(f"Killed {cleanup_stats['port_processes_killed']} processes using ports")
+
+        # Wait for ports to be free
+        for port in ports_to_clean:
+            if not wait_for_port_free(port, timeout=3.0):
+                self.log(f"Warning: Port {port} may still be in use")
 
         error = self._validate_config()
         if error is not None:
@@ -410,13 +508,14 @@ class EmulatorManager:
 
         self.runtime.status = EmulatorStatus.RUNNING
         self.runtime.pid = self._process.pid
-        self.log(f"Emulator QEMU started with PID {self.runtime.pid}")
+        self._boot_start_time = datetime.now()  # Track boot start time
+        self.log(f"Emulator QEMU started with PID {self.runtime.pid} at {self._boot_start_time.isoformat()}")
 
         # Best-effort attach adb logger.
         self._start_adb_logger()
 
     def stop(self) -> None:
-        """Stop emulator process (best-effort)."""
+        """Stop emulator process (best-effort with safe termination)."""
 
         if self.runtime.status not in {EmulatorStatus.RUNNING, EmulatorStatus.STARTING}:
             return
@@ -424,24 +523,7 @@ class EmulatorManager:
         self.runtime.status = EmulatorStatus.STOPPING
         self.log("Stopping emulator")
 
-        if self._process is not None and self._process.poll() is None:
-            try:
-                self._process.terminate()
-                try:
-                    self._process.wait(timeout=10)
-                except subprocess.TimeoutExpired:
-                    self._process.kill()
-                    self._process.wait(timeout=5)
-            except OSError as exc:
-                self.runtime.last_error = f"Failed to stop QEMU: {exc}"
-                self.log(f"Failed to stop QEMU: {exc}")
-
-        self._process = None
-        self.runtime.status = EmulatorStatus.STOPPED
-        self.runtime.pid = None
-        self.log("Emulator stopped")
-
-        # Stop adb logger as well.
+        # Stop adb logger first (it depends on emulator)
         if self._adb_process is not None and self._adb_process.poll() is None:
             try:
                 self._adb_process.terminate()
@@ -453,6 +535,33 @@ class EmulatorManager:
             except OSError as exc:
                 self.log(f"Failed to stop adb logcat: {exc}")
         self._adb_process = None
+
+        # Stop QEMU process with safe termination
+        if self._process is not None:
+            pid = self._process.pid
+            if self._process.poll() is None:
+                try:
+                    # Try graceful termination first
+                    self._process.terminate()
+                    try:
+                        self._process.wait(timeout=10)
+                        self.log(f"QEMU process {pid} terminated gracefully")
+                    except subprocess.TimeoutExpired:
+                        # Force kill if graceful termination failed
+                        self.log(f"QEMU process {pid} did not terminate, forcing kill")
+                        self._process.kill()
+                        try:
+                            self._process.wait(timeout=5)
+                        except subprocess.TimeoutExpired:
+                            self.log(f"Warning: QEMU process {pid} did not respond to kill")
+                except OSError as exc:
+                    self.runtime.last_error = f"Failed to stop QEMU: {exc}"
+                    self.log(f"Failed to stop QEMU: {exc}")
+
+        self._process = None
+        self.runtime.status = EmulatorStatus.STOPPED
+        self.runtime.pid = None
+        self.log("Emulator stopped")
 
     def _start_adb_logger(self) -> None:
         """Best-effort start of adb logcat mirror into logs/adb_android.log.
@@ -515,12 +624,20 @@ class EmulatorManager:
             self._adb_process = None
             log_file.close()
 
+    def get_boot_elapsed_time(self) -> float | None:
+        """Get elapsed time since boot started in seconds."""
+        if hasattr(self, '_boot_start_time') and self._boot_start_time:
+            return (datetime.now() - self._boot_start_time).total_seconds()
+        return None
+
     def to_dict(self) -> dict[str, object]:
+        boot_time = self.get_boot_elapsed_time()
         return {
             "status": self.runtime.status.value,
             "last_error": self.runtime.last_error,
             "last_qemu_command": self.runtime.last_qemu_command,
             "pid": self.runtime.pid,
+            "boot_elapsed_seconds": boot_time,
             "android_ota": str(self.config.android_ota) if self.config.android_ota else None,
             "qnx_ota": str(self.config.qnx_ota) if self.config.qnx_ota else None,
         }

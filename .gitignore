@@ -56,6 +56,18 @@ proguard/
 .AppleDouble
 .LSOverride
 ._*
+**/.DS_Store
+
+# Backup files
+*.bak
+*.bak2
+*.bak3
+*.swp
+*.tmp
+*~
+
+# Git backups
+.git-backup/
 
 # IDE settings
 .vscode/

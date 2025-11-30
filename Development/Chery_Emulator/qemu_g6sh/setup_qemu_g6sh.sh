@@ -32,6 +32,15 @@ else
   cd "${QEMU_DIR}"
 fi
 
+# QEMU v8.x использует отдельный build-каталог внутри исходников.
+# Если он уже существует и был создан НЕ через ./configure, конфигуратор падает
+# с ошибкой: "build dir already exists and was not previously created by configure".
+# Чтобы гарантировать чистую пересборку, всегда удаляем старый qemu-src/build.
+if [[ -d "${QEMU_DIR}/build" ]]; then
+  echo "==> Удаляю старый qemu-src/build перед конфигурацией..."
+  rm -rf "${QEMU_DIR}/build"
+fi
+
 mkdir -p "${BUILD_DIR}"
 
 echo "==> Конфигурирую сборку (aarch64-softmmu)..."

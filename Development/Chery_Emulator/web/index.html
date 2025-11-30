@@ -473,17 +473,23 @@
       align-items: stretch;
       gap: 24px;
     }
-    .engine-layout {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-    .engine-main {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-    }
+      .engine-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+      }
+      .engine-top-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .engine-main {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
     .engine-button-wrapper {
       width: 140px;
       height: 140px;
@@ -510,6 +516,29 @@
       box-shadow:
         0 0 0 4px rgba(45, 212, 191, 0.45),
         0 18px 38px rgba(15, 23, 42, 0.95);
+      overflow: hidden;
+    }
+    .engine-button-ring::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      border-radius: 50%;
+      border: 4px solid transparent;
+      border-top-color: var(--accent);
+      animation: ring-spin 1s linear infinite;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .engine-button.engine-button--pressing .engine-button-ring::before {
+      opacity: 1;
+    }
+    @keyframes ring-spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
     .engine-button-core {
       position: absolute;
@@ -556,8 +585,8 @@
     }
     .engine-legend {
       display: flex;
-      flex-direction: column;
-      gap: 4px;
+        flex-direction: column;
+        gap: 4px;
     }
     .engine-indicator-row {
       display: flex;
@@ -744,6 +773,187 @@
         max-width: 100%;
       }
     }
+
+    /* Vehicle top-view for doors + alarm */
+    .vehicle-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .vehicle-alarm-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 6px;
+    }
+    .vehicle-switch-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .vehicle-switch-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+    }
+    .alarm-switch {
+      position: relative;
+      width: 46px;
+      height: 22px;
+      border-radius: 999px;
+      border: none;
+      padding: 0;
+      background: #020617;
+      box-shadow:
+        inset 0 0 0 1px rgba(148, 163, 184, 0.7),
+        0 4px 10px rgba(15, 23, 42, 0.9);
+      cursor: pointer;
+    }
+    .alarm-switch-thumb {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: #f97373;
+      box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.25);
+      transition: transform 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
+    }
+    .alarm-switch--on {
+      background: #022c22;
+      box-shadow:
+        inset 0 0 0 1px rgba(45, 212, 191, 0.8),
+        0 4px 10px rgba(15, 23, 42, 0.9);
+    }
+    .alarm-switch--on .alarm-switch-thumb {
+      transform: translateX(22px);
+      background: #22c55e;
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.35);
+    }
+    .vehicle-car {
+      position: relative;
+      width: 250px;
+      height: 120px;
+      border-radius: 26px;
+      background: radial-gradient(circle at top, #020617 0, #020617 60%, #020617 100%);
+      box-shadow:
+        inset 0 0 0 1px rgba(30, 64, 175, 0.7),
+        0 14px 30px rgba(15, 23, 42, 0.9);
+      overflow: hidden;
+    }
+    .vehicle-car-body {
+      position: absolute;
+      inset: 16px 40px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #0b1120, #020617);
+      box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 0.9),
+        0 0 0 6px rgba(15, 23, 42, 0.9);
+    }
+    .vehicle-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto;
+      column-gap: 8px;
+      row-gap: 6px;
+      height: 100%;
+      padding: 14px 20px;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+    .vehicle-door {
+      position: relative;
+      width: 70px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: rgba(15, 23, 42, 0.95);
+      cursor: pointer;
+      transition: background 0.12s ease, box-shadow 0.12s ease, transform 0.12s ease;
+      box-shadow: 0 3px 8px rgba(15, 23, 42, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .vehicle-door::before {
+      content: "";
+      position: absolute;
+      inset-inline: 4px;
+      inset-block: 5px;
+      border-radius: 6px;
+      border: 1px solid rgba(55, 65, 81, 0.8);
+    }
+    .vehicle-door--vertical {
+      width: 40px;
+      height: 72px;
+      border-radius: 999px;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .vehicle-door--vertical::before {
+      inset-inline: 8px;
+      inset-block: 8px;
+      border-radius: 999px;
+    }
+    /* Grid positions: hood/trunk занимают две строки, двери — по одной. */
+    .vehicle-door--hood {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+    }
+    .vehicle-door--trunk {
+      grid-column: 4;
+      grid-row: 1 / span 2;
+    }
+    .vehicle-door--passenger {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .vehicle-door--rear-right {
+      grid-column: 3;
+      grid-row: 1;
+    }
+    .vehicle-door--driver {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .vehicle-door--rear-left {
+      grid-column: 3;
+      grid-row: 2;
+    }
+    .vehicle-door-label {
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+    .vehicle-door--vertical .vehicle-door-label {
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      letter-spacing: 0.2em;
+    }
+    .vehicle-door--open {
+      background: rgba(22, 163, 74, 0.2);
+      box-shadow:
+        0 0 0 1px rgba(22, 163, 74, 0.8),
+        0 0 12px rgba(34, 197, 94, 0.7);
+    }
+    .vehicle-door--disabled {
+      opacity: 0.3;
+      cursor: default;
+    }
+    }
   </style>
 </head>
 <body>
@@ -830,6 +1040,15 @@
               </svg>
             </span>
           </div>
+          <div class="tab" data-tab="logs">
+            <span>Logs</span>
+            <span class="tab-icon tab-icon--logs" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M3 3h18v18H3z" fill="none" stroke="currentColor" stroke-width="1.5" />
+                <path d="M7 7h10M7 12h10M7 17h6" />
+              </svg>
+            </span>
+          </div>
         </div>
         <div class="tab-content" id="sidebarTabContent">
           <h3 id="sidebarTabTitle">Vehicle</h3>
@@ -854,89 +1073,85 @@
       <div class="splitter splitter--horizontal splitter--top-middle" data-split-id="top-middle"></div>
 
       <div class="panel panel--active" data-panel="vehicle">
-        <div class="vertical-stack" id="verticalStack">
-          <section class="console-panel" id="logsPanel">
-            <div class="console-panel__title-row">
-              <div class="console-panel__title">Logs</div>
-              <div class="console-panel__actions">
-                <button class="console-panel__refresh" id="logRefreshButton" title="Clear and reload log">
-                  <svg viewBox="0 0 24 24" role="presentation">
-                    <path d="M6 8V4h4" />
-                    <path d="M6 4a8 8 0 0 1 13 4" />
-                    <path d="M18 16v4h-4" />
-                    <path d="M18 20a8 8 0 0 1-13-4" />
-                  </svg>
-                </button>
-                <div class="console-panel__filter">
-                  <button class="console-panel__filter-button" id="logFilterButton">
-                    <span id="logFilterLabel">Общие</span>
-                    <span class="chevron">▾</span>
-                  </button>
-                  <div class="console-panel__filter-menu" id="logFilterMenu">
-                    <div class="console-filter-group-label">Общие</div>
-                    <div class="console-filter-item" data-filter="all">Общие</div>
-                    <div class="console-filter-group-label">Андроид</div>
-                    <div class="console-filter-item" data-filter="android">Все логи Android</div>
-                    <div class="console-filter-group-label">QNX</div>
-                    <div class="console-filter-item" data-filter="qnx">Все логи QNX</div>
-                    <div class="console-filter-group-label">Эмулятор</div>
-                    <div class="console-filter-item" data-filter="emulator">Эмулятор</div>
-                    <div class="console-filter-item" data-filter="emulator-internal">Внутренние логи эмулятора</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="console-panel__header">
-              <span>Time</span>
-              <span>Source</span>
-              <span>Type</span>
-              <span>Message</span>
-            </div>
-            <div class="console-panel__body" id="huConsoleInner">
-              <span class="display__stub">Waiting for emulator output...</span>
-            </div>
-          </section>
-
-          <div class="splitter splitter--horizontal splitter--logs-bottom" data-split-id="logs-bottom"></div>
-
-          <div class="vertical-stack" id="bottomStack">
+        <div class="vertical-stack" id="bottomStack">
             <div class="bottom-row" id="bottomRow">
               <section class="bottom-panel" id="bottomPanel">
                 <div class="engine-layout">
-                  <div class="engine-main">
-                    <div class="engine-button-wrapper">
-                      <button class="engine-button" id="btnIgnition">
-                        <div class="engine-button-ring"></div>
-                        <div class="engine-button-core">
-                          <div class="engine-button-pill"></div>
-                          <div class="engine-button-label">
-                            <span>Start/Stop</span>
-                            <span>Engine</span>
+                  <div class="engine-top-row">
+                    <div class="engine-main">
+                      <div class="engine-button-wrapper">
+                        <button class="engine-button" id="btnIgnition">
+                          <div class="engine-button-ring"></div>
+                          <div class="engine-button-core">
+                            <div class="engine-button-pill"></div>
+                            <div class="engine-button-label">
+                              <span>Start/Stop</span>
+                              <span>Engine</span>
+                            </div>
                           </div>
-                        </div>
-                      </button>
+                        </button>
+                      </div>
+                      <div class="engine-info">
+                        <span class="label">Ignition state</span>
+                        <span class="value" id="ignitionState">OFF</span>
+                      </div>
                     </div>
-                    <div class="engine-info">
-                      <span class="label">Ignition state</span>
-                      <span class="value" id="ignitionState">OFF</span>
+                    <div class="engine-legend">
+                      <div class="engine-indicator-row">
+                        <span class="engine-indicator-dot engine-indicator--red" id="indEngineOff"></span>
+                        <span>Engine off</span>
+                      </div>
+                      <div class="engine-indicator-row">
+                        <span class="engine-indicator-dot engine-indicator--yellow" id="indPowerReady"></span>
+                        <span>Power ready</span>
+                      </div>
+                      <div class="engine-indicator-row">
+                        <span class="engine-indicator-dot engine-indicator--green" id="indAccOn"></span>
+                        <span>ACC ON</span>
+                      </div>
+                      <div class="engine-indicator-row">
+                        <span class="engine-indicator-dot engine-indicator--teal" id="indEngineRunning"></span>
+                        <span>Engine is working</span>
+                      </div>
                     </div>
                   </div>
-                  <div class="engine-legend">
-                    <div class="engine-indicator-row">
-                      <span class="engine-indicator-dot engine-indicator--red" id="indEngineOff"></span>
-                      <span>Engine off</span>
+                  <div class="vehicle-layout">
+                    <div class="vehicle-alarm-row">
+                      <div class="vehicle-switch-group">
+                        <span class="vehicle-switch-label">ARM</span>
+                        <button id="btnAlarm" class="alarm-switch" type="button" aria-pressed="false">
+                          <span class="alarm-switch-thumb"></span>
+                        </button>
+                      </div>
+                      <div class="vehicle-switch-group">
+                        <span class="vehicle-switch-label">PROX</span>
+                        <button id="btnProximity" class="alarm-switch" type="button" aria-pressed="false">
+                          <span class="alarm-switch-thumb"></span>
+                        </button>
+                      </div>
                     </div>
-                    <div class="engine-indicator-row">
-                      <span class="engine-indicator-dot engine-indicator--yellow" id="indPowerReady"></span>
-                      <span>Power ready</span>
-                    </div>
-                    <div class="engine-indicator-row">
-                      <span class="engine-indicator-dot engine-indicator--green" id="indAccOn"></span>
-                      <span>ACC ON</span>
-                    </div>
-                    <div class="engine-indicator-row">
-                      <span class="engine-indicator-dot engine-indicator--teal" id="indEngineRunning"></span>
-                      <span>Engine is working</span>
+                    <div class="vehicle-car" aria-label="Vehicle doors top view">
+                      <div class="vehicle-car-body"></div>
+                      <div class="vehicle-grid">
+                        <button type="button" class="vehicle-door vehicle-door--vertical vehicle-door--hood" id="doorHood" title="Hood">
+                          <span class="vehicle-door-label">hood</span>
+                        </button>
+                        <button type="button" class="vehicle-door vehicle-door--passenger" id="doorPassenger" title="Passenger">
+                          <span class="vehicle-door-label">pass</span>
+                        </button>
+                        <button type="button" class="vehicle-door vehicle-door--rear-right" id="doorRearRight" title="Rear right">
+                          <span class="vehicle-door-label">rear R</span>
+                        </button>
+                        <button type="button" class="vehicle-door vehicle-door--vertical vehicle-door--trunk" id="doorTrunk" title="Trunk">
+                          <span class="vehicle-door-label">trunk</span>
+                        </button>
+                        <button type="button" class="vehicle-door vehicle-door--driver" id="doorDriver" title="Driver">
+                          <span class="vehicle-door-label">driver</span>
+                        </button>
+                        <button type="button" class="vehicle-door vehicle-door--rear-left" id="doorRearLeft" title="Rear left">
+                          <span class="vehicle-door-label">rear L</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -948,12 +1163,17 @@
                 <div class="emulator-card" id="emulatorCard">
                   <div class="emulator-card__title">Emulator control</div>
                   <div class="emulator-card__content">
-                    <div class="pill" id="emulatorPill">
+                    <div class="pill" id="environmentPill">
+                      <span class="pill-dot" id="environmentDot"></span>
+                      <span class="pill-text" id="environmentStatusText">Environment: STOPPED</span>
+                    </div>
+                    <div class="pill" id="emulatorPill" style="margin-top: 8px;">
                       <span class="pill-dot" id="emulatorDot"></span>
                       <span class="pill-text" id="emulatorStatusText">Emulator: STOPPED</span>
                     </div>
-                    <div class="actions">
-                      <button id="btnEmuToggle">Emulator Start / Stop</button>
+                    <div class="actions" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+                      <button id="btnEnvToggle">Environment Start / Stop</button>
+                      <button id="btnEmuToggle">QEMU Start / Stop</button>
                     </div>
                   </div>
                 </div>
@@ -1042,6 +1262,50 @@
           </div>
         </section>
       </div>
+
+      <div class="panel" data-panel="logs">
+        <section class="console-panel" id="logsPanel">
+          <div class="console-panel__title-row">
+            <div class="console-panel__title">Logs</div>
+            <div class="console-panel__actions">
+              <button class="console-panel__refresh" id="logRefreshButton" title="Clear and reload log">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path d="M6 8V4h4" />
+                  <path d="M6 4a8 8 0 0 1 13 4" />
+                  <path d="M18 16v4h-4" />
+                  <path d="M18 20a8 8 0 0 1-13-4" />
+                </svg>
+              </button>
+              <div class="console-panel__filter">
+                <button class="console-panel__filter-button" id="logFilterButton">
+                  <span id="logFilterLabel">Общие</span>
+                  <span class="chevron">▾</span>
+                </button>
+                <div class="console-panel__filter-menu" id="logFilterMenu">
+                  <div class="console-filter-group-label">Общие</div>
+                  <div class="console-filter-item" data-filter="all">Общие</div>
+                  <div class="console-filter-group-label">Андроид</div>
+                  <div class="console-filter-item" data-filter="android">Все логи Android</div>
+                  <div class="console-filter-group-label">QNX</div>
+                  <div class="console-filter-item" data-filter="qnx">Все логи QNX</div>
+                  <div class="console-filter-group-label">Эмулятор</div>
+                  <div class="console-filter-item" data-filter="emulator">Эмулятор</div>
+                  <div class="console-filter-item" data-filter="emulator-internal">Внутренние логи эмулятора</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="console-panel__header">
+            <span>Time</span>
+            <span>Source</span>
+            <span>Type</span>
+            <span>Message</span>
+          </div>
+          <div class="console-panel__body" id="huConsoleInner">
+            <span class="display__stub">Waiting for emulator output...</span>
+          </div>
+        </section>
+      </div>
     </main>
   </div>
 
@@ -1049,17 +1313,29 @@
     const ignitionStateEl = document.getElementById('ignitionState');
     const emulatorStatusTextEl = document.getElementById('emulatorStatusText');
     const emulatorDotEl = document.getElementById('emulatorDot');
+    const environmentStatusTextEl = document.getElementById('environmentStatusText');
+    const environmentDotEl = document.getElementById('environmentDot');
     const btnIgnition = document.getElementById('btnIgnition');
     const btnEmuToggle = document.getElementById('btnEmuToggle');
+    const btnEnvToggle = document.getElementById('btnEnvToggle');
     const huConsoleInnerEl = document.getElementById('huConsoleInner');
     const btnLogRefresh = document.getElementById('logRefreshButton');
     const huCanvas = document.getElementById('huCanvas');
     const clusterCanvas = document.getElementById('clusterCanvas');
+    const btnAlarm = document.getElementById('btnAlarm');
+    const btnProximity = document.getElementById('btnProximity');
+    const doorDriverBtn = document.getElementById('doorDriver');
+    const doorPassengerBtn = document.getElementById('doorPassenger');
+    const doorRearLeftBtn = document.getElementById('doorRearLeft');
+    const doorRearRightBtn = document.getElementById('doorRearRight');
+    const doorTrunkBtn = document.getElementById('doorTrunk');
+    const doorHoodBtn = document.getElementById('doorHood');
 
     const sidebarTabs = document.querySelectorAll('.tab[data-tab]');
 
     const BASE_URL = window.location.origin.replace(/\/$/, '');
     let currentLogFilter = 'all';
+    let currentActiveTab = 'vehicle';
 
     const TAB_COMMANDS = {
       // Vehicle tab: controls moved to ignition button, no extra chips needed.
@@ -1077,6 +1353,7 @@
         system: ['RELOAD_STATE', 'DUMP_QEMU_CMD'],
       },
       emulator: {},
+      logs: {},
     };
 
     function escapeHtml(str) {
@@ -1092,26 +1369,27 @@
       });
     }
 
-    function updateIgnitionIndicators(ignitionState) {
+    function updateIgnitionIndicators(ignitionState, engineRunning = false) {
       const indOff = document.getElementById('indEngineOff');
       const indPower = document.getElementById('indPowerReady');
       const indAcc = document.getElementById('indAccOn');
       const indRun = document.getElementById('indEngineRunning');
 
       const isOff = ignitionState === 'OFF';
-      const isAcc = ignitionState === 'ACC';
-      const isIgn = ignitionState === 'IGN';
+      const isPowerReady = ignitionState === 'POWER_READY';
+      const isAccOn = ignitionState === 'ACC_ON';
       const isRunning = ignitionState === 'ENGINE_RUNNING';
 
       // Семантика:
       // - Красный: OFF
-      // - Жёлтый: ACC (первый короткий клик)
-      // - Зелёный: IGN или ENGINE_RUNNING (ACC ON)
-      // - Бирюзовый: только ENGINE_RUNNING
+      // - Жёлтый: POWER_READY (первый короткий клик)
+      // - Зелёный: ACC_ON (второй короткий клик)
+      // - Бирюзовый: ENGINE_RUNNING - показывает состояние двигателя (работает или нет)
+      //   Должна светиться когда engine_running = true, независимо от ignition_state
       const redOn = isOff;
-      const yellowOn = isAcc;
-      const greenOn = isIgn || isRunning;
-      const tealOn = isRunning;
+      const yellowOn = isPowerReady;
+      const greenOn = isAccOn || isRunning;  // ACC_ON или ENGINE_RUNNING (оба показывают ACC)
+      const tealOn = engineRunning;  // Показываем когда двигатель работает (независимо от ignition_state)
 
       function setActive(el, on) {
         if (!el) return;
@@ -1122,6 +1400,50 @@
       setActive(indPower, yellowOn);
       setActive(indAcc, greenOn);
       setActive(indRun, tealOn);
+    }
+
+    function updateAlarmAndDoors(state) {
+      const alarmArmed = !!state.alarm_armed;
+      const doors = state.doors || {};
+      const driverReady = !!state.driver_ready;
+      const proximityDetected = !!state.proximity_detected;
+
+      if (btnAlarm) {
+        btnAlarm.classList.toggle('alarm-switch--on', alarmArmed);
+        btnAlarm.setAttribute('aria-pressed', alarmArmed ? 'true' : 'false');
+        // Нельзя снять с охраны, если нет ключа – визуально блокируем.
+        const cannotDisarm = alarmArmed && !proximityDetected;
+        btnAlarm.disabled = cannotDisarm;
+        btnAlarm.style.opacity = cannotDisarm ? 0.4 : 1;
+        btnAlarm.style.cursor = cannotDisarm ? 'not-allowed' : 'pointer';
+      }
+      if (btnProximity) {
+        btnProximity.classList.toggle('alarm-switch--on', proximityDetected);
+        btnProximity.setAttribute('aria-pressed', proximityDetected ? 'true' : 'false');
+      }
+
+      function applyDoor(el, key) {
+        if (!el) return;
+        const open = !!doors[key];
+        el.classList.toggle('vehicle-door--open', open);
+        // Пока сигнализация включена – двери «заблокированы».
+        el.classList.toggle('vehicle-door--disabled', alarmArmed);
+      }
+
+      applyDoor(doorDriverBtn, 'driver');
+      applyDoor(doorPassengerBtn, 'passenger');
+      applyDoor(doorRearLeftBtn, 'rear_left');
+      applyDoor(doorRearRightBtn, 'rear_right');
+      applyDoor(doorTrunkBtn, 'trunk');
+      applyDoor(doorHoodBtn, 'hood');
+
+      // Блокируем кнопку Start/Stop, пока нельзя запускать.
+      if (btnIgnition) {
+        const disabled = !driverReady;
+        btnIgnition.disabled = disabled;
+        btnIgnition.style.cursor = disabled ? 'not-allowed' : 'pointer';
+        btnIgnition.style.opacity = disabled ? 0.5 : 1;
+      }
     }
 
     function updateMainPanel(tab) {
@@ -1136,6 +1458,7 @@
       sidebarTabs.forEach(el => {
         el.classList.toggle('tab--active', el.dataset.tab === tab);
       });
+      currentActiveTab = tab;
       try {
         if (window.localStorage) {
           window.localStorage.setItem('ui:selectedTab', tab);
@@ -1148,6 +1471,10 @@
         // Lazy-load emulator config when user opens the Emulator tab.
         loadEmulatorConfig();
       }
+      if (tab === 'logs') {
+        // Refresh logs when user opens the Logs tab.
+        fetchHuConsole();
+      }
     }
 
     sidebarTabs.forEach(el => {
@@ -1155,6 +1482,21 @@
         updateSidebarTab(el.dataset.tab);
       });
     });
+
+    function updateEnvironmentPill(status) {
+      let label = 'Environment: ' + status.toUpperCase();
+      environmentStatusTextEl.textContent = label;
+
+      if (status === 'running') {
+        // Зеленый для RUNNING
+        environmentDotEl.style.background = '#22c55e';
+        environmentDotEl.style.boxShadow = '0 0 0 4px rgba(34, 197, 94, 0.25)';
+      } else {
+        // Красный для STOPPED
+        environmentDotEl.style.background = '#f97373';
+        environmentDotEl.style.boxShadow = '0 0 0 4px rgba(249, 115, 115, 0.25)';
+      }
+    }
 
     function updateEmulatorPill(status, error, pid) {
       let label = 'Emulator: ' + status;
@@ -1242,9 +1584,15 @@
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
         ignitionStateEl.textContent = data.ignition_state;
-        updateIgnitionIndicators(data.ignition_state);
+        updateIgnitionIndicators(data.ignition_state, data.engine_running || false);
+        updateAlarmAndDoors(data);
         updateEmulatorPill(data.emulator_status, data.emulator_error, data.emulator_pid);
         window.__emulatorStatus = data.emulator_status;
+        // Обновляем статус окружения
+        if (data.environment_status) {
+          updateEnvironmentPill(data.environment_status);
+          window.__environmentStatus = data.environment_status;
+        }
       } catch (e) {
         console.error('Failed to fetch state', e);
         updateEmulatorPill('ERROR', 'core unreachable', null);
@@ -1364,9 +1712,25 @@
         const res = await fetch(BASE_URL + path, { method: 'POST' });
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
+
+        // Полное обновление UI после любого действия
         ignitionStateEl.textContent = data.ignition_state;
+        updateIgnitionIndicators(data.ignition_state, data.engine_running || false);
+        updateAlarmAndDoors(data);
         updateEmulatorPill(data.emulator_status, data.emulator_error, data.emulator_pid);
         window.__emulatorStatus = data.emulator_status;
+
+        // Обновляем статус окружения
+        if (data.environment_status) {
+          updateEnvironmentPill(data.environment_status);
+          window.__environmentStatus = data.environment_status;
+        }
+
+        // Для всех vehicle‑действий сразу обновляем локальное состояние
+        // сигнализации, дверей и proximity, не дожидаясь периодического поллинга.
+        if (Object.prototype.hasOwnProperty.call(data, 'alarm_armed')) {
+          updateAlarmAndDoors(data);
+        }
       } catch (e) {
         console.error('Failed to post action', e);
         updateEmulatorPill('ERROR', 'request failed', null);
@@ -1392,28 +1756,47 @@
     (function setupIgnitionButton() {
       let downTime = 0;
       let longFired = false;
-      const LONG_THRESHOLD_MS = 700;
+      const LONG_THRESHOLD_MS = 1000; // 1 second for long press
 
       function handleDown() {
         downTime = Date.now();
         longFired = false;
+        // Добавляем класс для анимации
+        if (btnIgnition) {
+          btnIgnition.classList.add('engine-button--pressing');
+        }
       }
 
       function handleUp() {
+        // Убираем класс анимации
+        if (btnIgnition) {
+          btnIgnition.classList.remove('engine-button--pressing');
+        }
+
         const dt = Date.now() - downTime;
         if (dt >= LONG_THRESHOLD_MS) {
-          // long press
-          postAction('/ignition/press_long');
-          longFired = true;
+          // long press - длительность >= 1 секунды
+          if (!longFired) {
+            postAction('/ignition/press_long');
+            longFired = true;
+          }
         } else if (!longFired) {
-          // short press
+          // short press - длительность < 1 секунды
           postAction('/ignition/press_short');
         }
       }
 
       btnIgnition.addEventListener('mousedown', handleDown);
       btnIgnition.addEventListener('mouseup', handleUp);
-      btnIgnition.addEventListener('mouseleave', () => { longFired = false; });
+      btnIgnition.addEventListener('mouseleave', () => {
+        // Убираем анимацию при уходе мыши
+        if (btnIgnition) {
+          btnIgnition.classList.remove('engine-button--pressing');
+        }
+        // При уходе мыши считаем что нажатие отменено
+        longFired = false;
+        downTime = 0;
+      });
 
       btnIgnition.addEventListener('touchstart', (ev) => {
         ev.preventDefault();
@@ -1424,6 +1807,63 @@
         handleUp();
       }, { passive: false });
     })();
+
+    // Alarm + doors interactions
+    function toggleAlarm() {
+      postAction('/vehicle/alarm/toggle');
+      // postAction уже дёргает fetchState через _state_response, но мы всё равно
+      // через пару секунд обновим состояние таймером.
+    }
+    function toggleProximity() {
+      postAction('/vehicle/proximity/toggle');
+    }
+
+    function toggleDoor(doorKey) {
+      // UI сам блокирует клики при вооружённой сигнализации, но серверная
+      // логика тоже защитит.
+      postJson('/vehicle/door', { door: doorKey, open: true });
+    }
+
+    if (btnAlarm) {
+      btnAlarm.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        toggleAlarm();
+      });
+    }
+    if (btnProximity) {
+      btnProximity.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        toggleProximity();
+      });
+    }
+
+    function setupDoorButton(el, key) {
+      if (!el) return;
+      el.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        if (el.classList.contains('vehicle-door--disabled')) {
+          return;
+        }
+        const isOpen = el.classList.contains('vehicle-door--open');
+        postJson('/vehicle/door', { door: key, open: !isOpen });
+      });
+    }
+
+    setupDoorButton(doorDriverBtn, 'driver');
+    setupDoorButton(doorPassengerBtn, 'passenger');
+    setupDoorButton(doorRearLeftBtn, 'rear_left');
+    setupDoorButton(doorRearRightBtn, 'rear_right');
+    setupDoorButton(doorTrunkBtn, 'trunk');
+    setupDoorButton(doorHoodBtn, 'hood');
+
+    btnEnvToggle.addEventListener('click', () => {
+      const envStatus = window.__environmentStatus || 'stopped';
+      if (envStatus === 'running') {
+        postAction('/emulator/environment/stop');
+      } else {
+        postAction('/emulator/environment/start');
+      }
+    });
 
     btnEmuToggle.addEventListener('click', () => {
       const status = window.__emulatorStatus || 'STOPPED';
@@ -1840,22 +2280,6 @@
         });
       }
 
-      const verticalStack = document.getElementById('verticalStack');
-      const logsPanel = document.getElementById('logsPanel');
-      const bottomStack = document.getElementById('bottomStack');
-      const logsBottomSplitter = document.querySelector('.splitter--logs-bottom');
-      if (verticalStack && logsPanel && bottomStack && logsBottomSplitter) {
-        logsPanel.style.flex = '0 0 55%';
-        bottomStack.style.flex = '1 1 auto';
-        setupVerticalResize({
-          container: verticalStack,
-          first: logsPanel,
-          second: bottomStack,
-          splitter: logsBottomSplitter,
-          storageKey: 'layout:logs-bottom',
-        });
-      }
-
       const bottomPanel = document.getElementById('bottomPanel');
       const emuPanel = document.getElementById('emuPanel');
       const bottomRow = document.getElementById('bottomRow');
@@ -1889,8 +2313,9 @@
       setupDisplayWebSocket(clusterCanvas, '/ws/cluster');
     });
 
-    setInterval(fetchState, 5000);
-    setInterval(fetchHuConsole, 2000);
+    // Оптимизированный polling - реже запросы для стабильности
+    setInterval(fetchState, 10000); // 10 секунд вместо 5
+    setInterval(fetchHuConsole, 5000); // 5 секунд вместо 2
   </script>
 </body>
 </html>

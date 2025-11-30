@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  can-bridge:
+    build:
+      context: ../..
+      dockerfile: docker/can-bridge/Dockerfile
+    container_name: chery-can-bridge
+    network_mode: host  # Use host network to access vcan0 and allow QEMU connection
+    privileged: true    # Required for network admin operations (modprobe, ip link)
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    volumes:
+      - ../../core:/app/core:ro  # Read-only access to core modules
+      - ../../logs:/app/logs
+    environment:
+      - CAN_INTERFACE=vcan0
+      - TCP_HOST=0.0.0.0
+      - TCP_PORT=1238
+    restart: unless-stopped
+

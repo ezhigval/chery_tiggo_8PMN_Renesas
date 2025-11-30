@@ -10,14 +10,14 @@ class IgnitionState(str, Enum):
     """High-level ignition states for the virtual vehicle.
 
     - OFF: vehicle completely off, both displays dark
-    - ACC: accessory power on, HU is allowed to boot
-    - IGN: ignition on (all electronics), engine not running yet
-    - ENGINE_RUNNING: engine started, full power
+    - POWER_READY: power ready (first press from OFF), cluster/QNX starts working
+    - ACC_ON: accessory on (second press), Android HU starts, radio, etc.
+    - ENGINE_RUNNING: engine starting/running (long press), then returns to ACC_ON
     """
 
     OFF = "OFF"
-    ACC = "ACC"
-    IGN = "IGN"
+    POWER_READY = "POWER_READY"
+    ACC_ON = "ACC_ON"
     ENGINE_RUNNING = "ENGINE_RUNNING"
 
 
@@ -25,65 +25,129 @@ class IgnitionState(str, Enum):
 class VehicleState:
     ignition_state: IgnitionState = IgnitionState.OFF
     updated_at: datetime = field(default_factory=datetime.utcnow)
+    # Дополнительная логика автомобиля.
+    alarm_armed: bool = True
+    # Простая модель дверей/капота/багажника: True = открыто.
+    doors: dict[str, bool] = field(
+        default_factory=lambda: {
+            "driver": False,
+            "passenger": False,
+            "rear_left": False,
+            "rear_right": False,
+            "trunk": False,
+            "hood": False,
+        }
+    )
+    # Флаг «мы сели в машину» – водительская дверь была открыта после снятия с охраны.
+    driver_door_opened_since_disarm: bool = False
+    # Обнаружен ли «ключ» (proximity) рядом с автомобилем.
+    proximity_detected: bool = False
+    # Состояние двигателя: работает или нет (независимо от состояния зажигания).
+    engine_running: bool = False
 
     def _set_state(self, new_state: IgnitionState) -> None:
+        """Устанавливает новое состояние зажигания.
+
+        ВАЖНО: Это внутренний метод. Используйте StateManager для изменения состояния.
+        """
         if new_state is self.ignition_state:
             return
         self.ignition_state = new_state
         self.updated_at = datetime.utcnow()
 
-    def press_short(self) -> None:
-        """Handle a short press of the ignition button.
+    # --- Alarm / doors helpers ---
 
-        Behaviour (v2, single physical button):
-        - OFF            -> ACC          (first press: accessories on)
-        - ACC            -> IGN          (second press: ignition on)
-        - IGN (no engine)-> OFF          (toggle back to full off)
-        - ENGINE_RUNNING -> OFF          (engine off, full shutdown for now)
+    def _touch(self) -> None:
+        self.updated_at = datetime.utcnow()
+
+    def set_alarm(self, armed: bool) -> None:
+        """Arm/disarm the vehicle alarm.
+
+        При постановке на охрану все двери считаем закрытыми. При снятии
+        проверяем, не открыта ли уже водительская дверь - если да, считаем что сели.
         """
 
-        if self.ignition_state is IgnitionState.OFF:
-            self._set_state(IgnitionState.ACC)
+        if self.alarm_armed == armed:
+            return
+        self.alarm_armed = armed
+        if armed:
+            # При постановке на охрану закрываем все двери.
+            for k in self.doors:
+                self.doors[k] = False
+            self.driver_door_opened_since_disarm = False
+        else:
+            # Только что сняли с охраны - если водительская дверь уже открыта,
+            # считаем что сели в машину
+            if self.doors.get("driver", False):
+                self.driver_door_opened_since_disarm = True
+            else:
+                # Ждём открытия водительской двери
+                self.driver_door_opened_since_disarm = False
+        self._touch()
 
-        elif self.ignition_state is IgnitionState.ACC:
-            self._set_state(IgnitionState.IGN)
+    def toggle_alarm(self) -> None:
+        self.set_alarm(not self.alarm_armed)
 
-        elif self.ignition_state is IgnitionState.IGN:
-            self._set_state(IgnitionState.OFF)
+    def set_door(self, name: str, open_: bool) -> None:
+        """Open/close a specific door.
 
-        elif self.ignition_state is IgnitionState.ENGINE_RUNNING:
-            # Stop engine and shut everything down (later можно добавить задержку ACC).
-            self._set_state(IgnitionState.OFF)
-
-    def press_long(self) -> None:
-        """Handle a long press of the ignition button.
-
-        Behaviour (v2):
-        - OFF  -> ACC (long press acts like short press)
-        - ACC  -> IGN (long press acts like short press)
-        - IGN  -> ENGINE_RUNNING (start engine, then считаем, что ключ в положении зажигания)
-        - ENGINE_RUNNING -> ENGINE_RUNNING (игнорируем, чтобы не дёргать лишний раз)
+        - Пока сигнализация включена, попытку открыть двери игнорируем.
+        - Когда после снятия с охраны впервые открывается водительская дверь,
+          считаем, что «мы сели в машину».
+        - Если дверь уже открыта, а потом снимаем с охраны, тоже считаем что сели.
         """
 
-        if self.ignition_state is IgnitionState.OFF:
-            self._set_state(IgnitionState.ACC)
+        if name not in self.doors:
+            return
+        if self.alarm_armed and open_:
+            # Нельзя открыть двери под охраной.
+            return
+        if self.doors[name] == open_:
+            return
+        self.doors[name] = open_
+        # Если водительская дверь открыта и сигнализация снята - считаем что сели
+        if name == "driver" and open_ and not self.alarm_armed:
+            self.driver_door_opened_since_disarm = True
+        self._touch()
 
-        elif self.ignition_state is IgnitionState.ACC:
-            self._set_state(IgnitionState.IGN)
+    def set_proximity(self, detected: bool) -> None:
+        """Update proximity (key presence) flag."""
 
-        elif self.ignition_state is IgnitionState.IGN:
-            self._set_state(IgnitionState.ENGINE_RUNNING)
+        if self.proximity_detected == detected:
+            return
+        self.proximity_detected = detected
+        self._touch()
 
-        elif self.ignition_state is IgnitionState.ENGINE_RUNNING:
-            # Никаких изменений при долгом нажатии в режиме запущенного двигателя.
-            pass
+    def set_engine_running(self, running: bool) -> None:
+        """Update engine running state.
+
+        This is independent of ignition_state - engine can be running
+        even when ignition is in ACC_ON state.
+        """
+        if self.engine_running == running:
+            return
+        self.engine_running = running
+        self._touch()
+
+    @property
+    def driver_ready(self) -> bool:
+        """Разрешаем запуск только если:
+
+        - сигнализация снята;
+        - после этого хотя бы раз открывали водительскую дверь;
+        - ключ (proximity) обнаружен рядом с автомобилем.
+        """
+
+        return (not self.alarm_armed) and self.driver_door_opened_since_disarm and self.proximity_detected
+
 
     def to_dict(self) -> dict[str, object]:
         return {
             "ignition_state": self.ignition_state.value,
             "updated_at": self.updated_at.isoformat() + "Z",
+            "alarm_armed": self.alarm_armed,
+            "doors": dict(self.doors),
+            "driver_ready": self.driver_ready,
+            "proximity_detected": self.proximity_detected,
+            "engine_running": self.engine_running,
         }
-
-
-# Global state instance for the initial prototype.
-vehicle_state = VehicleState()

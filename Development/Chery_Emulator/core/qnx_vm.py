@@ -7,6 +7,8 @@ from typing import Optional, Sequence
 
 import subprocess
 
+from .process_cleanup import cleanup_all_emulator_resources, wait_for_port_free
+
 from .emulator import EmulatorConfig
 
 
@@ -73,6 +75,7 @@ class QnxVmManager:
         self,
         uart_port: int = 1234,
         virtio_console_port: int = 1236,
+        pl011_console_port: int = 1237,
         enable_debug: bool = True,
     ) -> Sequence[str]:
         """Build QEMU argv for QNX‑only VM.
@@ -146,6 +149,25 @@ class QnxVmManager:
                 "virtio-blk-pci,drive=qnxsys",
             ]
 
+        # Стандартный PL011 консоль (ttyAMA0) - основной UART virt-машины
+        # QNX может использовать его по умолчанию для boot логов
+        # Используем chardev для правильной работы с socket
+        args += [
+            "-chardev",
+            f"socket,id=qnx_pl011,host=localhost,port={pl011_console_port},server=on,wait=off",
+            "-serial",
+            "chardev:qnx_pl011",
+        ]
+
+        # Дополнительный UART для QNX (на случай если используется другой)
+        # Порт 1239 для дополнительного UART
+        args += [
+            "-chardev",
+            f"socket,id=qnx_uart2,host=localhost,port=1239,server=on,wait=off",
+            "-serial",
+            "chardev:qnx_uart2",
+        ]
+
         # virtio-console для QNX: QNX IFS содержит vdev-virtio-console.so, поэтому
         # консоль QNX скорее всего идёт через virtio-console, а не через SCIF.
         args += [
@@ -157,13 +179,46 @@ class QnxVmManager:
             "virtconsole,chardev=qnx_virtcon,name=qnx-virtcon0",
         ]
 
-        # QEMU debug режим для диагностики: guest_errors, unimp, mmu
+        # QEMU monitor для мониторинга и отладки
+        args += [
+            "-monitor",
+            "tcp:127.0.0.1:5559,server,nowait",
+            # Предотвращаем зависание: не перезагружаемся и не выключаемся автоматически
+            "-no-reboot",
+            "-no-shutdown",
+        ]
+
+        # QEMU debug режим для диагностики: guest_errors, unimp, mmu, int, exec
         # Это поможет увидеть ошибки инициализации устройств и нереализованные функции.
         if enable_debug:
+            # Определяем путь к логам для debug файла
+            logs_dir = self.repo_root / "Development" / "Chery_Emulator" / "logs"
+            logs_dir.mkdir(parents=True, exist_ok=True)
             args += [
                 "-d",
-                "guest_errors,unimp,mmu",
+                "guest_errors,unimp,mmu,int,exec",
+                # Логируем debug вывод в отдельный файл
+                "-D",
+                str(logs_dir / "qnx_qemu_debug.log"),
             ]
+
+        # CAN bus support: для передачи CAN-сообщений в QNX
+        # Используем can-host-socketcan с vcan интерфейсом (только на Linux)
+        # На macOS socketcan недоступен, поэтому CAN отключен
+        import platform
+        if platform.system() == "Linux":
+            args += [
+                "-object",
+                f"can-bus,id=qnx_canbus0",
+                # Используем can-host-socketcan с vcan интерфейсом
+                # vcan должен быть создан на хосте: sudo modprobe vcan && sudo ip link add dev vcan0 type vcan && sudo ip link set up vcan0
+                "-object",
+                f"can-host-socketcan,id=qnx_can_host,if=vcan0,canbus=qnx_canbus0",
+                # Добавляем CAN контроллер для видимости в QNX
+                "-device",
+                f"kvaser_pci,canbus=qnx_canbus0,id=qnx_can_ctrl",
+            ]
+        # На macOS/Windows CAN не поддерживается через socketcan
 
         # We keep networking and GPU minimal for now; they can be added later.
 
@@ -179,13 +234,39 @@ class QnxVmManager:
         return " ".join(self.build_qemu_args())
 
     def start(self) -> None:
-        if self.runtime.status in {QnxVmStatus.STARTING, QnxVmStatus.RUNNING}:
-            return
+        """Start QNX VM process.
+
+        Before starting, safely terminates any existing QNX VM processes
+        and cleans up ports to ensure a clean start.
+        """
+
+        # If already running, stop first to ensure clean restart
+        if self.runtime.status in {QnxVmStatus.RUNNING, QnxVmStatus.STARTING}:
+            self.stop()
 
         self.runtime.status = QnxVmStatus.STARTING
         self.runtime.last_error = None
         self.runtime.last_qemu_command = None
         self.runtime.pid = None
+
+        # Clean up any orphaned QEMU processes and ports before starting
+        qemu_bin = str(
+            self.repo_root
+            / "Development"
+            / "Chery_Emulator"
+            / "qemu_scif_fork"
+            / "qemu-system-aarch64"
+        )
+        ports_to_clean = [1236, 1237, 1238, 1239, 5901]  # virtio-console, PL011, CAN, UART2, VNC
+
+        cleanup_stats = cleanup_all_emulator_resources(
+            qemu_binaries=[qemu_bin],
+            ports=ports_to_clean,
+        )
+
+        # Wait for ports to be free
+        for port in ports_to_clean:
+            wait_for_port_free(port, timeout=3.0)
 
         error = self._validate_config()
         if error is not None:
@@ -229,34 +310,58 @@ class QnxVmManager:
 
         self.runtime.status = QnxVmStatus.RUNNING
         self.runtime.pid = self._process.pid
+        from datetime import datetime
+        self._boot_start_time = datetime.now()  # Track boot start time
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.info(f"QNX VM started with PID {self.runtime.pid} at {self._boot_start_time.isoformat()}")
 
     def stop(self) -> None:
+        """Stop QNX VM process with safe termination."""
+
         if self.runtime.status not in {QnxVmStatus.RUNNING, QnxVmStatus.STARTING}:
             return
 
         self.runtime.status = QnxVmStatus.STOPPING
 
-        if self._process is not None and self._process.poll() is None:
-            try:
-                self._process.terminate()
+        if self._process is not None:
+            pid = self._process.pid
+            if self._process.poll() is None:
                 try:
-                    self._process.wait(timeout=10)
-                except subprocess.TimeoutExpired:
-                    self._process.kill()
-                    self._process.wait(timeout=5)
-            except OSError as exc:
-                self.runtime.last_error = f"Failed to stop QNX VM: {exc}"
+                    # Try graceful termination first
+                    self._process.terminate()
+                    try:
+                        self._process.wait(timeout=10)
+                    except subprocess.TimeoutExpired:
+                        # Force kill if graceful termination failed
+                        self._process.kill()
+                        try:
+                            self._process.wait(timeout=5)
+                        except subprocess.TimeoutExpired:
+                            # Process still not responding, but we've done our best
+                            pass
+                except OSError as exc:
+                    self.runtime.last_error = f"Failed to stop QNX VM: {exc}"
 
         self._process = None
         self.runtime.status = QnxVmStatus.STOPPED
         self.runtime.pid = None
 
+    def get_boot_elapsed_time(self) -> float | None:
+        """Get elapsed time since boot started in seconds."""
+        if hasattr(self, '_boot_start_time') and self._boot_start_time:
+            from datetime import datetime
+            return (datetime.now() - self._boot_start_time).total_seconds()
+        return None
+
     def to_dict(self) -> dict[str, object]:
+        boot_time = self.get_boot_elapsed_time()
         return {
             "status": self.runtime.status.value,
             "last_error": self.runtime.last_error,
             "last_qemu_command": self.runtime.last_qemu_command,
             "pid": self.runtime.pid,
+            "boot_elapsed_seconds": boot_time,
         }
 
 

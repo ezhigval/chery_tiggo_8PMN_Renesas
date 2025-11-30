@@ -51,17 +51,24 @@ class VncClient:
         Thread-safe and tolerant to transient connection errors. On any
         protocol error it will close the socket and fall back to a fresh
         connection on the next call.
+
+        If VNC server doesn't respond to frame requests (system still booting),
+        returns None gracefully.
         """
 
         with self._lock:
             try:
                 if not self._ensure_handshake():
                     return None
+                # Try to get frame with increased timeout for booting systems
                 raw = self._request_full_frame_raw()
                 if raw is None or self._width <= 0 or self._height <= 0:
+                    # VNC server might not be ready yet (system booting)
+                    # Don't close connection, just return None
                     return None
                 return self._encode_png(raw, self._width, self._height)
             except Exception:
+                # On any exception, close and reset for next attempt
                 self._close()
                 return None
 
@@ -243,18 +250,40 @@ class VncClient:
         if self._width <= 0 or self._height <= 0:
             return None
 
-        # FramebufferUpdateRequest (type=3, incremental=0, full rect).
-        msg = struct.pack("!BBHHHH", 3, 0, 0, 0, self._width, self._height)
-        if not self._send_all(msg):
-            return None
+        # Temporarily increase timeout for frame requests
+        # (systems might be booting and VNC might be slow to respond)
+        old_timeout = self._sock.gettimeout()
+        try:
+            self._sock.settimeout(2.0)  # 2 seconds for frame request
+        except Exception:
+            pass
 
-        # Expect FramebufferUpdate (type=0).
-        hdr = self._recv_exact(4)
-        if hdr is None or hdr[0] != 0:
-            return None
-        _msg_type, _pad, n_rects = struct.unpack("!BBH", hdr)
-        if n_rects == 0:
-            return None
+        try:
+            # FramebufferUpdateRequest (type=3, incremental=0, full rect).
+            msg = struct.pack("!BBHHHH", 3, 0, 0, 0, self._width, self._height)
+            if not self._send_all(msg):
+                return None
+
+            # Expect FramebufferUpdate (type=0).
+            hdr = self._recv_exact(4)
+            if hdr is None:
+                # Timeout or connection closed - VNC server might not be ready yet
+                # This is normal during system boot, don't close connection
+                return None
+            if hdr[0] != 0:
+                # Unexpected message type - might be ServerCutText or other
+                # Try to consume it and return None
+                return None
+            _msg_type, _pad, n_rects = struct.unpack("!BBH", hdr)
+            if n_rects == 0:
+                # Empty update - screen hasn't changed
+                return None
+        finally:
+            # Restore original timeout
+            try:
+                self._sock.settimeout(old_timeout)
+            except Exception:
+                pass
 
         # For now, take the first rectangle and assume it covers the full screen.
         rect_hdr = self._recv_exact(12)
